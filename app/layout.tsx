@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
+import Analytics from "@/components/Analytics";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#FAFAFA]">
         {children}
         <BottomNav />
+        <Analytics />
       </body>
     </html>
   );
