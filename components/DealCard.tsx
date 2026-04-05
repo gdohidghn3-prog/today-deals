@@ -1,0 +1,74 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
+import { SOURCE_LABELS, SOURCE_COLORS, type Deal } from "@/types/deal";
+
+export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: number }) {
+  const color = SOURCE_COLORS[deal.source];
+  const isHot = deal.discount.includes("50%") || deal.discount.includes("1+1") || deal.discount === "무료";
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.25, delay: index * 0.03 }}
+      className={`bg-white border rounded-xl p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ${
+        isHot ? "border-[#F59E0B] ring-1 ring-[#F59E0B]/20" : "border-[#E2E8F0]"
+      }`}
+    >
+      <div className="flex items-start justify-between gap-2 mb-2">
+        <div className="flex items-center gap-2">
+          <span
+            className="text-[11px] px-2 py-0.5 rounded-full font-medium text-white"
+            style={{ backgroundColor: color }}
+          >
+            {SOURCE_LABELS[deal.source]}
+          </span>
+          {isHot && (
+            <span className="text-[11px] px-2 py-0.5 rounded-full font-medium bg-[#FEF3C7] text-[#D97706]">
+              HOT
+            </span>
+          )}
+        </div>
+        {deal.link && (
+          <a
+            href={deal.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#94A3B8] hover:text-[#6366F1]"
+          >
+            <ExternalLink size={14} />
+          </a>
+        )}
+      </div>
+
+      <h3 className="font-semibold text-[#0F172A] text-sm mb-1">{deal.title}</h3>
+      <p className="text-xs text-[#64748B] mb-2">{deal.description}</p>
+
+      <div className="flex items-center justify-between">
+        <span className="text-lg font-bold" style={{ color }}>
+          {deal.discount}
+        </span>
+        <span className="text-[11px] text-[#94A3B8]">{deal.brand}</span>
+      </div>
+
+      {deal.dayOfWeek && (
+        <div className="flex gap-1 mt-2">
+          {["일", "월", "화", "수", "목", "금", "토"].map((d, i) => (
+            <span
+              key={d}
+              className={`text-[10px] w-5 h-5 flex items-center justify-center rounded-full ${
+                deal.dayOfWeek!.includes(i)
+                  ? "bg-[#6366F1] text-white"
+                  : "bg-[#F1F5F9] text-[#CBD5E1]"
+              }`}
+            >
+              {d}
+            </span>
+          ))}
+        </div>
+      )}
+    </motion.div>
+  );
+}
