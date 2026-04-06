@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Calendar, Store, Info } from "lucide-react";
+import { Home, GitCompare, Store, Info } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "/", label: "홈", icon: Home },
-  { href: "/calendar", label: "캘린더", icon: Calendar },
+  { href: "/", label: "통신사", icon: Home },
+  { href: "/compare", label: "비교", icon: GitCompare },
   { href: "/convenience", label: "편의점", icon: Store },
   { href: "/about", label: "소개", icon: Info },
 ];

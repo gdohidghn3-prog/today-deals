@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
-import { CATEGORY_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
+import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
 import DealCard from "@/components/DealCard";
 
 const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
@@ -17,27 +17,30 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
   const [telecom, setTelecom] = useState<TelecomType | "all">("all");
   const today = new Date();
 
+  // 통신사 혜택만 필터
+  const telecomDeals = useMemo(
+    () => initialDeals.filter((d) => ["skt", "kt", "lgu"].includes(d.source)),
+    [initialDeals]
+  );
+
   const filteredDeals = useMemo(() => {
-    if (telecom === "all") return initialDeals;
-    return initialDeals.filter(
-      (d) => d.source === telecom || !["skt", "kt", "lgu"].includes(d.source),
-    );
-  }, [initialDeals, telecom]);
+    if (telecom === "all") return telecomDeals;
+    return telecomDeals.filter((d) => d.source === telecom);
+  }, [telecomDeals, telecom]);
 
   const categories = Object.keys(CATEGORY_LABELS) as DealCategory[];
 
   return (
     <div className="max-w-3xl mx-auto px-4 pb-20">
-      {/* 헤더 */}
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">오늘혜택</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })}
+          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })} · 통신사 멤버십 혜택
         </p>
       </div>
 
       {/* 통신사 필터 */}
-      <div className="flex gap-2 mb-6">
+      <div className="flex gap-2 mb-2">
         {TELECOM_OPTIONS.map((opt) => (
           <button
             key={opt.key}
@@ -49,9 +52,21 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
             }`}
           >
             {opt.label}
+            {opt.key !== "all" && (
+              <span className="ml-1 text-[11px] opacity-80">
+                {telecomDeals.filter((d) => d.source === opt.key).length}
+              </span>
+            )}
           </button>
         ))}
       </div>
+
+      <p className="text-[11px] text-[#CBD5E1] mb-5">
+        {telecom === "all"
+          ? `총 ${filteredDeals.length}개 혜택`
+          : `${SOURCE_LABELS[telecom]} ${filteredDeals.length}개 혜택`}
+        {" · "}등급에 따라 혜택이 다를 수 있습니다
+      </p>
 
       {/* 카테고리별 혜택 */}
       {categories.map((cat) => {
@@ -75,12 +90,13 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
       {filteredDeals.length === 0 && (
         <div className="text-center py-12 text-[#94A3B8]">
-          오늘 해당하는 혜택이 없습니다.
+          해당 통신사의 혜택 정보가 없습니다.
         </div>
       )}
 
-      <p className="text-[11px] text-[#CBD5E1] text-center mt-6 mb-2">
-        혜택 정보는 변경될 수 있습니다 · 카드를 눌러 최신 정보를 확인하세요
+      <p className="text-[10px] text-[#CBD5E1] text-center mt-4 leading-relaxed">
+        혜택 정보는 각 통신사 공식 사이트에서 자동 수집되며, 실제와 다를 수 있습니다.
+        <br />정확한 내용은 카드를 눌러 확인하세요.
       </p>
     </div>
   );
