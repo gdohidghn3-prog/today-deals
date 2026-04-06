@@ -78,6 +78,10 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
           오늘 해당하는 혜택이 없습니다.
         </div>
       )}
+
+      <p className="text-[11px] text-[#CBD5E1] text-center mt-6 mb-2">
+        혜택 정보는 변경될 수 있습니다 · 카드를 눌러 최신 정보를 확인하세요
+      </p>
     </div>
   );
 }

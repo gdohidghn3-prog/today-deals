@@ -1,17 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { Search } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal } from "@/types/deal";
+
+function getSearchUrl(deal: Deal): string {
+  const source = SOURCE_LABELS[deal.source];
+  const query = `${source} ${deal.title}`;
+  return `https://search.naver.com/search.naver?query=${encodeURIComponent(query)}`;
+}
 
 export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: number }) {
   const color = SOURCE_COLORS[deal.source];
   const isHot = deal.discount.includes("50%") || deal.discount.includes("1+1") || deal.discount === "무료";
-
-  const Wrapper = deal.link ? "a" : "div";
-  const wrapperProps = deal.link
-    ? { href: deal.link, target: "_blank" as const, rel: "noopener noreferrer" }
-    : {};
+  const searchUrl = getSearchUrl(deal);
 
   return (
     <motion.div
@@ -19,11 +21,13 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.25, delay: index * 0.03 }}
     >
-      <Wrapper
-        {...wrapperProps}
-        className={`block bg-white border rounded-xl p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ${
-          deal.link ? "cursor-pointer" : ""
-        } ${isHot ? "border-[#F59E0B] ring-1 ring-[#F59E0B]/20" : "border-[#E2E8F0]"}`}
+      <a
+        href={searchUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`block bg-white border rounded-xl p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer ${
+          isHot ? "border-[#F59E0B] ring-1 ring-[#F59E0B]/20" : "border-[#E2E8F0]"
+        }`}
       >
         <div className="flex items-start justify-between gap-2 mb-2">
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -44,9 +48,7 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
               </span>
             )}
           </div>
-          {deal.link && (
-            <ExternalLink size={14} className="text-[#94A3B8] shrink-0" />
-          )}
+          <Search size={14} className="text-[#94A3B8] shrink-0" />
         </div>
 
         <h3 className="font-semibold text-[#0F172A] text-sm mb-1">{deal.title}</h3>
@@ -75,7 +77,7 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
             ))}
           </div>
         )}
-      </Wrapper>
+      </a>
     </motion.div>
   );
 }
