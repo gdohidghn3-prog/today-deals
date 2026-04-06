@@ -1,3 +1,5 @@
+import { readFileSync } from "fs";
+import { join } from "path";
 import type { Deal } from "@/types/deal";
 import { crawlCU } from "./cu";
 import { crawlGS25 } from "./gs25";
@@ -12,7 +14,6 @@ export async function crawlAllConvenience(): Promise<Deal[]> {
   ]);
 
   const deals: Deal[] = [];
-
   if (cu.status === "fulfilled") deals.push(...cu.value);
   if (gs25.status === "fulfilled") deals.push(...gs25.value);
   if (seven.status === "fulfilled") deals.push(...seven.value);
@@ -26,15 +27,36 @@ export async function crawlAllConvenience(): Promise<Deal[]> {
   return deals;
 }
 
+/**
+ * 통신사 혜택: SKT는 HTTP 크롤링, KT/LGU+는 data/telecom.json에서 로드
+ * (GitHub Actions가 매일 Playwright로 크롤링 → JSON 커밋)
+ */
 export async function crawlAllTelecom(): Promise<Deal[]> {
-  const [skt] = await Promise.allSettled([crawlSKT()]);
-
   const deals: Deal[] = [];
-  if (skt.status === "fulfilled") deals.push(...skt.value);
 
-  console.log(
-    `[Crawl] SKT: ${skt.status === "fulfilled" ? skt.value.length : "FAIL"}`
-  );
+  // SKT: HTTP로 실시간 크롤링 (항상 가능)
+  try {
+    const skt = await crawlSKT();
+    deals.push(...skt);
+  } catch (e) {
+    console.error("[SKT] 크롤링 실패:", e);
+  }
+
+  // KT/LGU+: data/telecom.json에서 로드 (GitHub Actions가 업데이트)
+  try {
+    const dataPath = join(process.cwd(), "data", "telecom.json");
+    const raw = readFileSync(dataPath, "utf-8");
+    const data = JSON.parse(raw);
+    const ktLgu = (data.deals as Deal[]).filter(
+      (d) => d.source === "kt" || d.source === "lgu"
+    );
+    deals.push(...ktLgu);
+    console.log(
+      `[Crawl] KT/LGU+ JSON 로드: ${ktLgu.length}개 (${data.updatedAt})`
+    );
+  } catch {
+    console.log("[Crawl] KT/LGU+ JSON 없음 — GitHub Actions 실행 필요");
+  }
 
   return deals;
 }

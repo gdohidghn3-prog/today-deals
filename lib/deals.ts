@@ -4,9 +4,7 @@ import { crawlAll, crawlAllConvenience } from "./crawlers";
 // ─── 정적 데이터: 검증 가능한 항목만 (공식 사이트 바로가기) ─────
 
 const staticDeals: Deal[] = [
-  // KT/LGU+/카드사는 크롤링 불가 → 공식 사이트 바로가기만 제공
-  { id: "kt-official", source: "kt", category: "etc", title: "KT 멤버십 혜택 전체보기", description: "VVIP·VIP·골드 등급별 혜택 확인", discount: "공식사이트", brand: "KT", link: "https://membership.kt.com", startDate: "2026-01-01", endDate: "2026-12-31" },
-  { id: "lgu-official", source: "lgu", category: "etc", title: "U+ 멤버십 혜택 전체보기", description: "VIP콕·기본혜택·우리동네멤버십 확인", discount: "공식사이트", brand: "LGU+", link: "https://www.lguplus.com/benefit-membership", startDate: "2026-01-01", endDate: "2026-12-31" },
+  // 카드사는 크롤링 불가 (SPA) → 공식 사이트 바로가기
   { id: "samsung-official", source: "samsung", category: "etc", title: "삼성카드 이벤트 전체보기", description: "진행 중인 할인·적립 이벤트 확인", discount: "공식사이트", brand: "삼성카드", link: "https://www.samsungcard.com", startDate: "2026-01-01", endDate: "2026-12-31" },
   { id: "shinhan-official", source: "shinhan", category: "etc", title: "신한카드 혜택 전체보기", description: "My혜택·이벤트 확인", discount: "공식사이트", brand: "신한카드", link: "https://www.shinhancard.com", startDate: "2026-01-01", endDate: "2026-12-31" },
   { id: "hyundai-official", source: "hyundai", category: "etc", title: "현대카드 혜택 전체보기", description: "진행 중인 이벤트 확인", discount: "공식사이트", brand: "현대카드", link: "https://www.hyundaicard.com/benefit/event", startDate: "2026-01-01", endDate: "2026-12-31" },
