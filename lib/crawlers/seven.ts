@@ -15,8 +15,8 @@ export async function crawlSeven(): Promise<Deal[]> {
   ];
 
   for (const [label, pTab] of tabs) {
-    // 여러 페이지 크롤링 (page 1~3)
-    for (let page = 1; page <= 3; page++) {
+    // Vercel 10초 타임아웃 고려: page 1~2
+    for (let page = 1; page <= 2; page++) {
       try {
         const res = await fetch(
           "https://www.7-eleven.co.kr/product/listMoreAjax.asp",

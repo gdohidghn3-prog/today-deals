@@ -1,10 +1,9 @@
-import { readFileSync } from "fs";
-import { join } from "path";
 import type { Deal } from "@/types/deal";
 import { crawlCU } from "./cu";
 import { crawlGS25 } from "./gs25";
 import { crawlSeven } from "./seven";
 import { crawlSKT } from "./skt";
+import telecomJson from "@/data/telecom.json";
 
 export async function crawlAllConvenience(): Promise<Deal[]> {
   const [cu, gs25, seven] = await Promise.allSettled([
@@ -42,20 +41,17 @@ export async function crawlAllTelecom(): Promise<Deal[]> {
     console.error("[SKT] 크롤링 실패:", e);
   }
 
-  // KT/LGU+: data/telecom.json에서 로드 (GitHub Actions가 업데이트)
+  // KT/LGU+: data/telecom.json에서 로드 (GitHub Actions가 매일 업데이트)
   try {
-    const dataPath = join(process.cwd(), "data", "telecom.json");
-    const raw = readFileSync(dataPath, "utf-8");
-    const data = JSON.parse(raw);
-    const ktLgu = (data.deals as Deal[]).filter(
+    const ktLgu = (telecomJson.deals as unknown as Deal[]).filter(
       (d) => d.source === "kt" || d.source === "lgu"
     );
     deals.push(...ktLgu);
     console.log(
-      `[Crawl] KT/LGU+ JSON 로드: ${ktLgu.length}개 (${data.updatedAt})`
+      `[Crawl] KT/LGU+ JSON 로드: ${ktLgu.length}개 (${telecomJson.updatedAt})`
     );
   } catch {
-    console.log("[Crawl] KT/LGU+ JSON 없음 — GitHub Actions 실행 필요");
+    console.log("[Crawl] KT/LGU+ JSON 로드 실패");
   }
 
   return deals;
