@@ -15,6 +15,9 @@ export interface Deal {
   discount: string;
   brand: string;
   link?: string;
+  imageUrl?: string;
+  price?: string;
+  membershipGrade?: string;  // VIP, 골드, 실버, 일반 등
   startDate: string;
   endDate: string;
   dayOfWeek?: number[];   // 0=일, 1=월, ... 6=토

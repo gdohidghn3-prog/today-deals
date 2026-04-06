@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
 import { getTodayDeals } from "@/lib/deals";
-import { CATEGORY_LABELS, type DealCategory, type TelecomType } from "@/types/deal";
+import { CATEGORY_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
 import DealCard from "@/components/DealCard";
 
 const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
@@ -16,9 +16,15 @@ const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
 
 export default function HomePage() {
   const [telecom, setTelecom] = useState<TelecomType | "all">("all");
+  const [todayDeals, setTodayDeals] = useState<Deal[]>(() => getTodayDeals());
   const today = new Date();
 
-  const todayDeals = useMemo(() => getTodayDeals(), []);
+  useEffect(() => {
+    fetch("/api/deals")
+      .then((res) => res.json())
+      .then((data) => { if (data.deals?.length) setTodayDeals(data.deals); })
+      .catch(() => {});
+  }, []);
 
   const filteredDeals = useMemo(() => {
     if (telecom === "all") return todayDeals;
