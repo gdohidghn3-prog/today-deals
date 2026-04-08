@@ -64,6 +64,26 @@ export async function GET(request: NextRequest) {
   const seen = new Set<string>();
   let kakaoError: string | null = null;
 
+  // 좌표 → 주소 변환 (현재 위치 표시용, 실패해도 무시)
+  let originAddress = "";
+  try {
+    const addrRes = await fetch(
+      `https://dapi.kakao.com/v2/local/geo/coord2address.json?x=${x}&y=${y}`,
+      { headers, cache: "no-store" }
+    );
+    if (addrRes.ok) {
+      const addrData = await addrRes.json();
+      const doc = addrData.documents?.[0];
+      // 도로명 주소 우선, 없으면 지번 주소
+      originAddress =
+        doc?.road_address?.address_name ||
+        doc?.address?.address_name ||
+        "";
+    }
+  } catch {
+    // ignore
+  }
+
   // CS2 = 편의점 카테고리. 페이지네이션
   for (let page = 1; page <= 3; page++) {
     try {
@@ -144,6 +164,11 @@ export async function GET(request: NextRequest) {
   stores.sort((a, b) => a.distance - b.distance);
 
   return NextResponse.json({
+    origin: {
+      lat: Number(y),
+      lng: Number(x),
+      address: originAddress,
+    },
     count: stores.length,
     stores: stores.slice(0, 30),
   });

@@ -17,6 +17,12 @@ interface NearbyStore {
   placeUrl: string;
 }
 
+interface Origin {
+  lat: number;
+  lng: number;
+  address: string;
+}
+
 interface Props {
   open: boolean;
   onClose: () => void;
@@ -34,6 +40,7 @@ export default function NearbyStoresSheet({
 }: Props) {
   const [state, setState] = useState<LoadState>("idle");
   const [stores, setStores] = useState<NearbyStore[]>([]);
+  const [origin, setOrigin] = useState<Origin | null>(null);
   const [errorMsg, setErrorMsg] = useState("");
 
   // 시트가 열릴 때 외부 시스템(geolocation + 카카오 API)을 동기화한다.
@@ -50,6 +57,7 @@ export default function NearbyStoresSheet({
       setIfActive(setState, "locating" as LoadState);
       setIfActive(setErrorMsg, "");
       setIfActive(setStores, [] as NearbyStore[]);
+      setIfActive(setOrigin, null as Origin | null);
 
       if (!("geolocation" in navigator)) {
         setIfActive(setState, "error" as LoadState);
@@ -74,6 +82,14 @@ export default function NearbyStoresSheet({
               return;
             }
             setIfActive(setStores, (data.stores || []) as NearbyStore[]);
+            setIfActive(
+              setOrigin,
+              (data.origin as Origin) || {
+                lat: latitude,
+                lng: longitude,
+                address: "",
+              }
+            );
             setIfActive(setState, "ready" as LoadState);
           } catch {
             if (cancelled) return;
@@ -206,6 +222,24 @@ export default function NearbyStoresSheet({
 
               {state === "ready" && stores.length > 0 && (
                 <>
+                  {/* 현재 위치 카드 */}
+                  {origin && (
+                    <div className="mb-3 p-3 bg-blue-50 border border-blue-200 rounded-lg flex items-start gap-2">
+                      <MapPin
+                        size={16}
+                        className="text-blue-600 mt-0.5 shrink-0"
+                      />
+                      <div className="flex-1 min-w-0">
+                        <div className="text-[10px] text-blue-700 font-semibold uppercase tracking-wider mb-0.5">
+                          내 위치
+                        </div>
+                        <p className="text-xs text-[#0F172A] truncate">
+                          {origin.address || `${origin.lat.toFixed(5)}, ${origin.lng.toFixed(5)}`}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
                   <div className="text-xs text-[#64748B] mb-2">
                     반경 1km · {stores.length}개 매장
                   </div>
@@ -249,7 +283,15 @@ export default function NearbyStoresSheet({
                             </a>
                           )}
                           <a
-                            href={`https://map.kakao.com/link/to/${encodeURIComponent(s.name)},${s.lat},${s.lng}`}
+                            href={
+                              origin
+                                ? `https://map.kakao.com/link/from/${encodeURIComponent(
+                                    origin.address || "내 위치"
+                                  )},${origin.lat},${origin.lng}/to/${encodeURIComponent(
+                                    s.name
+                                  )},${s.lat},${s.lng}`
+                                : `https://map.kakao.com/link/to/${encodeURIComponent(s.name)},${s.lat},${s.lng}`
+                            }
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex-1 inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-blue-600 text-white text-xs font-medium hover:bg-blue-700"
