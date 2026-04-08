@@ -62,6 +62,7 @@ export async function GET(request: NextRequest) {
   const headers = { Authorization: `KakaoAK ${KAKAO_KEY}` };
   const allPlaces: KakaoPlace[] = [];
   const seen = new Set<string>();
+  let kakaoError: string | null = null;
 
   // CS2 = 편의점 카테고리. 페이지네이션
   for (let page = 1; page <= 3; page++) {
@@ -81,7 +82,13 @@ export async function GET(request: NextRequest) {
         { headers, cache: "no-store" }
       );
 
-      if (!res.ok) break;
+      if (!res.ok) {
+        // 카카오 에러 메시지 추출 (디버깅용)
+        const errText = await res.text().catch(() => "");
+        kakaoError = `Kakao ${res.status}: ${errText.slice(0, 200)}`;
+        console.error("[nearby-stores]", kakaoError);
+        break;
+      }
       const data = await res.json();
 
       for (const doc of (data.documents as KakaoPlace[]) || []) {
@@ -92,9 +99,19 @@ export async function GET(request: NextRequest) {
       }
 
       if (data.meta?.is_end) break;
-    } catch {
+    } catch (e) {
+      kakaoError = `fetch failed: ${(e as Error).message}`;
+      console.error("[nearby-stores]", kakaoError);
       break;
     }
+  }
+
+  // 카카오 호출이 한 건도 성공하지 못했으면 명시적 에러 반환
+  if (allPlaces.length === 0 && kakaoError) {
+    return NextResponse.json(
+      { error: kakaoError, stores: [] },
+      { status: 502 }
+    );
   }
 
   // 브랜드 매칭 + 변환
