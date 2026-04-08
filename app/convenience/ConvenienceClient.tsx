@@ -8,6 +8,7 @@ const STORES: { key: DealSource; label: string }[] = [
   { key: "cu", label: "CU" },
   { key: "gs25", label: "GS25" },
   { key: "seven", label: "세븐일레븐" },
+  { key: "emart24", label: "이마트24" },
 ];
 
 const DEAL_TYPES = [

@@ -56,7 +56,7 @@ export async function getTodayDealsAsync(): Promise<Deal[]> {
 
 export async function getConvenienceDealsAsync(): Promise<Deal[]> {
   const all = await getAllDealsAsync();
-  return all.filter((d) => ["cu", "gs25", "seven"].includes(d.source));
+  return all.filter((d) => ["cu", "gs25", "seven", "emart24"].includes(d.source));
 }
 
 // ─── 동기 API (정적 데이터만, 하위 호환) ───────────────────
@@ -98,5 +98,5 @@ export function getWeeklyCalendar(): { day: number; label: string; deals: Deal[]
 }
 
 export function getConvenienceDeals(): Deal[] {
-  return staticDeals.filter((d) => ["cu", "gs25", "seven"].includes(d.source));
+  return staticDeals.filter((d) => ["cu", "gs25", "seven", "emart24"].includes(d.source));
 }

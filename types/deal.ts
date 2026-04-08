@@ -1,7 +1,7 @@
 export type DealSource =
   | "skt" | "kt" | "lgu"
   | "samsung" | "shinhan" | "hyundai" | "kb" | "lotte"
-  | "cu" | "gs25" | "seven"
+  | "cu" | "gs25" | "seven" | "emart24"
   | "government";
 
 export type DealCategory = "cafe" | "food" | "culture" | "shopping" | "convenience" | "etc";
@@ -35,6 +35,7 @@ export const SOURCE_LABELS: Record<DealSource, string> = {
   cu: "CU",
   gs25: "GS25",
   seven: "세븐일레븐",
+  emart24: "이마트24",
   government: "정부/지자체",
 };
 
@@ -50,6 +51,7 @@ export const SOURCE_COLORS: Record<DealSource, string> = {
   cu: "#652D90",
   gs25: "#0088CE",
   seven: "#00875A",
+  emart24: "#FFCD00",
   government: "#2563EB",
 };
 

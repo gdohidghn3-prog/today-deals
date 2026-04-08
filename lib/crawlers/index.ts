@@ -1,26 +1,36 @@
 import type { Deal } from "@/types/deal";
 import { crawlCU } from "./cu";
 import { crawlGS25 } from "./gs25";
-import { crawlSeven } from "./seven";
 import { crawlSKT } from "./skt";
 import telecomJson from "@/data/telecom.json";
+import convenienceJson from "@/data/convenience.json";
 
 export async function crawlAllConvenience(): Promise<Deal[]> {
-  const [cu, gs25, seven] = await Promise.allSettled([
-    crawlCU(),
-    crawlGS25(),
-    crawlSeven(),
-  ]);
+  // CU/GS25: 런타임 HTTP 크롤링 (Vercel에서 동작 확인됨)
+  // 세븐일레븐/이마트24: GitHub Actions가 매일 크롤 → data/convenience.json
+  //   (Vercel 런타임에서는 차단/타임아웃 빈번)
+  const [cu, gs25] = await Promise.allSettled([crawlCU(), crawlGS25()]);
 
   const deals: Deal[] = [];
   if (cu.status === "fulfilled") deals.push(...cu.value);
   if (gs25.status === "fulfilled") deals.push(...gs25.value);
-  if (seven.status === "fulfilled") deals.push(...seven.value);
+
+  // 세븐일레븐 + 이마트24 JSON 로드
+  let cachedCount = 0;
+  try {
+    const cached = (convenienceJson.deals as unknown as Deal[]).filter(
+      (d) => d.source === "seven" || d.source === "emart24"
+    );
+    deals.push(...cached);
+    cachedCount = cached.length;
+  } catch {
+    console.log("[Crawl] convenience.json 로드 실패");
+  }
 
   console.log(
     `[Crawl] CU: ${cu.status === "fulfilled" ? cu.value.length : "FAIL"}, ` +
     `GS25: ${gs25.status === "fulfilled" ? gs25.value.length : "FAIL"}, ` +
-    `7-Eleven: ${seven.status === "fulfilled" ? seven.value.length : "FAIL"}`
+    `7/이마트24 JSON: ${cachedCount} (${convenienceJson.updatedAt})`
   );
 
   return deals;
