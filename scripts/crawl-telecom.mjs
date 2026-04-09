@@ -2,8 +2,12 @@
 /**
  * 통신사 3사 멤버십 혜택 크롤링 스크립트
  * GitHub Actions에서 매일 실행 → data/telecom.json 저장 → 자동 커밋
+ *
+ * 모두 HTTP 직접 호출 (Playwright 제거):
+ *  - SKT: sktmembership.tworld.co.kr 공개 페이지 파싱
+ *  - KT:  membership.kt.com 내부 AJAX (PartnerListHtml.json + 세션 쿠키)
+ *  - LGU+: www.lguplus.com/uhdc/fo/prdv/mebfjnco/v1/jnco (REST JSON)
  */
-import { chromium } from "playwright";
 import * as cheerio from "cheerio";
 import { writeFileSync } from "fs";
 import { join, dirname } from "path";
@@ -12,27 +16,56 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, "..", "data", "telecom.json");
 
+const UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
+
 const now = new Date();
 const startDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-01`;
 const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
 const endDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${lastDay}`;
 
 function categorize(name) {
-  const n = name.toLowerCase();
+  const n = (name || "").toLowerCase();
   if (/커피|카페|스타벅스|투썸|이디야|할리스|메가커피|메가mgc|공차|폴바셋|배스킨|던킨|뚜레쥬르|파리바게/.test(n)) return "cafe";
-  if (/cgv|메가박스|롯데시네마|영화|공연|롯데월드|핑크퐁|아쿠아리움/.test(n)) return "culture";
-  if (/버거킹|맥도날드|피자|bbq|bhc|아웃백|vips|롯데리아|샐러디|도미노/.test(n)) return "food";
-  if (/이마트|롯데마트|올리브영|cj더마켓|면세점|플라워|11번가|마트/.test(n)) return "shopping";
-  if (/cu$|gs25|세븐일레븐/.test(n)) return "convenience";
+  if (/cgv|메가박스|롯데시네마|영화|공연|롯데월드|핑크퐁|아쿠아리움|놀이공원/.test(n)) return "culture";
+  if (/버거킹|맥도날드|피자|bbq|bhc|아웃백|vips|롯데리아|샐러디|도미노|kfc|뚜레/.test(n)) return "food";
+  if (/이마트|롯데마트|올리브영|cj더마켓|면세점|플라워|11번가|마트|gs the fresh|쇼핑/.test(n)) return "shopping";
+  if (/cu$|gs25|세븐일레븐|편의점/.test(n)) return "convenience";
   return "etc";
 }
 
-// ── SKT (HTTP, 브라우저 불필요) ──
+// HTML/엔티티 정리
+function cleanText(s) {
+  if (!s) return "";
+  return String(s)
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractDiscount(text) {
+  const t = cleanText(text);
+  const pct = t.match(/(\d{1,3}%)\s*할인/);
+  if (pct) return pct[1];
+  const won = t.match(/([\d,]+원)\s*(?:할인)?/);
+  if (won) return won[1];
+  if (/무료/.test(t)) return "무료";
+  if (/쿠폰/.test(t)) return "쿠폰";
+  return "혜택";
+}
+
+// ── SKT (HTTP) ────────────────────────────────────────
 async function crawlSKT() {
   console.log("[SKT] 크롤링 시작...");
-  const res = await fetch("https://sktmembership.tworld.co.kr/mps/pc-bff/benefitbrand/brandList.do", {
-    headers: { "User-Agent": "Mozilla/5.0" },
-  });
+  const res = await fetch(
+    "https://sktmembership.tworld.co.kr/mps/pc-bff/benefitbrand/brandList.do",
+    { headers: { "User-Agent": UA } }
+  );
   const html = await res.text();
   const $ = cheerio.load(html);
   const deals = [];
@@ -42,18 +75,24 @@ async function crawlSKT() {
     if (!brand) return;
     const img = $(el).find(".logo img").attr("src") || "";
     const benefits = [];
-    $(el).find(".bnf-info").first().find(".info").each((_, info) => {
-      const grades = [];
-      $(info).find(".badge-circle").each((_, g) => {
-        const cls = $(g).attr("class") || "";
-        if (cls.includes("vip")) grades.push("VIP");
-        if (cls.includes("gold")) grades.push("골드");
-        if (cls.includes("silver")) grades.push("실버");
+    $(el)
+      .find(".bnf-info")
+      .first()
+      .find(".info")
+      .each((_, info) => {
+        const grades = [];
+        $(info)
+          .find(".badge-circle")
+          .each((_, g) => {
+            const cls = $(g).attr("class") || "";
+            if (cls.includes("vip")) grades.push("VIP");
+            if (cls.includes("gold")) grades.push("골드");
+            if (cls.includes("silver")) grades.push("실버");
+          });
+        $(info).find(".blind").remove();
+        const text = $(info).text().replace(/\s+/g, " ").trim();
+        if (text && grades.length) benefits.push({ grades, text });
       });
-      $(info).find(".blind").remove();
-      const text = $(info).text().replace(/\s+/g, " ").trim();
-      if (text && grades.length) benefits.push({ grades, text });
-    });
     if (!benefits.length) return;
 
     const main = benefits[0];
@@ -81,57 +120,110 @@ async function crawlSKT() {
   return deals;
 }
 
-// ── KT (Playwright) ──
-async function crawlKT(browser) {
+// ── KT (HTTP, 세션 쿠키 + 페이지네이션) ──────────────
+async function crawlKT() {
   console.log("[KT] 크롤링 시작...");
-  const page = await browser.newPage();
-  await page.goto("https://membership.kt.com/discount/partner/PartnerList.do", {
-    waitUntil: "networkidle",
-    timeout: 20000,
-  }).catch(() => {});
-  await page.waitForTimeout(5000);
 
-  const partners = await page.evaluate(() => {
-    const results = [];
-    const seen = new Set();
-    document.querySelectorAll("li, .item, [class*=card]").forEach((el) => {
-      el.querySelectorAll("img").forEach((img) => {
-        const alt = img.alt?.trim();
-        const text = el.innerText?.trim() || "";
-        if (!alt || alt.length < 2 || alt.length > 50 || seen.has(alt)) return;
-        if (/로고|한국|인증|facebook|youtube|instagram|블로그|유심|에어컨|안심 QR|자세히/.test(alt)) return;
-        const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
-        const grade = lines.find((l) => /전등급|VIP|VVIP|골드|실버/.test(l)) || "전등급";
-        const desc = lines.find((l) => /할인|무료|쿠폰|%|원/.test(l)) || "";
-        if (desc) {
-          seen.add(alt);
-          results.push({
-            brand: alt.replace(/\(고객 보답\)/, "").trim(),
-            grade,
-            description: desc.substring(0, 150),
-            img: img.src || "",
-          });
-        }
+  // 1) 세션 쿠키 발급
+  const init = await fetch(
+    "https://membership.kt.com/discount/partner/PartnerList.do",
+    { headers: { "User-Agent": UA }, redirect: "follow" }
+  );
+  const cookieHdr = init.headers.getSetCookie?.() || [];
+  const cookies = cookieHdr.map((c) => c.split(";")[0]).join("; ");
+  if (!cookies) {
+    console.warn("[KT] 세션 쿠키 발급 실패 — 빈 결과 반환");
+    return [];
+  }
+
+  async function fetchPage(page) {
+    const res = await fetch(
+      "https://membership.kt.com/discount/partner/PartnerListHtml.json",
+      {
+        method: "POST",
+        headers: {
+          "User-Agent": UA,
+          "Content-Type": "application/x-www-form-urlencoded",
+          "X-Requested-With": "XMLHttpRequest",
+          Referer: "https://membership.kt.com/discount/partner/PartnerList.do",
+          Cookie: cookies,
+        },
+        body: `daeCode=&pageNo=${page}&searchName=&jungCode=`,
+      }
+    );
+    return await res.text();
+  }
+
+  // 2) 첫 페이지 → pageTotal 추출
+  const html1 = await fetchPage(1);
+  const $1 = cheerio.load(html1);
+  const pageTotal = parseInt($1("#pageTotal").val() || "1", 10);
+  const itemTotal = parseInt($1("#itemTotal").val() || "0", 10);
+  console.log(`[KT] itemTotal=${itemTotal}, pageTotal=${pageTotal}`);
+
+  // 3) 페이지별 파싱
+  function parsePage(html) {
+    const $ = cheerio.load(html);
+    const items = [];
+    $("li[data-daecode]").each((_, el) => {
+      const $li = $(el);
+      const brand =
+        $li.find("img").attr("alt")?.trim() ||
+        $li.find(".sec-cont-tit").text().trim();
+      if (!brand) return;
+      const imgRaw = $li.find("img").attr("src") || "";
+      const img = imgRaw
+        ? imgRaw.startsWith("http")
+          ? imgRaw
+          : `https://membership.kt.com${imgRaw}`
+        : "";
+      const benefits = [];
+      $li.find(".sec-cont-list > li").each((_, b) => {
+        const grade = $(b).find("em").text().trim();
+        const desc = $(b).find("span").text().trim();
+        if (desc) benefits.push({ grade, desc });
       });
+      if (!benefits.length) return;
+      items.push({ brand, img, benefits, daeCode: $li.attr("data-daecode") });
     });
-    return results;
+    return items;
+  }
+
+  const all = parsePage(html1);
+  for (let p = 2; p <= pageTotal; p++) {
+    try {
+      const html = await fetchPage(p);
+      all.push(...parsePage(html));
+    } catch (e) {
+      console.warn(`[KT] page ${p} 실패:`, e.message);
+    }
+  }
+
+  // 중복 제거 (brand + 첫 혜택 desc 기준)
+  const seen = new Set();
+  const dedup = all.filter((x) => {
+    const key = `${x.brand}|${x.benefits[0]?.desc?.slice(0, 30)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
   });
 
-  await page.close();
-
-  const deals = partners.map((p, i) => {
-    const dm = p.description.match(/(\d+%)\s*할인/);
-    const pm = p.description.match(/([\d,]+원)/);
-    const discount = dm?.[1] || pm?.[1] || "혜택";
+  // 변환
+  const deals = dedup.map((p, i) => {
+    const main = p.benefits[0];
+    const discount = extractDiscount(main.desc);
+    const allGrades = [...new Set(p.benefits.map((b) => b.grade).filter(Boolean))];
     return {
       id: `kt-${i}`,
       source: "kt",
       category: categorize(p.brand),
       title: `${p.brand} ${discount.includes("%") || discount.includes("원") ? discount + " 할인" : discount}`,
-      description: p.description,
+      description: p.benefits
+        .map((b) => `[${b.grade || "전등급"}] ${cleanText(b.desc)}`)
+        .join(" | "),
       discount,
       brand: p.brand,
-      membershipGrade: p.grade,
+      membershipGrade: allGrades.join("·") || "전등급",
       imageUrl: p.img,
       link: "https://membership.kt.com/discount/partner/PartnerList.do",
       startDate,
@@ -143,57 +235,68 @@ async function crawlKT(browser) {
   return deals;
 }
 
-// ── LGU+ (Playwright) ──
-async function crawlLGU(browser) {
+// ── LGU+ (HTTP, 내부 REST API) ───────────────────────
+async function crawlLGU() {
   console.log("[LGU+] 크롤링 시작...");
-  const page = await browser.newPage();
-  await page.goto("https://www.lguplus.com/benefit-membership", {
-    waitUntil: "domcontentloaded",
-    timeout: 15000,
-  }).catch(() => {});
-  await page.waitForTimeout(6000);
-  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-  await page.waitForTimeout(2000);
 
-  const benefits = await page.evaluate(() => {
-    const results = [];
-    const seen = new Set();
-    const text = document.body.innerText || "";
-    const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      const next1 = lines[i + 1] || "";
-      const next2 = lines[i + 2] || "";
-      if (/^(스타벅스|네이버플러스|CGV|배스킨라빈스|롯데월드|할리스|투썸|이디야|CU|GS25|BBQ|버거킹|도미노|메가박스|롯데시네마|올리브영|공차|뚜레쥬르)/.test(line)) {
-        const brandName = line.split("|")[0].split("[")[0].trim();
-        if (seen.has(brandName)) continue;
-        const desc = [next1, next2].filter((l) => /할인|무료|쿠폰|%|원|제공|이용|예매/.test(l)).join(" | ");
-        if (desc) {
-          seen.add(brandName);
-          const grade = [line, next1, next2].find((l) => /VVIP|VIP/.test(l)) || "VIP콕";
-          results.push({ brand: brandName, grade, description: desc.substring(0, 150) });
-        }
-      }
+  // urcMbspBnftDivsCd: 01=VIP콕, 02=U+멤버십
+  // urcMbspDivsCd: 01=일반
+  async function fetchAll(bnftDivsCd) {
+    const url = `https://www.lguplus.com/uhdc/fo/prdv/mebfjnco/v1/jnco?urcMbspDivsCd=01&urcMbspBnftDivsCd=${bnftDivsCd}&urcMbspCatgNo=&pageNo=1&rowSize=1000`;
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": UA,
+        Accept: "application/json",
+      },
+    });
+    if (!res.ok) {
+      console.warn(`[LGU+] BnftDivsCd=${bnftDivsCd} HTTP ${res.status}`);
+      return [];
     }
-    return results;
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  }
+
+  const [vipKok, uplusM] = await Promise.all([fetchAll("01"), fetchAll("02")]);
+  console.log(`[LGU+] VIP콕: ${vipKok.length}, U+멤버십: ${uplusM.length}`);
+
+  const merged = [...vipKok, ...uplusM];
+
+  // 중복 제거 (urcMbspJncoNo 기준)
+  const seen = new Set();
+  const dedup = merged.filter((x) => {
+    const id = x.urcMbspJncoNo;
+    if (id == null || seen.has(id)) return false;
+    seen.add(id);
+    return true;
   });
 
-  await page.close();
+  const deals = dedup.map((p, i) => {
+    const brand = p.urcMbspJncoNm || "";
+    const thum = cleanText(p.jncoBnftThumCntn);
+    const detl = cleanText(p.jncoBnftDetlCntn);
+    const description = [thum, detl].filter(Boolean).join(" | ");
+    const discount = extractDiscount(thum || detl);
 
-  const deals = benefits.map((b, i) => {
-    const dm = b.description.match(/(\d+%)\s*할인/);
-    const free = /무료/.test(b.description);
-    const discount = dm?.[1] || (free ? "무료" : "혜택");
+    // 등급 추출 (VVIP/VIP/우수)
+    const grades = [];
+    const gradeText = `${thum} ${detl}`;
+    if (/VVIP/i.test(gradeText)) grades.push("VVIP");
+    if (/(?<!V)VIP/i.test(gradeText)) grades.push("VIP");
+    if (/우수/.test(gradeText)) grades.push("우수");
+    const isVipKok = p.urcMbspBnftDivsCd === "01";
+    if (grades.length === 0) grades.push(isVipKok ? "VIP콕" : "전등급");
+
     return {
-      id: `lgu-${i}`,
+      id: `lgu-${p.urcMbspJncoNo || i}`,
       source: "lgu",
-      category: categorize(b.brand),
-      title: `${b.brand} ${discount.includes("%") ? discount + " 할인" : discount}`,
-      description: b.description,
+      category: categorize(brand),
+      title: `${brand} ${discount.includes("%") || discount.includes("원") ? discount + " 할인" : discount}`,
+      description: description.slice(0, 200),
       discount,
-      brand: b.brand,
-      membershipGrade: b.grade.replace(/.*?(VVIP|VIP|전등급).*/, "$1").substring(0, 20),
+      brand,
+      membershipGrade: grades.join("·"),
+      imageUrl: p.pcImgeUrl || "",
       link: "https://www.lguplus.com/benefit-membership",
       startDate,
       endDate,
@@ -204,19 +307,21 @@ async function crawlLGU(browser) {
   return deals;
 }
 
-// ── 메인 ──
+// ── 메인 ─────────────────────────────────────────────
 async function main() {
-  console.log("=== 통신사 혜택 크롤링 시작 ===");
+  console.log("=== 통신사 혜택 크롤링 시작 (HTTP 전용) ===");
   const start = Date.now();
 
-  // SKT는 HTTP만으로 가능
-  const skt = await crawlSKT();
+  const results = await Promise.allSettled([crawlSKT(), crawlKT(), crawlLGU()]);
+  const skt = results[0].status === "fulfilled" ? results[0].value : [];
+  const kt = results[1].status === "fulfilled" ? results[1].value : [];
+  const lgu = results[2].status === "fulfilled" ? results[2].value : [];
 
-  // KT/LGU+는 Playwright 필요
-  const browser = await chromium.launch({ headless: true });
-  const kt = await crawlKT(browser);
-  const lgu = await crawlLGU(browser);
-  await browser.close();
+  results.forEach((r, i) => {
+    if (r.status === "rejected") {
+      console.error(`[${["SKT", "KT", "LGU+"][i]}] 실패:`, r.reason);
+    }
+  });
 
   const all = [...skt, ...kt, ...lgu];
   const output = {
@@ -234,4 +339,7 @@ async function main() {
   console.log(`  파일: ${DATA_PATH}`);
 }
 
-main().catch(console.error);
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
