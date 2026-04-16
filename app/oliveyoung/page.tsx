@@ -11,6 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default async function OliveYoungPage() {
-  const items = await getOliveYoungCached();
-  return <OliveYoungClient initialItems={items} />;
+  const { items, updatedAt } = await getOliveYoungCached();
+  return <OliveYoungClient initialItems={items} updatedAt={updatedAt} />;
 }

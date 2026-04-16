@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
+import { Search, X } from "lucide-react";
 import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
 import DealCard from "@/components/DealCard";
 
@@ -15,6 +16,8 @@ const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
 
 export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
   const [telecom, setTelecom] = useState<TelecomType | "all">("all");
+  const [search, setSearch] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
   const today = new Date();
 
   // 통신사 혜택만 필터
@@ -24,9 +27,18 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
   );
 
   const filteredDeals = useMemo(() => {
-    if (telecom === "all") return telecomDeals;
-    return telecomDeals.filter((d) => d.source === telecom);
-  }, [telecomDeals, telecom]);
+    let deals = telecom === "all" ? telecomDeals : telecomDeals.filter((d) => d.source === telecom);
+    if (search.trim()) {
+      const q = search.trim().toLowerCase();
+      deals = deals.filter(
+        (d) =>
+          d.title.toLowerCase().includes(q) ||
+          d.brand.toLowerCase().includes(q) ||
+          d.description.toLowerCase().includes(q)
+      );
+    }
+    return deals;
+  }, [telecomDeals, telecom, search]);
 
   const categories = Object.keys(CATEGORY_LABELS) as DealCategory[];
 
@@ -61,12 +73,41 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
         ))}
       </div>
 
-      <p className="text-[11px] text-[#CBD5E1] mb-5">
+      <p className="text-[11px] text-[#CBD5E1] mb-3">
         {telecom === "all"
           ? `총 ${filteredDeals.length}개 혜택`
           : `${SOURCE_LABELS[telecom]} ${filteredDeals.length}개 혜택`}
         {" · "}등급에 따라 혜택이 다를 수 있습니다
       </p>
+
+      {/* 브랜드 검색 */}
+      <div className="relative mb-5">
+        <Search
+          size={16}
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none"
+        />
+        <input
+          ref={inputRef}
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="브랜드/혜택 검색 (예: 스타벅스, CGV)"
+          className="w-full pl-9 pr-9 py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#CBD5E1] focus:outline-none focus:border-[#94A3B8] transition-colors"
+        />
+        {search && (
+          <button
+            type="button"
+            onClick={() => {
+              setSearch("");
+              inputRef.current?.focus();
+            }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#64748B]"
+            aria-label="검색어 지우기"
+          >
+            <X size={16} />
+          </button>
+        )}
+      </div>
 
       {/* 카테고리별 혜택 */}
       {categories.map((cat) => {
@@ -90,7 +131,9 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
       {filteredDeals.length === 0 && (
         <div className="text-center py-12 text-[#94A3B8]">
-          해당 통신사의 혜택 정보가 없습니다.
+          {search.trim()
+            ? `"${search.trim()}" 검색 결과가 없습니다.`
+            : "해당 통신사의 혜택 정보가 없습니다."}
         </div>
       )}
 

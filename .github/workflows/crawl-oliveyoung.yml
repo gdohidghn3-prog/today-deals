@@ -1,0 +1,41 @@
+name: 올리브영 랭킹 크롤링
+
+on:
+  schedule:
+    - cron: "45 0 * * *" # 매일 09:45 KST (UTC 0:45)
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run oliveyoung crawl
+        run: node scripts/crawl-oliveyoung.mjs
+
+      - name: Check results
+        run: |
+          echo "=== 크롤링 결과 ==="
+          cat data/oliveyoung.json | node -e "
+            let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{
+              const j=JSON.parse(d);
+              console.log('총:', j.count, '| 업데이트:', j.updatedAt);
+              console.log('세일:', j.summary.sale, '쿠폰:', j.summary.coupon);
+            })
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/oliveyoung.json
+          git diff --cached --quiet || git commit -m "data: 올리브영 랭킹 자동 업데이트 $(date +%Y-%m-%d)"
+          git push

@@ -3,6 +3,8 @@
 import { useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Search, X } from "lucide-react";
+import { format } from "date-fns";
+import { ko } from "date-fns/locale";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
@@ -30,8 +32,10 @@ function fmt(n: number | null): string {
 
 export default function OliveYoungClient({
   initialItems,
+  updatedAt,
 }: {
   initialItems: OliveYoungItem[];
+  updatedAt: string | null;
 }) {
   const [filter, setFilter] = useState<FilterKey>("all");
   const [sort, setSort] = useState<SortKey>("rank");
@@ -75,8 +79,24 @@ export default function OliveYoungClient({
         <h1 className="text-2xl font-bold text-[#1A1A2E]">올리브영 랭킹</h1>
         <p className="text-sm text-[#64748B] mt-1">
           실시간 인기 상품 TOP {initialItems.length}개
+          {updatedAt && (
+            <span className="text-[#CBD5E1]">
+              {" · "}
+              {format(new Date(updatedAt), "M월 d일 HH시", { locale: ko })} 기준
+            </span>
+          )}
         </p>
       </div>
+
+      {initialItems.length === 0 && (
+        <div className="bg-[#FEF3C7] border border-[#FDE68A] rounded-xl p-4 mb-4 text-sm text-[#92400E]">
+          <p className="font-semibold mb-1">데이터를 불러오지 못했습니다</p>
+          <p className="text-xs leading-relaxed">
+            일시적인 연결 문제로 올리브영 랭킹을 가져올 수 없습니다. 잠시 후 다시
+            시도해주세요.
+          </p>
+        </div>
+      )}
 
       {/* 검색 */}
       <div className="relative mb-3">

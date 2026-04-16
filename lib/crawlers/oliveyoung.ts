@@ -1,4 +1,6 @@
 import * as cheerio from "cheerio";
+import { readFileSync } from "fs";
+import { join } from "path";
 
 export type OliveYoungItem = {
   id: string;
@@ -128,27 +130,65 @@ export async function crawlOliveYoung(): Promise<OliveYoungItem[]> {
   return items;
 }
 
+// ─── 정적 JSON (GitHub Actions 스케줄드 크롤 결과) ─────
+
+type OliveYoungData = {
+  updatedAt: string | null;
+  count: number;
+  items: OliveYoungItem[];
+};
+
+function readStaticJson(): OliveYoungData | null {
+  try {
+    const path = join(process.cwd(), "data", "oliveyoung.json");
+    const raw = readFileSync(path, "utf8");
+    const data = JSON.parse(raw) as OliveYoungData;
+    if (data?.items?.length) return data;
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 // ─── 캐시 ─────────────────────────────────────────────
 
-let cached: OliveYoungItem[] | null = null;
+let cached: OliveYoungData | null = null;
 let cacheTimestamp = 0;
 const CACHE_TTL = 6 * 60 * 60 * 1000;
 
-export async function getOliveYoungCached(): Promise<OliveYoungItem[]> {
+export async function getOliveYoungCached(): Promise<OliveYoungData> {
   const now = Date.now();
   if (cached && now - cacheTimestamp < CACHE_TTL) {
-    console.log(`[OY Cache HIT] ${cached.length}개`);
     return cached;
   }
-  try {
-    console.log("[OY Cache MISS] 크롤링 시작");
-    const items = await crawlOliveYoung();
-    cached = items;
+
+  // 1단계: 정적 JSON 우선 시도 (GitHub Actions가 생성)
+  const staticData = readStaticJson();
+  if (staticData) {
+    cached = staticData;
     cacheTimestamp = now;
-    console.log(`[OY Cache SET] ${items.length}개 저장`);
-  } catch (e) {
-    console.error("[OY Cache ERROR]", e);
-    if (!cached) cached = [];
+    console.log(
+      `[OY] 정적 JSON 사용: ${staticData.count}개 (${staticData.updatedAt})`
+    );
+    return cached;
   }
-  return cached;
+
+  // 2단계: 런타임 크롤링 폴백
+  try {
+    console.log("[OY] 런타임 크롤링 (JSON 없음 또는 비어있음)");
+    const items = await crawlOliveYoung();
+    cached = {
+      updatedAt: new Date().toISOString(),
+      count: items.length,
+      items,
+    };
+    cacheTimestamp = now;
+    return cached;
+  } catch (e) {
+    console.error("[OY] 런타임 크롤링 실패:", e);
+    if (!cached) {
+      cached = { updatedAt: null, count: 0, items: [] };
+    }
+    return cached;
+  }
 }
