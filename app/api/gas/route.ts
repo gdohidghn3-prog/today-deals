@@ -20,6 +20,58 @@ const ALLOWED_ACTIONS = new Set(["avg", "sido", "top10", "around", "zone"]);
 
 type OpinetResponse = { RESULT?: { OIL?: unknown[] } };
 
+type Station = {
+  UNI_ID?: string;
+  GIS_X_COOR?: number;
+  GIS_Y_COOR?: number;
+  [k: string]: unknown;
+};
+
+// KATEC(x,y) → WGS84 변환 결과 캐시 (주유소 위치는 거의 불변이므로 영구 캐시)
+const wgs84Cache = new Map<string, { lat: number; lng: number }>();
+
+async function katecToWgs84(
+  x: number,
+  y: number
+): Promise<{ lat: number; lng: number } | null> {
+  const kakaoKey = process.env.KAKAO_REST_API_KEY;
+  if (!kakaoKey) return null;
+  const key = `${x},${y}`;
+  const hit = wgs84Cache.get(key);
+  if (hit) return hit;
+  try {
+    const res = await fetch(
+      `https://dapi.kakao.com/v2/local/geo/transcoord.json?x=${x}&y=${y}&input_coord=KTM&output_coord=WGS84`,
+      { headers: { Authorization: `KakaoAK ${kakaoKey}` } }
+    );
+    if (!res.ok) return null;
+    const d = (await res.json()) as {
+      documents?: { x: number; y: number }[];
+    };
+    const doc = d.documents?.[0];
+    if (!doc) return null;
+    const wgs = { lat: doc.y, lng: doc.x };
+    wgs84Cache.set(key, wgs);
+    return wgs;
+  } catch {
+    return null;
+  }
+}
+
+// 주유소 배열에 WGS84 좌표 덧붙임
+async function enrichStations(list: unknown[]): Promise<unknown[]> {
+  const stations = list as Station[];
+  const tasks = stations.map(async (s) => {
+    const x = typeof s.GIS_X_COOR === "number" ? s.GIS_X_COOR : NaN;
+    const y = typeof s.GIS_Y_COOR === "number" ? s.GIS_Y_COOR : NaN;
+    if (!isFinite(x) || !isFinite(y)) return s;
+    const wgs = await katecToWgs84(x, y);
+    if (!wgs) return s;
+    return { ...s, lat: wgs.lat, lng: wgs.lng };
+  });
+  return Promise.all(tasks);
+}
+
 async function fetchOpinet(path: string, params: Record<string, string>) {
   const q = new URLSearchParams({ ...params, code: API_KEY!, out: "json" });
   const url = `${OPINET_BASE}/${path}?${q.toString()}`;
@@ -159,7 +211,8 @@ export async function GET(req: NextRequest) {
       if (!ALLOWED_SIDO.has(area)) {
         return NextResponse.json({ error: "invalid area" }, { status: 400 });
       }
-      const data = await fetchOpinet("lowTop10.do", { prodcd, area });
+      const raw = await fetchOpinet("lowTop10.do", { prodcd, area });
+      const data = await enrichStations(raw);
       return NextResponse.json({ data, updatedAt: new Date().toISOString() });
     }
 
@@ -183,13 +236,14 @@ export async function GET(req: NextRequest) {
           { status: 502 }
         );
       }
-      const data = await fetchOpinet("aroundAll.do", {
+      const raw = await fetchOpinet("aroundAll.do", {
         x: String(katec.x),
         y: String(katec.y),
         radius: String(radius),
         prodcd,
         sort: "1", // 가격순
       });
+      const data = await enrichStations(raw);
       return NextResponse.json({
         data,
         origin: { lng, lat, katec, radius },
@@ -223,13 +277,14 @@ export async function GET(req: NextRequest) {
           { status: 502 }
         );
       }
-      const data = await fetchOpinet("aroundAll.do", {
+      const raw = await fetchOpinet("aroundAll.do", {
         x: String(katec.x),
         y: String(katec.y),
         radius: String(radius),
         prodcd,
         sort: "1",
       });
+      const data = await enrichStations(raw);
       return NextResponse.json({
         data,
         origin: {

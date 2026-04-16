@@ -33,6 +33,9 @@ type Top10Item = {
   GIS_X_COOR?: number;
   GIS_Y_COOR?: number;
   DISTANCE?: number;
+  // 서버에서 KATEC → WGS84 변환 후 덧붙인 좌표
+  lat?: number;
+  lng?: number;
 };
 
 type ProdKey = "B027" | "D047" | "B034" | "K015";
@@ -422,9 +425,15 @@ export default function GasClient({
             const brand = POLL_DIV_LABEL[s.POLL_DIV_CD] ?? "기타";
             const color = POLL_DIV_COLOR[s.POLL_DIV_CD] ?? "#64748B";
             const addr = s.NEW_ADR || s.VAN_ADR || "";
-            // 카카오맵: 주유소명 + 도로명주소로 검색 링크
-            const mapQuery = [s.OS_NM, addr].filter(Boolean).join(" ");
-            const mapUrl = `https://map.kakao.com/link/search/${encodeURIComponent(mapQuery)}`;
+            // 좌표가 있으면 link/map으로 정확한 마커 표시, 없으면 주소 검색 fallback
+            const mapUrl =
+              s.lat != null && s.lng != null
+                ? `https://map.kakao.com/link/map/${encodeURIComponent(
+                    s.OS_NM
+                  )},${s.lat},${s.lng}`
+                : `https://map.kakao.com/link/search/${encodeURIComponent(
+                    addr || s.OS_NM
+                  )}`;
             return (
               <li
                 key={s.UNI_ID}

@@ -8,6 +8,15 @@ import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
 type SortKey = "rank" | "discount" | "price";
+type CategoryKey =
+  | "all"
+  | "skincare"
+  | "mask"
+  | "cleansing"
+  | "suncare"
+  | "makeup"
+  | "body_hair"
+  | "perfume";
 
 const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "all", label: "전체" },
@@ -15,6 +24,62 @@ const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "coupon", label: "쿠폰" },
   { key: "today", label: "오늘드림" },
 ];
+
+const CATEGORIES: { key: CategoryKey; label: string }[] = [
+  { key: "all", label: "전체" },
+  { key: "skincare", label: "스킨케어" },
+  { key: "mask", label: "마스크팩" },
+  { key: "cleansing", label: "클렌징" },
+  { key: "suncare", label: "선케어" },
+  { key: "makeup", label: "메이크업" },
+  { key: "body_hair", label: "바디/헤어" },
+  { key: "perfume", label: "향수" },
+];
+
+// 상품명 키워드 → 카테고리 매핑 (순서대로 매칭: 앞에 있을수록 우선)
+const CATEGORY_RULES: { key: CategoryKey; keywords: RegExp }[] = [
+  // 선케어 먼저: "선에센스" 같은 걸 스킨케어로 잡지 않게
+  {
+    key: "suncare",
+    keywords: /선크림|선스틱|선블록|썬크림|썬블록|자외선|SPF|스킨[\s]*아쿠아/i,
+  },
+  {
+    key: "mask",
+    keywords: /마스크[\s]*팩|마스크팩|시트[\s]*마스크|패치|부직포|슬리핑[\s]*마스크|\b팩\b|100매|5매|10매/i,
+  },
+  {
+    key: "cleansing",
+    keywords: /클렌저|클렌징|클린징|폼[\s]*클|리무버|페이스워시|세안|필링/i,
+  },
+  {
+    key: "makeup",
+    keywords:
+      /립[\s]*스틱|립[\s]*글|립[\s]*밤|립[\s]*틴트|립[\s]*플럼|립라이너|립|틴트|쿠션|파운데이션|파데|컨실러|섀도우|아이라이너|브로우|블러셔|블러셔|치크|하이라이터|프라이머|래커|글로스|메이크업|MLBB/i,
+  },
+  {
+    key: "body_hair",
+    keywords:
+      /샴푸|린스|컨디셔너|트리트먼트|헤어|두피|염색|바디|핸드|풋|각질|데오|제모|발[\s]*크림|입욕/i,
+  },
+  {
+    key: "perfume",
+    keywords: /향수|퍼퓸|오[\s]*드[\s]*(뚜왈렛|퍼퓸|코롱)|EDT|EDP|프래그런스|바디[\s]*미스트/i,
+  },
+  // 스킨케어는 가장 포괄적이라 마지막
+  {
+    key: "skincare",
+    keywords:
+      /에센스|세럼|앰플|토너|스킨|로션|크림|모이스처|부스터|아이크림|아이케어|수분|보습|미스트|에멀션|밤|패드|리들샷|콜라겐|비타민/i,
+  },
+];
+
+function classifyCategory(name: string, brand: string): CategoryKey {
+  const text = `${brand} ${name}`;
+  for (const { key, keywords } of CATEGORY_RULES) {
+    if (keywords.test(text)) return key;
+  }
+  return "all"; // 미분류
+}
 
 const SORTS: { key: SortKey; label: string }[] = [
   { key: "rank", label: "랭킹순" },
@@ -37,18 +102,51 @@ export default function OliveYoungClient({
   updatedAt: string | null;
 }) {
   const [filter, setFilter] = useState<FilterKey>("all");
+  const [category, setCategory] = useState<CategoryKey>("all");
   const [sort, setSort] = useState<SortKey>("rank");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // 각 상품에 카테고리 라벨 한 번만 계산 (memo)
+  const classified = useMemo(
+    () =>
+      initialItems.map((i) => ({
+        ...i,
+        _cat: classifyCategory(i.name, i.brand),
+      })),
+    [initialItems]
+  );
+
+  // 카테고리별 개수 (탭 옆 숫자 표시용)
+  const categoryCounts = useMemo(() => {
+    const counts: Record<CategoryKey, number> = {
+      all: classified.length,
+      skincare: 0,
+      mask: 0,
+      cleansing: 0,
+      suncare: 0,
+      makeup: 0,
+      body_hair: 0,
+      perfume: 0,
+    };
+    for (const i of classified) {
+      if (i._cat !== "all") counts[i._cat]++;
+    }
+    return counts;
+  }, [classified]);
+
   const items = useMemo(() => {
-    let list = initialItems.slice();
+    let list = classified.slice();
 
     if (filter === "sale") list = list.filter((i) => i.flags.includes("세일"));
     else if (filter === "coupon")
       list = list.filter((i) => i.flags.includes("쿠폰"));
     else if (filter === "today")
       list = list.filter((i) => i.flags.includes("오늘드림"));
+
+    if (category !== "all") {
+      list = list.filter((i) => i._cat === category);
+    }
 
     if (search.trim()) {
       const q = search.trim().toLowerCase();
@@ -70,7 +168,7 @@ export default function OliveYoungClient({
     }
 
     return list;
-  }, [initialItems, filter, sort, search]);
+  }, [classified, filter, category, sort, search]);
 
   return (
     <div className="max-w-3xl mx-auto px-4 pb-20">
@@ -126,8 +224,8 @@ export default function OliveYoungClient({
         )}
       </div>
 
-      {/* 필터 탭 */}
-      <div className="flex gap-2 mb-3">
+      {/* 혜택 필터 탭 */}
+      <div className="flex gap-2 mb-2">
         {FILTERS.map((f) => (
           <button
             key={f.key}
@@ -142,6 +240,34 @@ export default function OliveYoungClient({
             {f.label}
           </button>
         ))}
+      </div>
+
+      {/* 종류 카테고리 탭 (가로 스크롤) */}
+      <div className="flex gap-1.5 mb-3 overflow-x-auto pb-1 -mx-4 px-4 scrollbar-hide">
+        {CATEGORIES.map((c) => {
+          const count = categoryCounts[c.key];
+          const active = category === c.key;
+          return (
+            <button
+              key={c.key}
+              onClick={() => setCategory(c.key)}
+              className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                active
+                  ? "bg-[#0F172A] text-white"
+                  : "bg-white border border-[#E2E8F0] text-[#64748B] hover:border-[#CBD5E1]"
+              }`}
+            >
+              {c.label}
+              <span
+                className={`ml-1 text-[10px] ${
+                  active ? "opacity-70" : "text-[#94A3B8]"
+                }`}
+              >
+                {count}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* 정렬 */}
