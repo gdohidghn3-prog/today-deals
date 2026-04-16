@@ -1,176 +1,190 @@
 #!/usr/bin/env node
 /**
- * 올리브영 랭킹 (베스트셀러) 크롤링
- * GitHub Actions에서 매일 실행 → data/oliveyoung.json 저장 → 자동 커밋
+ * 올리브영 랭킹 (베스트셀러) 크롤링 - 배치
+ * GitHub Actions에서 매일 실행 → data/oliveyoung.json 저장 → 자동 커밋.
  *
- * Vercel 런타임에서 Cloudflare _cfuvid 쿠키 기반 2단계 요청 필요.
- * 런타임 실패 시를 대비해 정적 JSON을 사전 생성.
+ * 헤더/UA/파싱은 lib/crawlers/oliveyoung-shared.mjs와 단일 소스로 공유.
+ *
+ * Phase 2 강화:
+ *  - 데스크톱 UA → 403/빈응답 시 모바일 UA로 전체 재시도
+ *  - 페이지 1~MAX_PAGES_BATCH 순차 수집, 빈 페이지 즉시 break
+ *  - id/(brand+name) 중복 제거
+ *  - MIN_THRESHOLD 미달 시 기존 data/oliveyoung.json 보호 (덮어쓰지 않음)
+ *  - 실패 시 debug HTML 파일로 저장 → CI artifact 업로드 대상
  */
-import * as cheerio from "cheerio";
-import { writeFileSync } from "fs";
+import { writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import {
+  HOME_URL,
+  getBestUrl,
+  buildBrowserHeaders,
+  extractCookies,
+  parseListHtml,
+  dedupeItems,
+  MAX_PAGES_BATCH,
+  MIN_THRESHOLD,
+} from "../lib/crawlers/oliveyoung-shared.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_PATH = join(__dirname, "..", "data", "oliveyoung.json");
+const ROOT = join(__dirname, "..");
+const DATA_PATH = join(ROOT, "data", "oliveyoung.json");
+const DEBUG_DIR = join(ROOT, "debug");
 
-const UA =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
-
-const HOME_URL = "https://www.oliveyoung.co.kr/store/main/main.do";
-const BEST_URL =
-  "https://www.oliveyoung.co.kr/store/main/getBestList.do?dispCatNo=900000100100001&prdSort=01&pageIdx=1&rowsPerPage=100";
-
-function parsePrice(raw) {
-  if (!raw) return null;
-  const n = parseInt(String(raw).replace(/[^0-9]/g, ""), 10);
-  return Number.isFinite(n) && n > 0 ? n : null;
+// 페이지 간 사람처럼 보이게 약간 지연
+async function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
 }
 
-function extractCookies(res) {
-  const raw = res.headers.getSetCookie?.() ?? [];
-  const pairs = [];
-  for (const line of raw) {
-    const first = line.split(";", 1)[0]?.trim();
-    if (first) pairs.push(first);
+function dumpDebug(name, content) {
+  try {
+    mkdirSync(DEBUG_DIR, { recursive: true });
+    const ts = new Date().toISOString().replace(/[:.]/g, "-");
+    const path = join(DEBUG_DIR, `${name}-${ts}.html`);
+    writeFileSync(path, content, "utf8");
+    console.log(`[OliveYoung] 디버그 파일 저장: ${path}`);
+  } catch (e) {
+    console.warn("[OliveYoung] 디버그 파일 저장 실패:", e.message);
   }
-  return pairs.join("; ");
 }
 
-async function crawl() {
-  console.log("[OliveYoung] 홈페이지 방문하여 쿠키 획득...");
-  let cookie = "";
+async function tryCrawl({ mobile }) {
+  const label = mobile ? "MOBILE" : "DESKTOP";
+  console.log(`\n[OliveYoung][${label}] 홈페이지 방문...`);
 
-  const browserHeaders = {
-    "User-Agent": UA,
-    Accept:
-      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Cache-Control": "no-cache",
-    Pragma: "no-cache",
-    "Sec-Ch-Ua": '"Chromium";v="124", "Not-A.Brand";v="99"',
-    "Sec-Ch-Ua-Mobile": "?0",
-    "Sec-Ch-Ua-Platform": '"Windows"',
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Upgrade-Insecure-Requests": "1",
-  };
+  const baseHeaders = buildBrowserHeaders({ mobile });
+  let cookie = "";
+  let homeStatus = 0;
 
   try {
-    const homeRes = await fetch(HOME_URL, { headers: browserHeaders });
-    cookie = extractCookies(homeRes);
-    console.log(
-      `[OliveYoung] home=${homeRes.status} 쿠키=${cookie ? "획득" : "없음"}`
-    );
+    const homeRes = await fetch(HOME_URL, {
+      headers: { ...baseHeaders, "Sec-Fetch-Site": "none" },
+    });
+    homeStatus = homeRes.status;
+    if (homeRes.ok) {
+      cookie = extractCookies(homeRes);
+    } else {
+      // 디버그용으로 본문 일부 저장 (Cloudflare 차단 페이지 등)
+      const text = await homeRes.text().catch(() => "");
+      dumpDebug(`home-${label}-${homeRes.status}`, text.slice(0, 50000));
+    }
   } catch (e) {
-    console.warn("[OliveYoung] 홈페이지 요청 실패:", e.message);
+    console.warn(`[OliveYoung][${label}] 홈페이지 요청 실패:`, e.message);
+  }
+  console.log(
+    `[OliveYoung][${label}] home=${homeStatus} 쿠키=${cookie ? "획득" : "없음"}`
+  );
+
+  if (homeStatus !== 200) {
+    return { items: [], lastStatus: homeStatus, label };
   }
 
-  // 약간의 대기 (봇 탐지 완화)
-  await new Promise((r) => setTimeout(r, 500));
+  await sleep(700);
 
-  console.log("[OliveYoung] 랭킹 페이지 크롤링...");
-  const res = await fetch(BEST_URL, {
-    headers: {
-      ...browserHeaders,
-      "Sec-Fetch-Site": "same-origin",
-      Referer: HOME_URL,
-      ...(cookie ? { Cookie: cookie } : {}),
-    },
-  });
-  console.log(`[OliveYoung] rank=${res.status}`);
-  if (!res.ok) throw new Error(`oliveyoung ${res.status}`);
-  const html = await res.text();
-  const $ = cheerio.load(html);
+  const collected = [];
+  let lastStatus = 0;
+  for (let page = 1; page <= MAX_PAGES_BATCH; page++) {
+    const startRank = (page - 1) * 100 + 1;
+    console.log(`[OliveYoung][${label}] 랭킹 페이지 ${page} 요청...`);
 
-  const items = [];
-
-  $(".cate_prd_list > li").each((idx, el) => {
-    const $el = $(el);
-    const brand = $el.find(".tx_brand").first().text().trim();
-    const name = $el.find(".tx_name").first().text().trim();
-    if (!name) return;
-
-    const salePrice = parsePrice($el.find(".tx_cur .tx_num").first().text());
-    const origPrice = parsePrice($el.find(".tx_org .tx_num").first().text());
-
-    const flagSet = new Set();
-    $el
-      .find(".prd_flag, .icon_flag, .thumb_flag")
-      .children()
-      .each((_, f) => {
-        const t = $(f).text().trim();
-        if (t && t.length < 12) flagSet.add(t);
+    let res;
+    try {
+      res = await fetch(getBestUrl(page), {
+        headers: {
+          ...baseHeaders,
+          "Sec-Fetch-Site": "same-origin",
+          Referer: HOME_URL,
+          ...(cookie ? { Cookie: cookie } : {}),
+        },
       });
-    const flags = Array.from(flagSet);
+    } catch (e) {
+      console.warn(`[OliveYoung][${label}] page=${page} 네트워크 오류:`, e.message);
+      break;
+    }
+    lastStatus = res.status;
+    console.log(`[OliveYoung][${label}] page=${page} status=${res.status}`);
 
-    const img =
-      $el.find(".prd_thumb img").attr("src") ||
-      $el.find(".prd_thumb img").attr("data-src") ||
-      "";
+    if (!res.ok) {
+      const text = await res.text().catch(() => "");
+      dumpDebug(`rank-${label}-p${page}-${res.status}`, text.slice(0, 50000));
+      break;
+    }
 
-    const link =
-      $el.find(".prd_thumb").attr("href") || $el.find("a").attr("href") || "";
+    const html = await res.text();
+    const pageItems = parseListHtml(html, startRank);
 
-    const goodsMatch = link.match(/goodsNo=([A-Z0-9]+)/);
-    const id = goodsMatch ? goodsMatch[1] : `oy-${idx}`;
+    if (pageItems.length === 0) {
+      // 빈 페이지면 더 진행해도 의미 없음 → 즉시 종료
+      console.log(`[OliveYoung][${label}] page=${page} 결과 0개 → 종료`);
+      // 첫 페이지가 0개이면 셀렉터 변경 의심 → 디버그 저장
+      if (page === 1) {
+        dumpDebug(`rank-${label}-p1-empty`, html.slice(0, 50000));
+      }
+      break;
+    }
 
-    const discountRate =
-      salePrice != null && origPrice != null && origPrice > salePrice
-        ? Math.round(((origPrice - salePrice) / origPrice) * 100)
-        : null;
+    collected.push(...pageItems);
+    console.log(
+      `[OliveYoung][${label}] page=${page} 수집=${pageItems.length}개 (누적 ${collected.length})`
+    );
 
-    items.push({
-      id,
-      rank: idx + 1,
-      brand,
-      name,
-      salePrice,
-      origPrice,
-      discountRate,
-      imageUrl: img,
-      link: link.startsWith("http")
-        ? link
-        : `https://www.oliveyoung.co.kr${link}`,
-      flags,
-    });
-  });
+    if (page < MAX_PAGES_BATCH) {
+      await sleep(500);
+    }
+  }
 
-  return items;
+  return { items: dedupeItems(collected), lastStatus, label };
 }
 
 async function main() {
-  try {
-    const items = await crawl();
-    if (items.length === 0) {
-      throw new Error("크롤링 결과가 비어있음. 페이지 구조 변경 의심.");
-    }
+  // 1차: 데스크톱
+  let result = await tryCrawl({ mobile: false });
 
-    const saleCount = items.filter((i) => i.flags.includes("세일")).length;
-    const couponCount = items.filter((i) => i.flags.includes("쿠폰")).length;
-
-    const payload = {
-      updatedAt: new Date().toISOString(),
-      count: items.length,
-      summary: {
-        total: items.length,
-        sale: saleCount,
-        coupon: couponCount,
-      },
-      items,
-    };
-
-    writeFileSync(DATA_PATH, JSON.stringify(payload, null, 2), "utf8");
+  // 1차 실패(빈 결과) → 2차: 모바일
+  if (result.items.length === 0) {
     console.log(
-      `[OliveYoung] ${items.length}개 저장 완료 (세일 ${saleCount}, 쿠폰 ${couponCount})`
+      "\n[OliveYoung] 데스크톱 결과 0개 → 모바일 UA로 재시도"
     );
-  } catch (e) {
-    console.error("[OliveYoung] 크롤링 실패:", e.message);
+    result = await tryCrawl({ mobile: true });
+  }
+
+  const items = result.items;
+
+  if (items.length === 0) {
+    console.error(
+      `[OliveYoung] 크롤링 실패 (last status=${result.lastStatus}). data 파일 보호 (덮어쓰지 않음).`
+    );
     process.exit(1);
   }
+
+  if (items.length < MIN_THRESHOLD) {
+    console.error(
+      `[OliveYoung] 수집 ${items.length}개 < 최소 임계치 ${MIN_THRESHOLD}개. 비정상 응답으로 간주, data 파일 보호.`
+    );
+    process.exit(1);
+  }
+
+  const saleCount = items.filter((i) => i.flags.includes("세일")).length;
+  const couponCount = items.filter((i) => i.flags.includes("쿠폰")).length;
+
+  const payload = {
+    updatedAt: new Date().toISOString(),
+    count: items.length,
+    summary: {
+      total: items.length,
+      sale: saleCount,
+      coupon: couponCount,
+    },
+    items,
+  };
+
+  writeFileSync(DATA_PATH, JSON.stringify(payload, null, 2), "utf8");
+  console.log(
+    `\n[OliveYoung] ${items.length}개 저장 완료 (세일 ${saleCount}, 쿠폰 ${couponCount}, via ${result.label})`
+  );
 }
 
-main();
+main().catch((e) => {
+  console.error("[OliveYoung] 예기치 못한 오류:", e);
+  process.exit(1);
+});

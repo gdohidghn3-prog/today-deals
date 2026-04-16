@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { classifyCoordSource, type CoordSource } from "./helpers.mjs";
 
 // 서버 전용 프록시. 오피넷 API 키는 절대 클라이언트에 노출되지 않음.
 // 6시간 ISR 캐시 (유가 데이터는 하루 1회 정도 변동)
@@ -27,7 +28,16 @@ type Station = {
   [k: string]: unknown;
 };
 
+type VariantStats = {
+  total: number;
+  katec: number;
+  katec_low: number;
+  none: number;
+};
+
 // KATEC(x,y) → WGS84 변환 결과 캐시 (주유소 위치는 거의 불변이므로 영구 캐시)
+// 주의: 메모리 캐시 - serverless 콜드스타트마다 유실됨.
+// 영구 캐시(Redis/KV/빌드타임 배치)는 Phase 3 이후 별도 스펙으로.
 const wgs84Cache = new Map<string, { lat: number; lng: number }>();
 
 async function katecToWgs84(
@@ -58,18 +68,32 @@ async function katecToWgs84(
   }
 }
 
-// 주유소 배열에 WGS84 좌표 덧붙임
-async function enrichStations(list: unknown[]): Promise<unknown[]> {
+// 주유소 배열에 WGS84 좌표 + coord_source 덧붙임
+async function enrichStations(
+  list: unknown[]
+): Promise<{ enriched: unknown[]; stats: VariantStats }> {
   const stations = list as Station[];
+  const stats: VariantStats = {
+    total: stations.length,
+    katec: 0,
+    katec_low: 0,
+    none: 0,
+  };
   const tasks = stations.map(async (s) => {
     const x = typeof s.GIS_X_COOR === "number" ? s.GIS_X_COOR : NaN;
     const y = typeof s.GIS_Y_COOR === "number" ? s.GIS_Y_COOR : NaN;
-    if (!isFinite(x) || !isFinite(y)) return s;
+    if (!isFinite(x) || !isFinite(y)) {
+      stats.none++;
+      return { ...s, coord_source: "none" satisfies CoordSource };
+    }
     const wgs = await katecToWgs84(x, y);
-    if (!wgs) return s;
-    return { ...s, lat: wgs.lat, lng: wgs.lng };
+    const source = classifyCoordSource(x, y, wgs);
+    stats[source]++;
+    if (!wgs) return { ...s, coord_source: source };
+    return { ...s, lat: wgs.lat, lng: wgs.lng, coord_source: source };
   });
-  return Promise.all(tasks);
+  const enriched = await Promise.all(tasks);
+  return { enriched, stats };
 }
 
 async function fetchOpinet(path: string, params: Record<string, string>) {
@@ -212,8 +236,12 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ error: "invalid area" }, { status: 400 });
       }
       const raw = await fetchOpinet("lowTop10.do", { prodcd, area });
-      const data = await enrichStations(raw);
-      return NextResponse.json({ data, updatedAt: new Date().toISOString() });
+      const { enriched, stats } = await enrichStations(raw);
+      return NextResponse.json({
+        data: enriched,
+        variant_stats: stats,
+        updatedAt: new Date().toISOString(),
+      });
     }
 
     if (action === "around") {
@@ -243,9 +271,10 @@ export async function GET(req: NextRequest) {
         prodcd,
         sort: "1", // 가격순
       });
-      const data = await enrichStations(raw);
+      const { enriched, stats } = await enrichStations(raw);
       return NextResponse.json({
-        data,
+        data: enriched,
+        variant_stats: stats,
         origin: { lng, lat, katec, radius },
         updatedAt: new Date().toISOString(),
       });
@@ -284,9 +313,10 @@ export async function GET(req: NextRequest) {
         prodcd,
         sort: "1",
       });
-      const data = await enrichStations(raw);
+      const { enriched, stats } = await enrichStations(raw);
       return NextResponse.json({
-        data,
+        data: enriched,
+        variant_stats: stats,
         origin: {
           lng: place.lng,
           lat: place.lat,

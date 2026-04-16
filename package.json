@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test scripts/__tests__/ app/api/gas/__tests__/"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

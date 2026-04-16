@@ -19,7 +19,17 @@ jobs:
         run: npm ci
 
       - name: Run oliveyoung crawl
+        id: crawl
         run: node scripts/crawl-oliveyoung.mjs
+
+      - name: Upload debug HTML on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: oliveyoung-debug-${{ github.run_number }}
+          path: debug/
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Check results
         run: |

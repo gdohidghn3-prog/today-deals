@@ -23,6 +23,8 @@ type SidoAvgItem = {
   DIFF: number;
 };
 
+type CoordSource = "katec" | "katec_low" | "none";
+
 type Top10Item = {
   UNI_ID: string;
   PRICE: number;
@@ -36,6 +38,15 @@ type Top10Item = {
   // 서버에서 KATEC → WGS84 변환 후 덧붙인 좌표
   lat?: number;
   lng?: number;
+  // Phase 2: 좌표 정확도 출처
+  coord_source?: CoordSource;
+};
+
+type VariantStats = {
+  total: number;
+  katec: number;
+  katec_low: number;
+  none: number;
 };
 
 type ProdKey = "B027" | "D047" | "B034" | "K015";
@@ -131,6 +142,7 @@ export default function GasClient({
   const [locError, setLocError] = useState<string | null>(null);
   const [zoneQuery, setZoneQuery] = useState("");
   const [loadingZone, setLoadingZone] = useState(false);
+  const [variantStats, setVariantStats] = useState<VariantStats | null>(null);
 
   // 선택한 유종의 전국 평균
   const nationalAvg = useMemo(() => {
@@ -156,11 +168,13 @@ export default function GasClient({
         if (cancelled) return;
         setSidoAvg(sidoRes.data ?? []);
         setTop10(topRes.data ?? []);
+        setVariantStats(topRes.variant_stats ?? null);
       })
       .catch(() => {
         if (!cancelled) {
           setSidoAvg([]);
           setTop10([]);
+          setVariantStats(null);
         }
       })
       .finally(() => {
@@ -189,10 +203,12 @@ export default function GasClient({
           if (!res.ok) throw new Error(json?.error || "조회 실패");
           setAroundStations(json.data ?? []);
           setAroundLabel("내 위치 반경 5km");
+          setVariantStats(json.variant_stats ?? null);
         } catch (e) {
           setLocError(e instanceof Error ? e.message : "조회 실패");
           setAroundStations(null);
           setAroundLabel("");
+          setVariantStats(null);
         } finally {
           setLoadingAround(false);
         }
@@ -227,10 +243,12 @@ export default function GasClient({
           ? `${json.origin.placeName} 반경 3km`
           : `"${q}" 반경 3km`
       );
+      setVariantStats(json.variant_stats ?? null);
     } catch (err) {
       setLocError(err instanceof Error ? err.message : "조회 실패");
       setAroundStations(null);
       setAroundLabel("");
+      setVariantStats(null);
     } finally {
       setLoadingZone(false);
     }
@@ -410,6 +428,16 @@ export default function GasClient({
         </div>
       )}
 
+      {/* 좌표 정확도 부분 장애 배너: 일부 주유소 좌표 변환 실패 시 */}
+      {variantStats &&
+        variantStats.total > 0 &&
+        variantStats.none > 0 && (
+          <div className="bg-[#FFF7ED] border border-[#FED7AA] rounded-lg px-3 py-2 mb-3 text-[11px] text-[#9A3412] leading-relaxed">
+            일부 주유소({variantStats.none}/{variantStats.total})는 정확한
+            지도 위치 대신 주소 검색으로 표시됩니다.
+          </div>
+        )}
+
       {/* 최저가 리스트 */}
       {loadingList && !isAround ? (
         <div className="text-center py-12 text-[#94A3B8]">
@@ -469,9 +497,10 @@ export default function GasClient({
                     href={mapUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-[10px] text-[#2563EB] underline mt-1"
+                    className="inline-flex items-center gap-1 text-[10px] text-[#2563EB] underline mt-1"
                   >
                     지도
+                    <CoordBadge source={s.coord_source} />
                   </a>
                 </div>
               </li>
@@ -486,5 +515,28 @@ export default function GasClient({
         정확한 가격은 주유소에서 확인하세요.
       </p>
     </div>
+  );
+}
+
+/**
+ * 좌표 정확도 뱃지.
+ *  - katec:     생략 (기본 정확도)
+ *  - katec_low: 회색 "근사" (오피넷 원본이 100m 단위 반올림)
+ *  - none:      회색 "주소" (좌표 없음, 주소 검색으로 표시)
+ */
+function CoordBadge({ source }: { source?: CoordSource }) {
+  if (!source || source === "katec") return null;
+  const label = source === "katec_low" ? "근사" : "주소";
+  const title =
+    source === "katec_low"
+      ? "오피넷 원본 좌표의 정밀도가 낮아 실제 간판 위치와 수십m 차이가 있을 수 있습니다."
+      : "좌표 정보가 없어 주소 검색으로 표시됩니다.";
+  return (
+    <span
+      title={title}
+      className="text-[9px] px-1 py-px rounded bg-[#F1F5F9] text-[#94A3B8] leading-none not-italic no-underline"
+    >
+      {label}
+    </span>
   );
 }
