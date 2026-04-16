@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { memo, useMemo, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
@@ -174,8 +173,8 @@ export default function OliveYoungClient({
         </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {items.map((item, i) => (
-            <Card key={item.id} item={item} index={i} />
+          {items.map((item) => (
+            <Card key={item.id} item={item} />
           ))}
         </div>
       )}
@@ -189,25 +188,25 @@ export default function OliveYoungClient({
   );
 }
 
-function Card({ item, index }: { item: OliveYoungItem; index: number }) {
+const Card = memo(function Card({ item }: { item: OliveYoungItem }) {
   const hasDiscount = item.discountRate != null && item.discountRate > 0;
   return (
-    <motion.a
+    <a
       href={item.link}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.2, delay: Math.min(index * 0.01, 0.3) }}
-      className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all"
+      className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md transition-shadow"
     >
       <div className="relative w-full aspect-square bg-[#F8FAFC]">
         {item.imageUrl ? (
           <img
             src={item.imageUrl}
             alt={item.name}
+            width={200}
+            height={200}
             className="w-full h-full object-contain"
             loading="lazy"
+            decoding="async"
             onError={(e) =>
               ((e.target as HTMLImageElement).style.display = "none")
             }
@@ -259,6 +258,6 @@ function Card({ item, index }: { item: OliveYoungItem; index: number }) {
           </div>
         )}
       </div>
-    </motion.a>
+    </a>
   );
-}
+});

@@ -16,7 +16,7 @@ const ALLOWED_SIDO = new Set([
   "10", "11", "14", "15", "16", "17", "18", "19",
 ]);
 // 액션 화이트리스트
-const ALLOWED_ACTIONS = new Set(["avg", "sido", "top10", "around"]);
+const ALLOWED_ACTIONS = new Set(["avg", "sido", "top10", "around", "zone"]);
 
 type OpinetResponse = { RESULT?: { OIL?: unknown[] } };
 
@@ -51,6 +51,77 @@ async function wgs84ToKatec(
   if (!doc) return null;
   // Kakao의 "KTM" 출력이 오피넷이 사용하는 KATEC 좌표계와 동일 (x=300k~, y=540k~ 수준)
   return { x: doc.x, y: doc.y };
+}
+
+// 지역명/주소 → WGS84 좌표 (카카오 키워드 + 주소 검색 조합)
+async function searchPlace(query: string): Promise<
+  | { lng: number; lat: number; placeName: string; address: string }
+  | null
+> {
+  const kakaoKey = process.env.KAKAO_REST_API_KEY;
+  if (!kakaoKey || !query.trim()) return null;
+  const q = encodeURIComponent(query.trim());
+
+  // 1순위: 키워드 검색 (지하철역/랜드마크 등 우선)
+  try {
+    const kw = await fetch(
+      `https://dapi.kakao.com/v2/local/search/keyword.json?query=${q}&size=1`,
+      { headers: { Authorization: `KakaoAK ${kakaoKey}` } }
+    );
+    if (kw.ok) {
+      const d = (await kw.json()) as {
+        documents?: {
+          x: string;
+          y: string;
+          place_name: string;
+          address_name: string;
+          road_address_name: string;
+        }[];
+      };
+      const doc = d.documents?.[0];
+      if (doc) {
+        return {
+          lng: parseFloat(doc.x),
+          lat: parseFloat(doc.y),
+          placeName: doc.place_name,
+          address: doc.road_address_name || doc.address_name,
+        };
+      }
+    }
+  } catch {
+    // 계속 진행
+  }
+
+  // 2순위: 주소 검색
+  try {
+    const addr = await fetch(
+      `https://dapi.kakao.com/v2/local/search/address.json?query=${q}&size=1`,
+      { headers: { Authorization: `KakaoAK ${kakaoKey}` } }
+    );
+    if (addr.ok) {
+      const d = (await addr.json()) as {
+        documents?: {
+          x: string;
+          y: string;
+          address_name: string;
+          road_address?: { address_name: string } | null;
+        }[];
+      };
+      const doc = d.documents?.[0];
+      if (doc) {
+        return {
+          lng: parseFloat(doc.x),
+          lat: parseFloat(doc.y),
+          placeName: doc.road_address?.address_name || doc.address_name,
+          address: doc.address_name,
+        };
+      }
+    }
+  } catch {
+    // fallthrough
+  }
+
+  return null;
 }
 
 export async function GET(req: NextRequest) {
@@ -122,6 +193,52 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({
         data,
         origin: { lng, lat, katec, radius },
+        updatedAt: new Date().toISOString(),
+      });
+    }
+
+    if (action === "zone") {
+      const query = sp.get("query") ?? "";
+      const radius = Math.min(
+        Math.max(parseInt(sp.get("radius") ?? "3000", 10) || 3000, 500),
+        10000
+      );
+      if (!query.trim() || query.length > 80) {
+        return NextResponse.json(
+          { error: "invalid query" },
+          { status: 400 }
+        );
+      }
+      const place = await searchPlace(query);
+      if (!place) {
+        return NextResponse.json(
+          { error: "지역을 찾을 수 없습니다" },
+          { status: 404 }
+        );
+      }
+      const katec = await wgs84ToKatec(place.lng, place.lat);
+      if (!katec) {
+        return NextResponse.json(
+          { error: "coordinate conversion failed" },
+          { status: 502 }
+        );
+      }
+      const data = await fetchOpinet("aroundAll.do", {
+        x: String(katec.x),
+        y: String(katec.y),
+        radius: String(radius),
+        prodcd,
+        sort: "1",
+      });
+      return NextResponse.json({
+        data,
+        origin: {
+          lng: place.lng,
+          lat: place.lat,
+          placeName: place.placeName,
+          address: place.address,
+          radius,
+        },
         updatedAt: new Date().toISOString(),
       });
     }

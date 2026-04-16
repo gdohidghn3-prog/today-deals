@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { MapPin, Loader2, TrendingUp, TrendingDown } from "lucide-react";
+import { MapPin, Loader2, TrendingUp, TrendingDown, Search, X } from "lucide-react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
 
@@ -122,9 +122,12 @@ export default function GasClient({
   const [sidoAvg, setSidoAvg] = useState<SidoAvgItem[]>([]);
   const [top10, setTop10] = useState<Top10Item[]>([]);
   const [aroundStations, setAroundStations] = useState<Top10Item[] | null>(null);
+  const [aroundLabel, setAroundLabel] = useState<string>("");
   const [loadingList, setLoadingList] = useState(false);
   const [loadingAround, setLoadingAround] = useState(false);
   const [locError, setLocError] = useState<string | null>(null);
+  const [zoneQuery, setZoneQuery] = useState("");
+  const [loadingZone, setLoadingZone] = useState(false);
 
   // 선택한 유종의 전국 평균
   const nationalAvg = useMemo(() => {
@@ -182,9 +185,11 @@ export default function GasClient({
           const json = await res.json();
           if (!res.ok) throw new Error(json?.error || "조회 실패");
           setAroundStations(json.data ?? []);
+          setAroundLabel("내 위치 반경 5km");
         } catch (e) {
           setLocError(e instanceof Error ? e.message : "조회 실패");
           setAroundStations(null);
+          setAroundLabel("");
         } finally {
           setLoadingAround(false);
         }
@@ -199,6 +204,33 @@ export default function GasClient({
       },
       { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
     );
+  };
+
+  const handleZoneSearch = async (e?: React.FormEvent) => {
+    e?.preventDefault();
+    const q = zoneQuery.trim();
+    if (!q) return;
+    setLocError(null);
+    setLoadingZone(true);
+    try {
+      const res = await fetch(
+        `/api/gas?action=zone&prodcd=${prod}&query=${encodeURIComponent(q)}&radius=3000`
+      );
+      const json = await res.json();
+      if (!res.ok) throw new Error(json?.error || "조회 실패");
+      setAroundStations(json.data ?? []);
+      setAroundLabel(
+        json.origin?.placeName
+          ? `${json.origin.placeName} 반경 3km`
+          : `"${q}" 반경 3km`
+      );
+    } catch (err) {
+      setLocError(err instanceof Error ? err.message : "조회 실패");
+      setAroundStations(null);
+      setAroundLabel("");
+    } finally {
+      setLoadingZone(false);
+    }
   };
 
   const activeList = aroundStations ?? top10;
@@ -281,12 +313,13 @@ export default function GasClient({
       </div>
 
       {/* 시도 선택 + 내 주변 버튼 */}
-      <div className="flex gap-2 mb-3">
+      <div className="flex gap-2 mb-2">
         <select
           value={sido}
           onChange={(e) => {
             setSido(e.target.value);
             setAroundStations(null);
+            setAroundLabel("");
           }}
           className="flex-1 px-3 py-2 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] focus:outline-none focus:border-[#94A3B8]"
           aria-label="시도 선택"
@@ -312,6 +345,46 @@ export default function GasClient({
         </button>
       </div>
 
+      {/* 지역 검색 */}
+      <form onSubmit={handleZoneSearch} className="relative mb-3">
+        <Search
+          size={16}
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none"
+        />
+        <input
+          type="text"
+          value={zoneQuery}
+          onChange={(e) => setZoneQuery(e.target.value)}
+          placeholder="지역 검색 (예: 판교역, 해운대구, 홍대입구)"
+          className="w-full pl-9 pr-24 py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#CBD5E1] focus:outline-none focus:border-[#94A3B8] transition-colors"
+        />
+        {zoneQuery && (
+          <button
+            type="button"
+            onClick={() => {
+              setZoneQuery("");
+              setAroundStations(null);
+              setAroundLabel("");
+            }}
+            className="absolute right-[72px] top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#64748B]"
+            aria-label="검색어 지우기"
+          >
+            <X size={16} />
+          </button>
+        )}
+        <button
+          type="submit"
+          disabled={loadingZone || !zoneQuery.trim()}
+          className="absolute right-1.5 top-1/2 -translate-y-1/2 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#FF6B35] text-white text-xs font-medium disabled:opacity-50"
+        >
+          {loadingZone ? (
+            <Loader2 size={12} className="animate-spin" />
+          ) : (
+            "검색"
+          )}
+        </button>
+      </form>
+
       {locError && (
         <p className="text-xs text-[#EF4444] mb-3">{locError}</p>
       )}
@@ -319,11 +392,14 @@ export default function GasClient({
       {isAround && (
         <div className="flex items-center justify-between mb-3 px-1">
           <p className="text-xs text-[#64748B]">
-            반경 5km 내 최저가 주유소
+            {aroundLabel || "주변 최저가 주유소"}
           </p>
           <button
             type="button"
-            onClick={() => setAroundStations(null)}
+            onClick={() => {
+              setAroundStations(null);
+              setAroundLabel("");
+            }}
             className="text-[11px] text-[#2563EB] underline"
           >
             시도 최저가로 돌아가기
@@ -346,7 +422,9 @@ export default function GasClient({
             const brand = POLL_DIV_LABEL[s.POLL_DIV_CD] ?? "기타";
             const color = POLL_DIV_COLOR[s.POLL_DIV_CD] ?? "#64748B";
             const addr = s.NEW_ADR || s.VAN_ADR || "";
-            const mapQ = encodeURIComponent(`${s.OS_NM} ${addr}`);
+            // 카카오맵: 주유소명 + 도로명주소로 검색 링크
+            const mapQuery = [s.OS_NM, addr].filter(Boolean).join(" ");
+            const mapUrl = `https://map.kakao.com/link/search/${encodeURIComponent(mapQuery)}`;
             return (
               <li
                 key={s.UNI_ID}
@@ -379,7 +457,7 @@ export default function GasClient({
                   </p>
                   <p className="text-[10px] text-[#94A3B8] mt-0.5">원/L</p>
                   <a
-                    href={`https://map.kakao.com/?q=${mapQ}`}
+                    href={mapUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block text-[10px] text-[#2563EB] underline mt-1"
