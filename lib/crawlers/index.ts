@@ -5,32 +5,54 @@ import { crawlSKT } from "./skt";
 import telecomJson from "@/data/telecom.json";
 import convenienceJson from "@/data/convenience.json";
 
+/**
+ * 편의점 4사 통합 (CU + GS25 + 세븐일레븐 + 이마트24)
+ *
+ * 1순위: data/convenience.json (GitHub Actions 매일 09:30 KST 배치)
+ * 2순위: 런타임 fallback - JSON에 없는 source만 (Vercel 차단 위험으로 보조용)
+ *
+ * 배치 통합으로 4개 모두 안정적으로 수집되므로 보통 1순위만으로 충분.
+ * convenience.json이 손상/누락이거나 특정 source가 비어있을 때만 fallback 동작.
+ */
 export async function crawlAllConvenience(): Promise<Deal[]> {
-  // CU/GS25: 런타임 HTTP 크롤링 (Vercel에서 동작 확인됨)
-  // 세븐일레븐/이마트24: GitHub Actions가 매일 크롤 → data/convenience.json
-  //   (Vercel 런타임에서는 차단/타임아웃 빈번)
-  const [cu, gs25] = await Promise.allSettled([crawlCU(), crawlGS25()]);
-
   const deals: Deal[] = [];
-  if (cu.status === "fulfilled") deals.push(...cu.value);
-  if (gs25.status === "fulfilled") deals.push(...gs25.value);
+  const stats: Record<string, number> = {
+    cu: 0,
+    gs25: 0,
+    seven: 0,
+    emart24: 0,
+  };
 
-  // 세븐일레븐 + 이마트24 JSON 로드
-  let cachedCount = 0;
+  // 1순위: 정적 JSON
   try {
-    const cached = (convenienceJson.deals as unknown as Deal[]).filter(
-      (d) => d.source === "seven" || d.source === "emart24"
-    );
+    const cached = (convenienceJson.deals as unknown as Deal[]) ?? [];
+    for (const d of cached) {
+      if (d.source in stats) stats[d.source]++;
+    }
     deals.push(...cached);
-    cachedCount = cached.length;
   } catch {
     console.log("[Crawl] convenience.json 로드 실패");
   }
 
+  // 2순위: JSON에 없는 source만 런타임으로 보충
+  const fallbackTasks: Promise<Deal[]>[] = [];
+  if (stats.cu === 0) fallbackTasks.push(crawlCU().catch(() => []));
+  if (stats.gs25 === 0) fallbackTasks.push(crawlGS25().catch(() => []));
+
+  if (fallbackTasks.length > 0) {
+    const fallbackResults = await Promise.all(fallbackTasks);
+    for (const arr of fallbackResults) {
+      for (const d of arr) {
+        if (d.source in stats) stats[d.source]++;
+      }
+      deals.push(...arr);
+    }
+  }
+
   console.log(
-    `[Crawl] CU: ${cu.status === "fulfilled" ? cu.value.length : "FAIL"}, ` +
-    `GS25: ${gs25.status === "fulfilled" ? gs25.value.length : "FAIL"}, ` +
-    `7/이마트24 JSON: ${cachedCount} (${convenienceJson.updatedAt})`
+    `[Crawl] convenience: CU=${stats.cu}, GS25=${stats.gs25}, ` +
+      `seven=${stats.seven}, emart24=${stats.emart24} ` +
+      `(JSON updatedAt=${convenienceJson.updatedAt})`
   );
 
   return deals;

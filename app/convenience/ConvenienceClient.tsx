@@ -1,11 +1,14 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import { Search, X } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/types/deal";
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
 
-const STORES: { key: DealSource; label: string }[] = [
+type StoreKey = "all" | DealSource;
+
+const STORE_ORDER: { key: StoreKey; label: string }[] = [
+  { key: "all", label: "전체" },
   { key: "cu", label: "CU" },
   { key: "gs25", label: "GS25" },
   { key: "seven", label: "세븐일레븐" },
@@ -19,13 +22,47 @@ const DEAL_TYPES = [
 ];
 
 export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal[] }) {
-  const [activeStore, setActiveStore] = useState<DealSource>("cu");
+  const [activeStore, setActiveStore] = useState<StoreKey>("all");
   const [dealType, setDealType] = useState("all");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // 편의점별 카운트 (탭에 표시 + 표시 여부 판정)
+  const storeCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: initialDeals.length };
+    for (const store of STORE_ORDER) {
+      if (store.key === "all") continue;
+      counts[store.key] = initialDeals.filter(
+        (d) => d.source === store.key
+      ).length;
+    }
+    return counts;
+  }, [initialDeals]);
+
+  // 데이터 0건인 편의점 탭은 숨김 (혼란 방지)
+  const visibleStores = useMemo(
+    () =>
+      STORE_ORDER.filter(
+        (s) => s.key === "all" || (storeCounts[s.key] ?? 0) > 0
+      ),
+    [storeCounts]
+  );
+
+  // 검색어가 입력되면 자동으로 "전체"로 전환 → 편의점 간 비교 가능
+  // 사용자가 직접 편의점 탭을 클릭해서 검색 중인 케이스는 보존하지 않음
+  // (의도적인 단순화: 검색은 항상 전체에서 비교한다는 일관된 멘탈모델)
+  useEffect(() => {
+    if (search.trim() && activeStore !== "all") {
+      setActiveStore("all");
+    }
+  }, [search, activeStore]);
+
   const filteredDeals = useMemo(() => {
-    let deals = initialDeals.filter((d) => d.source === activeStore);
+    let deals =
+      activeStore === "all"
+        ? initialDeals
+        : initialDeals.filter((d) => d.source === activeStore);
+
     if (dealType !== "all") {
       deals = deals.filter((d) => d.discount === dealType);
     }
@@ -38,16 +75,20 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
           (d.price && d.price.toLowerCase().includes(q))
       );
     }
+
+    // 전체 탭에서 검색 결과는 편의점별로 정렬해서 비교 편의 ↑
+    if (activeStore === "all" && search.trim()) {
+      const order: Record<string, number> = {
+        cu: 0, gs25: 1, seven: 2, emart24: 3,
+      };
+      deals = [...deals].sort(
+        (a, b) => (order[a.source] ?? 99) - (order[b.source] ?? 99)
+      );
+    }
     return deals;
   }, [initialDeals, activeStore, dealType, search]);
 
-  const storeCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const store of STORES) {
-      counts[store.key] = initialDeals.filter((d) => d.source === store.key).length;
-    }
-    return counts;
-  }, [initialDeals]);
+  const showStoreLabel = activeStore === "all";
 
   return (
     <div className="max-w-3xl mx-auto px-4 pb-20">
@@ -58,24 +99,25 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
         </p>
       </div>
 
-      {/* 편의점 탭 */}
-      <div className="flex gap-2 mb-4">
-        {STORES.map((store) => {
-          const count = storeCounts[store.key] || 0;
+      {/* 편의점 탭 (가로 스크롤 - 탭 늘어나도 안전) */}
+      <div className="flex gap-2 mb-4 overflow-x-auto -mx-4 px-4 scrollbar-hide">
+        {visibleStores.map((store) => {
+          const count = storeCounts[store.key] ?? 0;
+          const active = activeStore === store.key;
+          const bg =
+            store.key === "all"
+              ? "#0F172A"
+              : SOURCE_COLORS[store.key as DealSource];
           return (
             <button
               key={store.key}
               onClick={() => setActiveStore(store.key)}
-              className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                activeStore === store.key
+              className={`shrink-0 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                active
                   ? "text-white"
                   : "bg-white border border-[#E2E8F0] text-[#64748B]"
               }`}
-              style={
-                activeStore === store.key
-                  ? { backgroundColor: SOURCE_COLORS[store.key] }
-                  : {}
-              }
+              style={active ? { backgroundColor: bg } : {}}
             >
               {store.label}
               <span className="ml-1 text-[11px] opacity-80">{count}</span>
@@ -95,7 +137,7 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="상품명 검색 (예: 콜라, 삼각김밥)"
+          placeholder="상품명 검색 (예: 콜라, 삼각김밥) - 전체 편의점 비교"
           className="w-full pl-9 pr-9 py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#CBD5E1] focus:outline-none focus:border-[#94A3B8] transition-colors"
         />
         {search && (
@@ -138,12 +180,21 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
         <div className="text-center py-12 text-[#94A3B8]">
           {search.trim()
             ? `"${search.trim()}" 검색 결과가 없습니다.`
-            : `현재 ${SOURCE_LABELS[activeStore]} ${dealType !== "all" ? dealType + " " : ""}행사가 없습니다.`}
+            : activeStore === "all"
+              ? "현재 진행 중인 행사가 없습니다."
+              : `현재 ${SOURCE_LABELS[activeStore as DealSource]} ${
+                  dealType !== "all" ? dealType + " " : ""
+                }행사가 없습니다.`}
         </div>
       ) : (
         <div className="grid grid-cols-3 gap-2">
           {filteredDeals.map((deal, i) => (
-            <ConvenienceDealCard key={deal.id} deal={deal} index={i} />
+            <ConvenienceDealCard
+              key={deal.id}
+              deal={deal}
+              index={i}
+              showSourceBadge={showStoreLabel}
+            />
           ))}
         </div>
       )}

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import { SOURCE_COLORS, type Deal } from "@/types/deal";
+import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
 
 const STORE_LINKS: Record<string, string> = {
@@ -26,9 +26,12 @@ function cleanName(raw: string): string {
 export default function ConvenienceDealCard({
   deal,
   index = 0,
+  showSourceBadge = false,
 }: {
   deal: Deal;
   index?: number;
+  /** 전체 탭에서 카드별 편의점 식별이 필요할 때 true */
+  showSourceBadge?: boolean;
 }) {
   const color = SOURCE_COLORS[deal.source];
   const name = cleanName(deal.title);
@@ -79,6 +82,14 @@ export default function ConvenienceDealCard({
             >
               {deal.discount}
             </span>
+            {showSourceBadge && (
+              <span
+                className="absolute bottom-1.5 left-1.5 text-[9px] px-1.5 py-0.5 rounded font-bold text-white leading-none"
+                style={{ backgroundColor: color }}
+              >
+                {SOURCE_LABELS[deal.source]}
+              </span>
+            )}
           </div>
 
           {/* 정보 - 고정 높이 */}
