@@ -3,17 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
 import ShareButton from "@/components/ShareButton";
 import { trackEvent } from "@/lib/analytics";
-
-const STORE_LINKS: Record<string, string> = {
-  cu: "https://cu.bgfretail.com/event/plus.do",
-  gs25: "http://gs25.gsretail.com/gscvs/ko/products/event-goods",
-  seven: "https://www.7-eleven.co.kr/product/presentList.asp",
-  emart24: "https://www.emart24.co.kr/goods/event",
-};
 
 function cleanName(raw: string): string {
   // "동원)양반누룽지닭죽 1+1" → "양반누룽지닭죽"
@@ -39,7 +33,6 @@ export default function ConvenienceDealCard({
   const name = cleanName(deal.title);
   const price = deal.price || "";
   const is1p1 = deal.discount === "1+1";
-  const link = STORE_LINKS[deal.source] || "#";
 
   const [sheetOpen, setSheetOpen] = useState(false);
 
@@ -57,10 +50,8 @@ export default function ConvenienceDealCard({
         transition={{ duration: 0.2, delay: Math.min(index * 0.01, 0.3) }}
         className="relative"
       >
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={`/deals/${deal.id}`}
           onClick={() => trackEvent("deal_click", { source: deal.source, brand: deal.brand })}
           className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
         >
@@ -117,7 +108,7 @@ export default function ConvenienceDealCard({
               </span>
             </div>
           </div>
-        </a>
+        </Link>
 
         {/* 주변매장 버튼 — 카드 우측 상단 (a 태그 외부) */}
         <button
