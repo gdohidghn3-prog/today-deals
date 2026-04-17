@@ -266,14 +266,14 @@ const Card = memo(function Card({ item }: { item: OliveYoungItem }) {
       onClick={() => trackEvent("deal_click", { source: "oliveyoung", brand: item.brand })}
       className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md transition-shadow"
     >
-      <div className="relative w-full aspect-square bg-[#F8FAFC]">
+      <div className="relative w-full aspect-square bg-[#F8FAFC] overflow-hidden">
         {item.imageUrl ? (
           <Image
             src={item.imageUrl}
             alt={item.name}
-            width={200}
-            height={200}
-            className="w-full h-full object-contain"
+            fill
+            sizes="(max-width: 640px) 50vw, 33vw"
+            className="object-contain"
             loading="lazy"
             onError={(e) =>
               ((e.target as HTMLImageElement).style.display = "none")
