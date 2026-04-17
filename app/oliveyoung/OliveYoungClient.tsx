@@ -8,6 +8,7 @@ import Image from "next/image";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { trackEvent } from "@/lib/analytics";
+import ShareButton from "@/components/ShareButton";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
 type SortKey = "rank" | "discount" | "price";
@@ -313,18 +314,29 @@ const Card = memo(function Card({ item }: { item: OliveYoungItem }) {
             </span>
           </p>
         </div>
-        {item.flags.length > 0 && (
-          <div className="flex flex-wrap gap-0.5 mt-1.5">
-            {item.flags.slice(0, 3).map((f) => (
-              <span
-                key={f}
-                className="text-[9px] px-1 py-0.5 rounded bg-[#F1F5F9] text-[#64748B] leading-none"
-              >
-                {f}
-              </span>
-            ))}
-          </div>
-        )}
+        <div className="flex items-center justify-between mt-1.5">
+          {item.flags.length > 0 && (
+            <div className="flex flex-wrap gap-0.5">
+              {item.flags.slice(0, 2).map((f) => (
+                <span
+                  key={f}
+                  className="text-[9px] px-1 py-0.5 rounded bg-[#F1F5F9] text-[#64748B] leading-none"
+                >
+                  {f}
+                </span>
+              ))}
+            </div>
+          )}
+          <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
+            <ShareButton
+              title={item.name}
+              description={`${item.brand} · ${fmt(item.salePrice)}원`}
+              imageUrl={item.imageUrl}
+              dealId={String(item.id)}
+              source="oliveyoung"
+            />
+          </span>
+        </div>
       </div>
     </a>
   );

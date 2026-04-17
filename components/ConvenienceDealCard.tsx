@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
+import ShareButton from "@/components/ShareButton";
 import { trackEvent } from "@/lib/analytics";
 
 const STORE_LINKS: Record<string, string> = {
@@ -94,16 +95,27 @@ export default function ConvenienceDealCard({
             )}
           </div>
 
-          {/* 정보 - 고정 높이 */}
-          <div className="p-2 h-[52px] flex flex-col justify-between">
+          {/* 정보 */}
+          <div className="p-2 h-[60px] flex flex-col justify-between">
             <p className="text-[11px] font-medium text-[#0F172A] leading-tight line-clamp-2">
               {name}
             </p>
-            {price && (
-              <p className="text-xs font-bold mt-auto" style={{ color }}>
-                {price}
-              </p>
-            )}
+            <div className="flex items-center justify-between mt-auto">
+              {price && (
+                <p className="text-xs font-bold" style={{ color }}>
+                  {price}
+                </p>
+              )}
+              <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
+                <ShareButton
+                  title={deal.title}
+                  description={`${price} · ${deal.discount} 행사`}
+                  imageUrl={deal.imageUrl}
+                  dealId={deal.id}
+                  source={deal.source}
+                />
+              </span>
+            </div>
           </div>
         </a>
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal } from "@/types/deal";
 import { trackEvent } from "@/lib/analytics";
+import ShareButton from "@/components/ShareButton";
 
 function getSearchUrl(deal: Deal): string {
   const source = SOURCE_LABELS[deal.source];
@@ -69,7 +70,18 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
           <span className="text-lg font-bold" style={{ color }}>
             {deal.discount}
           </span>
-          <span className="text-[11px] text-[#94A3B8]">{deal.brand}</span>
+          <div className="flex items-center gap-1">
+            <span className="text-[11px] text-[#94A3B8]">{deal.brand}</span>
+            <span onClick={(e) => e.preventDefault()}>
+              <ShareButton
+                title={deal.title}
+                description={deal.description}
+                imageUrl={deal.imageUrl}
+                dealId={deal.id}
+                source={deal.source}
+              />
+            </span>
+          </div>
         </div>
 
         {deal.dayOfWeek && (
