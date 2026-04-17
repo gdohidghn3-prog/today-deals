@@ -116,6 +116,7 @@ type OliveYoungData = {
   updatedAt: string | null;
   count: number;
   items: OliveYoungItem[];
+  categories?: string[];
 };
 
 function readStaticJson(): OliveYoungData | null {

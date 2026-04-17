@@ -14,6 +14,12 @@ export interface OliveYoungItem {
   imageUrl: string;
   link: string;
   flags: string[];
+  category?: string;
+}
+
+export interface OYCategory {
+  code: string;
+  label: string;
 }
 
 export interface BrowserHeadersOpts {
@@ -26,8 +32,9 @@ export const DISP_CAT: string;
 export const MIN_THRESHOLD: number;
 export const MAX_PAGES_BATCH: number;
 export const MAX_PAGES_RUNTIME: number;
+export const OY_CATEGORIES: OYCategory[];
 
-export function getBestUrl(pageIdx: number): string;
+export function getBestUrl(pageIdx: number, fltDispCatNo?: string): string;
 export function buildBrowserHeaders(
   opts?: BrowserHeadersOpts
 ): Record<string, string>;

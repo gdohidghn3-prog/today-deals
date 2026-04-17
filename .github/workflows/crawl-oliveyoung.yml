@@ -20,6 +20,7 @@ jobs:
 
       - name: Run oliveyoung crawl
         id: crawl
+        timeout-minutes: 5
         run: node scripts/crawl-oliveyoung.mjs
 
       - name: Upload debug HTML on failure
@@ -39,6 +40,7 @@ jobs:
               const j=JSON.parse(d);
               console.log('총:', j.count, '| 업데이트:', j.updatedAt);
               console.log('세일:', j.summary.sale, '쿠폰:', j.summary.coupon);
+              console.log('카테고리:', JSON.stringify(j.summary.categories));
             })
           "
 
