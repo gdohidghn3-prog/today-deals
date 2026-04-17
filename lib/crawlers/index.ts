@@ -59,32 +59,41 @@ export async function crawlAllConvenience(): Promise<Deal[]> {
 }
 
 /**
- * 통신사 혜택: SKT는 HTTP 크롤링, KT/LGU+는 data/telecom.json에서 로드
- * (GitHub Actions가 매일 Playwright로 크롤링 → JSON 커밋)
+ * 통신사 혜택: SKT/KT/LGU+ 통합
+ *
+ * 1순위: data/telecom.json (GitHub Actions 매일 09:00 KST 배치)
+ * 2순위: 런타임 fallback - JSON에 없는 source만 (SKT만 HTTP 가능)
  */
 export async function crawlAllTelecom(): Promise<Deal[]> {
   const deals: Deal[] = [];
+  const stats: Record<string, number> = { skt: 0, kt: 0, lgu: 0 };
 
-  // SKT: HTTP로 실시간 크롤링 (항상 가능)
+  // 1순위: 정적 JSON (GH Actions 매일 09:00 KST)
   try {
-    const skt = await crawlSKT();
-    deals.push(...skt);
-  } catch (e) {
-    console.error("[SKT] 크롤링 실패:", e);
-  }
-
-  // KT/LGU+: data/telecom.json에서 로드 (GitHub Actions가 매일 업데이트)
-  try {
-    const ktLgu = (telecomJson.deals as unknown as Deal[]).filter(
-      (d) => d.source === "kt" || d.source === "lgu"
-    );
-    deals.push(...ktLgu);
-    console.log(
-      `[Crawl] KT/LGU+ JSON 로드: ${ktLgu.length}개 (${telecomJson.updatedAt})`
-    );
+    const cached = (telecomJson.deals as unknown as Deal[]) ?? [];
+    for (const d of cached) {
+      if (d.source in stats) stats[d.source as keyof typeof stats]++;
+    }
+    deals.push(...cached);
   } catch {
-    console.log("[Crawl] KT/LGU+ JSON 로드 실패");
+    console.log("[Crawl] telecom.json 로드 실패");
   }
+
+  // 2순위: JSON에 없는 source만 런타임으로 보충
+  if (stats.skt === 0) {
+    try {
+      const skt = await crawlSKT();
+      deals.push(...skt);
+      stats.skt = skt.length;
+    } catch (e) {
+      console.error("[SKT] 런타임 fallback 실패:", e);
+    }
+  }
+
+  console.log(
+    `[Crawl] telecom: SKT=${stats.skt}, KT=${stats.kt}, LGU+=${stats.lgu} ` +
+    `(JSON updatedAt=${telecomJson.updatedAt})`
+  );
 
   return deals;
 }

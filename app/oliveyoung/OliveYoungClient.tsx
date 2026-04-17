@@ -138,10 +138,7 @@ export default function OliveYoungClient({
         {search && (
           <button
             type="button"
-            onClick={() => {
-              setSearch("");
-              inputRef.current?.focus();
-            }}
+            onClick={() => setSearch("")}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#64748B]"
             aria-label="검색어 지우기"
           >

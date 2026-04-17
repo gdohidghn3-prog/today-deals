@@ -24,7 +24,7 @@ export async function POST() {
     success: true,
     total: deals.length,
     summary,
+    updatedAt: new Date().toISOString(),
     elapsed: `${elapsed}ms`,
-    deals,
   });
 }

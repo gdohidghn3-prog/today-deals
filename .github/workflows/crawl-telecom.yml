@@ -5,9 +5,17 @@ on:
     - cron: "0 0 * * *" # 매일 09:00 KST (UTC 0:00)
   workflow_dispatch: # 수동 실행 가능
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -32,6 +40,45 @@ jobs:
             })
           "
 
+      - name: Validate per-source counts
+        run: |
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('data/telecom.json'));
+            const min = { skt: 10, kt: 100, lgu: 120 };
+            const fails = [];
+            for (const [k, v] of Object.entries(min)) {
+              if ((d.summary[k] || 0) < v) fails.push(k + ':' + (d.summary[k] || 0) + '<' + v);
+            }
+            if (fails.length) {
+              console.error('소스별 건수 미달:', fails.join(', '));
+              process.exit(1);
+            }
+            console.log('검증 통과:', JSON.stringify(d.summary));
+          "
+
+      - name: Merge-preserve on partial failure
+        if: failure()
+        run: |
+          node -e "
+            const fs = require('fs');
+            const cp = require('child_process');
+            const cur = JSON.parse(fs.readFileSync('data/telecom.json'));
+            let prev;
+            try { prev = JSON.parse(cp.execSync('git show HEAD:data/telecom.json').toString()); }
+            catch { console.log('이전 JSON 없음 — 스킵'); process.exit(0); }
+            const min = { skt: 10, kt: 100, lgu: 120 };
+            for (const [src, threshold] of Object.entries(min)) {
+              if ((cur.summary[src] || 0) < threshold) {
+                const prevDeals = prev.deals.filter(d => d.source === src);
+                cur.deals = cur.deals.filter(d => d.source !== src).concat(prevDeals);
+                cur.summary[src] = prevDeals.length;
+                console.log(src + ': 이전 데이터 복원 (' + prevDeals.length + '건)');
+              }
+            }
+            cur.count = cur.deals.length;
+            fs.writeFileSync('data/telecom.json', JSON.stringify(cur, null, 2));
+          "
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
@@ -39,3 +86,10 @@ jobs:
           git add data/telecom.json
           git diff --cached --quiet || git commit -m "data: 통신사 혜택 자동 업데이트 $(date +%Y-%m-%d)"
           git push
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
+            -d chat_id=${{ secrets.TG_CHAT_ID }} \
+            -d text="⚠️ [오늘혜택] ${{ github.workflow }} 실패 — $(date +%m/%d' '%H:%M)"

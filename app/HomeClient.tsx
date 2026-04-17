@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
-import { format } from "date-fns";
+import { format, differenceInHours, differenceInDays } from "date-fns";
 import { ko } from "date-fns/locale";
 import { Search, X } from "lucide-react";
 import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
@@ -14,11 +14,18 @@ const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
   { key: "lgu", label: "LGU+" },
 ];
 
-export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
+export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: Deal[]; updatedAt: string }) {
   const [telecom, setTelecom] = useState<TelecomType | "all">("all");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const today = new Date();
+  const updatedDate = new Date(updatedAt);
+  const updatedMonth = updatedDate.getMonth() + 1;
+  const updatedDay = updatedDate.getDate();
+  const updatedHour = updatedDate.getHours();
+  const hoursOld = differenceInHours(today, updatedDate);
+  const daysOld = differenceInDays(today, updatedDate);
+  const isStale = hoursOld >= 24;
 
   // 통신사 혜택만 필터
   const telecomDeals = useMemo(
@@ -47,9 +54,15 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">오늘혜택</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })} · 통신사 멤버십 혜택
+          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })} · 통신사 멤버십 혜택 · {updatedMonth}월 {updatedDay}일 {updatedHour}시 기준
         </p>
       </div>
+
+      {isStale && (
+        <div className="bg-[#FEF3C7] border border-[#FDE68A] rounded-xl p-3 mb-4 text-xs text-[#92400E]">
+          데이터가 최신이 아닐 수 있습니다 ({daysOld}일 전 기준)
+        </div>
+      )}
 
       {/* 통신사 필터 */}
       <div className="flex gap-2 mb-2">
@@ -97,10 +110,7 @@ export default function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
         {search && (
           <button
             type="button"
-            onClick={() => {
-              setSearch("");
-              inputRef.current?.focus();
-            }}
+            onClick={() => setSearch("")}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#64748B]"
             aria-label="검색어 지우기"
           >

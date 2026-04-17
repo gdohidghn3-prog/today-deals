@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useMemo, useRef } from "react";
+import { differenceInHours, differenceInDays } from "date-fns";
 import { Search, X } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/types/deal";
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
@@ -21,11 +22,19 @@ const DEAL_TYPES = [
   { key: "2+1", label: "2+1" },
 ];
 
-export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal[] }) {
+export default function ConvenienceClient({ initialDeals, updatedAt }: { initialDeals: Deal[]; updatedAt: string }) {
   const [activeStore, setActiveStore] = useState<StoreKey>("all");
   const [dealType, setDealType] = useState("all");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const now = new Date();
+  const updatedDate = new Date(updatedAt);
+  const updatedMonth = updatedDate.getMonth() + 1;
+  const updatedDay = updatedDate.getDate();
+  const updatedHour = updatedDate.getHours();
+  const hoursOld = differenceInHours(now, updatedDate);
+  const daysOld = differenceInDays(now, updatedDate);
+  const isStale = hoursOld >= 24;
 
   // 편의점별 카운트 (탭에 표시 + 표시 여부 판정)
   const storeCounts = useMemo(() => {
@@ -95,9 +104,15 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">편의점 행사</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          1+1, 2+1 행사 모아보기 · 총 {initialDeals.length}개
+          1+1, 2+1 행사 모아보기 · 총 {initialDeals.length}개 · {updatedMonth}월 {updatedDay}일 {updatedHour}시 기준
         </p>
       </div>
+
+      {isStale && (
+        <div className="bg-[#FEF3C7] border border-[#FDE68A] rounded-xl p-3 mb-4 text-xs text-[#92400E]">
+          데이터가 최신이 아닐 수 있습니다 ({daysOld}일 전 기준)
+        </div>
+      )}
 
       {/* 편의점 탭 (가로 스크롤 - 탭 늘어나도 안전) */}
       <div className="flex gap-2 mb-4 overflow-x-auto -mx-4 px-4 scrollbar-hide">
@@ -143,10 +158,7 @@ export default function ConvenienceClient({ initialDeals }: { initialDeals: Deal
         {search && (
           <button
             type="button"
-            onClick={() => {
-              setSearch("");
-              inputRef.current?.focus();
-            }}
+            onClick={() => setSearch("")}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#64748B] transition-colors"
             aria-label="검색어 지우기"
           >

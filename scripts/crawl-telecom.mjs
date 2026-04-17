@@ -326,6 +326,11 @@ async function main() {
   const all = [...skt, ...kt, ...lgu];
   const output = {
     updatedAt: new Date().toISOString(),
+    freshness: {
+      skt: skt.length > 0 ? new Date().toISOString() : null,
+      kt: kt.length > 0 ? new Date().toISOString() : null,
+      lgu: lgu.length > 0 ? new Date().toISOString() : null,
+    },
     count: all.length,
     summary: { skt: skt.length, kt: kt.length, lgu: lgu.length },
     deals: all,

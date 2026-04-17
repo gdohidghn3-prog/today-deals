@@ -5,9 +5,17 @@ on:
     - cron: "45 0 * * *" # 매일 09:45 KST (UTC 0:45)
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -44,6 +52,23 @@ jobs:
             })
           "
 
+      - name: Validate item counts
+        run: |
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('data/oliveyoung.json'));
+            const total = d.summary?.total || d.count || 0;
+            if (total < 100) {
+              console.error('총 아이템 수 미달: ' + total + ' < 100');
+              process.exit(1);
+            }
+            const cats = d.summary?.categories || {};
+            const emptyCats = Object.entries(cats).filter(([,v]) => v === 0).map(([k]) => k);
+            if (emptyCats.length > 0) {
+              console.warn('빈 카테고리:', emptyCats.join(', '));
+            }
+            console.log('검증 통과: total=' + total + ', 카테고리=' + Object.keys(cats).length + '개');
+          "
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
@@ -51,3 +76,10 @@ jobs:
           git add data/oliveyoung.json
           git diff --cached --quiet || git commit -m "data: 올리브영 랭킹 자동 업데이트 $(date +%Y-%m-%d)"
           git push
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
+            -d chat_id=${{ secrets.TG_CHAT_ID }} \
+            -d text="⚠️ [오늘혜택] ${{ github.workflow }} 실패 — $(date +%m/%d' '%H:%M)"
