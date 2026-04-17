@@ -22,6 +22,7 @@ import {
   extractCookies,
   parseListHtml,
   dedupeItems,
+  curlFetch,
   MAX_PAGES_BATCH,
   MIN_THRESHOLD,
 } from "../lib/crawlers/oliveyoung-shared.mjs";
@@ -48,14 +49,58 @@ function dumpDebug(name, content) {
   }
 }
 
-async function tryCrawl({ mobile }) {
-  const label = mobile ? "MOBILE" : "DESKTOP";
-  console.log(`\n[OliveYoung][${label}] 홈페이지 방문...`);
-
+/**
+ * @param {object} opts
+ * @param {boolean} [opts.mobile]
+ * @param {boolean} [opts.curl] - curl 사용 (Node.js fetch TLS 핑거프린트 차단 대비)
+ */
+async function tryCrawl({ mobile, curl: useCurl }) {
+  const label = useCurl
+    ? mobile ? "CURL_MOBILE" : "CURL_DESKTOP"
+    : mobile ? "MOBILE" : "DESKTOP";
   const baseHeaders = buildBrowserHeaders({ mobile });
+
+  // curl 모드: 쿠키/홈 방문 불필요 → curlFetch로 직접 랭킹 요청
+  if (useCurl) {
+    console.log(`\n[OliveYoung][${label}] curl로 랭킹 직접 요청...`);
+    const collected = [];
+    let lastStatus = 0;
+    for (let page = 1; page <= MAX_PAGES_BATCH; page++) {
+      const startRank = (page - 1) * 100 + 1;
+      console.log(`[OliveYoung][${label}] 랭킹 페이지 ${page} 요청...`);
+
+      const { status, body } = await curlFetch(getBestUrl(page), {
+        ...baseHeaders,
+        Referer: HOME_URL,
+      });
+      lastStatus = status;
+      console.log(`[OliveYoung][${label}] page=${page} status=${status}`);
+
+      if (status !== 200 || !body) {
+        if (body) dumpDebug(`rank-${label}-p${page}-${status}`, body.slice(0, 50000));
+        break;
+      }
+
+      const pageItems = parseListHtml(body, startRank);
+      if (pageItems.length === 0) {
+        console.log(`[OliveYoung][${label}] page=${page} 결과 0개 → 종료`);
+        if (page === 1) dumpDebug(`rank-${label}-p1-empty`, body.slice(0, 50000));
+        break;
+      }
+
+      collected.push(...pageItems);
+      console.log(
+        `[OliveYoung][${label}] page=${page} 수집=${pageItems.length}개 (누적 ${collected.length})`
+      );
+      if (page < MAX_PAGES_BATCH) await sleep(500);
+    }
+    return { items: dedupeItems(collected), lastStatus, label };
+  }
+
+  // Node.js fetch 모드 (폴백)
+  console.log(`\n[OliveYoung][${label}] 홈페이지 방문...`);
   let cookie = "";
   let homeStatus = 0;
-
   try {
     const homeRes = await fetch(HOME_URL, {
       headers: { ...baseHeaders, "Sec-Fetch-Site": "none" },
@@ -64,7 +109,6 @@ async function tryCrawl({ mobile }) {
     if (homeRes.ok) {
       cookie = extractCookies(homeRes);
     } else {
-      // 디버그용으로 본문 일부 저장 (Cloudflare 차단 페이지 등)
       const text = await homeRes.text().catch(() => "");
       dumpDebug(`home-${label}-${homeRes.status}`, text.slice(0, 50000));
     }
@@ -74,11 +118,11 @@ async function tryCrawl({ mobile }) {
   console.log(
     `[OliveYoung][${label}] home=${homeStatus} 쿠키=${cookie ? "획득" : "없음"}`
   );
-
   if (homeStatus !== 200) {
-    return { items: [], lastStatus: homeStatus, label };
+    console.log(
+      `[OliveYoung][${label}] home 차단됨, best 페이지 직접 시도 (Referer만)`
+    );
   }
-
   await sleep(700);
 
   const collected = [];
@@ -114,9 +158,7 @@ async function tryCrawl({ mobile }) {
     const pageItems = parseListHtml(html, startRank);
 
     if (pageItems.length === 0) {
-      // 빈 페이지면 더 진행해도 의미 없음 → 즉시 종료
       console.log(`[OliveYoung][${label}] page=${page} 결과 0개 → 종료`);
-      // 첫 페이지가 0개이면 셀렉터 변경 의심 → 디버그 저장
       if (page === 1) {
         dumpDebug(`rank-${label}-p1-empty`, html.slice(0, 50000));
       }
@@ -137,14 +179,24 @@ async function tryCrawl({ mobile }) {
 }
 
 async function main() {
-  // 1차: 데스크톱
-  let result = await tryCrawl({ mobile: false });
+  // 1차: curl + 데스크톱 UA (Cloudflare TLS 핑거프린트 통과)
+  let result = await tryCrawl({ curl: true });
 
-  // 1차 실패(빈 결과) → 2차: 모바일
+  // 2차: curl + 모바일 UA
   if (result.items.length === 0) {
-    console.log(
-      "\n[OliveYoung] 데스크톱 결과 0개 → 모바일 UA로 재시도"
-    );
+    console.log("\n[OliveYoung] curl 데스크톱 결과 0개 → curl 모바일로 재시도");
+    result = await tryCrawl({ curl: true, mobile: true });
+  }
+
+  // 3차: Node.js fetch 데스크톱 (curl 없는 환경 대비)
+  if (result.items.length === 0) {
+    console.log("\n[OliveYoung] curl 실패 → Node.js fetch 데스크톱으로 재시도");
+    result = await tryCrawl({ mobile: false });
+  }
+
+  // 4차: Node.js fetch 모바일
+  if (result.items.length === 0) {
+    console.log("\n[OliveYoung] fetch 데스크톱 실패 → fetch 모바일로 재시도");
     result = await tryCrawl({ mobile: true });
   }
 

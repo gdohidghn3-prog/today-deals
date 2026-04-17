@@ -7,6 +7,7 @@ import {
   extractCookies,
   parseListHtml,
   dedupeItems,
+  curlFetch,
   MAX_PAGES_RUNTIME,
   MIN_THRESHOLD,
   type OliveYoungItem,
@@ -21,21 +22,53 @@ export type { OliveYoungItem };
  * 헤더/파싱은 oliveyoung-shared.mjs와 단일 소스로 공유.
  * 페이지 수는 MAX_PAGES_RUNTIME(1)로 제한 - 런타임 응답시간 보호.
  *
- * 데스크톱 UA → 403이면 모바일 UA로 1회 재시도.
+ * curl + 데스크톱 UA → curl 모바일 → fetch 데스크톱 → fetch 모바일 순으로 시도.
  */
 export async function crawlOliveYoung(): Promise<OliveYoungItem[]> {
-  // 우선 데스크톱 → 실패 시 모바일
-  let items = await tryCrawl({ mobile: false });
-  if (items.length === 0) {
-    items = await tryCrawl({ mobile: true });
-  }
+  // 1차: curl + 데스크톱 UA (Cloudflare TLS 핑거프린트 통과)
+  let items = await tryCrawl({ curl: true });
+  if (items.length > 0) return items;
+  // 2차: curl + 모바일
+  items = await tryCrawl({ curl: true, mobile: true });
+  if (items.length > 0) return items;
+  // 3차: fetch 데스크톱 (curl 없는 환경 대비)
+  items = await tryCrawl({ mobile: false });
+  if (items.length > 0) return items;
+  // 4차: fetch 모바일
+  items = await tryCrawl({ mobile: true });
   return items;
 }
 
-async function tryCrawl(opts: { mobile: boolean }): Promise<OliveYoungItem[]> {
-  const headers = buildBrowserHeaders(opts);
+async function tryCrawl(opts: {
+  mobile?: boolean;
+  curl?: boolean;
+}): Promise<OliveYoungItem[]> {
+  const headers = buildBrowserHeaders({ mobile: opts.mobile });
 
-  // 1단계: 메인 페이지 방문 → 쿠키 획득
+  // curl 모드: Cloudflare TLS 핑거프린트 통과
+  if (opts.curl) {
+    const collected: OliveYoungItem[] = [];
+    for (let page = 1; page <= MAX_PAGES_RUNTIME; page++) {
+      try {
+        const startRank = (page - 1) * 100 + 1;
+        const { status, body } = await curlFetch(getBestUrl(page), {
+          ...headers,
+          Referer: HOME_URL,
+        });
+        if (status !== 200 || !body) break;
+        const pageItems = parseListHtml(body, startRank);
+        if (pageItems.length === 0) break;
+        collected.push(...pageItems);
+      } catch {
+        break;
+      }
+    }
+    const unique = dedupeItems(collected);
+    if (unique.length < MIN_THRESHOLD) return [];
+    return unique;
+  }
+
+  // Node.js fetch 모드 (폴백)
   let cookie = "";
   try {
     const homeRes = await fetch(HOME_URL, {
@@ -49,7 +82,6 @@ async function tryCrawl(opts: { mobile: boolean }): Promise<OliveYoungItem[]> {
     // 쿠키 획득 실패 → 그래도 시도
   }
 
-  // 2단계: 페이지 1만 (런타임)
   const collected: OliveYoungItem[] = [];
   for (let page = 1; page <= MAX_PAGES_RUNTIME; page++) {
     try {
@@ -63,7 +95,7 @@ async function tryCrawl(opts: { mobile: boolean }): Promise<OliveYoungItem[]> {
         },
         next: { revalidate: 21600 },
       });
-      if (!res.ok) break; // 한 페이지라도 실패하면 중단
+      if (!res.ok) break;
       const html = await res.text();
       const pageItems = parseListHtml(html, startRank);
       if (pageItems.length === 0) break;
@@ -74,9 +106,6 @@ async function tryCrawl(opts: { mobile: boolean }): Promise<OliveYoungItem[]> {
   }
 
   const unique = dedupeItems(collected);
-
-  // 최소 임계치 미달 → 비정상 응답으로 간주, 빈 배열 반환
-  // 호출자가 fallback(다른 모드/캐시)을 결정할 수 있도록 함
   if (unique.length < MIN_THRESHOLD) return [];
   return unique;
 }

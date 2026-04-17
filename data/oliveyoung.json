@@ -1,10 +1,1610 @@
 {
-  "updatedAt": null,
-  "count": 0,
+  "updatedAt": "2026-04-17T04:00:09.977Z",
+  "count": 100,
   "summary": {
-    "total": 0,
-    "sale": 0,
-    "coupon": 0
+    "total": 100,
+    "sale": 85,
+    "coupon": 65
   },
-  "items": []
+  "items": [
+    {
+      "id": "A000000252045",
+      "rank": 1,
+      "brand": "넛세린",
+      "name": "[NEW]넛세린 아로마 넛 괄사 세럼 60ml 단품/기획 3종 택1",
+      "salePrice": 23900,
+      "origPrice": 35000,
+      "discountRate": 32,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025204507ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000252045&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=1",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000147782",
+      "rank": 2,
+      "brand": "딜라이트 프로젝트",
+      "name": "딜라이트 프로젝트 프레첼 3종 택1",
+      "salePrice": 2160,
+      "origPrice": 2400,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014778242ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000147782&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=2",
+      "flags": [
+        "2+1",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000180532",
+      "rank": 3,
+      "brand": "웨이크메이크",
+      "name": "[4월 올영픽/헬로키티 블랙에디션] 웨이크메이크 소프트 블러링 아이팔레트",
+      "salePrice": 23500,
+      "origPrice": 34000,
+      "discountRate": 31,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A000000180532213ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000180532&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=3",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000223414",
+      "rank": 4,
+      "brand": "메디힐",
+      "name": "[15년 연속 1위] 메디힐 에센셜 마스크팩 10+1/10매 기획 7종 골라담기",
+      "salePrice": 10000,
+      "origPrice": 20000,
+      "discountRate": 50,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A000000223414107ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223414&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=4",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250346",
+      "rank": 5,
+      "brand": "아이오페",
+      "name": "[4월올영픽/파워물광] 아이오페 XMD 스템3 클리니컬 리커버리 세럼 23ml 기획 (+세럼 15ml+크림 5ml)",
+      "salePrice": 34800,
+      "origPrice": 47000,
+      "discountRate": 26,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025034609ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250346&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=5",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000235179",
+      "rank": 6,
+      "brand": "성분에디터",
+      "name": "[4월 올영픽/물광리프팅] 성분에디터 실크펩타이드 EGF 하트핏 볼륨 리프팅 앰플 40ml 더블기획",
+      "salePrice": 21900,
+      "origPrice": 43000,
+      "discountRate": 49,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023517939ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000235179&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=6",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000244742",
+      "rank": 7,
+      "brand": "레고트",
+      "name": "레고트 루프 텀블러 멀티 600ml 주토피아2 콜라보 어워즈 한정기획 (+텀꾸 스티커)",
+      "salePrice": 22500,
+      "origPrice": 45000,
+      "discountRate": 50,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024474214ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000244742&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=7",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000222833",
+      "rank": 8,
+      "brand": "에스트라",
+      "name": "[4월 올영픽][2025어워즈1위] 에스트라 아토베리어365 크림 80ml 기획 (+하이드로 에센스25ml+앰플7ml)",
+      "salePrice": 25900,
+      "origPrice": 33000,
+      "discountRate": 22,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022283326ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222833&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=8",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000171427",
+      "rank": 9,
+      "brand": "메디힐",
+      "name": "[1위패드] 메디힐 더마 패드 200매 대용량 기획 세트 7종 골라담기",
+      "salePrice": 28900,
+      "origPrice": 39900,
+      "discountRate": 28,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A000000171427216ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171427&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=9",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000252115",
+      "rank": 10,
+      "brand": "웨이크메이크",
+      "name": "[4월 올영픽]웨이크메이크 헬로키티 블랙 에디션 30종 골라담기(단품/기획)",
+      "salePrice": 11000,
+      "origPrice": 13000,
+      "discountRate": 15,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025211501ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000252115&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=10",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000229501",
+      "rank": 11,
+      "brand": "팁토우",
+      "name": "[NEW/단독기획/리뷰이벤트] 팁토우 글로윗 소르베 틴트 20 Colors (+키링 증정)",
+      "salePrice": 13900,
+      "origPrice": 18000,
+      "discountRate": 23,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022950129ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229501&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=11",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000231574",
+      "rank": 12,
+      "brand": "딜라이트 프로젝트",
+      "name": "딜라이트 프로젝트 단백질쉐이크 모음전 (파우치/대용량/통)",
+      "salePrice": 3900,
+      "origPrice": null,
+      "discountRate": null,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023157434ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000231574&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=12",
+      "flags": [
+        "1+1",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "B000000252969",
+      "rank": 13,
+      "brand": "라보",
+      "name": "라보 난소나이 분석 패키지 BASIC (AMH 단독)",
+      "salePrice": 57800,
+      "origPrice": 72000,
+      "discountRate": 20,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/B00000025296907ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000252969&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=13",
+      "flags": [
+        "쿠폰",
+        "무배"
+      ]
+    },
+    {
+      "id": "A000000232394",
+      "rank": 14,
+      "brand": "비브리브",
+      "name": "비브리브 꼬박꼬밥 고단저당 40g 6종 택1",
+      "salePrice": 3900,
+      "origPrice": null,
+      "discountRate": null,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023239403ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232394&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=14",
+      "flags": [
+        "1+1",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000189261",
+      "rank": 15,
+      "brand": "토리든",
+      "name": "[1위 속보습세럼/단독기획] 토리든 다이브인 저분자 히알루론산 세럼 50ml 리필기획(+리필팩 50ml)",
+      "salePrice": 25650,
+      "origPrice": 36000,
+      "discountRate": 29,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018926138ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189261&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=15",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000251856",
+      "rank": 16,
+      "brand": "힐그리즈",
+      "name": "[NEW] 힐그리즈 레티노이드 0.1% 퍼밍 바디 세럼 150ml",
+      "salePrice": 39900,
+      "origPrice": 45000,
+      "discountRate": 11,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025185601ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000251856&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=16",
+      "flags": [
+        "세일"
+      ]
+    },
+    {
+      "id": "A000000227660",
+      "rank": 17,
+      "brand": "넛세린",
+      "name": "넛세린 아로마 넛 슬림핏 괄사 세럼 60ml 단품/기획(+30ml 증정)",
+      "salePrice": 23900,
+      "origPrice": 35000,
+      "discountRate": 32,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022766022ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227660&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=17",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000232672",
+      "rank": 18,
+      "brand": "메디힐",
+      "name": "[양현종 Pick/1+1]메디힐 마데카소사이드 수분 선세럼 흔적 리페어 50+50g 기획",
+      "salePrice": 22900,
+      "origPrice": 34900,
+      "discountRate": 34,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023267235ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232672&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=18",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000234422",
+      "rank": 19,
+      "brand": "메노킨",
+      "name": "[30ml 추가증정/4월 올영픽]메노킨 30초 퀵 버블 마스크 95ml 6종 중 택1",
+      "salePrice": 24200,
+      "origPrice": 28500,
+      "discountRate": 15,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023442231ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000234422&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=19",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250474",
+      "rank": 20,
+      "brand": "에스네이처",
+      "name": "[1+1+역대급증정/4월올영픽/모공수분천재크림] 에스네이처 아쿠아 스쿠알란 수분크림 60ml 더블기획 (+파우치키링)",
+      "salePrice": 22300,
+      "origPrice": 43000,
+      "discountRate": 48,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025047495ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250474&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=20",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000224296",
+      "rank": 21,
+      "brand": "좋은느낌",
+      "name": "좋은느낌 유기농100%순면 라이너 7종 택 1 (일반/롱/수퍼롱/맥시롱)",
+      "salePrice": 5100,
+      "origPrice": 7000,
+      "discountRate": 27,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022429635ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000224296&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=21",
+      "flags": [
+        "1+1",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000222215",
+      "rank": 22,
+      "brand": "피지오겔",
+      "name": "[4월올영픽/이사배Pick] 피지오겔 DMT 페이셜크림 100ml+100ml 더블기획",
+      "salePrice": 24900,
+      "origPrice": 55000,
+      "discountRate": 55,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022221527ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222215&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=22",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "B000000252971",
+      "rank": 23,
+      "brand": "라보",
+      "name": "라보 난소나이 비타민D 복합 분석 패키지 (AMH+비타민D 복합)",
+      "salePrice": 76800,
+      "origPrice": 106200,
+      "discountRate": 28,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/B00000025297108ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000252971&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=23",
+      "flags": [
+        "쿠폰",
+        "무배"
+      ]
+    },
+    {
+      "id": "A000000231589",
+      "rank": 24,
+      "brand": "제로이드",
+      "name": "[온라인단독/대용량] 제로이드 수딩 크림 80ml 기획 (+50ml)",
+      "salePrice": 30900,
+      "origPrice": 38000,
+      "discountRate": 19,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023158907ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000231589&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=24",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000233408",
+      "rank": 25,
+      "brand": "딜라이트 프로젝트",
+      "name": "[NEW] 딜라이트 프로젝트 파스타칩 3종 택1",
+      "salePrice": 3150,
+      "origPrice": 3500,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023340823ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000233408&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=25",
+      "flags": [
+        "2+1",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249280",
+      "rank": 26,
+      "brand": "티블레스",
+      "name": "[엑스트레 드 퍼퓸] 티블레스 퍼퓸 30ml 3종 중 택 1",
+      "salePrice": 37900,
+      "origPrice": 44900,
+      "discountRate": 16,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024928009ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249280&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=26",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000213943",
+      "rank": 27,
+      "brand": "연작",
+      "name": "[4월올영픽/10ml 증정기획] 연작 스킨 퍼펙팅 프로텍티브 베이스 프렙 25ml/40ml",
+      "salePrice": 26950,
+      "origPrice": 33000,
+      "discountRate": 18,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021394372ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213943&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=27",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000225938",
+      "rank": 28,
+      "brand": "고려은단",
+      "name": "고려은단 비타민C1000 600정 (20개월분)",
+      "salePrice": 42900,
+      "origPrice": null,
+      "discountRate": null,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022593803ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225938&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=28",
+      "flags": [
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000223554",
+      "rank": 29,
+      "brand": "멜라메이트",
+      "name": "식물성 멜라토닌 함유 멜라메이트 구미/로우슈가 구미 20구미",
+      "salePrice": 8900,
+      "origPrice": 13000,
+      "discountRate": 32,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022355405ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223554&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=29",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000139063",
+      "rank": 30,
+      "brand": "정샘물",
+      "name": "[NEW쿨컬러출시/맑은윤광쿠션] 정샘물 에센셜 스킨 누더 쿠션/본품+리필",
+      "salePrice": 37400,
+      "origPrice": 48000,
+      "discountRate": 22,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A000000139063161ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000139063&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=30",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250790",
+      "rank": 31,
+      "brand": "민티드",
+      "name": "[4월 올영픽]민티드 프리미엄 고체치약 90정 기획 (+미니케이스)",
+      "salePrice": 8900,
+      "origPrice": 11900,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025079006ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250790&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=31",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250445",
+      "rank": 32,
+      "brand": "무지개맨션",
+      "name": "[4월올영픽/뽀용뇽 공동개발] 무지개맨션 오브제 스테인 틴트",
+      "salePrice": 13500,
+      "origPrice": 18000,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025044582ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250445&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=32",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000171423",
+      "rank": 33,
+      "brand": "어노브",
+      "name": "[4년 연속 1위] 어노브 딥 데미지 헤어 트리트먼트 EX 320ml 더블/듀오 기획",
+      "salePrice": 29800,
+      "origPrice": 42000,
+      "discountRate": 29,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A000000171423130ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171423&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=33",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000213569",
+      "rank": 34,
+      "brand": "코링코",
+      "name": "[1등 속눈썹/또렷눈매] 코링코 톡톡하라 노글루 속눈썹 12종 택1",
+      "salePrice": 13900,
+      "origPrice": 20000,
+      "discountRate": 31,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021356929ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213569&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=34",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250098",
+      "rank": 35,
+      "brand": "라로슈포제",
+      "name": "[4월 올영픽] 라로슈포제 시카플라스트 멀티 리페어 크림 100ml 기획 (+시카에센스 7.5ml)",
+      "salePrice": 41600,
+      "origPrice": 52000,
+      "discountRate": 20,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025009806ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250098&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=35",
+      "flags": [
+        "세일",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249348",
+      "rank": 36,
+      "brand": "바이오던스",
+      "name": "[7+1매] 바이오던스 리얼 딥 마스크 7+1매 기획 (콜라겐/세라놀/씨켈프)",
+      "salePrice": 29400,
+      "origPrice": 35000,
+      "discountRate": 16,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024934814ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249348&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=36",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000223388",
+      "rank": 37,
+      "brand": "좋은느낌",
+      "name": "[NEW] 좋은느낌 유기농100%순면 생리대 (소/중/대/수퍼롱)",
+      "salePrice": 6720,
+      "origPrice": 9200,
+      "discountRate": 27,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022338822ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223388&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=37",
+      "flags": [
+        "1+1",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000186409",
+      "rank": 38,
+      "brand": "블랑네이처",
+      "name": "[여드름 기능성/피지케어] 블랑네이처 아크네 클렌징 폼 단품/기획",
+      "salePrice": 21400,
+      "origPrice": 23800,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018640937ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000186409&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=38",
+      "flags": [
+        "세일",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249797",
+      "rank": 39,
+      "brand": "비플레인",
+      "name": "[4월올영픽/말끔모공] 비플레인 녹두 약산성 클렌징폼 160ml 더블 기획",
+      "salePrice": 23900,
+      "origPrice": 26000,
+      "discountRate": 8,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024979705ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249797&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=39",
+      "flags": [
+        "세일",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000230854",
+      "rank": 40,
+      "brand": "리덴스",
+      "name": "[잡티/미백] 리덴스 톤앤스팟 코렉터 앰플 30ml 더블기획",
+      "salePrice": 22020,
+      "origPrice": 39900,
+      "discountRate": 45,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023085429ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230854&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=40",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000225003",
+      "rank": 41,
+      "brand": "아떼",
+      "name": "[4/17 아떼 선케어 단 하루 특가] 화잘먹 선에센스/안심피부 무기자차 /톤업 선 에센스",
+      "salePrice": 12900,
+      "origPrice": 34000,
+      "discountRate": 62,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022500352ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225003&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=41",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000208162",
+      "rank": 42,
+      "brand": "딜라이트 프로젝트",
+      "name": "딜라이트 프로젝트 단백질쉐이크 45g 8종 택1",
+      "salePrice": 3900,
+      "origPrice": null,
+      "discountRate": null,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020816251ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000208162&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=42",
+      "flags": [
+        "1+1",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000235247",
+      "rank": 43,
+      "brand": "웰라쥬",
+      "name": "[카니PICK/속건조필수템] 웰라쥬 리얼 히알루로닉 블루 100 앰플 75ml 더블 기획 (+마스크1매)",
+      "salePrice": 29900,
+      "origPrice": 50000,
+      "discountRate": 40,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023524719ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000235247&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=43",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000199182",
+      "rank": 44,
+      "brand": "투쿨포스쿨",
+      "name": "[4월 올영픽/스테이셔너리 컬렉션] 투쿨포스쿨 스머징 트임 라이너 (단품/파우치증정 더블기획)",
+      "salePrice": 8800,
+      "origPrice": 12000,
+      "discountRate": 27,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019918230ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000199182&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=44",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000225475",
+      "rank": 45,
+      "brand": "토리든",
+      "name": "[대용량] 토리든 히알루론산 다이브인 마스크 20매",
+      "salePrice": 28500,
+      "origPrice": 60000,
+      "discountRate": 53,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022547503ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225475&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=45",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000248829",
+      "rank": 46,
+      "brand": "이옴",
+      "name": "[트러블 스케일링] 이옴 트러블 패치 마스크 3매",
+      "salePrice": 14700,
+      "origPrice": 21000,
+      "discountRate": 30,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024882901ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248829&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=46",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249619",
+      "rank": 47,
+      "brand": "디어달리아",
+      "name": "[NEW/이슬광글로스] 디어달리아 드레시 듀 립젤",
+      "salePrice": 15300,
+      "origPrice": 18000,
+      "discountRate": 15,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024961909ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249619&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=47",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250243",
+      "rank": 48,
+      "brand": "어반디케이",
+      "name": "[4월올영픽/리뉴얼/단독선런칭] 어반디케이 올나이터 메이크업 세팅 픽서 118ml/30ml 3종 (기획/단품)",
+      "salePrice": 33840,
+      "origPrice": 47000,
+      "discountRate": 28,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025024321ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250243&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=48",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000232081",
+      "rank": 49,
+      "brand": "제로이드",
+      "name": "[4월 올영픽]제로이드 포밍 클렌저 240ml 기획(+ 리필 240ml)",
+      "salePrice": 32900,
+      "origPrice": 43000,
+      "discountRate": 23,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023208111ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232081&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=49",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000230208",
+      "rank": 50,
+      "brand": "이니스프리",
+      "name": "[1+1/깐달걀피부결] 이니스프리 레티놀 시카 흔적 앰플 30ml 더블 기획",
+      "salePrice": 26900,
+      "origPrice": 52000,
+      "discountRate": 48,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023020857ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230208&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=50",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250773",
+      "rank": 51,
+      "brand": "넘버즈인",
+      "name": "[4월올영픽/화잘먹] 넘버즈인 3번 보들보들 모공결 세럼 30ml 더블 기획",
+      "salePrice": 21700,
+      "origPrice": 42000,
+      "discountRate": 48,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025077316ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250773&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=51",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000231639",
+      "rank": 52,
+      "brand": "베러데이",
+      "name": "[치아미백] 칸디데 화이트케어 치약 100g",
+      "salePrice": 11500,
+      "origPrice": 13000,
+      "discountRate": 12,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023163902ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000231639&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=52",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000174309",
+      "rank": 53,
+      "brand": "홀리카홀리카",
+      "name": "[NEW젤테일] 홀리카홀리카 마이페이브 피스 아이섀도우/젤테일/피스 빔/피스 밤",
+      "salePrice": 4800,
+      "origPrice": 6000,
+      "discountRate": 20,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017430960ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000174309&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=53",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000243677",
+      "rank": 54,
+      "brand": "피지오겔",
+      "name": "[4월올영픽/비타민앰플] 피지오겔 사이언수티컬즈 데일리뮨 앰플 20ml+20ml 더블기획",
+      "salePrice": 49900,
+      "origPrice": 78000,
+      "discountRate": 36,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024367742ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000243677&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=54",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000117541",
+      "rank": 55,
+      "brand": "우르오스",
+      "name": "[베스트 올인원]우르오스 올인원 200ml 2종 택 1(증정기획/단품)",
+      "salePrice": 22900,
+      "origPrice": 29700,
+      "discountRate": 23,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0011/A00000011754150ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000117541&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=55",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000234394",
+      "rank": 56,
+      "brand": "얼터너티브스테레오",
+      "name": "[인보라 공동개발/단독기획] 얼터너티브스테레오 립 포션 카라멜 글레이즈 8ml",
+      "salePrice": 16500,
+      "origPrice": 19000,
+      "discountRate": 13,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023439473ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000234394&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=56",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000230821",
+      "rank": 57,
+      "brand": "라곰",
+      "name": "[4월 올영픽/수분민감] 라곰 셀럽 마이크로 폼 클렌저 2종 택 1",
+      "salePrice": 22500,
+      "origPrice": 29000,
+      "discountRate": 22,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023082139ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230821&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=57",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000206904",
+      "rank": 58,
+      "brand": "라로슈포제",
+      "name": "라로슈포제 시카플라스트 밤 B5+ 100ml 기획 (+3ml 추가증정)",
+      "salePrice": 36900,
+      "origPrice": 41000,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020690407ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206904&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=58",
+      "flags": [
+        "세일",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250253",
+      "rank": 59,
+      "brand": "아이소이",
+      "name": "[4월올영픽/포카이벤트] 아이소이 브라이트닝 카밍 스팟 세럼 총 70ml 대용량 리필 기획",
+      "salePrice": 21370,
+      "origPrice": 37500,
+      "discountRate": 43,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025025330ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250253&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=59",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000226081",
+      "rank": 60,
+      "brand": "바이오더마",
+      "name": "[4월 올영픽] 바이오더마 하이드라비오 토너 500ml  기획(+250ml 증정)",
+      "salePrice": 26900,
+      "origPrice": 38000,
+      "discountRate": 29,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022608114ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000226081&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=60",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000238536",
+      "rank": 61,
+      "brand": "딜라이트 프로젝트",
+      "name": "딜라이트 프로젝트 파스타칩/감자부각 5종 택1",
+      "salePrice": 3150,
+      "origPrice": 3500,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023853628ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000238536&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=61",
+      "flags": [
+        "2+1",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000248226",
+      "rank": 62,
+      "brand": "아비브",
+      "name": "[4월 한정/1+1/파데프리톤업] 아비브 글루타치온좀 CC 선크림 토닝 튜브 50ml 더블 기획",
+      "salePrice": 24610,
+      "origPrice": 37000,
+      "discountRate": 33,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024822613ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248226&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=62",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000217765",
+      "rank": 63,
+      "brand": "일리윤",
+      "name": "[4월올영픽] 일리윤 세라마이드 아토 로션 몬치치 한정에디션(600ml+한정 굿즈 기획)",
+      "salePrice": 21900,
+      "origPrice": 31900,
+      "discountRate": 31,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021776523ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000217765&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=63",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000210417",
+      "rank": 64,
+      "brand": "헤브블루",
+      "name": "[증정기획] 헤브블루 살몬 PDRN 센텔라 크림 100ml 기획 (+연어 토너 25ml)",
+      "salePrice": 26800,
+      "origPrice": 39900,
+      "discountRate": 33,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021041716ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210417&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=64",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000222698",
+      "rank": 65,
+      "brand": "아누아",
+      "name": "[단독기획] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30mL 기획 (+30mL 리필팩)",
+      "salePrice": 27500,
+      "origPrice": 58500,
+      "discountRate": 53,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022269816ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222698&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=65",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000211119",
+      "rank": 66,
+      "brand": "메디힐",
+      "name": "[장도연 PICK/1+1] 메디힐 마데카소사이드 흔적 리페어 세럼 40+40ml 더블 기획",
+      "salePrice": 22900,
+      "origPrice": 36900,
+      "discountRate": 38,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021111987ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000211119&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=66",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249162",
+      "rank": 67,
+      "brand": "라네즈",
+      "name": "[4월 올영픽/리필+실버파우치 증정] 라네즈 네오 쿠션 더 매트 15g",
+      "salePrice": 23500,
+      "origPrice": 30000,
+      "discountRate": 22,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024916211ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249162&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=67",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000199701",
+      "rank": 68,
+      "brand": "바이오힐보",
+      "name": "[탄력보습크림| 어워즈 수상] 바이오힐보 프로바이오덤 3D 리프팅 크림 50ml [단품/리필 기획]",
+      "salePrice": 38900,
+      "origPrice": 70200,
+      "discountRate": 45,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019970167ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000199701&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=68",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000138671",
+      "rank": 69,
+      "brand": "페리페라",
+      "name": "페리페라 스피디 스키니 브로우 8 Colors",
+      "salePrice": 5700,
+      "origPrice": 6000,
+      "discountRate": 5,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013867145ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000138671&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=69",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000198343",
+      "rank": 70,
+      "brand": "클리오",
+      "name": "[NO.1 아이라이너] 클리오 샤프 쏘 심플 워터프루프 펜슬라이너 단품/더블기획",
+      "salePrice": 7700,
+      "origPrice": 11000,
+      "discountRate": 30,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019834322ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198343&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=70",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000238525",
+      "rank": 71,
+      "brand": "바이오가",
+      "name": "[대용량] 바이오가 등드름 바디워시 베타인살리실레이트 1000ml 기획(+바디미스트 20ml)",
+      "salePrice": 22190,
+      "origPrice": 25500,
+      "discountRate": 13,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023852530ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000238525&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=71",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000219553",
+      "rank": 72,
+      "brand": "구달",
+      "name": "[1등 선크림/화잘먹] 구달 맑은 어성초 진정 수분 선크림 50ml 1+1 기획",
+      "salePrice": 18900,
+      "origPrice": 22000,
+      "discountRate": 14,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021955342ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000219553&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=72",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000167236",
+      "rank": 73,
+      "brand": "페리페라",
+      "name": "[NEW 컬러 출시] 페리페라 스피디 스키니 브로우 마스카라 10 Colors (단품/더블기획)",
+      "salePrice": 7600,
+      "origPrice": 8000,
+      "discountRate": 5,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016723666ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000167236&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=73",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000222703",
+      "rank": 74,
+      "brand": "아누아",
+      "name": "[화해1위/수분광채크림] 아누아 피디알엔 히알루론산 100 수분 크림 60mL 기획 (+30mL)",
+      "salePrice": 19500,
+      "origPrice": 32000,
+      "discountRate": 39,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022270314ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222703&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=74",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000212749",
+      "rank": 75,
+      "brand": "프레시안",
+      "name": "[New컬러] 프레시안 에그라이크 크림 블러셔",
+      "salePrice": 20700,
+      "origPrice": 23000,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021274999ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212749&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=75",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000232536",
+      "rank": 76,
+      "brand": "VT",
+      "name": "[단이 PICK/아이크림/눈가탄력] VT 피디알엔 리들샷 아이 리프터 15ml",
+      "salePrice": 19500,
+      "origPrice": 42000,
+      "discountRate": 54,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023253611ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232536&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=76",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000130319",
+      "rank": 77,
+      "brand": "바이오더마",
+      "name": "[4월 올영픽] 바이오더마 센시비오 H2O 850ml(클렌징워터)",
+      "salePrice": 24500,
+      "origPrice": 37500,
+      "discountRate": 35,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013031983ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000130319&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=77",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000248430",
+      "rank": 78,
+      "brand": "블랑네이처",
+      "name": "[세정력2배/장벽보호] 블랑네이처 버블 클렌징밀크 150ml",
+      "salePrice": 22800,
+      "origPrice": 28900,
+      "discountRate": 21,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024843010ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248430&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=78",
+      "flags": [
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000162114",
+      "rank": 79,
+      "brand": "쏘내추럴",
+      "name": "[4월 올영픽 한정기획] 쏘내추럴 올 데이 타이트 메이크업 세팅 픽서 120ml 더블기획 (120ml+120ml)",
+      "salePrice": 31420,
+      "origPrice": 42000,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016211435ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000162114&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=79",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000202777",
+      "rank": 80,
+      "brand": "헤라",
+      "name": "[프리미엄 1위] 헤라 블랙 쿠션 파운데이션 기획 (15g+15g)",
+      "salePrice": 66600,
+      "origPrice": 74000,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020277782ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202777&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=80",
+      "flags": [
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249969",
+      "rank": 81,
+      "brand": "셀라딕스",
+      "name": "[드래곤길들이기 콜라보] 셀라딕스 세범 리밸런싱 RX 131 앰플 30ml 기획 + 랜덤 키링 1종 증정",
+      "salePrice": 25400,
+      "origPrice": 28900,
+      "discountRate": 12,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024996905ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249969&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=81",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000246568",
+      "rank": 82,
+      "brand": "톰",
+      "name": "[최미나수PICK/1등 물방울 초음파] 톰 더 글로우 시그니처 크림베이지",
+      "salePrice": 389500,
+      "origPrice": 599000,
+      "discountRate": 35,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024656814ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000246568&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=82",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000219555",
+      "rank": 83,
+      "brand": "아비브",
+      "name": "아비브 어성초 흔적 에센스 패드 클리어터치 70매 리필기획 (+70매 리필)",
+      "salePrice": 26600,
+      "origPrice": 40000,
+      "discountRate": 34,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021955554ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000219555&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=83",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000182700",
+      "rank": 84,
+      "brand": "뮤드",
+      "name": "[NEW/1+1기획] 뮤드 스키니컬링/멀티픽서 마스카라",
+      "salePrice": 16200,
+      "origPrice": 18000,
+      "discountRate": 10,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018270079ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182700&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=84",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000249613",
+      "rank": 85,
+      "brand": "디어달리아",
+      "name": "[NEW/물먹광틴트] 디어달리아 드레시 글로우 틴트",
+      "salePrice": 15300,
+      "origPrice": 18000,
+      "discountRate": 15,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024961310ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249613&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=85",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000248098",
+      "rank": 86,
+      "brand": "스킨푸드",
+      "name": "[망곰 콜라보/1+1한정기획] 스킨푸드 패드 더블기획 2종(+망곰 얼굴파우치) (당근/복숭아)",
+      "salePrice": 25800,
+      "origPrice": 42000,
+      "discountRate": 39,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0024/A00000024809805ko.png?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248098&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=86",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000238828",
+      "rank": 87,
+      "brand": "디어달리아",
+      "name": "[NEW컬러/2025어워즈] 페탈 드롭 리퀴드 블러쉬 (단품/기획)",
+      "salePrice": 20190,
+      "origPrice": 25000,
+      "discountRate": 19,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023882809ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000238828&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=87",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000209917",
+      "rank": 88,
+      "brand": "제로이드",
+      "name": "[민감피부 추천 무기자차] 제로이드 데일리 선크림 50ml",
+      "salePrice": 24300,
+      "origPrice": 32000,
+      "discountRate": 24,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020991705ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000209917&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=88",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000171848",
+      "rank": 89,
+      "brand": "일리윤",
+      "name": "[4년연속1위] 일리윤 세라마이드 아토 로션기획(600ML+600ML)",
+      "salePrice": 35900,
+      "origPrice": 53900,
+      "discountRate": 33,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017184821ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171848&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=89",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "B000000229045",
+      "rank": 90,
+      "brand": "GNM자연의품격",
+      "name": "GNM 미오 이노시톨 콜린 4000 30포X2박스(2개월분) /엽산",
+      "salePrice": 28900,
+      "origPrice": 37900,
+      "discountRate": 24,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/B00000022904524ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000229045&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=90",
+      "flags": [
+        "쿠폰"
+      ]
+    },
+    {
+      "id": "A000000140618",
+      "rank": 91,
+      "brand": "코스노리",
+      "name": "[1등속눈썹영양제] 코스노리 아이래쉬 세럼 비건 속눈썹영양제 9g (클리어/블랙)",
+      "salePrice": 13400,
+      "origPrice": 18000,
+      "discountRate": 26,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A000000140618133ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000140618&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=91",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000237596",
+      "rank": 92,
+      "brand": "좋은느낌",
+      "name": "좋은느낌 센서티브스킨 생리대 6종 택1(중형/대형/라이너 롱/입는 오버나이트)",
+      "salePrice": 6550,
+      "origPrice": 8700,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023759620ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000237596&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=92",
+      "flags": [
+        "1+1",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000165598",
+      "rank": 93,
+      "brand": "토리든",
+      "name": "[더블기획/1+1] 토리든 다이브인 히알루론산 수딩 크림 더블기획 (100ml+100ml)",
+      "salePrice": 31500,
+      "origPrice": 42000,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016559833ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165598&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=93",
+      "flags": [
+        "세일",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000006565",
+      "rank": 94,
+      "brand": "우르오스",
+      "name": "우르오스 올인원 스킨밀크 200ml 증정기획/단품",
+      "salePrice": 22900,
+      "origPrice": 29700,
+      "discountRate": 23,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0000/A00000000656527ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000006565&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=94",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250328",
+      "rank": 95,
+      "brand": "피노",
+      "name": "[올영픽 /젤리 헤어팩]피노 프리미엄 터치 헤어 마스크 230g 더블 기획",
+      "salePrice": 19400,
+      "origPrice": 28000,
+      "discountRate": 31,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025032827ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250328&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=95",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000145650",
+      "rank": 96,
+      "brand": "투쿨포스쿨",
+      "name": "[4월 올영픽/손주희 PICK] 투쿨포스쿨 바이로댕 쉐이딩 (듀라이트스틱 기획/단품)",
+      "salePrice": 11900,
+      "origPrice": 16000,
+      "discountRate": 26,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A000000145650141ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145650&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=96",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000250472",
+      "rank": 97,
+      "brand": "에스트라",
+      "name": "[4월 올영픽] 에스트라 에이시카365 리페어크림 pH4.5 60ml  (+크림 20ml+마스크 2매)",
+      "salePrice": 20300,
+      "origPrice": 30000,
+      "discountRate": 32,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0025/A00000025047212ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000250472&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=97",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "증정",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000182947",
+      "rank": 98,
+      "brand": "아도르",
+      "name": "[단독기획/미니증정] 아도르 퍼퓸 헤어 오일 80ml 기획 5종 택1",
+      "salePrice": 26200,
+      "origPrice": 32000,
+      "discountRate": 18,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018294734ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182947&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=98",
+      "flags": [
+        "세일",
+        "쿠폰",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000200646",
+      "rank": 99,
+      "brand": "브링그린",
+      "name": "[3일 집중진정]브링그린 징크테카 트러블 세럼 (콜라보/대용량기획)",
+      "salePrice": 29800,
+      "origPrice": 56100,
+      "discountRate": 47,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020064679ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200646&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=99",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    },
+    {
+      "id": "A000000172122",
+      "rank": 100,
+      "brand": "아일로",
+      "name": "[아이린 Pick] 아일로 타입1 콜라겐 비오틴 앰플 8+2/28입 (10/28일분)",
+      "salePrice": 23900,
+      "origPrice": 32000,
+      "discountRate": 25,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017212212ko.jpg?l=ko",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000172122&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=랭킹&t_click=판매랭킹_전체_상품상세&t_number=100",
+      "flags": [
+        "세일",
+        "오늘드림"
+      ]
+    }
+  ]
 }

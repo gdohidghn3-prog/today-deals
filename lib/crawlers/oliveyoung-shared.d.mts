@@ -37,3 +37,7 @@ export function parseListHtml(
   startRank?: number
 ): OliveYoungItem[];
 export function dedupeItems(items: OliveYoungItem[]): OliveYoungItem[];
+export function curlFetch(
+  url: string,
+  headers?: Record<string, string>
+): Promise<{ status: number; body: string }>;
