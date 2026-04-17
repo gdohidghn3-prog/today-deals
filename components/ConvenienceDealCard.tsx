@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
+import { trackEvent } from "@/lib/analytics";
 
 const STORE_LINKS: Record<string, string> = {
   cu: "https://cu.bgfretail.com/event/plus.do",
@@ -59,6 +60,7 @@ export default function ConvenienceDealCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackEvent("deal_click", { source: deal.source, brand: deal.brand })}
           className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
         >
           {/* 이미지 - 고정 비율 */}

@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import type { Deal } from "@/types/deal";
+import { stableId } from "./stable-id";
 
 export async function crawlSKT(): Promise<Deal[]> {
   const start = Date.now();
@@ -72,7 +73,7 @@ export async function crawlSKT(): Promise<Deal[]> {
       else if (/이마트|롯데마트|올리브영|마트/.test(n)) category = "shopping";
 
       deals.push({
-        id: `skt-${i}`,
+        id: stableId("skt", brandName, `${brandName} ${discount.includes("%") ? discount + " 할인" : discount}`, discount),
         source: "skt",
         category,
         title: `${brandName} ${discount.includes("%") ? discount + " 할인" : discount}`,

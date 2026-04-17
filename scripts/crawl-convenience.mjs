@@ -12,6 +12,9 @@ import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { stableId } from "./lib/stable-id.mjs";
+import { pickBest, scoreConvenience } from "./lib/best-picks.mjs";
+import { trackHistory } from "./lib/history-tracker.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, "..", "data", "convenience.json");
@@ -68,7 +71,7 @@ async function crawlSeven() {
           pageCount++;
 
           deals.push({
-            id: `seven-${label.replace("+", "")}-p${page}-${i}`,
+            id: stableId("seven", name, `${name} ${label}`, label),
             source: "seven",
             category: "convenience",
             title: `${name} ${label}`,
@@ -132,7 +135,7 @@ async function crawlEmart24() {
           pageCount++;
 
           deals.push({
-            id: `emart24-${label.replace("+", "")}-p${page}-${i}`,
+            id: stableId("emart24", name, `${name} ${label}`, label),
             source: "emart24",
             category: "convenience",
             title: `${name} ${label}`,
@@ -202,7 +205,7 @@ async function crawlCU() {
           pageCount++;
 
           deals.push({
-            id: `cu-${label.replace("+", "")}-p${page}-${i}`,
+            id: stableId("cu", name, `${name} ${label}`, label),
             source: "cu",
             category: "convenience",
             title: `${name} ${label}`,
@@ -315,7 +318,7 @@ async function crawlGS25() {
           const price = typeof item.price === "number" ? item.price : null;
 
           deals.push({
-            id: `gs25-${label.replace("+", "")}-${i}`,
+            id: stableId("gs25", name, `${name} ${label}`, label),
             source: "gs25",
             category: "convenience",
             title: `${name} ${label}`,
@@ -417,10 +420,16 @@ async function main() {
     emart24: emart24U.length || preserved.emart24,
   };
 
+  const best = pickBest(all, scoreConvenience);
+
+  // 이력 추적 (JSON 저장 전에 이전 데이터와 비교)
+  trackHistory(DATA_PATH, all, "convenience");
+
   const output = {
     updatedAt: new Date().toISOString(),
     count: all.length,
     summary,
+    best,
     deals: all,
   };
 

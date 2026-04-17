@@ -12,11 +12,25 @@ export const metadata: Metadata = {
 
 export default async function OliveYoungPage() {
   const { items, updatedAt, categories } = await getOliveYoungCached();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "올리브영 랭킹 · 세일",
+    numberOfItems: items.length,
+  };
+
   return (
-    <OliveYoungClient
-      initialItems={items}
-      updatedAt={updatedAt}
-      categories={categories ?? []}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <OliveYoungClient
+        initialItems={items}
+        updatedAt={updatedAt}
+        categories={categories ?? []}
+      />
+    </>
   );
 }

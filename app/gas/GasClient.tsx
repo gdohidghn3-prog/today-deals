@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { MapPin, Loader2, TrendingUp, TrendingDown, Search, X } from "lucide-react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 // ─── 상수 ───────────────────────────────────────────────
 
@@ -131,8 +132,8 @@ export default function GasClient({
   initialAvg: AvgItem[];
   updatedAt: string;
 }) {
-  const [prod, setProd] = useState<ProdKey>("B027");
-  const [sido, setSido] = useState<string>("01");
+  const [prod, setProd] = useLocalStorage<ProdKey>("pref:fuel", "B027");
+  const [sido, setSido] = useLocalStorage<string>("pref:sido", "01");
   const [sidoAvg, setSidoAvg] = useState<SidoAvgItem[]>([]);
   const [top10, setTop10] = useState<Top10Item[]>([]);
   const [aroundStations, setAroundStations] = useState<Top10Item[] | null>(null);

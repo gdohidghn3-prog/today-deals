@@ -12,6 +12,9 @@ import * as cheerio from "cheerio";
 import { writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { stableId } from "./lib/stable-id.mjs";
+import { pickBest, scoreTelecom } from "./lib/best-picks.mjs";
+import { trackHistory } from "./lib/history-tracker.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, "..", "data", "telecom.json");
@@ -101,7 +104,7 @@ async function crawlSKT() {
     const allGrades = [...new Set(benefits.flatMap((b) => b.grades))];
 
     deals.push({
-      id: `skt-${i}`,
+      id: stableId("skt", brand, `${brand} ${discount.includes("%") ? discount + " 할인" : discount}`, discount),
       source: "skt",
       category: categorize(brand),
       title: `${brand} ${discount.includes("%") ? discount + " 할인" : discount}`,
@@ -214,7 +217,7 @@ async function crawlKT() {
     const discount = extractDiscount(main.desc);
     const allGrades = [...new Set(p.benefits.map((b) => b.grade).filter(Boolean))];
     return {
-      id: `kt-${i}`,
+      id: stableId("kt", p.brand, `${p.brand} ${discount.includes("%") || discount.includes("원") ? discount + " 할인" : discount}`, discount),
       source: "kt",
       category: categorize(p.brand),
       title: `${p.brand} ${discount.includes("%") || discount.includes("원") ? discount + " 할인" : discount}`,
@@ -324,6 +327,11 @@ async function main() {
   });
 
   const all = [...skt, ...kt, ...lgu];
+  const best = pickBest(all, scoreTelecom);
+
+  // 이력 추적 (JSON 저장 전에 이전 데이터와 비교)
+  trackHistory(DATA_PATH, all, "telecom");
+
   const output = {
     updatedAt: new Date().toISOString(),
     freshness: {
@@ -333,6 +341,7 @@ async function main() {
     },
     count: all.length,
     summary: { skt: skt.length, kt: kt.length, lgu: lgu.length },
+    best,
     deals: all,
   };
 

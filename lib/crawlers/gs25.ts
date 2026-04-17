@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import type { Deal } from "@/types/deal";
+import { stableId } from "./stable-id";
 
 interface GS25Product {
   goodsNm: string;
@@ -59,7 +60,7 @@ export async function crawlGS25(): Promise<Deal[]> {
         if (!item.goodsNm) return;
 
         deals.push({
-          id: `gs25-${label.replace("+", "")}-${i}`,
+          id: stableId("gs25", item.goodsNm, `${item.goodsNm} ${label}`, label),
           source: "gs25",
           category: "convenience",
           title: `${item.goodsNm} ${label}`,

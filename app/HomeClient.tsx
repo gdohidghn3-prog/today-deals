@@ -6,6 +6,8 @@ import { ko } from "date-fns/locale";
 import { Search, X } from "lucide-react";
 import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
 import DealCard from "@/components/DealCard";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { trackEvent } from "@/lib/analytics";
 
 const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
   { key: "all", label: "전체" },
@@ -15,7 +17,7 @@ const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
 ];
 
 export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: Deal[]; updatedAt: string }) {
-  const [telecom, setTelecom] = useState<TelecomType | "all">("all");
+  const [telecom, setTelecom] = useLocalStorage<TelecomType | "all">("pref:telecom", "all");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const today = new Date();
@@ -69,7 +71,7 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
         {TELECOM_OPTIONS.map((opt) => (
           <button
             key={opt.key}
-            onClick={() => setTelecom(opt.key)}
+            onClick={() => { setTelecom(opt.key); trackEvent("filter_change", { tab: "telecom", value: opt.key }); }}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               telecom === opt.key
                 ? "bg-[#FF6B35] text-white"
@@ -104,6 +106,7 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          onBlur={() => { if (search.trim()) trackEvent("search", { query: search.trim(), count: filteredDeals.length }); }}
           placeholder="브랜드/혜택 검색 (예: 스타벅스, CGV)"
           className="w-full pl-9 pr-9 py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#CBD5E1] focus:outline-none focus:border-[#94A3B8] transition-colors"
         />

@@ -5,6 +5,7 @@ import { differenceInHours, differenceInDays } from "date-fns";
 import { Search, X } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/types/deal";
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 type StoreKey = "all" | DealSource;
 
@@ -23,7 +24,7 @@ const DEAL_TYPES = [
 ];
 
 export default function ConvenienceClient({ initialDeals, updatedAt }: { initialDeals: Deal[]; updatedAt: string }) {
-  const [activeStore, setActiveStore] = useState<StoreKey>("all");
+  const [activeStore, setActiveStore] = useLocalStorage<StoreKey>("pref:store", "all");
   const [dealType, setDealType] = useState("all");
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);

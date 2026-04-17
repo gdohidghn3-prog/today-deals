@@ -1,10 +1,13 @@
 "use client";
 
-import { memo, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
+import Image from "next/image";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { trackEvent } from "@/lib/analytics";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
 type SortKey = "rank" | "discount" | "price";
@@ -39,10 +42,16 @@ export default function OliveYoungClient({
   categories: string[];
 }) {
   const [filter, setFilter] = useState<FilterKey>("all");
-  const [category, setCategory] = useState("전체");
+  const [category, setCategory] = useLocalStorage("pref:oy-category", "전체");
   const [sort, setSort] = useState<SortKey>("rank");
   const [search, setSearch] = useState("");
+  const [visibleCount, setVisibleCount] = useState(50);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Reset visible count when filters change
+  useEffect(() => {
+    setVisibleCount(50);
+  }, [filter, category, sort, search]);
 
   // 카테고리 탭 목록: "전체" + 서버에서 받은 공식 카테고리
   const categoryTabs = useMemo(
@@ -221,11 +230,21 @@ export default function OliveYoungClient({
             : "조건에 맞는 상품이 없습니다."}
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {items.map((item) => (
-            <Card key={`${item.id}-${item.category}`} item={item} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {items.slice(0, visibleCount).map((item) => (
+              <Card key={`${item.id}-${item.category}`} item={item} />
+            ))}
+          </div>
+          {visibleCount < items.length && (
+            <button
+              onClick={() => setVisibleCount(c => c + 50)}
+              className="w-full py-3 mt-3 rounded-xl bg-white border border-[#E2E8F0] text-sm font-medium text-[#64748B] hover:border-[#CBD5E1] transition-colors"
+            >
+              더보기 ({items.length - visibleCount}개 남음)
+            </button>
+          )}
+        </>
       )}
 
       <p className="text-[10px] text-[#CBD5E1] text-center mt-6 leading-relaxed">
@@ -244,18 +263,18 @@ const Card = memo(function Card({ item }: { item: OliveYoungItem }) {
       href={item.link}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent("deal_click", { source: "oliveyoung", brand: item.brand })}
       className="block bg-white border border-[#E2E8F0] rounded-xl overflow-hidden hover:shadow-md transition-shadow"
     >
       <div className="relative w-full aspect-square bg-[#F8FAFC]">
         {item.imageUrl ? (
-          <img
+          <Image
             src={item.imageUrl}
             alt={item.name}
             width={200}
             height={200}
             className="w-full h-full object-contain"
             loading="lazy"
-            decoding="async"
             onError={(e) =>
               ((e.target as HTMLImageElement).style.display = "none")
             }

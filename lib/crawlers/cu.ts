@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import type { Deal } from "@/types/deal";
+import { stableId } from "./stable-id";
 
 export async function crawlCU(): Promise<Deal[]> {
   const start = Date.now();
@@ -37,7 +38,7 @@ export async function crawlCU(): Promise<Deal[]> {
         if (!name) return;
 
         deals.push({
-          id: `cu-${label.replace("+", "")}-${i}`,
+          id: stableId("cu", name, `${name} ${label}`, label),
           source: "cu",
           category: "convenience",
           title: `${name} ${label}`,

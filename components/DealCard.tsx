@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal } from "@/types/deal";
+import { trackEvent } from "@/lib/analytics";
 
 function getSearchUrl(deal: Deal): string {
   const source = SOURCE_LABELS[deal.source];
@@ -22,9 +23,10 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
       transition={{ duration: 0.25, delay: index * 0.03 }}
     >
       <a
-        href={searchUrl}
+        href={deal.link || searchUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackEvent("deal_click", { source: deal.source, brand: deal.brand })}
         className={`block bg-white border rounded-xl p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer ${
           isHot ? "border-[#F59E0B] ring-1 ring-[#F59E0B]/20" : "border-[#E2E8F0]"
         }`}
@@ -48,7 +50,16 @@ export default function DealCard({ deal, index = 0 }: { deal: Deal; index?: numb
               </span>
             )}
           </div>
-          <Search size={14} className="text-[#94A3B8] shrink-0" />
+          <a
+            href={searchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-[#94A3B8] shrink-0 hover:text-[#64748B] transition-colors"
+            aria-label="네이버 검색"
+          >
+            <Search size={14} />
+          </a>
         </div>
 
         <h3 className="font-semibold text-[#0F172A] text-sm mb-1">{deal.title}</h3>
