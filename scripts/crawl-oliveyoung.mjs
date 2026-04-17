@@ -266,7 +266,7 @@ async function main() {
     const cat = OY_CATEGORIES[i];
     const items = await crawlCategory(cat.code, cat.label);
     allCategoryItems.push(...items);
-    if (i < OY_CATEGORIES.length - 1) await sleep(3000); // Cloudflare rate limit 방지
+    if (i < OY_CATEGORIES.length - 1) await sleep(5000); // Cloudflare rate limit 방지 (여유 있게)
   }
 
   console.log(`\n[OliveYoung] 카테고리별 수집 합계: ${allCategoryItems.length}개`);
