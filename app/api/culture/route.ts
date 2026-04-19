@@ -8,7 +8,7 @@ const SEOUL_KEY = process.env.SEOUL_OPENAPI_KEY || "sample";
 const TOUR_KEY = process.env.DATA_GO_KR_API_KEY || "";
 const SEOUL_BASE = "http://openapi.seoul.go.kr:8088";
 const TOUR_BASE = "https://apis.data.go.kr/B551011/KorService1";
-const CULTURE_BASE = "http://www.culture.go.kr/openapi/rest/publicperformancedisplays";
+const CULTURE_BASE = "https://apis.data.go.kr/B553457/cultureinfo";
 
 export type CultureEvent = {
   id: string;
@@ -216,10 +216,10 @@ async function fetchCulture(): Promise<CultureEvent[]> {
         serviceKey: TOUR_KEY,
         from,
         to,
-        cPage: String(page),
-        rows: "100",
+        PageNo: String(page),
+        numOfrows: "100",
       });
-      const url = `${CULTURE_BASE}/period?${params}`;
+      const url = `${CULTURE_BASE}/period2?${params}`;
       const res = await fetch(url, {
         next: { revalidate: 21600 },
         signal: AbortSignal.timeout(8000),
@@ -230,7 +230,7 @@ async function fetchCulture(): Promise<CultureEvent[]> {
       }
       const xml = await res.text();
       const $ = cheerio.load(xml, { xmlMode: true });
-      const items = $("perforList");
+      const items = $("item");
       if (items.length === 0) break;
 
       items.each((_, el) => {
@@ -268,6 +268,9 @@ async function fetchCulture(): Promise<CultureEvent[]> {
         });
       });
 
+      // totalCount 기반 종료 또는 결과 부족 시 종료
+      const totalCount = parseInt($("totalCount").text() || "0", 10);
+      if (totalCount > 0 && page * 100 >= totalCount) break;
       if (items.length < 100) break;
     } catch (e) {
       console.warn("[culture-kr api] fetch failed:", e instanceof Error ? e.message : e);
