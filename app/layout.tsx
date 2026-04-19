@@ -39,13 +39,6 @@ export default function RootLayout({
         <Disclaimer />
         <BottomNav />
         <Analytics />
-        {process.env.NEXT_PUBLIC_KAKAO_JS_KEY && (
-          <script
-            src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
-            crossOrigin="anonymous"
-            async
-          />
-        )}
         <script dangerouslySetInnerHTML={{ __html: `
           if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js').catch(() => {});

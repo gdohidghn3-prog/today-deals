@@ -6,7 +6,6 @@ import { MapPin } from "lucide-react";
 import Link from "next/link";
 import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
-import ShareButton from "@/components/ShareButton";
 import { trackEvent } from "@/lib/analytics";
 
 function cleanName(raw: string): string {
@@ -97,15 +96,6 @@ export default function ConvenienceDealCard({
                   {price}
                 </p>
               )}
-              <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
-                <ShareButton
-                  title={deal.title}
-                  description={`${price} · ${deal.discount} 행사`}
-                  imageUrl={deal.imageUrl}
-                  dealId={deal.id}
-                  source={deal.source}
-                />
-              </span>
             </div>
           </div>
         </Link>

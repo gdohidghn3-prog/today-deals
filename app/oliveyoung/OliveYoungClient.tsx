@@ -8,7 +8,6 @@ import Image from "next/image";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { trackEvent } from "@/lib/analytics";
-import ShareButton from "@/components/ShareButton";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
 type SortKey = "rank" | "discount" | "price";
@@ -327,15 +326,6 @@ const Card = memo(function Card({ item }: { item: OliveYoungItem }) {
               ))}
             </div>
           )}
-          <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
-            <ShareButton
-              title={item.name}
-              description={`${item.brand} · ${fmt(item.salePrice)}원`}
-              imageUrl={item.imageUrl}
-              dealId={String(item.id)}
-              source="oliveyoung"
-            />
-          </span>
         </div>
       </div>
     </a>
