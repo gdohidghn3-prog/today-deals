@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { Search, MapPin, Calendar, X } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Search, MapPin, Calendar, X, Filter } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ type CultureEvent = {
   id: string;
   title: string;
   category: string;
-  gu: string;
+  region: string;
   place: string;
   date: string;
   startDate: string;
@@ -23,11 +23,11 @@ type CultureEvent = {
   lat: number | null;
   lng: number | null;
   time: string;
+  source: "seoul" | "tour";
 };
 
 type FeeFilter = "all" | "free" | "paid";
-
-const BRAND = "#7C3AED";
+type TimeFilter = "all" | "ongoing" | "upcoming" | "thisweek";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "전시/미술": "#E74C3C",
@@ -40,11 +40,14 @@ const CATEGORY_COLORS: Record<string, string> = {
   "축제-시민화합": "#FF5722",
   "축제-자연/경관": "#4CAF50",
   "축제-전통/역사": "#795548",
+  "축제/행사": "#FF9800",
   "기타": "#607D8B",
   "교육/체험": "#00BCD4",
   "독주/독창회": "#9C27B0",
   "영화": "#F44336",
   "연극": "#3F51B5",
+  "공연/행사": "#673AB7",
+  "체육대회": "#009688",
 };
 
 function getCatColor(cat: string): string {
@@ -58,6 +61,15 @@ function isOngoing(event: CultureEvent): boolean {
   return start <= now && end >= now;
 }
 
+function isThisWeek(event: CultureEvent): boolean {
+  const now = new Date();
+  const weekEnd = new Date(now);
+  weekEnd.setDate(weekEnd.getDate() + (7 - weekEnd.getDay()));
+  const start = new Date(event.startDate);
+  const end = new Date(event.endDate);
+  return (start <= weekEnd && end >= now);
+}
+
 function formatDateRange(date: string): string {
   if (!date) return "";
   return date.replace(/~/g, " ~ ");
@@ -66,14 +78,19 @@ function formatDateRange(date: string): string {
 export default function CultureClient() {
   const [events, setEvents] = useState<CultureEvent[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
+  const [regions, setRegions] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
+  const [sources, setSources] = useState<{ seoul: number; tour: number }>({ seoul: 0, tour: 0 });
 
   const [selectedCat, setSelectedCat] = useState("전체");
-  const [feeFilter, setFeeFilter] = useState<FeeFilter>("free");
+  const [selectedRegion, setSelectedRegion] = useState("전체");
+  const [feeFilter, setFeeFilter] = useState<FeeFilter>("all");
+  const [timeFilter, setTimeFilter] = useState<TimeFilter>("ongoing");
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(30);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -83,7 +100,9 @@ export default function CultureClient() {
         if (data.error) throw new Error(data.error);
         setEvents(data.events ?? []);
         setCategories(data.categories ?? []);
+        setRegions(data.regions ?? []);
         setUpdatedAt(data.updatedAt);
+        setSources(data.sources ?? { seoul: 0, tour: 0 });
       })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
@@ -91,29 +110,46 @@ export default function CultureClient() {
 
   useEffect(() => {
     setVisibleCount(30);
-  }, [selectedCat, feeFilter, search]);
+  }, [selectedCat, selectedRegion, feeFilter, timeFilter, search]);
 
   const filtered = useMemo(() => {
     let list = events;
+
+    // 시간 필터
+    if (timeFilter === "ongoing") list = list.filter(isOngoing);
+    if (timeFilter === "upcoming") {
+      const now = new Date();
+      list = list.filter((e) => new Date(e.startDate) > now);
+    }
+    if (timeFilter === "thisweek") list = list.filter(isThisWeek);
+
+    // 무료/유료
     if (feeFilter === "free") list = list.filter((e) => e.isFree);
     if (feeFilter === "paid") list = list.filter((e) => !e.isFree);
+
+    // 카테고리
     if (selectedCat !== "전체") list = list.filter((e) => e.category === selectedCat);
+
+    // 지역
+    if (selectedRegion !== "전체") list = list.filter((e) => e.region.startsWith(selectedRegion));
+
+    // 검색
     if (search.trim()) {
       const q = search.trim().toLowerCase();
       list = list.filter(
         (e) =>
           e.title.toLowerCase().includes(q) ||
           e.place.toLowerCase().includes(q) ||
-          e.gu.toLowerCase().includes(q)
+          e.region.toLowerCase().includes(q) ||
+          e.category.toLowerCase().includes(q) ||
+          e.fee.toLowerCase().includes(q) ||
+          e.target.toLowerCase().includes(q)
       );
     }
     return list;
-  }, [events, feeFilter, selectedCat, search]);
+  }, [events, feeFilter, timeFilter, selectedCat, selectedRegion, search]);
 
   const visible = filtered.slice(0, visibleCount);
-
-  const freeCount = useMemo(() => events.filter((e) => e.isFree).length, [events]);
-  const paidCount = useMemo(() => events.filter((e) => !e.isFree).length, [events]);
 
   if (loading) {
     return (
@@ -142,37 +178,82 @@ export default function CultureClient() {
     <main className="max-w-3xl mx-auto px-4 pt-6 pb-24">
       {/* 헤더 */}
       <div className="mb-4">
-        <h1 className="text-xl font-bold text-[#1A1A2E]">무료 문화행사</h1>
+        <h1 className="text-xl font-bold text-[#1A1A2E]">문화행사</h1>
         <p className="text-xs text-[#94A3B8] mt-1">
-          서울시 문화행사 · 전시 · 공연 · 축제
+          전시 · 공연 · 축제 · 콘서트
+          {sources.tour > 0 && ` · 서울 ${sources.seoul}건 + 전국 ${sources.tour}건`}
+          {sources.tour === 0 && events.length > 0 && ` · ${events.length}건`}
           {updatedAt && ` · ${new Date(updatedAt).toLocaleDateString("ko-KR")} 기준`}
         </p>
       </div>
 
-      {/* 무료/유료 필터 */}
-      <div className="flex gap-2 mb-3">
+      {/* 시간 필터 */}
+      <div className="flex gap-1.5 mb-2 overflow-x-auto scrollbar-hide">
         {([
-          { key: "free" as FeeFilter, label: "무료", count: freeCount },
-          { key: "paid" as FeeFilter, label: "유료", count: paidCount },
-          { key: "all" as FeeFilter, label: "전체", count: events.length },
+          { key: "ongoing" as TimeFilter, label: "진행중" },
+          { key: "thisweek" as TimeFilter, label: "이번주" },
+          { key: "upcoming" as TimeFilter, label: "예정" },
+          { key: "all" as TimeFilter, label: "전체" },
         ]).map((opt) => (
           <button
             key={opt.key}
             onClick={() => {
-              setFeeFilter(opt.key);
-              trackEvent("filter_change", { tab: "culture", value: opt.key });
+              setTimeFilter(opt.key);
+              trackEvent("filter_change", { tab: "culture_time", value: opt.key });
             }}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              feeFilter === opt.key
+            className={`whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              timeFilter === opt.key
                 ? "bg-[#7C3AED] text-white"
-                : "bg-white border border-[#E2E8F0] text-[#64748B] hover:border-[#7C3AED] hover:text-[#7C3AED]"
+                : "bg-white border border-[#E2E8F0] text-[#64748B]"
             }`}
           >
             {opt.label}
-            <span className="ml-1 text-[11px] opacity-80">{opt.count}</span>
+          </button>
+        ))}
+        <span className="border-l border-[#E2E8F0] mx-1" />
+        {([
+          { key: "all" as FeeFilter, label: "전체" },
+          { key: "free" as FeeFilter, label: "무료" },
+          { key: "paid" as FeeFilter, label: "유료" },
+        ]).map((opt) => (
+          <button
+            key={`fee-${opt.key}`}
+            onClick={() => {
+              setFeeFilter(opt.key);
+              trackEvent("filter_change", { tab: "culture_fee", value: opt.key });
+            }}
+            className={`whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              feeFilter === opt.key
+                ? "bg-[#10B981] text-white"
+                : "bg-white border border-[#E2E8F0] text-[#64748B]"
+            }`}
+          >
+            {opt.label}
           </button>
         ))}
       </div>
+
+      {/* 지역 필터 */}
+      {regions.length > 1 && (
+        <div className="flex gap-1.5 mb-2 overflow-x-auto scrollbar-hide pb-1">
+          {["전체", ...regions].map((r) => (
+            <button
+              key={r}
+              onClick={() => {
+                setSelectedRegion(r);
+                trackEvent("filter_change", { tab: "culture_region", value: r });
+              }}
+              className={`whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                selectedRegion === r
+                  ? "bg-[#3B82F6] text-white"
+                  : "bg-white border border-[#E2E8F0] text-[#64748B]"
+              }`}
+            >
+              {r}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* 카테고리 필터 */}
       <div className="flex gap-1.5 mb-3 overflow-x-auto scrollbar-hide pb-1">
@@ -201,15 +282,19 @@ export default function CultureClient() {
           className="absolute left-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none"
         />
         <input
+          ref={inputRef}
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="행사명, 장소, 지역 검색..."
+          onBlur={() => {
+            if (search.trim()) trackEvent("search", { query: search.trim(), tab: "culture", count: filtered.length });
+          }}
+          placeholder="행사명, 장소, 지역, 장르 검색..."
           className="w-full pl-9 pr-8 py-2.5 rounded-xl border border-[#E2E8F0] text-sm placeholder:text-[#CBD5E1] focus:outline-none focus:ring-2 focus:ring-[#7C3AED]/30 focus:border-[#7C3AED]"
         />
         {search && (
           <button
-            onClick={() => setSearch("")}
+            onClick={() => { setSearch(""); inputRef.current?.focus(); }}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8]"
           >
             <X size={14} />
@@ -219,7 +304,10 @@ export default function CultureClient() {
 
       <p className="text-[11px] text-[#CBD5E1] mb-3">
         {filtered.length}개 행사
-        {feeFilter === "free" && " · 무료 행사만"}
+        {timeFilter === "ongoing" && " · 현재 진행중"}
+        {timeFilter === "thisweek" && " · 이번주"}
+        {timeFilter === "upcoming" && " · 예정"}
+        {feeFilter === "free" && " · 무료만"}
       </p>
 
       {/* 행사 목록 */}
@@ -239,8 +327,14 @@ export default function CultureClient() {
       )}
 
       {filtered.length === 0 && (
-        <div className="text-center py-12 text-sm text-[#94A3B8]">
-          조건에 맞는 행사가 없습니다
+        <div className="text-center py-12">
+          <p className="text-sm text-[#94A3B8] mb-2">조건에 맞는 행사가 없습니다</p>
+          <button
+            onClick={() => { setSelectedCat("전체"); setSelectedRegion("전체"); setFeeFilter("all"); setTimeFilter("all"); setSearch(""); }}
+            className="text-xs text-[#7C3AED] underline"
+          >
+            필터 초기화
+          </button>
         </div>
       )}
     </main>
@@ -276,7 +370,7 @@ function EventCard({ event }: { event: CultureEvent }) {
 
         {/* 내용 */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-1.5 mb-1">
+          <div className="flex items-center gap-1.5 mb-1 flex-wrap">
             <span
               className="text-[10px] font-medium px-1.5 py-0.5 rounded-full text-white"
               style={{ backgroundColor: catColor }}
@@ -293,6 +387,11 @@ function EventCard({ event }: { event: CultureEvent }) {
                 진행중
               </span>
             )}
+            {event.region && (
+              <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-[#EEF2FF] text-[#4338CA]">
+                {event.region.split(" ")[0]}
+              </span>
+            )}
           </div>
 
           <h3 className="text-sm font-bold text-[#1A1A2E] leading-snug line-clamp-2 mb-1">
@@ -301,10 +400,7 @@ function EventCard({ event }: { event: CultureEvent }) {
 
           <div className="flex items-center gap-1 text-[11px] text-[#64748B] mb-0.5">
             <MapPin size={10} className="flex-shrink-0" />
-            <span className="truncate">{event.place}</span>
-            {event.gu && (
-              <span className="text-[#94A3B8] flex-shrink-0">· {event.gu}</span>
-            )}
+            <span className="truncate">{event.place || event.region}</span>
           </div>
 
           <div className="flex items-center gap-1 text-[11px] text-[#64748B]">
