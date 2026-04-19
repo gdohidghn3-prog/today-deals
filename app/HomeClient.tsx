@@ -92,6 +92,7 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
         {telecom === "all"
           ? `총 ${filteredDeals.length}개 혜택`
           : `${SOURCE_LABELS[telecom]} ${filteredDeals.length}개 혜택`}
+        {telecom === "skt" ? " · 대표 제휴 브랜드 기준" : ""}
         {" · "}등급에 따라 혜택이 다를 수 있습니다
       </p>
 
