@@ -167,6 +167,9 @@ export default function GasClient({
     ])
       .then(([sidoRes, topRes]) => {
         if (cancelled) return;
+        if (sidoRes.error || topRes.error) {
+          setLocError("유가 데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.");
+        }
         setSidoAvg(sidoRes.data ?? []);
         setTop10(topRes.data ?? []);
         setVariantStats(topRes.variant_stats ?? null);
@@ -176,6 +179,7 @@ export default function GasClient({
           setSidoAvg([]);
           setTop10([]);
           setVariantStats(null);
+          setLocError("유가 데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.");
         }
       })
       .finally(() => {

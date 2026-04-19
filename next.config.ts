@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "sktmembership.tworld.co.kr" },
       { protocol: "https", hostname: "membership.kt.com" },
       { protocol: "https", hostname: "www.lguplus.com" },
+      // 서울 문화행사
+      { protocol: "https", hostname: "culture.seoul.go.kr" },
     ],
   },
 };

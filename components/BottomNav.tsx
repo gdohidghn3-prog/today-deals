@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Fuel, Store, Sparkles, Info } from "lucide-react";
+import { Home, Fuel, Store, Sparkles, Ticket, Info } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/", label: "통신사", icon: Home },
   { href: "/convenience", label: "편의점", icon: Store },
   { href: "/oliveyoung", label: "올리브영", icon: Sparkles },
+  { href: "/culture", label: "문화", icon: Ticket },
   { href: "/gas", label: "주유", icon: Fuel },
-  { href: "/about", label: "소개", icon: Info },
 ];
 
 export default function BottomNav() {

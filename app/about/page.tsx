@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="max-w-2xl mx-auto px-4 py-8 pb-20">
       <h1 className="text-2xl font-bold text-[#1A1A2E] mb-2">오늘혜택</h1>
       <p className="text-[#64748B] mb-6">
-        통신사 멤버십 · 편의점 · 올리브영 · 주유 최저가를 한 번에.
+        통신사 멤버십 · 편의점 · 올리브영 · 문화행사 · 주유 최저가를 한 번에.
       </p>
 
       <section className="mb-6">
@@ -20,6 +20,7 @@ export default function AboutPage() {
             { icon: "📱", title: "통신사 멤버십 혜택", desc: "SKT·KT·LGU+ 공식 사이트에서 자동 수집한 등급별 할인 정보" },
             { icon: "🏪", title: "편의점 행사", desc: "CU·GS25·세븐일레븐·이마트24 1+1, 2+1 행사 상품 검색" },
             { icon: "💄", title: "올리브영 랭킹", desc: "실시간 인기 TOP 100과 세일·쿠폰·오늘드림 상품 모아보기" },
+            { icon: "🎭", title: "무료 문화행사", desc: "서울시 무료 전시·공연·축제·콘서트 일정 (서울 열린데이터)" },
             { icon: "⛽", title: "주유 최저가", desc: "전국·시도별 평균가와 내 주변 저렴한 주유소 (오피넷 제공)" },
           ].map((item) => (
             <div
@@ -44,6 +45,7 @@ export default function AboutPage() {
           <p>LGU+ — lguplus.com/benefit-membership 자동 수집</p>
           <p>편의점 — 각 편의점 공식 행사 페이지 실시간 크롤링</p>
           <p>올리브영 — oliveyoung.co.kr 랭킹 페이지 실시간 크롤링</p>
+          <p>문화행사 — 서울 열린데이터광장 문화행사 API</p>
           <p>주유 — 오피넷 (한국석유공사) 공식 유가정보 API</p>
         </div>
       </section>

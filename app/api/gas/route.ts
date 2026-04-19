@@ -102,6 +102,7 @@ async function fetchOpinet(path: string, params: Record<string, string>) {
   const res = await fetch(url, {
     next: { revalidate: 21600 },
     headers: { Accept: "application/json" },
+    signal: AbortSignal.timeout(8000),
   });
   if (!res.ok) throw new Error(`opinet ${path} ${res.status}`);
   // 오피넷 응답은 JSON이지만 공백/개행이 많음 - 그대로 파싱
