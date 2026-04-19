@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
+import * as cheerio from "cheerio";
 
-// 서울 열린데이터광장 + 한국관광공사 문화행사 통합 API
+// 서울 열린데이터광장 + 한국관광공사 + 한국문화정보원 문화행사 통합 API
 export const revalidate = 21600; // 6시간 캐시
 
 const SEOUL_KEY = process.env.SEOUL_OPENAPI_KEY || "sample";
 const TOUR_KEY = process.env.DATA_GO_KR_API_KEY || "";
 const SEOUL_BASE = "http://openapi.seoul.go.kr:8088";
 const TOUR_BASE = "https://apis.data.go.kr/B551011/KorService1";
+const CULTURE_BASE = "http://www.culture.go.kr/openapi/rest/publicperformancedisplays";
 
 export type CultureEvent = {
   id: string;
@@ -26,7 +28,7 @@ export type CultureEvent = {
   lat: number | null;
   lng: number | null;
   time: string;
-  source: "seoul" | "tour"; // 데이터 출처
+  source: "seoul" | "tour" | "culture"; // 데이터 출처
 };
 
 // ── 서울 열린데이터광장 ──────────────────────────────
@@ -189,15 +191,107 @@ async function fetchTour(): Promise<CultureEvent[]> {
   return events;
 }
 
+// ── 한국문화정보원 (전국 공연/전시) ───────────────────
+const CULTURE_CAT_MAP: Record<string, string> = {
+  "미술": "전시/미술",
+  "서양음악(클래식)": "클래식",
+  "한국음악(국악)": "국악",
+  "대중음악": "콘서트",
+};
+
+async function fetchCulture(): Promise<CultureEvent[]> {
+  if (!TOUR_KEY) return []; // data.go.kr 키 공용
+
+  const now = new Date();
+  const from = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}${String(now.getDate()).padStart(2, "0")}`;
+  const future = new Date(now);
+  future.setMonth(future.getMonth() + 3);
+  const to = `${future.getFullYear()}${String(future.getMonth() + 1).padStart(2, "0")}${String(future.getDate()).padStart(2, "0")}`;
+
+  const events: CultureEvent[] = [];
+
+  for (let page = 1; page <= 5; page++) {
+    try {
+      const params = new URLSearchParams({
+        serviceKey: TOUR_KEY,
+        from,
+        to,
+        cPage: String(page),
+        rows: "100",
+      });
+      const url = `${CULTURE_BASE}/period?${params}`;
+      const res = await fetch(url, {
+        next: { revalidate: 21600 },
+        signal: AbortSignal.timeout(8000),
+      });
+      if (!res.ok) {
+        console.warn(`[culture-kr api] page ${page}: HTTP ${res.status}`);
+        break;
+      }
+      const xml = await res.text();
+      const $ = cheerio.load(xml, { xmlMode: true });
+      const items = $("perforList");
+      if (items.length === 0) break;
+
+      items.each((_, el) => {
+        const $el = $(el);
+        const startRaw = $el.find("startDate").text();
+        const endRaw = $el.find("endDate").text();
+        const fmtDate = (d: string) =>
+          d && d.length >= 8 ? `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}` : "";
+        const startFmt = fmtDate(startRaw);
+        const endFmt = fmtDate(endRaw);
+        const price = $el.find("price").text();
+        const area = $el.find("area").text();
+        const realm = $el.find("realmName").text();
+        const category = CULTURE_CAT_MAP[realm] || realm || "공연/전시";
+
+        events.push({
+          id: `culture-${$el.find("seq").text()}`,
+          title: $el.find("title").text(),
+          category,
+          region: area || "",
+          place: $el.find("place").text(),
+          date: startFmt && endFmt ? `${startFmt}~${endFmt}` : startFmt,
+          startDate: startFmt ? `${startFmt} 00:00:00.0` : "",
+          endDate: endFmt ? `${endFmt} 23:59:59.0` : "",
+          isFree: /무료/.test(price),
+          fee: price,
+          target: "",
+          imageUrl: $el.find("thumbnail").text(),
+          link: $el.find("url").text(),
+          orgLink: "",
+          lat: $el.find("gpsY").text().trim() ? parseFloat($el.find("gpsY").text().trim()) : null,
+          lng: $el.find("gpsX").text().trim() ? parseFloat($el.find("gpsX").text().trim()) : null,
+          time: "",
+          source: "culture",
+        });
+      });
+
+      if (items.length < 100) break;
+    } catch (e) {
+      console.warn("[culture-kr api] fetch failed:", e instanceof Error ? e.message : e);
+      break;
+    }
+  }
+  return events;
+}
+
 // ── 통합 ─────────────────────────────────────────────
 async function fetchAll(): Promise<CultureEvent[]> {
-  const [seoul, tour] = await Promise.allSettled([fetchSeoul(), fetchTour()]);
+  const [seoul, tour, culture] = await Promise.allSettled([
+    fetchSeoul(),
+    fetchTour(),
+    fetchCulture(),
+  ]);
   const seoulEvents = seoul.status === "fulfilled" ? seoul.value : [];
   const tourEvents = tour.status === "fulfilled" ? tour.value : [];
+  const cultureEvents = culture.status === "fulfilled" ? culture.value : [];
 
-  // 서울 관광공사 데이터는 서울 열린데이터와 중복 가능 → 서울 지역 제외
-  const tourFiltered = tourEvents.filter((e) => e.region !== "서울");
-  const all = [...seoulEvents, ...tourFiltered];
+  // 서울 열린데이터와 중복 가능 → 서울 지역 제외 (관광공사 + 문화정보원)
+  const tourFiltered = tourEvents.filter((e) => !e.region.startsWith("서울"));
+  const cultureFiltered = cultureEvents.filter((e) => !e.region.startsWith("서울"));
+  const all = [...seoulEvents, ...tourFiltered, ...cultureFiltered];
 
   // 현재 진행중 또는 예정인 행사만
   const now = new Date();
@@ -235,6 +329,7 @@ export async function GET(req: NextRequest) {
       sources: {
         seoul: events.filter((e) => e.source === "seoul").length,
         tour: events.filter((e) => e.source === "tour").length,
+        culture: events.filter((e) => e.source === "culture").length,
       },
       updatedAt: new Date().toISOString(),
     });

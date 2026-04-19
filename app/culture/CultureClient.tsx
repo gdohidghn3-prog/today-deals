@@ -23,7 +23,7 @@ type CultureEvent = {
   lat: number | null;
   lng: number | null;
   time: string;
-  source: "seoul" | "tour";
+  source: "seoul" | "tour" | "culture";
 };
 
 type FeeFilter = "all" | "free" | "paid";
@@ -41,6 +41,9 @@ const CATEGORY_COLORS: Record<string, string> = {
   "축제-자연/경관": "#4CAF50",
   "축제-전통/역사": "#795548",
   "축제/행사": "#FF9800",
+  "음악": "#8E44AD",
+  "미술": "#E74C3C",
+  "복합": "#673AB7",
   "기타": "#607D8B",
   "교육/체험": "#00BCD4",
   "독주/독창회": "#9C27B0",
@@ -82,7 +85,7 @@ export default function CultureClient() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
-  const [sources, setSources] = useState<{ seoul: number; tour: number }>({ seoul: 0, tour: 0 });
+  const [sources, setSources] = useState<{ seoul: number; tour: number; culture: number }>({ seoul: 0, tour: 0, culture: 0 });
 
   const [selectedCat, setSelectedCat] = useState("전체");
   const [selectedRegion, setSelectedRegion] = useState("전체");
@@ -102,7 +105,7 @@ export default function CultureClient() {
         setCategories(data.categories ?? []);
         setRegions(data.regions ?? []);
         setUpdatedAt(data.updatedAt);
-        setSources(data.sources ?? { seoul: 0, tour: 0 });
+        setSources(data.sources ?? { seoul: 0, tour: 0, culture: 0 });
       })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
@@ -181,8 +184,8 @@ export default function CultureClient() {
         <h1 className="text-xl font-bold text-[#1A1A2E]">문화행사</h1>
         <p className="text-xs text-[#94A3B8] mt-1">
           전시 · 공연 · 축제 · 콘서트
-          {sources.tour > 0 && ` · 서울 ${sources.seoul}건 + 전국 ${sources.tour}건`}
-          {sources.tour === 0 && events.length > 0 && ` · ${events.length}건`}
+          {(sources.tour > 0 || sources.culture > 0) && ` · 서울 ${sources.seoul}건 + 전국 ${sources.tour + sources.culture}건`}
+          {sources.tour === 0 && sources.culture === 0 && events.length > 0 && ` · ${events.length}건`}
           {updatedAt && ` · ${new Date(updatedAt).toLocaleDateString("ko-KR")} 기준`}
         </p>
       </div>
