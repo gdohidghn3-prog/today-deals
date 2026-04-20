@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19T06:22:39.971Z",
+  "updatedAt": "2026-04-20T07:31:46.912Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -10,7 +10,7 @@
   "best": [
     "cu-7bf64d9b",
     "emart24-cfc9cb45",
-    "cu-33d69edb"
+    "cu-0aa4776d"
   ],
   "deals": [
     {
@@ -2302,15 +2302,15 @@
       "endDate": "2026-04-30"
     },
     {
-      "id": "cu-33d69edb",
+      "id": "cu-0aa4776d",
       "source": "cu",
       "category": "convenience",
-      "title": "미래)나무야클린3겹24롤 1+1",
+      "title": "잘풀리는집)클린3겹24롤 1+1",
       "description": "24,000원 · 1+1 행사",
       "discount": "1+1",
-      "brand": "미래)나무야클린3겹24롤",
+      "brand": "잘풀리는집)클린3겹24롤",
       "price": "24,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809848530579.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809848530579_1.png",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
