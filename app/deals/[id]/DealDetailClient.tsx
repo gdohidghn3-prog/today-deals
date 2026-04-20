@@ -3,13 +3,17 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal } from "@/types/deal";
+import type { CoupangLink } from "@/lib/coupang";
+import CoupangLinkCard from "@/components/CoupangLinkCard";
 
 export default function DealDetailClient({
   deal,
   related,
+  coupangLink,
 }: {
   deal: Deal;
   related: Deal[];
+  coupangLink: CoupangLink | null;
 }) {
   const color = SOURCE_COLORS[deal.source];
   const sourceLabel = SOURCE_LABELS[deal.source];
@@ -47,6 +51,8 @@ export default function DealDetailClient({
           <p className="text-xs text-[#94A3B8]">{deal.startDate} ~ {deal.endDate}</p>
         </div>
       </div>
+
+      {coupangLink && <CoupangLinkCard link={coupangLink} />}
 
       {related.length > 0 && (
         <div className="mt-6">

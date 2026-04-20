@@ -4,7 +4,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://today-deals-ochre.
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: "*", allow: "/" },
+    rules: { userAgent: "*", allow: "/", disallow: ["/admin", "/api/admin"] },
     sitemap: `${BASE_URL}/sitemap.xml`,
   };
 }

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import convenienceJson from "@/data/convenience.json";
 import telecomJson from "@/data/telecom.json";
 import type { Deal } from "@/types/deal";
+import { getCoupangLink } from "@/lib/coupang";
 import DealDetailClient from "./DealDetailClient";
 
 export const revalidate = 21600; // 6시간
@@ -45,6 +46,7 @@ export default async function DealPage({ params }: { params: Promise<{ id: strin
   const deal = findDeal(id);
   if (!deal) notFound();
   const related = getRelated(deal);
+  const coupangLink = getCoupangLink(deal.id);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -69,7 +71,7 @@ export default async function DealPage({ params }: { params: Promise<{ id: strin
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <DealDetailClient deal={deal} related={related} />
+      <DealDetailClient deal={deal} related={related} coupangLink={coupangLink} />
     </>
   );
 }
