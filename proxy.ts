@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { verifySession } from "@/lib/admin-session";
 
 const hitMap = new Map<string, { count: number; resetAt: number }>();
 const LIMIT = 30;
@@ -14,9 +15,30 @@ function evictExpired() {
   }
 }
 
-export function proxy(req: NextRequest) {
+export async function proxy(req: NextRequest) {
+  const { pathname } = req.nextUrl;
+
+  // /admin, /api/admin 인증 (로그인 페이지와 auth 엔드포인트는 공개)
+  if (
+    (pathname.startsWith("/admin") || pathname.startsWith("/api/admin")) &&
+    pathname !== "/admin/login" &&
+    pathname !== "/api/admin/auth"
+  ) {
+    const token = req.cookies.get("admin-session")?.value;
+    const ok = await verifySession(token);
+    if (!ok) {
+      if (pathname.startsWith("/api/")) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+      }
+      const url = req.nextUrl.clone();
+      url.pathname = "/admin/login";
+      url.searchParams.set("from", pathname);
+      return NextResponse.redirect(url);
+    }
+  }
+
   // /api/crawl → 시크릿 키 검증
-  if (req.nextUrl.pathname === "/api/crawl") {
+  if (pathname === "/api/crawl") {
     const key = req.headers.get("x-api-key");
     if (key !== process.env.CRAWL_API_KEY) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -24,10 +46,7 @@ export function proxy(req: NextRequest) {
   }
 
   // /api/gas, /api/nearby-stores → rate limit
-  if (
-    req.nextUrl.pathname.startsWith("/api/gas") ||
-    req.nextUrl.pathname.startsWith("/api/nearby-stores")
-  ) {
+  if (pathname.startsWith("/api/gas") || pathname.startsWith("/api/nearby-stores")) {
     evictExpired();
     const ip = req.headers.get("x-forwarded-for") || "unknown";
     const now = Date.now();
@@ -39,7 +58,7 @@ export function proxy(req: NextRequest) {
       if (entry.count > LIMIT) {
         return NextResponse.json(
           { error: "Too many requests" },
-          { status: 429, headers: { "Retry-After": "60" } }
+          { status: 429, headers: { "Retry-After": "60" } },
         );
       }
     }
@@ -49,5 +68,5 @@ export function proxy(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/api/:path*"],
+  matcher: ["/api/:path*", "/admin/:path*"],
 };
