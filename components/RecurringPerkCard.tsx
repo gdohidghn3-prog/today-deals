@@ -10,6 +10,12 @@ const BADGE_STYLES = {
   estimated_window: { label: "예상 일정", className: "bg-[#E0E7FF] text-[#3730A3]" },
 } as const;
 
+function buildSearchUrl(perk: RecurringPerk): string {
+  const now = new Date();
+  const q = `${perk.brand} ${perk.title} ${now.getFullYear()}년 ${now.getMonth() + 1}월`;
+  return `https://search.naver.com/search.naver?query=${encodeURIComponent(q)}`;
+}
+
 export default function RecurringPerkCard({
   perk,
   resolved,
@@ -22,18 +28,19 @@ export default function RecurringPerkCard({
   const badge = BADGE_STYLES[resolved.badge];
   const dDay = resolved.daysUntil;
   const isFeatured = variant === "featured";
+  const searchUrl = buildSearchUrl(perk);
 
-  const handleClick = () => {
-    trackEvent("featured_click", { id: perk.id, brand: perk.brand });
+  const handleOfficialClick = () => {
+    trackEvent("featured_click", { id: perk.id, brand: perk.brand, target: "official" });
+  };
+
+  const handleSearchClick = () => {
+    trackEvent("perk_search_click", { id: perk.id, brand: perk.brand });
   };
 
   return (
-    <a
-      href={perk.officialUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={handleClick}
-      className={`block bg-white border border-[#FFD8A8] rounded-xl overflow-hidden hover:shadow-md transition-shadow ${
+    <div
+      className={`bg-white border border-[#FFD8A8] rounded-xl overflow-hidden ${
         isFeatured ? "min-w-[180px] max-w-[200px] flex-shrink-0" : ""
       }`}
     >
@@ -43,7 +50,13 @@ export default function RecurringPerkCard({
           {badge.label}
         </span>
       </div>
-      <div className="p-3">
+      <a
+        href={perk.officialUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={handleOfficialClick}
+        className="block p-3 hover:bg-[#FFFAF3] transition-colors"
+      >
         <p className="text-xs font-bold text-[#0F172A] line-clamp-1">{perk.title}</p>
         <p className="text-[11px] text-[#64748B] mt-0.5 line-clamp-1">{perk.brand}</p>
         {resolved.label && (
@@ -62,7 +75,27 @@ export default function RecurringPerkCard({
             마감 임박
           </span>
         )}
+      </a>
+      <div className="px-3 py-1.5 border-t border-[#FFE9D1] flex gap-2 text-[10px]">
+        <a
+          href={perk.officialUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleOfficialClick}
+          className="flex-1 text-center py-1 rounded bg-[#FFF4E6] text-[#D97706] font-bold hover:bg-[#FFE9D1]"
+        >
+          공식
+        </a>
+        <a
+          href={searchUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleSearchClick}
+          className="flex-1 text-center py-1 rounded bg-[#F1F5F9] text-[#475569] font-bold hover:bg-[#E2E8F0]"
+        >
+          최신 검색
+        </a>
       </div>
-    </a>
+    </div>
   );
 }

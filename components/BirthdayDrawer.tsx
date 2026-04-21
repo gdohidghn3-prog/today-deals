@@ -167,15 +167,28 @@ function BirthdayItem({
             {perk.issueWindow ?? ""}
             {perk.claimMethod ? ` · ${perk.claimMethod}` : ""}
           </p>
-          <a
-            href={perk.membershipUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onOfficialClick}
-            className="inline-flex items-center gap-1 mt-1.5 text-[11px] text-[#3B82F6] hover:underline"
-          >
-            공식 확인 <ExternalLink size={10} />
-          </a>
+          <div className="flex items-center gap-3 mt-1.5">
+            <a
+              href={perk.membershipUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onOfficialClick}
+              className="inline-flex items-center gap-1 text-[11px] text-[#3B82F6] hover:underline"
+            >
+              공식 확인 <ExternalLink size={10} />
+            </a>
+            <a
+              href={`https://search.naver.com/search.naver?query=${encodeURIComponent(
+                `${perk.brand} 생일혜택 ${perk.membership}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("perk_search_click", { id: perk.id, brand: perk.brand })}
+              className="inline-flex items-center gap-1 text-[11px] text-[#64748B] hover:underline"
+            >
+              최신 검색 <ExternalLink size={10} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
