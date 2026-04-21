@@ -14,11 +14,9 @@ export function UpcomingPerksFeatured() {
 
   if (result.perks.length === 0) return null;
 
-  const title = result.fallbackTitle ?? "💎 이번주 놓치지 마세요";
-
   return (
     <section className="mb-6 -mx-4 px-4">
-      <h2 className="text-base font-bold text-[#1A1A2E] mb-3">{title}</h2>
+      <h2 className="text-base font-bold text-[#1A1A2E] mb-3">{result.title}</h2>
       <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 snap-x snap-mandatory">
         {result.perks.map(({ perk, resolved }) => (
           <div key={perk.id} className="snap-start">

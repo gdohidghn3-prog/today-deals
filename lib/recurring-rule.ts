@@ -109,7 +109,14 @@ function formatDateLabel(date: Date, today: Date): string {
 
 export interface FeaturedResult {
   perks: { perk: RecurringPerk; resolved: ResolvedSchedule }[];
-  fallbackTitle?: string;
+  title: string;
+}
+
+function endOfThisWeek(today: Date): Date {
+  const d = startOfDay(today);
+  const dow = d.getDay();
+  const daysToSun = (7 - dow) % 7;
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate() + daysToSun);
 }
 
 export function selectFeatured(
@@ -127,12 +134,25 @@ export function selectFeatured(
     .map((perk) => ({ perk, resolved: resolveSchedule(perk, today) }))
     .filter((x) => x.resolved.daysUntil !== null && x.resolved.daysUntil! >= 0);
 
+  const weekEndDays = daysBetween(today, endOfThisWeek(today));
+
+  const thisWeek = candidates
+    .filter((x) => x.resolved.daysUntil! <= weekEndDays)
+    .sort(sortByDayThenScore)
+    .slice(0, limit);
+
+  if (thisWeek.length > 0) {
+    return { perks: thisWeek, title: "💎 이번주 놓치지 마세요" };
+  }
+
   const within14 = candidates
     .filter((x) => x.resolved.daysUntil! <= 14)
     .sort(sortByDayThenScore)
     .slice(0, limit);
 
-  if (within14.length > 0) return { perks: within14 };
+  if (within14.length > 0) {
+    return { perks: within14, title: "💎 곧 챙길 정기 혜택" };
+  }
 
   const within30 = candidates
     .filter((x) => x.resolved.daysUntil! <= 30)
@@ -140,9 +160,9 @@ export function selectFeatured(
     .slice(0, 1);
 
   if (within30.length > 0) {
-    return { perks: within30, fallbackTitle: "다가오는 정기 혜택" };
+    return { perks: within30, title: "💎 다가오는 정기 혜택" };
   }
-  return { perks: [] };
+  return { perks: [], title: "" };
 }
 
 function sortByDayThenScore(
