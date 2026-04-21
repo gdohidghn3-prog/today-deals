@@ -246,6 +246,56 @@ export default function AdminPage() {
           </div>
         )}
 
+        {/* 0. 등록된 매핑 (CRUD) */}
+        {data && (
+          <section className="bg-white border border-[#E2E8F0] rounded-xl p-4">
+            <h2 className="text-sm font-bold text-[#0F172A] mb-2">
+              📋 등록된 쿠팡 상품 ({data.mappedIds.length})
+            </h2>
+            {data.mappedIds.length === 0 ? (
+              <p className="text-xs text-[#94A3B8] py-3 text-center">
+                아직 등록된 상품이 없습니다. 아래에서 혜택을 선택해 매핑을 추가하세요.
+              </p>
+            ) : (
+              <div className="divide-y border border-[#E2E8F0] rounded-lg max-h-72 overflow-y-auto">
+                {data.mappedIds.map((id) => {
+                  const m = data.mappings[id];
+                  return (
+                    <div key={id} className="py-2 px-3 flex items-center gap-2 hover:bg-[#F8FAFC]">
+                      {m.productImage && (
+                        <img
+                          src={m.productImage}
+                          alt=""
+                          className="w-10 h-10 object-contain rounded bg-[#F8FAFC] flex-shrink-0"
+                        />
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs text-[#0F172A] truncate">{m.productName}</p>
+                        <p className="font-mono text-[10px] text-[#94A3B8]">{id}</p>
+                      </div>
+                      <span className="text-xs text-[#D97706] font-bold whitespace-nowrap">
+                        {m.productPrice.toLocaleString()}원
+                      </span>
+                      <button
+                        onClick={() => pickDeal(id)}
+                        className="text-[11px] text-[#3B82F6] hover:underline whitespace-nowrap"
+                      >
+                        수정
+                      </button>
+                      <button
+                        onClick={() => remove(id)}
+                        className="text-[11px] text-[#DC2626] hover:underline whitespace-nowrap"
+                      >
+                        삭제
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+        )}
+
         {/* 1. 혜택 선택 */}
         <section className="bg-white border border-[#E2E8F0] rounded-xl p-4">
           <h2 className="text-sm font-bold text-[#0F172A] mb-2">1️⃣ 혜택 선택</h2>
@@ -436,40 +486,6 @@ export default function AdminPage() {
           </>
         )}
 
-        {/* 기존 매핑 목록 */}
-        {data && data.mappedIds.length > 0 && (
-          <section className="bg-white border border-[#E2E8F0] rounded-xl p-4">
-            <h2 className="text-sm font-bold text-[#0F172A] mb-2">
-              📋 기존 매핑 ({data.mappedIds.length})
-            </h2>
-            <div className="divide-y">
-              {data.mappedIds.map((id) => {
-                const m = data.mappings[id];
-                return (
-                  <div key={id} className="py-2 flex items-center gap-2">
-                    <span className="font-mono text-[10px] text-[#94A3B8] w-24 truncate">{id}</span>
-                    <span className="flex-1 text-xs text-[#0F172A] truncate">{m.productName}</span>
-                    <span className="text-xs text-[#D97706] font-bold">
-                      {m.productPrice.toLocaleString()}원
-                    </span>
-                    <button
-                      onClick={() => pickDeal(id)}
-                      className="text-[11px] text-[#3B82F6] hover:underline"
-                    >
-                      수정
-                    </button>
-                    <button
-                      onClick={() => remove(id)}
-                      className="text-[11px] text-[#DC2626] hover:underline"
-                    >
-                      삭제
-                    </button>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        )}
       </main>
     </div>
   );

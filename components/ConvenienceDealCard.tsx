@@ -7,6 +7,7 @@ import Link from "next/link";
 import { SOURCE_COLORS, SOURCE_LABELS, type Deal } from "@/types/deal";
 import NearbyStoresSheet from "@/components/NearbyStoresSheet";
 import { trackEvent } from "@/lib/analytics";
+import { getCoupangLink } from "@/lib/coupang";
 
 function cleanName(raw: string): string {
   // "동원)양반누룽지닭죽 1+1" → "양반누룽지닭죽"
@@ -32,6 +33,7 @@ export default function ConvenienceDealCard({
   const name = cleanName(deal.title);
   const price = deal.price || "";
   const is1p1 = deal.discount === "1+1";
+  const coupang = getCoupangLink(deal.id);
 
   const [sheetOpen, setSheetOpen] = useState(false);
 
@@ -83,6 +85,14 @@ export default function ConvenienceDealCard({
                 {SOURCE_LABELS[deal.source]}
               </span>
             )}
+            {coupang && (
+              <span
+                className="absolute bottom-1.5 right-1.5 text-[9px] px-1.5 py-0.5 rounded font-bold text-white leading-none bg-[#D97706] flex items-center gap-0.5"
+                title={`쿠팡 ${coupang.productPrice.toLocaleString()}원`}
+              >
+                🛒 쿠팡
+              </span>
+            )}
           </div>
 
           {/* 정보 */}
@@ -90,10 +100,15 @@ export default function ConvenienceDealCard({
             <p className="text-[11px] font-medium text-[#0F172A] leading-tight line-clamp-2">
               {name}
             </p>
-            <div className="flex items-center justify-between mt-auto">
+            <div className="flex items-center justify-between mt-auto gap-1">
               {price && (
                 <p className="text-xs font-bold" style={{ color }}>
                   {price}
+                </p>
+              )}
+              {coupang && (
+                <p className="text-[10px] font-bold text-[#D97706] ml-auto">
+                  쿠팡 {coupang.productPrice.toLocaleString()}원
                 </p>
               )}
             </div>
