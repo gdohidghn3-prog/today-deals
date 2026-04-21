@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cgv-culture-day",
+    "title": "CGV 문화의 날",
+    "brand": "CGV",
+    "category": "movie",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_last_weekday", "weekday": 3 } },
+    "description": "매월 마지막 수요일 영화 할인",
+    "expectedDiscountText": "약 7,000원 (일반관 기준)",
+    "expectedSavingScore": 80,
+    "officialUrl": "https://www.cgv.co.kr",
+    "notes": "일부 특수관/시간대 제외 가능",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home", "culture"]
+  },
+  {
+    "id": "megabox-culture-day",
+    "title": "메가박스 컬처데이",
+    "brand": "메가박스",
+    "category": "movie",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_last_weekday", "weekday": 3 } },
+    "description": "매월 마지막 수요일 영화 할인",
+    "expectedSavingScore": 75,
+    "officialUrl": "https://www.megabox.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home", "culture"]
+  },
+  {
+    "id": "lottecinema-culture-day",
+    "title": "롯데시네마 컬처데이",
+    "brand": "롯데시네마",
+    "category": "movie",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_last_weekday", "weekday": 3 } },
+    "description": "매월 마지막 수요일 영화 할인",
+    "expectedSavingScore": 75,
+    "officialUrl": "https://www.lottecinema.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home", "culture"]
+  },
+  {
+    "id": "baskin-31-day",
+    "title": "베스킨라빈스 31데이",
+    "brand": "베스킨라빈스",
+    "category": "dessert",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_day", "day": 31 } },
+    "description": "매월 31일 31% 할인",
+    "expectedDiscountText": "31% 할인",
+    "expectedSavingScore": 70,
+    "officialUrl": "https://www.baskinrobbins.co.kr",
+    "notes": "31일 없는 달은 해당 없음 (2/4/6/9/11월)",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home", "convenience"]
+  },
+  {
+    "id": "emart-fresh-wed",
+    "title": "이마트 신선특가",
+    "brand": "이마트",
+    "category": "mart",
+    "schedule": { "mode": "rule", "rule": { "type": "weekly", "weekday": 3 } },
+    "description": "매주 수요일 신선식품 특가",
+    "expectedSavingScore": 60,
+    "officialUrl": "https://emart.ssg.com",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["convenience"]
+  },
+  {
+    "id": "traders-member-day",
+    "title": "트레이더스 회원의 날",
+    "brand": "트레이더스",
+    "category": "mart",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "monthly",
+      "label": "월 1회 정기",
+      "confidence": "estimated"
+    },
+    "description": "월 1회 회원 추가 할인",
+    "expectedSavingScore": 55,
+    "officialUrl": "https://www.traders.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["convenience"]
+  },
+  {
+    "id": "oliveyoung-sale",
+    "title": "올리브영 정기 세일",
+    "brand": "올리브영",
+    "category": "beauty",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "quarterly",
+      "label": "1·4·7·10월 분기 정기 세일",
+      "confidence": "confirmed"
+    },
+    "description": "분기별 대규모 정기 세일",
+    "expectedSavingScore": 85,
+    "officialUrl": "https://www.oliveyoung.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home", "oliveyoung"]
+  },
+  {
+    "id": "coupang-bigsmile",
+    "title": "쿠팡 빅스마일데이",
+    "brand": "쿠팡",
+    "category": "ecommerce",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "quarterly",
+      "label": "분기 정기 행사",
+      "confidence": "estimated"
+    },
+    "description": "쿠팡 분기 빅세일",
+    "expectedSavingScore": 60,
+    "officialUrl": "https://www.coupang.com",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "gmarket-bigsmile",
+    "title": "G마켓 빅스마일데이",
+    "brand": "G마켓",
+    "category": "ecommerce",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "quarterly",
+      "label": "분기 정기 행사",
+      "confidence": "estimated"
+    },
+    "description": "G마켓 분기 빅세일",
+    "expectedSavingScore": 55,
+    "officialUrl": "https://www.gmarket.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "11st-monthly",
+    "title": "11번가 십일절",
+    "brand": "11번가",
+    "category": "ecommerce",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_day", "day": 11 } },
+    "description": "매월 11일 십일절 할인",
+    "expectedSavingScore": 65,
+    "officialUrl": "https://www.11st.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "confirmed",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "shinsegae-seasonal",
+    "title": "신세계백화점 정기세일",
+    "brand": "신세계백화점",
+    "category": "department",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "seasonal",
+      "label": "봄/여름/가을/겨울 정기세일",
+      "confidence": "estimated"
+    },
+    "description": "분기별 백화점 정기세일",
+    "expectedSavingScore": 50,
+    "officialUrl": "https://www.shinsegae.com",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "hyundai-seasonal",
+    "title": "현대백화점 정기세일",
+    "brand": "현대백화점",
+    "category": "department",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "seasonal",
+      "label": "봄/여름/가을/겨울 정기세일",
+      "confidence": "estimated"
+    },
+    "description": "분기별 백화점 정기세일",
+    "expectedSavingScore": 50,
+    "officialUrl": "https://www.ehyundai.com",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "lotte-seasonal",
+    "title": "롯데백화점 정기세일",
+    "brand": "롯데백화점",
+    "category": "department",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "seasonal",
+      "label": "봄/여름/가을/겨울 정기세일",
+      "confidence": "estimated"
+    },
+    "description": "분기별 백화점 정기세일",
+    "expectedSavingScore": 50,
+    "officialUrl": "https://www.lotteshopping.com",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "starbucks-frequency",
+    "title": "스타벅스 프리퀀시",
+    "brand": "스타벅스",
+    "category": "cafe",
+    "schedule": {
+      "mode": "manual_window",
+      "cadence": "seasonal",
+      "label": "여름/겨울 시즌 프리퀀시",
+      "confidence": "estimated"
+    },
+    "description": "음료 구매 시 e-스티커 적립 → 굿즈 교환",
+    "expectedSavingScore": 40,
+    "officialUrl": "https://www.starbucks.co.kr",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  },
+  {
+    "id": "tmem-movie-day",
+    "title": "T멤버십 무비데이",
+    "brand": "T멤버십",
+    "category": "telecom-perk",
+    "schedule": { "mode": "rule", "rule": { "type": "monthly_nth_weekday", "n": 1, "weekday": 2 } },
+    "description": "매월 첫째 화요일 영화 할인",
+    "expectedSavingScore": 65,
+    "officialUrl": "https://www.tworld.co.kr",
+    "notes": "T멤버십 가입자 대상",
+    "lastVerified": "2026-04-21",
+    "verificationLevel": "estimated",
+    "integrationTargets": ["home"]
+  }
+]

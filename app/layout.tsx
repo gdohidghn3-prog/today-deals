@@ -4,6 +4,7 @@ import "./globals.css";
 import BottomNav from "@/components/BottomNav";
 import Disclaimer from "@/components/Disclaimer";
 import Analytics from "@/components/Analytics";
+import BirthdayFab from "@/components/BirthdayFab";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#FAFAFA]">
         {children}
         <Disclaimer />
+        <BirthdayFab />
         <BottomNav />
         <Analytics />
         <script dangerouslySetInnerHTML={{ __html: `

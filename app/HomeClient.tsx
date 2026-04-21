@@ -8,6 +8,7 @@ import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type Tele
 import DealCard from "@/components/DealCard";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { trackEvent } from "@/lib/analytics";
+import { UpcomingPerksFeatured } from "@/components/UpcomingPerks";
 
 const TELECOM_OPTIONS: { key: TelecomType | "all"; label: string }[] = [
   { key: "all", label: "전체" },
@@ -65,6 +66,8 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
           데이터가 최신이 아닐 수 있습니다 ({daysOld}일 전 기준)
         </div>
       )}
+
+      <UpcomingPerksFeatured />
 
       {/* 통신사 필터 */}
       <div className="flex gap-2 mb-2">

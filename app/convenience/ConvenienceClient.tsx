@@ -6,6 +6,7 @@ import { Search, X } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/types/deal";
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { CategoryRecurringPerks } from "@/components/UpcomingPerks";
 
 type StoreKey = "all" | DealSource;
 
@@ -114,6 +115,8 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
           데이터가 최신이 아닐 수 있습니다 ({daysOld}일 전 기준)
         </div>
       )}
+
+      <CategoryRecurringPerks target="convenience" title="정기 마트/식음료 행사" emoji="🛒" />
 
       {/* 편의점 탭 (가로 스크롤 - 탭 늘어나도 안전) */}
       <div className="flex gap-2 mb-4 overflow-x-auto -mx-4 px-4 scrollbar-hide">

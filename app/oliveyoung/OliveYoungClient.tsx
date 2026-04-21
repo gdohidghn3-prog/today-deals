@@ -8,6 +8,7 @@ import Image from "next/image";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { trackEvent } from "@/lib/analytics";
+import { CategoryRecurringPerks } from "@/components/UpcomingPerks";
 
 type FilterKey = "all" | "sale" | "coupon" | "today";
 type SortKey = "rank" | "discount" | "price";
@@ -129,6 +130,8 @@ export default function OliveYoungClient({
           </p>
         </div>
       )}
+
+      <CategoryRecurringPerks target="oliveyoung" title="올리브영 정기 세일" emoji="✨" />
 
       {/* 검색 */}
       <div className="relative mb-3">
