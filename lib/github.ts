@@ -18,7 +18,7 @@ function getClient() {
   const repo = process.env.GITHUB_REPO;
   if (!token || !repo) throw new Error("GITHUB_TOKEN / GITHUB_REPO 환경변수 필요");
   const [owner, name] = repo.split("/");
-  const branch = process.env.GITHUB_BRANCH || "main";
+  const branch = process.env.GITHUB_BRANCH || "master";
   return { octokit: new Octokit({ auth: token }), owner, repo: name, branch };
 }
 
