@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Search, MapPin, Calendar, X, Filter } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import Image from "next/image";
-import { CategoryRecurringPerks } from "@/components/UpcomingPerks";
 
 type CultureEvent = {
   id: string;
@@ -190,8 +189,6 @@ export default function CultureClient() {
           {updatedAt && ` · ${new Date(updatedAt).toLocaleDateString("ko-KR")} 기준`}
         </p>
       </div>
-
-      <CategoryRecurringPerks target="culture" title="정기 영화 할인" emoji="🎬" />
 
       {/* 시간 필터 */}
       <div className="flex gap-1.5 mb-2 overflow-x-auto scrollbar-hide">

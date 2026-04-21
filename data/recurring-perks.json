@@ -12,7 +12,7 @@
     "notes": "일부 특수관/시간대 제외 가능",
     "lastVerified": "2026-04-21",
     "verificationLevel": "confirmed",
-    "integrationTargets": ["home", "culture"]
+    "integrationTargets": ["home"]
   },
   {
     "id": "megabox-culture-day",
@@ -25,7 +25,7 @@
     "officialUrl": "https://www.megabox.co.kr",
     "lastVerified": "2026-04-21",
     "verificationLevel": "confirmed",
-    "integrationTargets": ["home", "culture"]
+    "integrationTargets": ["home"]
   },
   {
     "id": "lottecinema-culture-day",
@@ -38,7 +38,7 @@
     "officialUrl": "https://www.lottecinema.co.kr",
     "lastVerified": "2026-04-21",
     "verificationLevel": "confirmed",
-    "integrationTargets": ["home", "culture"]
+    "integrationTargets": ["home"]
   },
   {
     "id": "baskin-31-day",
