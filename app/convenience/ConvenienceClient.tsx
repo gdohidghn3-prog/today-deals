@@ -7,6 +7,8 @@ import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/type
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { CategoryRecurringPerks } from "@/components/UpcomingPerks";
+import { getCoupangLink } from "@/lib/coupang";
+import { trackEvent } from "@/lib/analytics";
 
 type StoreKey = "all" | DealSource;
 
@@ -27,7 +29,13 @@ const DEAL_TYPES = [
 export default function ConvenienceClient({ initialDeals, updatedAt }: { initialDeals: Deal[]; updatedAt: string }) {
   const [activeStore, setActiveStore] = useLocalStorage<StoreKey>("pref:store", "all");
   const [dealType, setDealType] = useState("all");
+  const [coupangOnly, setCoupangOnly] = useState(false);
   const [search, setSearch] = useState("");
+
+  const coupangCount = useMemo(
+    () => initialDeals.filter((d) => getCoupangLink(d.id) !== null).length,
+    [initialDeals]
+  );
   const inputRef = useRef<HTMLInputElement>(null);
   const now = new Date();
   const updatedDate = new Date(updatedAt);
@@ -77,6 +85,9 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
     if (dealType !== "all") {
       deals = deals.filter((d) => d.discount === dealType);
     }
+    if (coupangOnly) {
+      deals = deals.filter((d) => getCoupangLink(d.id) !== null);
+    }
     if (search.trim()) {
       const q = search.trim().toLowerCase();
       deals = deals.filter(
@@ -97,7 +108,7 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
       );
     }
     return deals;
-  }, [initialDeals, activeStore, dealType, search]);
+  }, [initialDeals, activeStore, dealType, coupangOnly, search]);
 
   const showStoreLabel = activeStore === "all";
 
@@ -114,6 +125,42 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
         <div className="bg-[#FEF3C7] border border-[#FDE68A] rounded-xl p-3 mb-4 text-xs text-[#92400E]">
           데이터가 최신이 아닐 수 있습니다 ({daysOld}일 전 기준)
         </div>
+      )}
+
+      {coupangCount > 0 && (
+        <button
+          onClick={() => {
+            const next = !coupangOnly;
+            setCoupangOnly(next);
+            trackEvent("coupang_filter_toggle", { on: next ? 1 : 0, source: "hero_banner" });
+          }}
+          className={`w-full mb-4 rounded-2xl p-4 text-left transition-all ${
+            coupangOnly
+              ? "bg-gradient-to-r from-[#D97706] to-[#F59E0B] text-white shadow-lg"
+              : "bg-gradient-to-r from-[#FFF4E6] to-[#FFE4B5] border border-[#FFD8A8] hover:shadow-md"
+          }`}
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-3xl">🛒</span>
+            <div className="flex-1 min-w-0">
+              <p className={`text-base font-bold ${coupangOnly ? "text-white" : "text-[#92400E]"}`}>
+                쿠팡 가격 비교 가능 {coupangCount}개
+              </p>
+              <p className={`text-xs mt-0.5 ${coupangOnly ? "text-white/90" : "text-[#B45309]"}`}>
+                {coupangOnly
+                  ? "✓ 가격 비교 가능 상품만 보는 중 · 다시 눌러 해제"
+                  : "편의점 행사가보다 쿠팡이 더 저렴할 수 있어요. 탭하여 비교"}
+              </p>
+            </div>
+            <span
+              className={`text-[11px] px-2.5 py-1 rounded-full font-bold whitespace-nowrap ${
+                coupangOnly ? "bg-white text-[#D97706]" : "bg-[#D97706] text-white"
+              }`}
+            >
+              {coupangOnly ? "ON" : "보기"}
+            </span>
+          </div>
+        </button>
       )}
 
       <CategoryRecurringPerks target="convenience" title="정기 마트/식음료 행사" emoji="🛒" />
@@ -186,6 +233,22 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
             {t.label}
           </button>
         ))}
+        {coupangCount > 0 && (
+          <button
+            onClick={() => {
+              const next = !coupangOnly;
+              setCoupangOnly(next);
+              trackEvent("coupang_filter_toggle", { on: next ? 1 : 0, source: "filter_chip" });
+            }}
+            className={`px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${
+              coupangOnly
+                ? "bg-[#D97706] text-white"
+                : "bg-[#FFF4E6] text-[#D97706] border border-[#FFD8A8] hover:bg-[#FFE4B5]"
+            }`}
+          >
+            🛒 쿠팡 비교 ({coupangCount})
+          </button>
+        )}
         <span className="ml-auto text-xs text-[#94A3B8] self-center">
           {filteredDeals.length}개
         </span>

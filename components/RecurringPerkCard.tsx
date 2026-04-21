@@ -12,7 +12,9 @@ const BADGE_STYLES = {
 
 function buildSearchUrl(perk: RecurringPerk): string {
   const now = new Date();
-  const q = `${perk.brand} ${perk.title} ${now.getFullYear()}년 ${now.getMonth() + 1}월`;
+  const titleHasBrand = perk.title.toLowerCase().includes(perk.brand.toLowerCase());
+  const head = titleHasBrand ? perk.title : `${perk.brand} ${perk.title}`;
+  const q = `${head} ${now.getFullYear()}년 ${now.getMonth() + 1}월`;
   return `https://search.naver.com/search.naver?query=${encodeURIComponent(q)}`;
 }
 

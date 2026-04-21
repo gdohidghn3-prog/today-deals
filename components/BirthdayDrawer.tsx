@@ -179,7 +179,9 @@ function BirthdayItem({
             </a>
             <a
               href={`https://search.naver.com/search.naver?query=${encodeURIComponent(
-                `${perk.brand} 생일혜택 ${perk.membership}`
+                perk.membership.toLowerCase().includes(perk.brand.toLowerCase())
+                  ? `${perk.membership} 생일혜택`
+                  : `${perk.brand} 생일혜택 ${perk.membership}`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
