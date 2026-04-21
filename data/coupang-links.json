@@ -1,4 +1,12 @@
 {
-  "updatedAt": "2026-04-20",
-  "links": {}
+  "updatedAt": "2026-04-21",
+  "links": {
+    "emart24-90af031f": {
+      "productUrl": "https://link.coupang.com/a/etJDRH",
+      "productImage": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2534849741317389-01daa305-d345-4454-8395-cf13b5a662e6.jpg",
+      "productName": "스프라이트 캔, 350ml, 24개",
+      "productPrice": 13720,
+      "isRocket": true
+    }
+  }
 }
