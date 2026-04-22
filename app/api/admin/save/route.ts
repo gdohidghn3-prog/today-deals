@@ -6,7 +6,7 @@ type SaveBody = {
   productUrl: string;
   productImage: string;
   productName: string;
-  productPrice: number;
+  productPrice?: number;
   isRocket?: boolean;
   imageUpload?: { base64: string; ext: string };
 };
@@ -16,8 +16,8 @@ export async function POST(req: Request) {
     const body = (await req.json()) as SaveBody;
     const { dealId, productUrl, productName, productPrice, isRocket } = body;
 
-    if (!dealId || !productUrl || !productName || !productPrice) {
-      return NextResponse.json({ error: "필수 필드 누락 (dealId, productUrl, productName, productPrice)" }, { status: 400 });
+    if (!dealId || !productUrl || !productName) {
+      return NextResponse.json({ error: "필수 필드 누락 (dealId, productUrl, productName)" }, { status: 400 });
     }
     if (!/^https:\/\/link\.coupang\.com\/a\//.test(productUrl)) {
       return NextResponse.json({ error: "파트너스 짧은 링크(link.coupang.com/a/...) 형식이어야 합니다" }, { status: 400 });
@@ -37,7 +37,7 @@ export async function POST(req: Request) {
       productUrl,
       productImage,
       productName,
-      productPrice,
+      ...(typeof productPrice === "number" && productPrice > 0 ? { productPrice } : {}),
       isRocket: !!isRocket,
     });
 

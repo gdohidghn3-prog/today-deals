@@ -144,12 +144,12 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
             <span className="text-3xl">🛒</span>
             <div className="flex-1 min-w-0">
               <p className={`text-base font-bold ${coupangOnly ? "text-white" : "text-[#92400E]"}`}>
-                쿠팡 가격 비교 가능 {coupangCount}개
+                쿠팡에서 바로 확인 가능 {coupangCount}개
               </p>
               <p className={`text-xs mt-0.5 ${coupangOnly ? "text-white/90" : "text-[#B45309]"}`}>
                 {coupangOnly
-                  ? "✓ 가격 비교 가능 상품만 보는 중 · 다시 눌러 해제"
-                  : "편의점 행사가보다 쿠팡이 더 저렴할 수 있어요. 탭하여 비교"}
+                  ? "✓ 쿠팡 연결 상품만 보는 중 · 다시 눌러 해제"
+                  : "편의점 행사 상품을 쿠팡에서 바로 주문·가격 확인 가능"}
               </p>
             </div>
             <span

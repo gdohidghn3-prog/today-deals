@@ -27,9 +27,7 @@ export default function CoupangLinkCard({ link }: { link: CoupangLink }) {
             {link.productName}
           </p>
           <div className="flex items-center gap-2 mt-1">
-            <p className="text-sm font-bold text-[#D97706]">
-              {link.productPrice.toLocaleString()}원
-            </p>
+            <p className="text-[11px] text-[#64748B]">쿠팡에서 가격 확인 →</p>
             {link.isRocket && (
               <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#3B82F6] text-white font-bold">
                 로켓배송

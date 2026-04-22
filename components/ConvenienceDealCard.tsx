@@ -88,7 +88,7 @@ export default function ConvenienceDealCard({
             {coupang && (
               <span
                 className="absolute bottom-1.5 right-1.5 text-[9px] px-1.5 py-0.5 rounded font-bold text-white leading-none bg-[#D97706] flex items-center gap-0.5"
-                title={`쿠팡 ${coupang.productPrice.toLocaleString()}원`}
+                title="쿠팡에서 가격 확인"
               >
                 🛒 쿠팡
               </span>
@@ -108,7 +108,7 @@ export default function ConvenienceDealCard({
               )}
               {coupang && (
                 <p className="text-[10px] font-bold text-[#D97706] ml-auto">
-                  쿠팡 {coupang.productPrice.toLocaleString()}원
+                  🛒 쿠팡에서 확인
                 </p>
               )}
             </div>

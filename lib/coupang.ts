@@ -4,7 +4,7 @@ export type CoupangLink = {
   productUrl: string;
   productImage: string;
   productName: string;
-  productPrice: number;
+  productPrice?: number;
   isRocket?: boolean;
 };
 

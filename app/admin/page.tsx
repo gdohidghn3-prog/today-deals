@@ -16,7 +16,7 @@ type Mapping = {
   productUrl: string;
   productImage: string;
   productName: string;
-  productPrice: number;
+  productPrice?: number;
   isRocket?: boolean;
   note?: string;
 };
@@ -86,7 +86,7 @@ export default function AdminPage() {
       setProductUrl(m.productUrl);
       setProductName(m.productName);
       setProductImage(m.productImage);
-      setProductPrice(m.productPrice);
+      setProductPrice(typeof m.productPrice === "number" ? m.productPrice : "");
       setIsRocket(!!m.isRocket);
     } else {
       setProductUrl("");
@@ -160,8 +160,8 @@ export default function AdminPage() {
       setToast({ type: "error", msg: "먼저 혜택을 선택하세요" });
       return;
     }
-    if (!productUrl || !productName || !productPrice) {
-      setToast({ type: "error", msg: "파트너스 링크, 상품명, 가격은 필수입니다" });
+    if (!productUrl || !productName) {
+      setToast({ type: "error", msg: "파트너스 링크, 상품명은 필수입니다" });
       return;
     }
     if (!productImage && !uploadedBase64) {
@@ -175,7 +175,7 @@ export default function AdminPage() {
       productUrl,
       productName,
       productImage,
-      productPrice: Number(productPrice),
+      ...(productPrice !== "" ? { productPrice: Number(productPrice) } : {}),
       isRocket,
       ...(uploadedBase64 ? { imageUpload: { base64: uploadedBase64, ext: uploadedExt } } : {}),
     };
@@ -274,7 +274,7 @@ export default function AdminPage() {
                         <p className="font-mono text-[10px] text-[#94A3B8]">{id}</p>
                       </div>
                       <span className="text-xs text-[#D97706] font-bold whitespace-nowrap">
-                        {m.productPrice.toLocaleString()}원
+                        {typeof m.productPrice === "number" ? `${m.productPrice.toLocaleString()}원` : "가격 미표시"}
                       </span>
                       <button
                         onClick={() => pickDeal(id)}
@@ -388,7 +388,9 @@ export default function AdminPage() {
                 />
               </div>
               <div>
-                <label className="block text-[11px] text-[#475569] mb-1">가격 (원) *</label>
+                <label className="block text-[11px] text-[#475569] mb-1">
+                  가격 (원) <span className="text-[#94A3B8]">— 선택 (비우면 노출되지 않음)</span>
+                </label>
                 <input
                   type="number"
                   value={productPrice}
@@ -452,9 +454,7 @@ export default function AdminPage() {
                   <div className="flex-1 min-w-0">
                     <p className="text-xs text-[#0F172A] line-clamp-2">{productName || "(상품명)"}</p>
                     <div className="flex items-center gap-2 mt-1">
-                      <p className="text-sm font-bold text-[#D97706]">
-                        {productPrice ? `${Number(productPrice).toLocaleString()}원` : "(가격)"}
-                      </p>
+                      <p className="text-[11px] text-[#64748B]">쿠팡에서 가격 확인 →</p>
                       {isRocket && (
                         <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#3B82F6] text-white font-bold">
                           로켓배송
