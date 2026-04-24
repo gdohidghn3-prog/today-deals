@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23T06:31:49.298Z",
+  "updatedAt": "2026-04-24T07:19:18.066Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3550,19 +3550,6 @@
       "endDate": "2026-04-30"
     },
     {
-      "id": "cu-49545010",
-      "source": "cu",
-      "category": "convenience",
-      "title": "크라운)새콤달콤포도 2+1",
-      "description": "500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "크라운)새콤달콤포도",
-      "price": "500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801111188012.jpg",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
       "id": "cu-f5a66597",
       "source": "cu",
       "category": "convenience",
@@ -5210,6 +5197,19 @@
       "brand": "서울)커피우유300ml",
       "price": "2,100원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115135708.jpg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30"
+    },
+    {
+      "id": "cu-ce846b8d",
+      "source": "cu",
+      "category": "convenience",
+      "title": "동서)티오피트리플에스프 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "동서)티오피트리플에스프",
+      "price": "2,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115384212.png",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
