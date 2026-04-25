@@ -8,7 +8,10 @@ import BirthdayFab from "@/components/BirthdayFab";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://today-deals-ochre.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "오늘혜택 — 오늘 쓸 수 있는 할인/무료 혜택 모음",
     template: "%s | 오늘혜택",
@@ -20,7 +23,13 @@ export const metadata: Metadata = {
     title: "오늘혜택 — 통신사 · 편의점 · 올리브영 · 주유",
     description: "통신사 멤버십, 편의점 1+1, 올리브영 랭킹, 주유 최저가를 한 번에.",
     type: "website",
+    url: BASE_URL,
     locale: "ko_KR",
+  },
+  twitter: {
+    card: "summary",
+    title: "오늘혜택 — 통신사 · 편의점 · 올리브영 · 주유",
+    description: "통신사 멤버십, 편의점 1+1, 올리브영 랭킹, 주유 최저가를 한 번에.",
   },
 };
 
