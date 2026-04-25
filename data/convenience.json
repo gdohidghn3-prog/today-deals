@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24T07:19:18.066Z",
+  "updatedAt": "2026-04-25T06:10:59.853Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -1322,7 +1322,7 @@
       "discount": "1+1",
       "brand": "오뚜기)쇠고기육개장500g",
       "price": "7,800원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045600444.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045600444_1.png",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
@@ -1790,7 +1790,7 @@
       "discount": "1+1",
       "brand": "오뚜기)사골곰탕국물500ml",
       "price": "3,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045290102.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045290102_1.png",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
@@ -2063,7 +2063,7 @@
       "discount": "1+1",
       "brand": "오뚜기)돼지김치짜글이450",
       "price": "8,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045030098.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045030098_1.png",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
@@ -5864,19 +5864,6 @@
       "endDate": "2026-04-30"
     },
     {
-      "id": "gs25-925e71dc",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "미성)온실바닐라팝콘40G 1+1",
-      "description": "1,700원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "미성)온실바닐라팝콘40G",
-      "price": "1,700원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809827252034_001.jpg",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
       "id": "gs25-b554f5b3",
       "source": "gs25",
       "category": "convenience",
@@ -5899,19 +5886,6 @@
       "brand": "CJ)바삭칩허브솔트맛45G",
       "price": "1,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392149139_002.jpg",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "gs25-f28b35f3",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)바삭칩스팸맛45G 1+1",
-      "description": "1,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)바삭칩스팸맛45G",
-      "price": "1,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392149153_002.jpg",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
@@ -7814,6 +7788,32 @@
       "endDate": "2026-04-30"
     },
     {
+      "id": "gs25-833f609b",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "에이스)데일리유기농레몬즙20G 1+1",
+      "description": "1,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "에이스)데일리유기농레몬즙20G",
+      "price": "1,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809100016742_002.jpg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30"
+    },
+    {
+      "id": "gs25-8c55beb2",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "백설)멸치디포리1분링80G 1+1",
+      "description": "8,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "백설)멸치디포리1분링80G",
+      "price": "8,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392061622_002.jpg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30"
+    },
+    {
       "id": "gs25-ccc29a1f",
       "source": "gs25",
       "category": "convenience",
@@ -7888,19 +7888,6 @@
       "brand": "하림)치킨왕라면(대컵)",
       "price": "1,800원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8800354750277_001.jpg",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "gs25-bbaa32d2",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "바프)누룽지치킨(군옥수수맛) 2+1",
-      "description": "5,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "바프)누룽지치킨(군옥수수맛)",
-      "price": "5,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809389493531_001.jpg",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
@@ -10410,6 +10397,19 @@
       "brand": "서주)젤리인젤리콜라사이다40G",
       "price": "1,500원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809592641583_001.jpg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30"
+    },
+    {
+      "id": "gs25-7ad913c5",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "롯데)2%바이탈레몬라임500ML 2+1",
+      "description": "1,800원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "롯데)2%바이탈레몬라임500ML",
+      "price": "1,800원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801056251062_001.jpg",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
