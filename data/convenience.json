@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T09:16:04.107Z",
+  "updatedAt": "2026-04-28T09:35:06.036Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -5695,19 +5695,6 @@
       "endDate": "2026-04-30"
     },
     {
-      "id": "gs25-fe78c9c5",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "황태하태38G 1+1",
-      "description": "5,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "황태하태38G",
-      "price": "5,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809677723807_002.jpg",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
       "id": "gs25-d85e8416",
       "source": "gs25",
       "category": "convenience",
@@ -7810,6 +7797,19 @@
       "brand": "백설)멸치디포리1분링80G",
       "price": "8,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392061622_002.jpg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30"
+    },
+    {
+      "id": "gs25-c3b87af5",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "백설)사골가득1분링80G 1+1",
+      "description": "8,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "백설)사골가득1분링80G",
+      "price": "8,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392061646_002.jpg",
       "startDate": "2026-04-01",
       "endDate": "2026-04-30"
     },
