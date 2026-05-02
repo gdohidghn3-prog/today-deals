@@ -16,7 +16,14 @@ export default function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] z-30">
+    <nav
+      className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] z-30"
+      style={{
+        paddingBottom: "env(safe-area-inset-bottom)",
+        transform: "translateZ(0)",
+        WebkitTransform: "translateZ(0)",
+      }}
+    >
       <div className="max-w-3xl mx-auto grid grid-cols-5">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;

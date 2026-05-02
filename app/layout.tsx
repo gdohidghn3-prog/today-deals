@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
@@ -31,6 +31,12 @@ export const metadata: Metadata = {
     title: "오늘혜택 — 통신사 · 편의점 · 올리브영 · 주유",
     description: "통신사 멤버십, 편의점 1+1, 올리브영 랭킹, 주유 최저가를 한 번에.",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
