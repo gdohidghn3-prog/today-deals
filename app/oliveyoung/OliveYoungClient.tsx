@@ -2,7 +2,7 @@
 
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
-import { format } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import { ko } from "date-fns/locale";
 import Image from "next/image";
 import type { OliveYoungItem } from "@/lib/crawlers/oliveyoung";
@@ -115,7 +115,7 @@ export default function OliveYoungClient({
           {updatedAt && (
             <span className="text-[#CBD5E1]">
               {" · "}
-              {format(new Date(updatedAt), "M월 d일 HH시", { locale: ko })} 기준
+              {formatInTimeZone(new Date(updatedAt), "Asia/Seoul", "M월 d일 HH시", { locale: ko })} 기준
             </span>
           )}
         </p>

@@ -2,6 +2,8 @@
 
 import { useEffect, useState, useMemo, useRef } from "react";
 import { differenceInHours, differenceInDays } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
+import { ko } from "date-fns/locale";
 import { Search, X } from "lucide-react";
 import { SOURCE_LABELS, SOURCE_COLORS, type Deal, type DealSource } from "@/types/deal";
 import ConvenienceDealCard from "@/components/ConvenienceDealCard";
@@ -39,9 +41,6 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
   const inputRef = useRef<HTMLInputElement>(null);
   const now = new Date();
   const updatedDate = new Date(updatedAt);
-  const updatedMonth = updatedDate.getMonth() + 1;
-  const updatedDay = updatedDate.getDate();
-  const updatedHour = updatedDate.getHours();
   const hoursOld = differenceInHours(now, updatedDate);
   const daysOld = differenceInDays(now, updatedDate);
   const isStale = hoursOld >= 24;
@@ -117,7 +116,7 @@ export default function ConvenienceClient({ initialDeals, updatedAt }: { initial
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">편의점 행사</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          1+1, 2+1 행사 모아보기 · 총 {initialDeals.length}개 · {updatedMonth}월 {updatedDay}일 {updatedHour}시 기준
+          1+1, 2+1 행사 모아보기 · 총 {initialDeals.length}개 · {formatInTimeZone(updatedDate, "Asia/Seoul", "M월 d일 HH시", { locale: ko })} 기준
         </p>
       </div>
 

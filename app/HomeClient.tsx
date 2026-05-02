@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useRef } from "react";
 import { format, differenceInHours, differenceInDays } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import { ko } from "date-fns/locale";
 import { Search, X } from "lucide-react";
 import { CATEGORY_LABELS, SOURCE_LABELS, type Deal, type DealCategory, type TelecomType } from "@/types/deal";
@@ -23,9 +24,6 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
   const inputRef = useRef<HTMLInputElement>(null);
   const today = new Date();
   const updatedDate = new Date(updatedAt);
-  const updatedMonth = updatedDate.getMonth() + 1;
-  const updatedDay = updatedDate.getDate();
-  const updatedHour = updatedDate.getHours();
   const hoursOld = differenceInHours(today, updatedDate);
   const daysOld = differenceInDays(today, updatedDate);
   const isStale = hoursOld >= 24;
@@ -57,7 +55,7 @@ export default function HomeClient({ initialDeals, updatedAt }: { initialDeals: 
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">오늘혜택</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })} · 통신사 멤버십 혜택 · {updatedMonth}월 {updatedDay}일 {updatedHour}시 기준
+          {format(today, "yyyy년 M월 d일 EEEE", { locale: ko })} · 통신사 멤버십 혜택 · {formatInTimeZone(updatedDate, "Asia/Seoul", "M월 d일 HH시", { locale: ko })} 기준
         </p>
       </div>
 

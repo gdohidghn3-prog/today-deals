@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { MapPin, Loader2, TrendingUp, TrendingDown, Search, X } from "lucide-react";
-import { format } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import { ko } from "date-fns/locale";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 
@@ -267,7 +267,7 @@ export default function GasClient({
       <div className="pt-6 pb-4">
         <h1 className="text-2xl font-bold text-[#1A1A2E]">주유 최저가</h1>
         <p className="text-sm text-[#64748B] mt-1">
-          {format(new Date(updatedAt), "M월 d일 EEEE HH시", { locale: ko })} 기준 · 출처
+          {formatInTimeZone(new Date(updatedAt), "Asia/Seoul", "M월 d일 EEEE HH시", { locale: ko })} 기준 · 출처
           오피넷
         </p>
       </div>

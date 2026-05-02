@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Search, MapPin, Calendar, X, Filter } from "lucide-react";
+import { formatInTimeZone } from "date-fns-tz";
+import { ko } from "date-fns/locale";
 import { trackEvent } from "@/lib/analytics";
 import Image from "next/image";
 
@@ -186,7 +188,7 @@ export default function CultureClient() {
           전시 · 공연 · 축제 · 콘서트
           {(sources.tour > 0 || sources.culture > 0) && ` · 서울 ${sources.seoul}건 + 전국 ${sources.tour + sources.culture}건`}
           {sources.tour === 0 && sources.culture === 0 && events.length > 0 && ` · ${events.length}건`}
-          {updatedAt && ` · ${new Date(updatedAt).toLocaleDateString("ko-KR")} 기준`}
+          {updatedAt && ` · ${formatInTimeZone(new Date(updatedAt), "Asia/Seoul", "M월 d일", { locale: ko })} 기준`}
         </p>
       </div>
 
