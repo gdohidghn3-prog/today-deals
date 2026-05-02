@@ -57,6 +57,7 @@ jobs:
           "
 
       - name: Merge-preserve on partial failure
+        id: merge-preserve
         if: failure()
         run: |
           node -e "
@@ -80,6 +81,7 @@ jobs:
           "
 
       - name: Commit and push
+        if: ${{ success() || steps.merge-preserve.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

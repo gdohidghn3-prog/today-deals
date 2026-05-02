@@ -1,14 +1,24 @@
 {
-  "updatedAt": "2026-04-09T01:15:09.235Z",
+  "updatedAt": "2026-05-02T16:06:57.699Z",
+  "freshness": {
+    "skt": "2026-05-02T16:06:57.699Z",
+    "kt": "2026-05-02T16:06:57.699Z",
+    "lgu": "2026-05-02T16:06:57.699Z"
+  },
   "count": 333,
   "summary": {
     "skt": 20,
     "kt": 149,
     "lgu": 164
   },
+  "best": [
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
+  ],
   "deals": [
     {
-      "id": "skt-0",
+      "id": "skt-2688cdb4",
       "source": "skt",
       "category": "cafe",
       "title": "배스킨라빈스 50% 할인",
@@ -18,11 +28,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202602/1772070181682.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-1",
+      "id": "skt-4968032a",
       "source": "skt",
       "category": "cafe",
       "title": "파리바게뜨 천원당 100원 할인",
@@ -32,11 +42,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635235481847.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-2",
+      "id": "skt-c06400bd",
       "source": "skt",
       "category": "convenience",
       "title": "CU 1천 원당 100원 할인",
@@ -46,11 +56,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202407/1720411306460.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-3",
+      "id": "skt-9bdf8931",
       "source": "skt",
       "category": "food",
       "title": "아웃백 스테이크하우스 15% 할인",
@@ -60,11 +70,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635224545687.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-4",
+      "id": "skt-572c712e",
       "source": "skt",
       "category": "shopping",
       "title": "이마트 3% 할인",
@@ -74,11 +84,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635228970229.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-5",
+      "id": "skt-739afc73",
       "source": "skt",
       "category": "cafe",
       "title": "뚜레쥬르 1천원당 150원 할인",
@@ -88,11 +98,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202501/1735657309709.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-6",
+      "id": "skt-b4d39395",
       "source": "skt",
       "category": "cafe",
       "title": "공차 10% 할인",
@@ -102,11 +112,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635143713581.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-7",
+      "id": "skt-3cca790a",
       "source": "skt",
       "category": "food",
       "title": "도미노피자 30% 할인",
@@ -116,11 +126,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202511/1762736813029.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-8",
+      "id": "skt-b3a93a62",
       "source": "skt",
       "category": "food",
       "title": "롯데리아 1천원당 150원 할인",
@@ -130,11 +140,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202407/1721797048603.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-9",
+      "id": "skt-a799ff21",
       "source": "skt",
       "category": "convenience",
       "title": "세븐일레븐 1천 원당 100원 할인",
@@ -144,11 +154,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202401/1705560905763.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-10",
+      "id": "skt-86fabe9b",
       "source": "skt",
       "category": "etc",
       "title": "폴 바셋 10% 할인",
@@ -158,11 +168,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202211/1667888724269.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-11",
+      "id": "skt-5b94f172",
       "source": "skt",
       "category": "culture",
       "title": "CGV 무료 관람 연 3회, 평일/주말 관람 1+1 연 9회, 특별관 할인 혜택 연 12회, 영화 관람권",
@@ -172,11 +182,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202401/1705989931703.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-12",
+      "id": "skt-a0b59e6d",
       "source": "skt",
       "category": "cafe",
       "title": "던킨 15% 할인",
@@ -186,11 +196,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202412/1734920944106.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-13",
+      "id": "skt-84a95277",
       "source": "skt",
       "category": "food",
       "title": "VIPS 15% 할인",
@@ -200,11 +210,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202309/1694398652272.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-14",
+      "id": "skt-4e61deeb",
       "source": "skt",
       "category": "culture",
       "title": "롯데월드 어드벤처 종합이용권 본인 40% + 동반 3인 30% 현장 할인 할인",
@@ -214,25 +224,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202111/1637324770776.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-15",
-      "source": "skt",
-      "category": "shopping",
-      "title": "11번가 11% 할인",
-      "description": "[VIP/골드/실버] 상시 최대 11% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 상시 최대 11% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위)",
-      "discount": "11%",
-      "brand": "11번가",
-      "membershipGrade": "VIP·골드·실버",
-      "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202210/1666164823765.png",
-      "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "skt-16",
+      "id": "skt-33118f63",
       "source": "skt",
       "category": "cafe",
       "title": "메가MGC커피 20% 할인",
@@ -242,11 +238,25 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202503/1741325122018.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-17",
+      "id": "skt-97cfdc97",
+      "source": "skt",
+      "category": "shopping",
+      "title": "11번가 11% 할인",
+      "description": "[VIP/골드/실버] 상시 최대 11% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 상시 최대 11% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위)",
+      "discount": "11%",
+      "brand": "11번가",
+      "membershipGrade": "VIP·골드·실버",
+      "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202210/1666164823765.png",
+      "link": "https://sktmembership.tworld.co.kr",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "skt-82214dcf",
       "source": "skt",
       "category": "food",
       "title": "피자헛 30% 할인",
@@ -256,11 +266,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202604/1775438638114.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-18",
+      "id": "skt-4516760a",
       "source": "skt",
       "category": "food",
       "title": "파파존스피자 30% 할인",
@@ -270,11 +280,11 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202407/1722325191736.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "skt-19",
+      "id": "skt-142aae50",
       "source": "skt",
       "category": "etc",
       "title": "SK렌터카 85% 할인",
@@ -284,39 +294,39 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635214032482.png",
       "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-0",
+      "id": "kt-ff40742b",
       "source": "kt",
-      "category": "food",
-      "title": "VIPS(고객 보답) 50% 할인",
-      "description": "[전등급] [고객 보답 프로그램] VIPS 전 메뉴 50% 할인 (최대 7만 5천원 할인)",
-      "discount": "50%",
-      "brand": "VIPS(고객 보답)",
+      "category": "etc",
+      "title": "하프클럽 쿠폰",
+      "description": "[전등급] 10% 장바구니 할인 쿠폰",
+      "discount": "쿠폰",
+      "brand": "하프클럽",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98183.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98189.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-1",
+      "id": "kt-bc34eed2",
       "source": "kt",
-      "category": "culture",
-      "title": "롯데시네마(고객 보답) 1,000원 할인",
-      "description": "[전등급] [고객 보답 프로그램] 싱글콤보(팝콘M 1개 탄산 1개) 1,000원 딜",
-      "discount": "1,000원",
-      "brand": "롯데시네마(고객 보답)",
+      "category": "etc",
+      "title": "보리보리 쿠폰",
+      "description": "[전등급] 10% 장바구니 할인 쿠폰",
+      "discount": "쿠폰",
+      "brand": "보리보리",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98182.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98188.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-2",
+      "id": "kt-8f177ba2",
       "source": "kt",
       "category": "shopping",
       "title": "어니스트플라워 15% 할인",
@@ -326,11 +336,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98181.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-3",
+      "id": "kt-0f061a92",
       "source": "kt",
       "category": "food",
       "title": "샐러디 10% 할인",
@@ -340,11 +350,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9870.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-4",
+      "id": "kt-4f7b0c3b",
       "source": "kt",
       "category": "culture",
       "title": "핑크퐁플러스 53% 할인",
@@ -354,11 +364,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98155.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-5",
+      "id": "kt-70b465b9",
       "source": "kt",
       "category": "shopping",
       "title": "롯데면세점 동경긴자점 무료",
@@ -368,11 +378,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98165.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-6",
+      "id": "kt-6692bce6",
       "source": "kt",
       "category": "etc",
       "title": "어플레이즈 20% 할인",
@@ -382,11 +392,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98160.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-7",
+      "id": "kt-205d87b9",
       "source": "kt",
       "category": "etc",
       "title": "와플랫 체크 무료",
@@ -396,11 +406,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98166.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-8",
+      "id": "kt-c62ac24d",
       "source": "kt",
       "category": "etc",
       "title": "핸들대리 12% 할인",
@@ -410,11 +420,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98159.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-9",
+      "id": "kt-d8e7dec6",
       "source": "kt",
       "category": "etc",
       "title": "스몹 20% 할인",
@@ -424,25 +434,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98149.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-10",
+      "id": "kt-04ede949",
       "source": "kt",
       "category": "etc",
-      "title": "온누리시장 7% 할인",
-      "description": "[전등급] 7% 할인쿠폰 (최소 1천원 이상, 최대 할인금액 제한없음, ID당 무제한 이용 가능)",
-      "discount": "7%",
+      "title": "온누리시장 10% 할인",
+      "description": "[전등급] 10%할인쿠폰 (최소 1천원 이상, 최대 할인금액 제한없음, ID당 무제한 이용 가능)",
+      "discount": "10%",
       "brand": "온누리시장",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98153.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-11",
+      "id": "kt-52f60fa1",
       "source": "kt",
       "category": "convenience",
       "title": "GS25 1,000원 할인",
@@ -452,11 +462,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_GS25_web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-12",
+      "id": "kt-61c9e431",
       "source": "kt",
       "category": "cafe",
       "title": "파리바게뜨 1,000원 할인",
@@ -466,11 +476,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/PB.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-13",
+      "id": "kt-3e70a3d2",
       "source": "kt",
       "category": "cafe",
       "title": "메가MGC커피 500원 할인",
@@ -480,11 +490,11 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_메가MGC커피_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-14",
+      "id": "kt-b42fbfc8",
       "source": "kt",
       "category": "etc",
       "title": "지니 TV 20% 할인",
@@ -494,25 +504,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_지니TV_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-15",
+      "id": "kt-752abf8d",
       "source": "kt",
       "category": "culture",
       "title": "롯데시네마 5,000원 할인",
-      "description": "[전등급] [상시]최대 5,000원 할인 [현장혜택]매점 콤보 3,000원 | [VVIP] [VVIP초이스]영화예매 무료 [VVIP 생일혜택]영화쿠폰 2매 or 영화쿠폰 1매 싱글콤보 1매 | [VIP] [VIP초이스]영화예매 무료 [VIP 생일혜택]영화 1＋1 관람권",
+      "description": "[전등급] [상시]최대 5,000원 할인 [현장혜택] 매점 콤보 3,000원 | [VVIP] [VVIP초이스]영화예매 무료 [VVIP 생일혜택]영화쿠폰 2매 or 영화쿠폰 1매 싱글콤보 1매 | [VIP] [VIP초이스]영화예매 무료 [VIP 생일혜택]영화 1＋1 관람권",
       "discount": "5,000원",
       "brand": "롯데시네마",
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_롯데시네마_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-16",
+      "id": "kt-c01b17b2",
       "source": "kt",
       "category": "etc",
       "title": "Starbucks 무료",
@@ -522,11 +532,11 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0027_starbucks.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-17",
+      "id": "kt-05ce5644",
       "source": "kt",
       "category": "cafe",
       "title": "뚜레쥬르 1,000원 할인",
@@ -536,11 +546,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9867.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-18",
+      "id": "kt-70b3b1d3",
       "source": "kt",
       "category": "shopping",
       "title": "이마트24 1,000원 할인",
@@ -550,11 +560,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0078_emart24.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-19",
+      "id": "kt-c2435f4e",
       "source": "kt",
       "category": "etc",
       "title": "BR baskinrobbin 혜택",
@@ -564,25 +574,25 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/배스킨라빈스_웹_제휴브랜드_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-20",
+      "id": "kt-5db42c6d",
       "source": "kt",
       "category": "culture",
       "title": "CGV 혜택",
-      "description": "[전등급] [상시] 최대 5천원 할인(동반 3인 추가할인) [현장할인]매점콤보 3천원 할인",
+      "description": "[전등급] [상시] 최대 5천원 할인(동반 4인 추가할인) [현장할인]매점콤보 3천원 할인",
       "discount": "혜택",
       "brand": "CGV",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0001_CGV.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-21",
+      "id": "kt-36f30c72",
       "source": "kt",
       "category": "cafe",
       "title": "할리스 로고 이미지 무료",
@@ -592,11 +602,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_할리스_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-22",
+      "id": "kt-1ed22313",
       "source": "kt",
       "category": "etc",
       "title": "원스토어 10% 할인",
@@ -606,11 +616,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_원스토어_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-23",
+      "id": "kt-76e42c1b",
       "source": "kt",
       "category": "etc",
       "title": "kukka Live everyday with beautiful flowers 10% 할인",
@@ -620,11 +630,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_꾸까_웹5.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-24",
+      "id": "kt-0bcecffd",
       "source": "kt",
       "category": "cafe",
       "title": "공차 10% 할인",
@@ -634,11 +644,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9834.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-25",
+      "id": "kt-314c025b",
       "source": "kt",
       "category": "etc",
       "title": "MEGABOX LIFE THEATER 혜택",
@@ -648,11 +658,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/megaboxnew.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-26",
+      "id": "kt-1fc95cf6",
       "source": "kt",
       "category": "etc",
       "title": "Domino's 25% 할인",
@@ -662,11 +672,11 @@
       "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98135.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-27",
+      "id": "kt-7ef9e205",
       "source": "kt",
       "category": "etc",
       "title": "OUTBACK STEAKHOUSE 15% 할인",
@@ -676,11 +686,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0004_outback.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-28",
+      "id": "kt-1a9b684d",
       "source": "kt",
       "category": "food",
       "title": "파파존스피자 30% 할인",
@@ -690,11 +700,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/papajohns_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-29",
+      "id": "kt-5e16b7a6",
       "source": "kt",
       "category": "etc",
       "title": "DUNKIN 무료",
@@ -704,11 +714,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_던킨도너츠_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-30",
+      "id": "kt-72863416",
       "source": "kt",
       "category": "shopping",
       "title": "GS THE FRESH 혜택",
@@ -718,11 +728,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9888.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-31",
+      "id": "kt-61bac655",
       "source": "kt",
       "category": "etc",
       "title": "파리크라상 1,000원 할인",
@@ -732,11 +742,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0022_pariscroissant.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-32",
+      "id": "kt-610a8311",
       "source": "kt",
       "category": "convenience",
       "title": "CU 1,000원 할인",
@@ -746,11 +756,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-33",
+      "id": "kt-ca6f4c24",
       "source": "kt",
       "category": "food",
       "title": "VIPS 15% 할인",
@@ -760,11 +770,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9810.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-34",
+      "id": "kt-51f6a85e",
       "source": "kt",
       "category": "etc",
       "title": "그리팅 쿠폰",
@@ -774,25 +784,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_그리팅_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-35",
+      "id": "kt-59f26c6d",
       "source": "kt",
       "category": "shopping",
       "title": "KT알파 쇼핑(구. K쇼핑) 쿠폰",
-      "description": "[전등급] [상시혜택]최대 1만 2천원 할인 쿠폰 [생일혜택] 1만원 할인",
+      "description": "[전등급] [상시] 최대 1만 2천원 할인 쿠폰 [생일혜택] 1만원 할인",
       "discount": "쿠폰",
       "brand": "KT알파 쇼핑(구. K쇼핑)",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_KT알파쇼핑_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-36",
+      "id": "kt-3cff6b18",
       "source": "kt",
       "category": "cafe",
       "title": "서울형 키즈카페 20% 할인",
@@ -802,11 +812,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9880.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-37",
+      "id": "kt-fe87dd08",
       "source": "kt",
       "category": "etc",
       "title": "BR스노우로고 무료",
@@ -816,11 +826,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9840.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-38",
+      "id": "kt-42f841db",
       "source": "kt",
       "category": "etc",
       "title": "브레댄코 10% 할인",
@@ -830,11 +840,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/BNCO_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-39",
+      "id": "kt-bb3b62f8",
       "source": "kt",
       "category": "etc",
       "title": "매드포갈릭 20% 할인",
@@ -844,11 +854,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0013_madforG.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-40",
+      "id": "kt-3c3dce59",
       "source": "kt",
       "category": "etc",
       "title": "5G 데이터충전 80% 할인",
@@ -858,11 +868,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/4612_lteDataRecharge3.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-41",
+      "id": "kt-dc780fed",
       "source": "kt",
       "category": "shopping",
       "title": "쇼핑라운지 혜택",
@@ -872,25 +882,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98113.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-42",
+      "id": "kt-f8ca94df",
       "source": "kt",
       "category": "etc",
-      "title": "이니스프리 혜택",
-      "description": "[전등급] 비타민C 겔마스크 2매 증정(3만원 이상 구매 시) | [VVIP] 레티놀 PDRN 마스크 4매 OR 블랙티 마스크 4매 무료",
-      "discount": "혜택",
+      "title": "이니스프리 무료",
+      "description": "[VVIP] 레티놀 PDRN 마스크 4매 OR 블랙티 마스크 4매 무료",
+      "discount": "무료",
       "brand": "이니스프리",
-      "membershipGrade": "전등급·VVIP",
+      "membershipGrade": "VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9814.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-43",
+      "id": "kt-6722710f",
       "source": "kt",
       "category": "etc",
       "title": "퀴즈노스 10% 할인",
@@ -900,11 +910,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9851.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-44",
+      "id": "kt-e861e984",
       "source": "kt",
       "category": "etc",
       "title": "롯데렌터카 G car 20% 할인",
@@ -914,11 +924,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9841.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-45",
+      "id": "kt-22e245ef",
       "source": "kt",
       "category": "etc",
       "title": "LTE데이터 룰렛 100% 할인",
@@ -928,25 +938,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/4613_lteDataRoulette.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-46",
+      "id": "kt-36e8508c",
       "source": "kt",
       "category": "etc",
-      "title": "에버랜드 로고 이미지 30% 할인",
-      "description": "[전등급] [1,2월 이벤트] 본인 50% 및 동반 3인 30% 할인 [상시혜택] 본인 40% 및 동반 3인 20% 할인 [생일혜택] 이용권 50% 할인",
-      "discount": "30%",
+      "title": "에버랜드 로고 이미지 20% 할인",
+      "description": "[전등급] [상시혜택] 본인 40% 및 동반 3인 20% 할인 [생일혜택] 이용권 50% 할인",
+      "discount": "20%",
       "brand": "에버랜드 로고 이미지",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0036_everland.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-47",
+      "id": "kt-14c9d951",
       "source": "kt",
       "category": "shopping",
       "title": "신세계면세점 로고 이미지 혜택",
@@ -956,11 +966,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_신세계면세점_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-48",
+      "id": "kt-298ca895",
       "source": "kt",
       "category": "culture",
       "title": "KT멤버십 공연예매 50% 할인",
@@ -970,11 +980,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4608_culture.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-49",
+      "id": "kt-d733d442",
       "source": "kt",
       "category": "etc",
       "title": "모두의충전 로고 1,000원 할인",
@@ -984,11 +994,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-50",
+      "id": "kt-116caba6",
       "source": "kt",
       "category": "cafe",
       "title": "BR 플레이타임 키즈카페 로고 무료",
@@ -998,11 +1008,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9846.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-51",
+      "id": "kt-43bb94c6",
       "source": "kt",
       "category": "etc",
       "title": "노트미 20% 할인",
@@ -1012,11 +1022,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98100.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-52",
+      "id": "kt-e0c47dc6",
       "source": "kt",
       "category": "food",
       "title": "피자헛 15% 할인",
@@ -1026,25 +1036,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0010_pizzahut.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-53",
+      "id": "kt-76c22c5b",
       "source": "kt",
       "category": "etc",
-      "title": "BRCLEAN 10% 할인",
-      "description": "[VVIP] 5천원 할인 쿠폰(1회) / 2천원 할인 쿠폰(정기)/ 이사, 입주청소 10% 할인쿠폰 | [VIP] 5천원 할인 쿠폰(1회) / 2천원 할인 쿠폰(정기)/ 이사, 입주청소 10% 할인쿠폰 | [Gold] 3천원 할인 쿠폰(1회)/ 이사, 입주청소 10% 할인쿠폰 | [일반] 3천원 할인 쿠폰(1회)/ 이사, 입주청소 10% 할인쿠폰",
-      "discount": "10%",
+      "title": "BRCLEAN 7% 할인",
+      "description": "[VVIP] 5천원 할인 쿠폰(1회) / 2천원 할인 쿠폰(정기)/ 에어컨 청소 7% 할인 쿠폰(최대 1만원) | [VIP] 5천원 할인 쿠폰(1회) / 2천원 할인 쿠폰(정기)/ 에어컨 청소 7% 할인 쿠폰(최대 1만원) | [Gold] 3천원 할인 쿠폰(1회)/ 에어컨 청소 7% 할인 쿠폰(최대 1만원) | [일반] 3천원 할인 쿠폰(1회)/ 에어컨 청소 7% 할인 쿠폰(최대 1만원)",
+      "discount": "7%",
       "brand": "BRCLEAN",
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98161.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-54",
+      "id": "kt-4214bd77",
       "source": "kt",
       "category": "food",
       "title": "피자알볼로 15% 할인",
@@ -1054,11 +1064,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_피자알볼로_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-55",
+      "id": "kt-b44ad8fb",
       "source": "kt",
       "category": "etc",
       "title": "LTE 데이터충전 80% 할인",
@@ -1068,11 +1078,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_LTE데이터충전_195x98 (1).png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-56",
+      "id": "kt-1266215e",
       "source": "kt",
       "category": "etc",
       "title": "트립닷컴 쿠폰",
@@ -1082,11 +1092,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9811.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-57",
+      "id": "kt-2b8d85f9",
       "source": "kt",
       "category": "shopping",
       "title": "현대면세점 혜택",
@@ -1096,11 +1106,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9856.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-58",
+      "id": "kt-40193a35",
       "source": "kt",
       "category": "etc",
       "title": "아고다 5% 할인",
@@ -1110,11 +1120,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_아고다_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-59",
+      "id": "kt-da702ac2",
       "source": "kt",
       "category": "shopping",
       "title": "CJ더마켓 45% 할인",
@@ -1124,11 +1134,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_CJ더마켓_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-60",
+      "id": "kt-578e59ed",
       "source": "kt",
       "category": "etc",
       "title": "필수팩 혜택",
@@ -1138,11 +1148,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9854.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-61",
+      "id": "kt-7aab0742",
       "source": "kt",
       "category": "shopping",
       "title": "신라면세점 혜택",
@@ -1152,11 +1162,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_신라면세점_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-62",
+      "id": "kt-016856d7",
       "source": "kt",
       "category": "etc",
       "title": "genie 30% 할인",
@@ -1166,11 +1176,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/1112_genieweb.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-63",
+      "id": "kt-3842ba61",
       "source": "kt",
       "category": "cafe",
       "title": "카페베네 10% 할인",
@@ -1180,11 +1190,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_카페베네_웹1.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-64",
+      "id": "kt-53e2bd7f",
       "source": "kt",
       "category": "cafe",
       "title": "초심스터디카페 쿠폰",
@@ -1194,11 +1204,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_초심카페_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-65",
+      "id": "kt-39532b96",
       "source": "kt",
       "category": "etc",
       "title": "dal.komm COFFEE 무료",
@@ -1208,11 +1218,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_달콤커피_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-66",
+      "id": "kt-1590588e",
       "source": "kt",
       "category": "etc",
       "title": "핫딜 5% 할인",
@@ -1222,11 +1232,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9873.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-67",
+      "id": "kt-0918c6df",
       "source": "kt",
       "category": "etc",
       "title": "아쿠아필드 30% 할인",
@@ -1236,11 +1246,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9885.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-68",
+      "id": "kt-41bb609a",
       "source": "kt",
       "category": "etc",
       "title": "KT닷컴 액세서리 할인 5% 할인",
@@ -1250,11 +1260,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x984.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-69",
+      "id": "kt-b3c78157",
       "source": "kt",
       "category": "etc",
       "title": "주렁주렁 25% 할인",
@@ -1264,11 +1274,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98119.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-70",
+      "id": "kt-9fd33de6",
       "source": "kt",
       "category": "food",
       "title": "미스터피자 20% 할인",
@@ -1278,11 +1288,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0009_mrpizza.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-71",
+      "id": "kt-a4db830e",
       "source": "kt",
       "category": "convenience",
       "title": "GS25편의점택배 10% 할인",
@@ -1292,11 +1302,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_GS포스트박스_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-72",
+      "id": "kt-d96015b7",
       "source": "kt",
       "category": "etc",
       "title": "정원e샵 30% 할인",
@@ -1306,11 +1316,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98104.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-73",
+      "id": "kt-b8aeb0f1",
       "source": "kt",
       "category": "etc",
       "title": "텐바이텐 15% 할인",
@@ -1320,11 +1330,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_텐바이텐_195x982.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-74",
+      "id": "kt-4e96dd05",
       "source": "kt",
       "category": "etc",
       "title": "어바웃펫 10% 할인",
@@ -1334,11 +1344,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_어바웃펫_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-75",
+      "id": "kt-f470ecec",
       "source": "kt",
       "category": "cafe",
       "title": "비트커피 50% 할인",
@@ -1348,11 +1358,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/비트커피.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-76",
+      "id": "kt-b7d6ec85",
       "source": "kt",
       "category": "etc",
       "title": "차방정 무료",
@@ -1362,11 +1372,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9895.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-77",
+      "id": "kt-a5d77d28",
       "source": "kt",
       "category": "etc",
       "title": "핏펫로고 쿠폰",
@@ -1376,11 +1386,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/webbrand_195x986.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-78",
+      "id": "kt-afcf561d",
       "source": "kt",
       "category": "etc",
       "title": "아쿠아플라넷 20% 할인",
@@ -1390,11 +1400,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0043_aquaplanet.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-79",
+      "id": "kt-1eafbb2c",
       "source": "kt",
       "category": "etc",
       "title": "아르떼뮤지엄 20% 할인",
@@ -1404,11 +1414,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98130.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-80",
+      "id": "kt-cc163e6b",
       "source": "kt",
       "category": "etc",
       "title": "기프티쇼 쿠폰",
@@ -1418,11 +1428,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_기프티쇼_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-81",
+      "id": "kt-23be850b",
       "source": "kt",
       "category": "etc",
       "title": "BLUE BOTTLE COFFEE 혜택",
@@ -1432,11 +1442,11 @@
       "membershipGrade": "VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_블루보틀_웹1.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-82",
+      "id": "kt-fd05f0bb",
       "source": "kt",
       "category": "etc",
       "title": "이랜드몰 10% 할인",
@@ -1446,11 +1456,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9846.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-83",
+      "id": "kt-6c9f75e8",
       "source": "kt",
       "category": "etc",
       "title": "여기어때_로고 8% 할인",
@@ -1460,11 +1470,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x981.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-84",
+      "id": "kt-373407ee",
       "source": "kt",
       "category": "etc",
       "title": "스파랜드 30% 할인",
@@ -1474,11 +1484,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9892.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-85",
+      "id": "kt-bebdf8f9",
       "source": "kt",
       "category": "etc",
       "title": "AICE 20% 할인",
@@ -1488,25 +1498,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9855.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-86",
+      "id": "kt-5687d65e",
       "source": "kt",
       "category": "etc",
-      "title": "SeoulLand 50% 할인",
-      "description": "[전등급] [1,2월 이벤트] 본인 50% 할인(동반 2인 40%)[상시] 본인 40% 할인(동반 2인 30%)",
-      "discount": "50%",
+      "title": "SeoulLand 40% 할인",
+      "description": "[전등급] [상시] 본인 40% 할인(동반 2인 30%)",
+      "discount": "40%",
       "brand": "SeoulLand",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0039_seoulland.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-87",
+      "id": "kt-f07d5526",
       "source": "kt",
       "category": "shopping",
       "title": "신라아이파크면세점 혜택",
@@ -1516,11 +1526,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_신라아이파크면세점_앱.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-88",
+      "id": "kt-e8c44984",
       "source": "kt",
       "category": "etc",
       "title": "BR 카모아 쿠폰",
@@ -1530,11 +1540,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_카모아_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-89",
+      "id": "kt-d3ed6d87",
       "source": "kt",
       "category": "etc",
       "title": "키자니아 20% 할인",
@@ -1544,11 +1554,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/키자니아로고_195x98(웹)_190422.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-90",
+      "id": "kt-697e26e3",
       "source": "kt",
       "category": "etc",
       "title": "풀무원 로고 쿠폰",
@@ -1558,11 +1568,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_풀무원_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-91",
+      "id": "kt-4a42de90",
       "source": "kt",
       "category": "etc",
       "title": "VOG Hair(보그헤어) 20% 할인",
@@ -1572,11 +1582,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98115.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-92",
+      "id": "kt-aa8aa748",
       "source": "kt",
       "category": "etc",
       "title": "BR 허닭 로고 10% 할인",
@@ -1586,11 +1596,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9843.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-93",
+      "id": "kt-2d5ebdac",
       "source": "kt",
       "category": "etc",
       "title": "파고다토쿨 혜택",
@@ -1600,11 +1610,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98112.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-94",
+      "id": "kt-947df59f",
       "source": "kt",
       "category": "etc",
       "title": "파고다원 5% 할인",
@@ -1614,11 +1624,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98111.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-95",
+      "id": "kt-f0db0ad8",
       "source": "kt",
       "category": "etc",
       "title": "파고다인강 15% 할인",
@@ -1628,11 +1638,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98114.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-96",
+      "id": "kt-9b96b910",
       "source": "kt",
       "category": "etc",
       "title": "파고다어학원 20% 할인",
@@ -1642,11 +1652,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98110.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-97",
+      "id": "kt-ffd01d35",
       "source": "kt",
       "category": "etc",
       "title": "후디스몰 25% 할인",
@@ -1656,11 +1666,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_후디스몰_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-98",
+      "id": "kt-60c1cd2c",
       "source": "kt",
       "category": "etc",
       "title": "광동상회 로고 10% 할인",
@@ -1670,11 +1680,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9839.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-99",
+      "id": "kt-22db87c5",
       "source": "kt",
       "category": "etc",
       "title": "아르떼 키즈파크 제주 20% 할인",
@@ -1684,11 +1694,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98131.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-100",
+      "id": "kt-22e0937e",
       "source": "kt",
       "category": "etc",
       "title": "원더파크 25% 할인",
@@ -1698,11 +1708,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9884.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-101",
+      "id": "kt-4d67cf60",
       "source": "kt",
       "category": "shopping",
       "title": "BR제주면세점 쿠폰",
@@ -1712,11 +1722,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_제주인터넷면세점_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-102",
+      "id": "kt-efb31525",
       "source": "kt",
       "category": "etc",
       "title": "에어클래스 15% 할인",
@@ -1726,11 +1736,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_에어클래스_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-103",
+      "id": "kt-9a96de85",
       "source": "kt",
       "category": "etc",
       "title": "다락 35% 할인",
@@ -1740,11 +1750,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_다락_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-104",
+      "id": "kt-1ff5a7b0",
       "source": "kt",
       "category": "etc",
       "title": "히트조명 5% 할인",
@@ -1754,11 +1764,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_히트조명_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-105",
+      "id": "kt-98b82412",
       "source": "kt",
       "category": "etc",
       "title": "원더빌리지 25% 할인",
@@ -1768,11 +1778,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9891.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-106",
+      "id": "kt-a0be6d6b",
       "source": "kt",
       "category": "etc",
       "title": "에듀윌 5% 할인",
@@ -1782,11 +1792,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_에듀윌_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-107",
+      "id": "kt-e0bb6c41",
       "source": "kt",
       "category": "etc",
       "title": "REFRESH GOLF 혜택",
@@ -1796,11 +1806,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_리프레쉬골프_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-108",
+      "id": "kt-6827f9a5",
       "source": "kt",
       "category": "etc",
       "title": "A/S수리비 할인 20% 할인",
@@ -1810,11 +1820,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4614_ASDiscount.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-109",
+      "id": "kt-62daca0e",
       "source": "kt",
       "category": "etc",
       "title": "차일디 10% 할인",
@@ -1824,11 +1834,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_차일디_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-110",
+      "id": "kt-f4637d10",
       "source": "kt",
       "category": "culture",
       "title": "씨라이프 코엑스 아쿠아리움 15% 할인",
@@ -1838,11 +1848,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98125.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-111",
+      "id": "kt-9b924eb2",
       "source": "kt",
       "category": "etc",
       "title": "추억의 국민학교 떡볶이 25% 할인",
@@ -1852,11 +1862,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98102.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-112",
+      "id": "kt-f2054f0e",
       "source": "kt",
       "category": "etc",
       "title": "볼록북 30% 할인",
@@ -1866,11 +1876,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_볼록북_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-113",
+      "id": "kt-fb80ba52",
       "source": "kt",
       "category": "etc",
       "title": "노보텔 앰배서더 동대문 10% 할인",
@@ -1880,11 +1890,11 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_노보텔_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-114",
+      "id": "kt-26b54951",
       "source": "kt",
       "category": "etc",
       "title": "V컬러링 100% 할인",
@@ -1894,11 +1904,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98106.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-115",
+      "id": "kt-7a90b0ca",
       "source": "kt",
       "category": "etc",
       "title": "스피드메이트 10% 할인",
@@ -1908,11 +1918,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98134.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-116",
+      "id": "kt-e4bb2465",
       "source": "kt",
       "category": "etc",
       "title": "밀크T 무료",
@@ -1922,11 +1932,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9875.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-117",
+      "id": "kt-bc8d77f5",
       "source": "kt",
       "category": "etc",
       "title": "KKday 10% 할인",
@@ -1936,11 +1946,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9898.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-118",
+      "id": "kt-4333f628",
       "source": "kt",
       "category": "etc",
       "title": "김캐디 5,000원 할인",
@@ -1950,11 +1960,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9845.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-119",
+      "id": "kt-4c8c18f5",
       "source": "kt",
       "category": "etc",
       "title": "오붓 10% 할인",
@@ -1964,11 +1974,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9869.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-120",
+      "id": "kt-9c8698fe",
       "source": "kt",
       "category": "etc",
       "title": "kt wiz 프로야구 2,000원 할인",
@@ -1978,11 +1988,11 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0056_ktWiz.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-121",
+      "id": "kt-d5b02505",
       "source": "kt",
       "category": "etc",
       "title": "SEOUL SKY 20% 할인",
@@ -1992,11 +2002,11 @@
       "membershipGrade": "전등급·VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_서울스카이_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-122",
+      "id": "kt-cedaeec1",
       "source": "kt",
       "category": "etc",
       "title": "클럽디오아시스 10% 할인",
@@ -2006,11 +2016,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/멤버십_웹등록용_logo.jpg",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-123",
+      "id": "kt-720d2eb3",
       "source": "kt",
       "category": "etc",
       "title": "앱티핏 20% 할인",
@@ -2020,11 +2030,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9874.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-124",
+      "id": "kt-bb3804d9",
       "source": "kt",
       "category": "etc",
       "title": "착한의사 49% 할인",
@@ -2034,11 +2044,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9879.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-125",
+      "id": "kt-56190034",
       "source": "kt",
       "category": "etc",
       "title": "리뷰노트 30% 할인",
@@ -2048,11 +2058,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9871.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-126",
+      "id": "kt-c70d3ba5",
       "source": "kt",
       "category": "etc",
       "title": "빌리카 85% 할인",
@@ -2062,11 +2072,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9858.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-127",
+      "id": "kt-460c1b60",
       "source": "kt",
       "category": "etc",
       "title": "밀리의 서재 무료",
@@ -2076,11 +2086,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_밀리의서재_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-128",
+      "id": "kt-9248672e",
       "source": "kt",
       "category": "etc",
       "title": "롯데렌터카 60% 할인",
@@ -2090,11 +2100,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0057_lottecar.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-129",
+      "id": "kt-623ed162",
       "source": "kt",
       "category": "culture",
       "title": "롯데월드로고 30% 할인",
@@ -2104,11 +2114,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/lotteworld_weblogo.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-130",
+      "id": "kt-2ef56dfb",
       "source": "kt",
       "category": "etc",
       "title": "autoOasis 혜택",
@@ -2118,11 +2128,11 @@
       "membershipGrade": "VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/오토오아시스_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-131",
+      "id": "kt-18a387c1",
       "source": "kt",
       "category": "culture",
       "title": "롯데월드 아쿠아리움 30% 할인",
@@ -2132,11 +2142,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_롯데월드_아쿠아리움_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-132",
+      "id": "kt-2167701e",
       "source": "kt",
       "category": "etc",
       "title": "이월드 20% 할인",
@@ -2146,11 +2156,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_이월드_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-133",
+      "id": "kt-445540a8",
       "source": "kt",
       "category": "etc",
       "title": "설악워터피아 35% 할인",
@@ -2160,11 +2170,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/워터피아.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-134",
+      "id": "kt-5fad8645",
       "source": "kt",
       "category": "etc",
       "title": "SK렌터카 60% 할인",
@@ -2174,25 +2184,25 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9821.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-135",
+      "id": "kt-81a88fcf",
       "source": "kt",
       "category": "etc",
       "title": "MOVV 18% 할인",
-      "description": "[전등급] KTX결합상품 최대 18% 할인 인천공항이동 특가 99,000원 (최대 33%할인), 왕복시 7% 편도 추가 할인",
+      "description": "[전등급] 가정의달(5~6월), KTX결합상품 최대 18%할인(15%선할인+무브 마일리지 3% 추가 적립/ 인천공항이동 특가 99,000원(최대 33%할인)",
       "discount": "18%",
       "brand": "MOVV",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9849.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-136",
+      "id": "kt-e774ae84",
       "source": "kt",
       "category": "etc",
       "title": "지니팩 100% 할인",
@@ -2202,11 +2212,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4611_geniePack.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-137",
+      "id": "kt-9733288f",
       "source": "kt",
       "category": "etc",
       "title": "클룩(KLOOK) 5% 할인",
@@ -2216,11 +2226,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_클룩_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-138",
+      "id": "kt-f15b931f",
       "source": "kt",
       "category": "shopping",
       "title": "롯데면세점 혜택",
@@ -2230,11 +2240,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/1804lotteweb.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-139",
+      "id": "kt-cf0573f9",
       "source": "kt",
       "category": "etc",
       "title": "한화리조트 혜택",
@@ -2244,11 +2254,11 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_한화리조트_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-140",
+      "id": "kt-1bfc0ab8",
       "source": "kt",
       "category": "etc",
       "title": "공항 스카이허브 라운지 30% 할인",
@@ -2258,11 +2268,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/skyhub_web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-141",
+      "id": "kt-23170ea8",
       "source": "kt",
       "category": "etc",
       "title": "더라운지 30% 할인",
@@ -2272,11 +2282,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_더라운지멤버스_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-142",
+      "id": "kt-5d4e4f12",
       "source": "kt",
       "category": "etc",
       "title": "런드리고 혜택",
@@ -2286,11 +2296,11 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9899.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-143",
+      "id": "kt-b7658389",
       "source": "kt",
       "category": "etc",
       "title": "현대Hmall 7% 할인",
@@ -2300,11 +2310,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_Hmall_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-144",
+      "id": "kt-6c572766",
       "source": "kt",
       "category": "etc",
       "title": "미스터힐링 8% 할인",
@@ -2314,11 +2324,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0029_mrhealing.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-145",
+      "id": "kt-03cf4c8c",
       "source": "kt",
       "category": "food",
       "title": "반올림피자 20% 할인",
@@ -2328,11 +2338,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9872.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-146",
+      "id": "kt-e1052430",
       "source": "kt",
       "category": "etc",
       "title": "데이팩 7,500원 할인",
@@ -2342,11 +2352,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x986.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-147",
+      "id": "kt-31a6fc9b",
       "source": "kt",
       "category": "etc",
       "title": "집업페이 1% 할인",
@@ -2356,11 +2366,11 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98150.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
-      "id": "kt-148",
+      "id": "kt-def5bfd3",
       "source": "kt",
       "category": "etc",
       "title": "QED 무료",
@@ -2370,36 +2380,36 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9828.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711169",
       "source": "lgu",
       "category": "cafe",
       "title": "스타벅스 무료",
-      "description": "[VVIP]아메리카노(T) 한잔 무료 OR [VIP]더블 사이즈업 무료 | VIP콕 내 제휴사 통합 월 1회",
+      "description": "[VVIP] 아메리카노(T) 한잔 무료 OR [VIP] 더블 사이즈업 무료 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "스타벅스",
       "membershipGrade": "VVIP·VIP",
-      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250925-031724-486-gQs3Th5D.png",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260417-070356-078-G0hoxNCV.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-391",
       "source": "lgu",
       "category": "etc",
       "title": "네이버플러스 멤버십 무료",
-      "description": "네이버플러스멤버십 1개월 무료 이용권 제공 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "네이버플러스 멤버십 1개월 무료 이용권 제공 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "네이버플러스 멤버십",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20201103a100213456.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-446",
@@ -2412,260 +2422,260 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "/images/mobcop/images/20150216104043195.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711069",
       "source": "lgu",
       "category": "etc",
       "title": "유독 혜택",
-      "description": "유독 4천원 할인 제공 ※최소 구매 금액 없음 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "유독 4천원 할인 제공 ※최소 구매 금액 없음 | VIP콕 통합 월 1회",
       "discount": "혜택",
       "brand": "유독",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240628-105300-029-wltbA22S.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711114",
       "source": "lgu",
       "category": "cafe",
       "title": "배스킨라빈스 무료",
-      "description": "블록팩 1개 무료 교환 | VIP콕 통합 월 1회, 연 12회 가능",
+      "description": "블록팩 1개 무료 교환 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "배스킨라빈스",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240220-021017-797-92ex7TfB.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711141",
       "source": "lgu",
       "category": "etc",
       "title": "교보문고sam 혜택",
-      "description": "sam무제한 1개월 이용권 | VIP콕 내 제휴사 통합 월 1회",
+      "description": "sam무제한 1개월 이용권 | VIP콕 통합 월 1회",
       "discount": "혜택",
       "brand": "교보문고sam",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032111-760-2YRzK6xv.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-402",
       "source": "lgu",
       "category": "culture",
       "title": "롯데월드 어드벤처 42% 할인",
-      "description": "종합이용권(1 Day/AFTER 4) 42% 할인 (동반 1인 30% 할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "종합이용권(1 Day/AFTER 4) 42% 할인 (동반 1인 30% 할인) | VIP콕 통합 월 1회",
       "discount": "42%",
       "brand": "롯데월드 어드벤처",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20190219a101023716.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-393",
       "source": "lgu",
       "category": "culture",
       "title": "롯데월드 아쿠아리움 40% 할인",
-      "description": "입장권 본인 40% 할인 (동반 3인 30%할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "입장권 본인 40% 할인 (동반 3인 30%할인) | VIP콕 통합 월 1회",
       "discount": "40%",
       "brand": "롯데월드 아쿠아리움",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032341-885-z2TZWwl4.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-394",
       "source": "lgu",
       "category": "etc",
       "title": "서울스카이 30% 할인",
-      "description": "입장권 본인 30% 할인 (동반 3인 10% 할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "입장권 본인 30% 할인 (동반 3인 10% 할인) | VIP콕 통합 월 1회",
       "discount": "30%",
       "brand": "서울스카이",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032404-633-IapvaTQ8.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711053",
       "source": "lgu",
       "category": "culture",
       "title": "롯데월드 어드벤처 부산 35% 할인",
-      "description": "종합이용권(1 Day/AFTER 4) 35% 할인 (동반 3인 10% 할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "종합이용권(1 Day/AFTER 4) 35% 할인 (동반 3인 10% 할인) | VIP콕 통합 월 1회",
       "discount": "35%",
       "brand": "롯데월드 어드벤처 부산",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20221229-015020-196-k3NXSuqt.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711074",
       "source": "lgu",
       "category": "etc",
       "title": "캐리비안베이 40% 할인",
-      "description": "이용권 본인 40% 할인 (동반 1인 30% 할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "이용권 본인 40% 할인 (동반 1인 30% 할인) | VIP콕 통합 월 1회",
       "discount": "40%",
       "brand": "캐리비안베이",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230419-023841-703-GGHe6jbD.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711070",
       "source": "lgu",
       "category": "etc",
       "title": "에버랜드 40% 할인",
-      "description": "종일권 본인 40% 할인(대인/소인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "종일권 본인 40% 할인(대인/소인) | VIP콕 통합 월 1회",
       "discount": "40%",
       "brand": "에버랜드",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230227-044713-102-AJeB4MQg.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-375",
       "source": "lgu",
       "category": "cafe",
       "title": "할리스 무료",
-      "description": "아메리카노(R사이즈) 1잔 무료 ※ ICE/HOT 선택 가능 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "아메리카노(R사이즈) 1잔 무료 ※ ICE/HOT 선택 가능 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "할리스",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20220214a141607520.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711039",
       "source": "lgu",
       "category": "etc",
       "title": "요기요 10% 할인",
-      "description": "①10% 할인 쿠폰 2매(최대 2천원 할인) ②5% 할인 쿠폰(최대 1천5백원 할인) | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "①10% 할인 쿠폰 2매(최대 2천원 할인) ②5% 할인 쿠폰(최대 1천5백원 할인) | VIP콕 통합 월 1회",
       "discount": "10%",
       "brand": "요기요",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20220805-024740-842-N0U2PCoA.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711083",
       "source": "lgu",
       "category": "etc",
       "title": "롯데렌터카 G car 35% 할인",
-      "description": "35% 할인권 2매 (차량 대여 시 최대 1만원, 전 차종 가능) | VIP콕 통합 월 1회, 연 12회 가능",
+      "description": "35% 할인권 2매 (차량 대여 시 최대 1만원, 전 차종 가능) | VIP콕 통합 월 1회",
       "discount": "35%",
       "brand": "롯데렌터카 G car",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240813-090842-656-8XaD12Of.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711121",
       "source": "lgu",
       "category": "etc",
       "title": "카모아 10% 할인",
-      "description": "해외 렌터카 10% 할인(최대 1만8천원 할인) | VIP콕 통합 월 1회, 연 12회 가능",
+      "description": "해외 렌터카 10% 할인(최대 1만8천원 할인) | VIP콕 통합 월 1회",
       "discount": "10%",
       "brand": "카모아",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240327-034556-019-0ayQVNP4.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-440",
       "source": "lgu",
       "category": "etc",
       "title": "LG생활건강샵 U+패밀리샵 혜택",
-      "description": "5천원 할인 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "5천원 할인 | VIP콕 통합 월 1회",
       "discount": "혜택",
       "brand": "LG생활건강샵 U+패밀리샵",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20170404145744731.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711052",
       "source": "lgu",
       "category": "etc",
       "title": "리디셀렉트 무료",
-      "description": "리디셀렉트 1개월 무료 이용권 증정 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "리디셀렉트 1개월 무료 이용권 증정 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "리디셀렉트",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032558-756-CNHgiXmp.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-405",
       "source": "lgu",
       "category": "etc",
       "title": "데이터 1GB 선물하기 무료",
-      "description": "무료 데이터 1GB 선물하기 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "무료 데이터 1GB 선물하기 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "데이터 1GB 선물하기",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20180330a085532013.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711116",
       "source": "lgu",
       "category": "etc",
       "title": "쉐이크쉑 혜택",
-      "description": "5천원 할인(2만원 이상 구매 시) | VIP콕 통합 월 1회, 연 12회 가능",
+      "description": "5천원 할인(2만원 이상 구매 시) | VIP콕 통합 월 1회",
       "discount": "혜택",
       "brand": "쉐이크쉑",
       "membershipGrade": "VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240221-034647-241-EluvpJYD.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-380",
       "source": "lgu",
       "category": "etc",
       "title": "딸기콩  무료",
-      "description": "어린이 오디오북 딸기콩 1개월 무료 이용권 제공 | VIP콕 내 제휴사 통합 월 1회, 연 12회 가능",
+      "description": "어린이 오디오북 딸기콩 1개월 무료 이용권 제공 | VIP콕 통합 월 1회",
       "discount": "무료",
       "brand": "딸기콩 ",
       "membershipGrade": "VIP",
       "imageUrl": "/images/mobcop/images/20211012a153359897.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-6",
@@ -2678,36 +2688,36 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211231a180846455.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-196",
       "source": "lgu",
       "category": "shopping",
       "title": "GS THE FRESH 혜택",
-      "description": "VVIP/VIP 3천원 할인 우수 2천원 할인 ※ 5만원 이상 결제 시 | 월 1회",
+      "description": "VVIP/VIP : 3천원 할인 우수 : 2천원 할인 ※ 5만원 이상 결제 시 | 월 1회",
       "discount": "혜택",
       "brand": "GS THE FRESH",
       "membershipGrade": "VVIP·VIP·우수",
-      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250226-080236-906-GPYc6LSL.png",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260417-065524-237-EjUV347W.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-265",
       "source": "lgu",
       "category": "convenience",
       "title": "GS25 100원 할인",
-      "description": "VVIP/VIP : 1천원당 100원 할인 우수 : 1천원당 50원 할인 ※제휴사 지정하는 행사상품은 할인제외 | 일 1회",
+      "description": "VVIP/VIP : 1천원당 100원 할인 우수 : 1천원당 50원 할인 | 일 1회",
       "discount": "100원",
       "brand": "GS25",
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20200110a175546955.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-266",
@@ -2720,8 +2730,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20171208a124252090.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-267",
@@ -2734,8 +2744,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250120-085921-476-07h37ZHf.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711112",
@@ -2748,8 +2758,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240124-013612-547-arZFUDV0.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711115",
@@ -2762,22 +2772,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240220-023021-271-UPIBcSMf.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711117",
       "source": "lgu",
       "category": "etc",
       "title": "펫생각 20% 할인",
-      "description": "20% 할인(최대 2만원) | 월 1회",
+      "description": "20% 할인 (최대 2만원 할인) | 월 1회",
       "discount": "20%",
       "brand": "펫생각",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240320-013009-217-LNBl0XYd.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711118",
@@ -2790,8 +2800,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240322-042627-303-CZHs2fRq.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711119",
@@ -2804,8 +2814,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240322-043000-971-0z5rljFJ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711120",
@@ -2818,8 +2828,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240401-093901-428-837PUysG.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711124",
@@ -2832,8 +2842,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240521-110201-766-nWgsBewR.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711125",
@@ -2846,8 +2856,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240605-031531-492-kcHtZFso.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711126",
@@ -2860,8 +2870,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240620-051852-767-it9si7HO.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711133",
@@ -2874,8 +2884,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240902-030811-189-yB56Vpsf.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711134",
@@ -2888,8 +2898,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20241107-102904-623-STAlWv4L.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711137",
@@ -2902,8 +2912,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250123-023000-411-8CFuZgs6.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711139",
@@ -2916,22 +2926,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250331-031942-904-a6FL7ofg.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711140",
       "source": "lgu",
       "category": "etc",
       "title": "V컬러링 멤버십 프로모션 1,430원 할인",
-      "description": "V컬러링 가입 시 첫달 통화연결음 콘텐츠 1곡 무료 제공(1,430원 상당) | 최초 1개월, 1회 제공",
+      "description": "V컬러링 가입 시 첫달 통화연결음 콘텐츠 1곡 무료 제공(1,430원 상당) | 최초 1회, 1개월 제공",
       "discount": "1,430원",
       "brand": "V컬러링 멤버십 프로모션",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031806-137-h3PsMf4m.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711143",
@@ -2944,8 +2954,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031841-182-pJbf2jA2.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711144",
@@ -2958,8 +2968,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031857-046-ZL2kyR5a.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711145",
@@ -2972,8 +2982,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031917-543-ULJGelBX.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711146",
@@ -2986,8 +2996,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031934-128-ZXgFeJIv.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711147",
@@ -3000,8 +3010,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-031947-063-qn6GduSx.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711150",
@@ -3014,8 +3024,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032037-908-K3e21eaV.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711152",
@@ -3028,36 +3038,36 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250724-045617-832-hdlIAoJp.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711154",
       "source": "lgu",
       "category": "etc",
       "title": "페인터즈 혜택",
-      "description": "페인터즈 공연 U+멤버십 할인가 제공 | 제한없음",
+      "description": "페인터즈 공연 U+멤버십 할인가 제공 | 월 1회",
       "discount": "혜택",
       "brand": "페인터즈",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250724-045718-539-TOsme0Wa.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711155",
       "source": "lgu",
       "category": "etc",
       "title": "VYVY 30% 할인",
-      "description": "렌탈 서비스 제품 렌탈 시 30% 할인 | 월 2회",
+      "description": "렌탈 서비스 제품 렌탈 시 30% 할인 쿠폰 2장 | 월 1회",
       "discount": "30%",
       "brand": "VYVY",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032004-857-0UGWEuPQ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711156",
@@ -3070,8 +3080,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250707-043013-281-VPlAxWqW.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711158",
@@ -3084,8 +3094,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250731-054117-589-zRUoLBbf.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711160",
@@ -3098,8 +3108,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250731-054624-139-IPhpT9oJ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711162",
@@ -3112,8 +3122,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250731-055103-352-wqMiBKqP.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711163",
@@ -3126,8 +3136,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-113127-691-YA6aJWcW.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711165",
@@ -3140,8 +3150,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-114049-861-NaiB9IGO.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711166",
@@ -3154,8 +3164,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-114245-641-KV1jZjjV.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711167",
@@ -3168,8 +3178,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-114906-874-yzTduHrS.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711171",
@@ -3182,8 +3192,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250926-023213-593-SdokOkTv.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711172",
@@ -3196,8 +3206,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251020-054856-471-B3JA0GYi.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711173",
@@ -3210,8 +3220,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251020-060827-949-qesjeXUH.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711174",
@@ -3224,8 +3234,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251020-061200-932-yNE3o5gZ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711175",
@@ -3238,22 +3248,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260312-062315-684-085mYIbZ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "lgu-711176",
-      "source": "lgu",
-      "category": "etc",
-      "title": "마켓비 10% 할인",
-      "description": "마켓비 자사몰 전 상품 10% 할인 | 월 1회",
-      "discount": "10%",
-      "brand": "마켓비",
-      "membershipGrade": "전등급",
-      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251020-061608-093-afeTOeDD.png",
-      "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711177",
@@ -3266,8 +3262,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251103-120938-060-3JktUqxh.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711178",
@@ -3280,22 +3276,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251028-042706-865-IbF9dbxx.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711179",
       "source": "lgu",
       "category": "etc",
       "title": "파고다어학원 20% 할인",
-      "description": "20% 할인(신규 회원은 5% 추가 할인) | 3개월에 1회",
+      "description": "20% 할인(신규 회원은 5% 추가 할인) | 3개월 1회",
       "discount": "20%",
       "brand": "파고다어학원",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251125-043506-460-JxZDvgCz.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711180",
@@ -3308,22 +3304,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251125-045724-213-iZ4q9olY.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711181",
       "source": "lgu",
       "category": "etc",
       "title": "파고다원 5% 할인",
-      "description": "①1:1 회화 전과목 5% 할인 ②1:1 화상 전과목 1만원 할인 | 연 2회(6개월에 1회)",
+      "description": "①1:1 회화 전과목 5% 할인 ②1:1 화상 전과목 1만원 할인 | 3개월 1회",
       "discount": "5%",
       "brand": "파고다원",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251125-050040-903-iDox68am.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711182",
@@ -3336,8 +3332,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251125-050502-332-lYRqNB4j.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711184",
@@ -3350,22 +3346,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251218-045719-787-3clsIa5i.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711185",
       "source": "lgu",
       "category": "etc",
       "title": "스와로브스키 5% 할인",
-      "description": "상시 드립백&커피캡슐 구매 5% 할인 | 월 3회",
+      "description": "상시 드립백&커피캡슐 구매 5% 할인 쿠폰 3장 | 월 3회",
       "discount": "5%",
       "brand": "스와로브스키",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-033954-539-476Jw5u2.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711186",
@@ -3378,8 +3374,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-042249-391-a48tziNW.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711187",
@@ -3392,8 +3388,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-043031-180-OW1FPM5v.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711188",
@@ -3406,8 +3402,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-044945-780-IgBFcNZp.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711189",
@@ -3420,8 +3416,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-045351-788-cx8yn7WD.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711190",
@@ -3434,8 +3430,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260129-051201-929-wu8BhoYP.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711191",
@@ -3448,8 +3444,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260224-050319-667-IKbPC7Vi.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711192",
@@ -3462,8 +3458,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260224-052328-972-2yJdBf5p.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711193",
@@ -3476,8 +3472,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260224-052608-541-25ZMf9BD.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711194",
@@ -3490,22 +3486,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260312-035538-394-9T1cvkJR.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711195",
       "source": "lgu",
       "category": "etc",
       "title": "밀크T 무료",
-      "description": "①무료 체험 ②네이버페이 3만원 ③초중고 학습전략서 | 가정당 1회",
+      "description": "①무료 체험 ②네이버페이 2만원 ③초중고 학습전략서 | 가정당 1회",
       "discount": "무료",
       "brand": "밀크T",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260224-053650-057-ERtlGe79.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711196",
@@ -3518,8 +3514,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260331-043559-109-a5EuGCQC.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711197",
@@ -3532,8 +3528,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260331-045659-181-w7btTLgs.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711198",
@@ -3546,8 +3542,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260331-062448-653-aFuG5UXj.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711199",
@@ -3560,8 +3556,64 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260331-062649-875-gNBp2MKk.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "lgu-711200",
+      "source": "lgu",
+      "category": "etc",
+      "title": "매드포갈릭 15% 할인",
+      "description": "VVIP/VIP : 15% 할인 우수 : 5% 할인 | 일 1회",
+      "discount": "15%",
+      "brand": "매드포갈릭",
+      "membershipGrade": "VVIP·VIP·우수",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260417-065700-082-R4lYRxLS.png",
+      "link": "https://www.lguplus.com/benefit-membership",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "lgu-711202",
+      "source": "lgu",
+      "category": "etc",
+      "title": "웅진플레이도시 30% 할인",
+      "description": "워터파크&온천스파 1인 종일권 30% 할인 (동반 3인까지) | 월 1회",
+      "discount": "30%",
+      "brand": "웅진플레이도시",
+      "membershipGrade": "전등급",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260423-052654-830-RaKcGHSY.png",
+      "link": "https://www.lguplus.com/benefit-membership",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "lgu-711203",
+      "source": "lgu",
+      "category": "etc",
+      "title": "폴라리스오피스 20% 할인",
+      "description": "AI 요금제 1개월권 20% 할인 | 월 1회",
+      "discount": "20%",
+      "brand": "폴라리스오피스",
+      "membershipGrade": "전등급",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260423-052843-586-hSnPdboL.png",
+      "link": "https://www.lguplus.com/benefit-membership",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "lgu-711204",
+      "source": "lgu",
+      "category": "etc",
+      "title": "포텔리어 무료",
+      "description": "무료 1개월 구독권 | 월 1회",
+      "discount": "무료",
+      "brand": "포텔리어",
+      "membershipGrade": "전등급",
+      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260423-052917-291-5aIQ7oeH.png",
+      "link": "https://www.lguplus.com/benefit-membership",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-71",
@@ -3574,22 +3626,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20220302a094332808.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-188",
       "source": "lgu",
       "category": "etc",
       "title": "원스토어 10% 할인",
-      "description": "최대 10% 할인 (최대 1만원 할인) | - 게임(유료게임, 인앱결제) : 10% 할인, 일 1회, 최대 1만원 할인 - 앱(유료앱, 인앱결제(카카오톡 등 일부 앱 한정)) : 10% 할인, 일 1회, 최대 1만원 할인 - 원스토리앱(이북/만화/웹툰/웹소설) : 5% 할인, 일 1회, 최대 5천원 할인",
+      "description": "최대 10% 할인 (최대 1만원 할인) | 일 1회",
       "discount": "10%",
       "brand": "원스토어",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20180620a120123595.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-243",
@@ -3602,22 +3654,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20211222a145057371.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "lgu-255",
-      "source": "lgu",
-      "category": "etc",
-      "title": "U⁺모바일tv 10% 할인",
-      "description": "콘텐츠 및 월정액 10% 할인 | 월 최대 1만원까지 할인 가능",
-      "discount": "10%",
-      "brand": "U⁺모바일tv",
-      "membershipGrade": "전등급",
-      "imageUrl": "/images/mobcop/images/20190125a141250644.jpg",
-      "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711096",
@@ -3630,8 +3668,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230920-023426-994-iVFPfdZ0.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711107",
@@ -3644,8 +3682,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240122-013545-767-q8cKa0ng.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711109",
@@ -3658,8 +3696,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240123-032737-076-yNDrOGbM.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711164",
@@ -3672,36 +3710,36 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-113651-917-tPN6xAWs.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711168",
       "source": "lgu",
       "category": "etc",
       "title": "스피드메이트 혜택",
-      "description": "엔진오일 2만원 할인 및 정비혜택 4종 제공 | 3개월에 1회",
+      "description": "엔진오일 2만원 할인 및 정비혜택 4종 제공 | 3개월 1회",
       "discount": "혜택",
       "brand": "스피드메이트",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250830-115647-038-AoreUfsE.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711092",
       "source": "lgu",
       "category": "etc",
       "title": "롯데렌터카 89% 할인",
-      "description": "①제주 최대 89% 할인 ②내륙 최대 65% 할인 | 제주지역 기간별 별도 할인 적용",
+      "description": "①제주 최대 89% 할인 ②내륙 최대 65% 할인 | 제주지점에 한해서만 기간별 별도 할인 적용",
       "discount": "89%",
       "brand": "롯데렌터카",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230905-033335-133-KRUCyTon.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-125",
@@ -3714,8 +3752,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20221209-034704-556-MJG7HH3j.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711019",
@@ -3728,8 +3766,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20220517a103856886.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711020",
@@ -3742,8 +3780,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20220517a105137701.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711021",
@@ -3756,8 +3794,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230323-103937-458-ddf6327n.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711036",
@@ -3770,8 +3808,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20220729-012935-101-2ZWiGfpU.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711075",
@@ -3784,8 +3822,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20241016-011634-803-WZJwxsLw.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711080",
@@ -3798,22 +3836,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230526-034102-011-7ToTQv4f.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "lgu-711082",
-      "source": "lgu",
-      "category": "etc",
-      "title": "셀렉스 15% 할인",
-      "description": "15% 할인(최대 3만원 할인) | 월 1회",
-      "discount": "15%",
-      "brand": "셀렉스",
-      "membershipGrade": "전등급",
-      "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230620-020747-084-ILr4Ftfe.png",
-      "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711085",
@@ -3826,22 +3850,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230626-032301-751-aVvJVfuQ.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711088",
       "source": "lgu",
       "category": "etc",
       "title": "트립닷컴 7% 할인",
-      "description": "①호텔 7% 할인 ②액티비티 4% 할인 ③항공 2% 할인 | 제한없음",
+      "description": "①호텔 7% 할인 ②액티비티 4% 할인 ③항공 2% 할인 | 월 1회",
       "discount": "7%",
       "brand": "트립닷컴",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230718-052644-264-KMYQOVYi.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711095",
@@ -3854,22 +3878,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20230919-050011-912-qesBMPht.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711102",
       "source": "lgu",
       "category": "etc",
       "title": "뮤직벨링 혜택",
-      "description": "통화연결음 가입이벤트 경품 지급 | 가입 당 최초 1회",
+      "description": "통화연결음 가입이벤트 경품 지급 | 최초 1회",
       "discount": "혜택",
       "brand": "뮤직벨링",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20241209-035422-916-fuq6yTzM.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711106",
@@ -3882,8 +3906,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20241210-021353-997-VRbOpie1.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711108",
@@ -3896,8 +3920,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240123-031332-700-bN7UYW1A.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711111",
@@ -3910,8 +3934,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240123-044320-629-VrBfoygt.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-711110",
@@ -3924,8 +3948,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240123-033740-660-3sQNH6By.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-64",
@@ -3938,22 +3962,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250817-062802-330-AJ57Ji7R.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-216",
       "source": "lgu",
       "category": "etc",
       "title": "아쿠아플라넷 20% 할인",
-      "description": "①일산점, 광교점 20% 할인 ②여수점, 제주점 15% 할인 | 일 1회(대인기준 / 본인포함 최대 4인)",
+      "description": "①일산점, 광교점 20% 할인 ②여수점, 제주점 15% 할인 | 일 1회",
       "discount": "20%",
       "brand": "아쿠아플라넷",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251210-022600-207-k34xbXhb.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-200",
@@ -3966,22 +3990,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20250817-062727-614-WDlH9hy0.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-80",
       "source": "lgu",
       "category": "etc",
       "title": "세빛섬 혜택",
-      "description": "세빛섬 내 제휴 레스토랑 할인 (채빛퀴진 뷔페/이솔라 레스토랑/카페돌체/골든블루마리나) | 혜택별 일 1회",
+      "description": "세빛섬 내 제휴 레스토랑 할인 (채빛퀴진 뷔페/이솔라 레스토랑/카페돌체/골든블루마리나) | 혜택 별 일 1회",
       "discount": "혜택",
       "brand": "세빛섬",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20200428a101731431.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-275",
@@ -3994,8 +4018,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20170512143214506.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-277",
@@ -4008,8 +4032,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20211220a163011763.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-278",
@@ -4022,22 +4046,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211220a163120465.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-279",
       "source": "lgu",
       "category": "etc",
       "title": "LG트윈스 경기 티켓 할인 혜택",
-      "description": "VVIP/VIP: 3천원 할인 우수: 2천원 할인 | 일 1회 - BLUE석, RED석, NAVY석, GREEN석에 한함 - 정규시즌 잠실 홈경기에 한함 ※ 중복 할인 불가",
+      "description": "VVIP/VIP : 3천원 할인 우수 : 2천원 할인 | 일 1회 - BLUE석, RED석, NAVY석, GREEN석에 한함 - 정규시즌 잠실 홈경기에 한함 ※ 중복 할인 불가",
       "discount": "혜택",
       "brand": "LG트윈스 경기 티켓 할인",
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20211220a163155223.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-78",
@@ -4050,8 +4074,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211222a094116566.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-96",
@@ -4064,8 +4088,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032312-069-XbUYVoT1.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-79",
@@ -4078,8 +4102,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20200428a102624405.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-77",
@@ -4092,8 +4116,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20200515a093318903.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-97",
@@ -4106,8 +4130,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260105-032735-803-l8nw3G6R.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-173",
@@ -4120,8 +4144,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20191022a095754680.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-170",
@@ -4134,8 +4158,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20190401a095854429.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-114",
@@ -4148,8 +4172,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20260204-125352-039-hANo3jDR.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-447",
@@ -4162,8 +4186,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20220404a095049355.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-22",
@@ -4176,8 +4200,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210914a154106916.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-92",
@@ -4190,22 +4214,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20200113a104514469.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-199",
       "source": "lgu",
       "category": "shopping",
       "title": "신라아이파크면세점(온라인) 혜택",
-      "description": "①등급 업 ②적립금 지급 ③선불카드 제공 | 주 1회",
+      "description": "①제휴적립금 지급 ②적립금 지급 ③매니아 등급 업 | 주 1회",
       "discount": "혜택",
       "brand": "신라아이파크면세점(온라인)",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20170817161109976.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-287",
@@ -4218,8 +4242,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20170404145744731.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-192",
@@ -4232,8 +4256,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20181207a144005641.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-182",
@@ -4246,22 +4270,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20181207a144122609.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-106",
       "source": "lgu",
       "category": "shopping",
       "title": "신라인터넷면세점 쿠폰",
-      "description": "①등급 업 ②제휴 쿠폰 5천원 증정 | 신라인터넷면세점 홈페이지 내 이벤트 페이지 참조",
+      "description": "①등급 업 ②제휴 쿠폰 5천원 증정 | 연 1회",
       "discount": "쿠폰",
       "brand": "신라인터넷면세점",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20190809a162753259.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-186",
@@ -4274,8 +4298,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20180719a110011589.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-193",
@@ -4288,36 +4312,36 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20180327a192930760.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-25",
       "source": "lgu",
       "category": "etc",
       "title": "전자랜드 쿠폰",
-      "description": "①등급별 할인 쿠폰 ②포인트 차등 지급 | e.POINT: 가입 시 최초 1회 할인쿠폰: 월 1회",
+      "description": "①등급별 할인 쿠폰 ②포인트 차등 지급 | 할인 쿠폰 : 월 1회 e.POINT : 가입 시 최초 1회",
       "discount": "쿠폰",
       "brand": "전자랜드",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210805a134657577.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-26",
       "source": "lgu",
       "category": "etc",
       "title": "필리 10% 할인",
-      "description": "영양제 정기구독 10% 할인 | 제한 없음",
+      "description": "영양제 정기구독 10% 할인 | 월 1회",
       "discount": "10%",
       "brand": "필리",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210802a130346976.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-41",
@@ -4330,8 +4354,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210520a143029344.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-44",
@@ -4344,8 +4368,8 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20210414a094902595.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-55",
@@ -4358,36 +4382,36 @@
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20211220a180016542.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-235",
       "source": "lgu",
       "category": "etc",
       "title": "가연결혼정보 10% 할인",
-      "description": "결혼정보 가입비 10% 할인 | 가입시 제공",
+      "description": "가입비 10% 할인 | 가입 시 최초 1회",
       "discount": "10%",
       "brand": "가연결혼정보",
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240123-030753-222-92uZzdAS.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-208",
       "source": "lgu",
       "category": "etc",
-      "title": "지니뮤직 23% 할인",
-      "description": "유독 Pick2 23% 할인 혜택 ①지니뮤직 앱 음악감상 ②추가 혜택(택1) | 월 1회",
-      "discount": "23%",
+      "title": "지니뮤직 혜택",
+      "description": "①지니뮤직 앱 음악감상 ②추가 혜택(택1) | 월 1회",
+      "discount": "혜택",
       "brand": "지니뮤직",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20201104a141119241.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-301",
@@ -4400,22 +4424,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20170405132853014.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
-    },
-    {
-      "id": "lgu-194",
-      "source": "lgu",
-      "category": "etc",
-      "title": "포토블루 무료",
-      "description": "가족사진 촬영 무료(액자비 2만원 본인 부담) | 제한 없음",
-      "discount": "무료",
-      "brand": "포토블루",
-      "membershipGrade": "전등급",
-      "imageUrl": "/images/mobcop/images/20180327a145037313.JPG",
-      "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-76",
@@ -4428,8 +4438,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211221a173125609.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-103",
@@ -4442,8 +4452,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211221a173522296.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-100",
@@ -4456,22 +4466,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20191213a101034677.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-112",
       "source": "lgu",
       "category": "etc",
       "title": "허그맘허그인 15% 할인",
-      "description": "초기상담 15% 할인 | 초기상담 1회",
+      "description": "초기상담 15% 할인 | 최초 1회",
       "discount": "15%",
       "brand": "허그맘허그인",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20190712a104222710.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-43",
@@ -4484,8 +4494,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210430a095233177.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-16",
@@ -4498,8 +4508,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240108-103948-310-8uZkUeHI.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-10",
@@ -4512,64 +4522,64 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240125-032636-407-8mELR4ig.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-281",
       "source": "lgu",
       "category": "food",
       "title": "도미노피자 20% 할인",
-      "description": "VVIP/VIP : 20% 할인 우수 : 15% 할인 | 일 1회 VVIP/VIP : 일 최대 4만원까지 할인 가능 우수 : 일 최대 3만원까지 할인 가능",
+      "description": "VVIP/VIP : 20% 할인(최대 4만원 할인) 우수 : 15% 할인(최대 3만원 할인) | 일 1회",
       "discount": "20%",
       "brand": "도미노피자",
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20251110-031946-901-i0u4QGQN.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-280",
       "source": "lgu",
       "category": "food",
       "title": "미스터피자 20% 할인",
-      "description": "VVIP/VIP : 20% 할인 우수 : 15% 할인 | 일 1회 VVIP/VIP : 일 최대 4만원까지 할인 가능 우수 : 일 최대 3만원까지 할인 가능",
+      "description": "VVIP/VIP : 20% 할인(최대 4만원 할인) 우수 : 15% 할인(최대 3만원 할인) | 일 1회",
       "discount": "20%",
       "brand": "미스터피자",
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/images/mobcop/images/20181112a110949704.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-283",
       "source": "lgu",
       "category": "etc",
       "title": "파파존스 20% 할인",
-      "description": "VVIP/VIP : 20% 할인 우수 : 15% 할인 | 일 1회 VVIP/VIP : 일 최대 6만원까지 할인 가능 우수 : 일 최대 3만원까지 할인 가능",
+      "description": "VVIP/VIP : 20% 할인(최대 6만원 할인) 우수 : 15% 할인(최대 3만원 할인) | 일 1회",
       "discount": "20%",
       "brand": "파파존스",
       "membershipGrade": "VVIP·VIP·우수",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20240730-075855-622-pGR9RRL1.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-282",
       "source": "lgu",
       "category": "food",
       "title": "피자헛 15% 할인",
-      "description": "15% 할인 | 일 1회 일 최대 3만원까지 할인 가능",
+      "description": "15% 할인(최대 3만원 할인) | 일 1회",
       "discount": "15%",
       "brand": "피자헛",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211222a144858437.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-101",
@@ -4582,8 +4592,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20191114a142519888.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-17",
@@ -4596,8 +4606,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20211022a142135143.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-40",
@@ -4610,8 +4620,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210520a142648555.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-46",
@@ -4624,8 +4634,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210127a102207145.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-47",
@@ -4638,8 +4648,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20210127a101002555.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-49",
@@ -4652,22 +4662,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "/pc-contents/images/uhdc/prdv/mb/jnco/20220426-030443-506-271Heoqy.png",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     },
     {
       "id": "lgu-292",
       "source": "lgu",
       "category": "etc",
       "title": "오토오아시스 혜택",
-      "description": "엔진오일 2만2천원 할인 | 연 1회",
+      "description": "엔진오일 2만2천원 할인 외 정비 할인 혜택 4종 | 혜택 별 연 1회",
       "discount": "혜택",
       "brand": "오토오아시스",
       "membershipGrade": "전등급",
       "imageUrl": "/images/mobcop/images/20170405105402112.jpg",
       "link": "https://www.lguplus.com/benefit-membership",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-30"
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
     }
   ]
 }
