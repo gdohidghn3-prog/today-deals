@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-05-03T07:31:28.795Z",
+  "updatedAt": "2026-05-04T09:07:11.271Z",
   "freshness": {
-    "skt": "2026-05-03T07:31:28.795Z",
-    "kt": "2026-05-03T07:31:28.795Z",
+    "skt": "2026-05-04T09:07:11.271Z",
+    "kt": "2026-05-04T09:07:11.271Z",
     "lgu": null
   },
-  "count": 333,
+  "count": 335,
   "summary": {
     "skt": 20,
-    "kt": 149,
+    "kt": 151,
     "lgu": 164
   },
   "best": [
@@ -294,6 +294,34 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635214032482.png",
       "link": "https://sktmembership.tworld.co.kr",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "kt-236b823f",
+      "source": "kt",
+      "category": "cafe",
+      "title": "메가MGC커피(고객 보답) 무료",
+      "description": "[전등급] [고객 보답 프로그램] 아메리카노(HOT/ICE) 2잔 무료 (최대 4천원 할인)",
+      "discount": "무료",
+      "brand": "메가MGC커피(고객 보답)",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_메가MGC커피_웹0.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "kt-b1f71f50",
+      "source": "kt",
+      "category": "shopping",
+      "title": "쇼핑라운지(고객 보답) 혜택",
+      "description": "[전등급] [고객 보답] 쇼핑라운지 전 상품 6천원 할인",
+      "discount": "혜택",
+      "brand": "쇼핑라운지(고객 보답)",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/쇼핑라운지_웹_제휴브랜드_195x981130.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
