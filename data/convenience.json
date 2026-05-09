@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T03:59:37.352Z",
+  "updatedAt": "2026-05-09T04:03:42.810Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -2003,15 +2003,15 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-d9dab852",
+      "id": "cu-57423826",
       "source": "cu",
       "category": "convenience",
-      "title": "예지)몰랑이오가닛중형3P 1+1",
+      "title": "예지)모모이오가닛중형3P 1+1",
       "description": "2,800원 · 1+1 행사",
       "discount": "1+1",
-      "brand": "예지)몰랑이오가닛중형3P",
+      "brand": "예지)모모이오가닛중형3P",
       "price": "2,800원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809104290759.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809104290759_1.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -5838,6 +5838,19 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "gs25-b4b838e0",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "CJ)바삭칩스팸맛45G[D2] 1+1",
+      "description": "1,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)바삭칩스팸맛45G[D2]",
+      "price": "1,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392149153_002.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "gs25-9e590056",
       "source": "gs25",
       "category": "convenience",
@@ -6215,6 +6228,19 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "gs25-dff7c64f",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "훼밀리)국떡컵볶이매콤크림[D2] 1+1",
+      "description": "3,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "훼밀리)국떡컵볶이매콤크림[D2]",
+      "price": "3,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809418080695_002.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "gs25-f2858bf8",
       "source": "gs25",
       "category": "convenience",
@@ -6497,6 +6523,19 @@
       "brand": "에이스)흑도라지생강진액15G",
       "price": "1,500원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8805892016748_002.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-07a1e6b3",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "만전)명란김자반40G[D2] 1+1",
+      "description": "2,400원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "만전)명란김자반40G[D2]",
+      "price": "2,400원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8802241902318_001.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -7771,45 +7810,6 @@
       "brand": "유어스)아이스피릿피치우롱200ML",
       "price": "3,000원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8802259023043_002.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-5367a908",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "라라스윗)저당딸기요거트바70ML 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "라라스윗)저당딸기요거트바70ML",
-      "price": "2,500원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361057_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-d93f0bf9",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "라라스윗)저당블루베리요거트바 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "라라스윗)저당블루베리요거트바",
-      "price": "2,500원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361286_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-f3fc6ebe",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "요아정)구슬아이스레인보우70ML 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "요아정)구슬아이스레인보우70ML",
-      "price": "2,500원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809106922917_003.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
