@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T04:44:10.543Z",
+  "updatedAt": "2026-05-12T04:14:36.068Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -222,19 +222,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-90c06656",
-      "source": "cu",
-      "category": "convenience",
-      "title": "페브리즈)다우니370ml 1+1",
-      "description": "12,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "페브리즈)다우니370ml",
-      "price": "12,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/4902430741880.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "cu-c14ca92f",
       "source": "cu",
       "category": "convenience",
@@ -287,15 +274,15 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-349ed3e6",
+      "id": "cu-f34bf0ff",
       "source": "cu",
       "category": "convenience",
-      "title": "좋은)순면대16P 1+1",
+      "title": "좋은)순면프레쉬대16P 1+1",
       "description": "10,400원 · 1+1 행사",
       "discount": "1+1",
-      "brand": "좋은)순면대16P",
+      "brand": "좋은)순면프레쉬대16P",
       "price": "10,400원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801166231367.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801166231367_1.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -946,19 +933,6 @@
       "brand": "코카)조지아블랙P470ml",
       "price": "2,800원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801094502669.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "cu-906b7f37",
-      "source": "cu",
-      "category": "convenience",
-      "title": "샤프란)스타일러탈취제 1+1",
-      "description": "4,200원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "샤프란)스타일러탈취제",
-      "price": "4,200원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801051262995.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -2610,6 +2584,32 @@
       "brand": "CJ)100%현미밥130g",
       "price": "2,600원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801392023200.png",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-6b197e1a",
+      "source": "cu",
+      "category": "convenience",
+      "title": "CJ)한식간장김자반20g 1+1",
+      "description": "3,200원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)한식간장김자반20g",
+      "price": "3,200원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007373218.png",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-279e5abe",
+      "source": "cu",
+      "category": "convenience",
+      "title": "웅진)빅토리아청포P500ml 1+1",
+      "description": "1,800원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "웅진)빅토리아청포P500ml",
+      "price": "1,800원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801382147060.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -5552,19 +5552,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "gs25-3556aee6",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "한입호박고구마(700G/봉) 1+1",
-      "description": "8,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "한입호박고구마(700G/봉)",
-      "price": "8,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809653410646_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "gs25-8c938515",
       "source": "gs25",
       "category": "convenience",
@@ -5834,19 +5821,6 @@
       "brand": "글로브)해바라기씨튀김50G",
       "price": "1,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8800311500105_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-b4b838e0",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)바삭칩스팸맛45G[D2] 1+1",
-      "description": "1,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)바삭칩스팸맛45G[D2]",
-      "price": "1,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392149153_002.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -7814,6 +7788,32 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "gs25-5367a908",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)저당딸기요거트바70ML 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)저당딸기요거트바70ML",
+      "price": "2,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361057_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-d93f0bf9",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)저당블루베리요거트바 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)저당블루베리요거트바",
+      "price": "2,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361286_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "gs25-44526fe6",
       "source": "gs25",
       "category": "convenience",
@@ -8135,19 +8135,6 @@
       "brand": "더납딱한오다리25G",
       "price": "4,800원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809677723203_002.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-c0d586ca",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "더도톰한오징어25G 2+1",
-      "description": "4,800원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "더도톰한오징어25G",
-      "price": "4,800원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809677723210_002.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -10410,6 +10397,19 @@
       "brand": "덴마크)요구르트베리믹스275ML",
       "price": "2,400원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155741846_003.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-29e38d55",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "덴마크)요구르트복숭아275ML 2+1",
+      "description": "2,400원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "덴마크)요구르트복숭아275ML",
+      "price": "2,400원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155741877_003.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
