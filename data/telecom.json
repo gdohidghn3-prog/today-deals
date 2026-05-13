@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-05-12T03:41:00.020Z",
+  "updatedAt": "2026-05-13T03:50:59.828Z",
   "freshness": {
-    "skt": "2026-05-12T03:41:00.020Z",
-    "kt": "2026-05-12T03:41:00.020Z",
+    "skt": "2026-05-13T03:50:59.828Z",
+    "kt": "2026-05-13T03:50:59.828Z",
     "lgu": null
   },
-  "count": 335,
+  "count": 336,
   "summary": {
     "skt": 20,
-    "kt": 151,
+    "kt": 152,
     "lgu": 164
   },
   "best": [
@@ -294,6 +294,20 @@
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635214032482.png",
       "link": "https://sktmembership.tworld.co.kr",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "kt-b77e52a0",
+      "source": "kt",
+      "category": "etc",
+      "title": "크록스 혜택",
+      "description": "[전등급] [달.달.혜택] 4만원 할인(12만원 이상 구매 시)",
+      "discount": "혜택",
+      "brand": "크록스",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9817.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
