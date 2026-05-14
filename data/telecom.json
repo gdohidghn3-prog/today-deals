@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-13T03:50:59.828Z",
+  "updatedAt": "2026-05-14T03:50:38.880Z",
   "freshness": {
-    "skt": "2026-05-13T03:50:59.828Z",
-    "kt": "2026-05-13T03:50:59.828Z",
+    "skt": "2026-05-14T03:50:38.880Z",
+    "kt": "2026-05-14T03:50:38.880Z",
     "lgu": null
   },
   "count": 336,
@@ -2328,12 +2328,12 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "kt-5d4e4f12",
+      "id": "kt-c430bdb2",
       "source": "kt",
       "category": "etc",
-      "title": "런드리고 혜택",
-      "description": "[VVIP] 3천 포인트 제공 | [VIP] 3천 포인트 제공 | [Gold] 2천 포인트 제공 | [일반] 2천 포인트 제공",
-      "discount": "혜택",
+      "title": "런드리고 쿠폰",
+      "description": "[VVIP] 3천원 할인 쿠폰 제공 | [VIP] 3천원 할인 쿠폰 제공 | [Gold] 2천원 할인 쿠폰 제공 | [일반] 2천원 할인 쿠폰 제공",
+      "discount": "쿠폰",
       "brand": "런드리고",
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9899.png",
