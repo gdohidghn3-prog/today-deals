@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-14T04:29:07.206Z",
+  "updatedAt": "2026-05-15T04:35:32.502Z",
   "count": 1818,
   "summary": {
     "cu": 400,
@@ -2765,7 +2765,7 @@
       "discount": "2+1",
       "brand": "오뚜기)진라면매운컵",
       "price": "1,400원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045571638.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045571638_1.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -2818,19 +2818,6 @@
       "brand": "HK)컨디션헛개병",
       "price": "5,000원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007071046.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "cu-23d536dc",
-      "source": "cu",
-      "category": "convenience",
-      "title": "빙그레)아카페라카라멜 2+1",
-      "description": "2,000원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "빙그레)아카페라카라멜",
-      "price": "2,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801104212403.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -3433,19 +3420,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-80b07fb5",
-      "source": "cu",
-      "category": "convenience",
-      "title": "빙그레)아카페라바닐라 2+1",
-      "description": "2,000원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "빙그레)아카페라바닐라",
-      "price": "2,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801104212601.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "cu-ed12fc3f",
       "source": "cu",
       "category": "convenience",
@@ -3597,7 +3571,7 @@
       "discount": "2+1",
       "brand": "오뚜기)진라면순한컵",
       "price": "1,400원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045571362.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045571362_1.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -5214,6 +5188,32 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "cu-8b2eb012",
+      "source": "cu",
+      "category": "convenience",
+      "title": "네슬레)킷캣청키쿠앤크 2+1",
+      "description": "2,000원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "네슬레)킷캣청키쿠앤크",
+      "price": "2,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/9556001216144.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-ec633ead",
+      "source": "cu",
+      "category": "convenience",
+      "title": "매일)바리스타로슈거250ml 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "매일)바리스타로슈거250ml",
+      "price": "2,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801121761823.png",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "gs25-6c2445f6",
       "source": "gs25",
       "category": "convenience",
@@ -5821,19 +5821,6 @@
       "brand": "글로브)해바라기씨튀김50G",
       "price": "1,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8800311500105_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-b4b838e0",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)바삭칩스팸맛45G[D2] 1+1",
-      "description": "1,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)바삭칩스팸맛45G[D2]",
-      "price": "1,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392149153_002.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -7762,45 +7749,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "gs25-4abe4b46",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "라라스윗)피스타치오젤라또바 1+1",
-      "description": "3,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "라라스윗)피스타치오젤라또바",
-      "price": "3,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361392_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-b41ddf4c",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "유어스)아이스피릿레몬200ML 1+1",
-      "description": "3,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "유어스)아이스피릿레몬200ML",
-      "price": "3,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8802259023036_002.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-3d024d66",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "유어스)아이스피릿피치우롱200ML 1+1",
-      "description": "3,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "유어스)아이스피릿피치우롱200ML",
-      "price": "3,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8802259023043_002.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "gs25-5367a908",
       "source": "gs25",
       "category": "convenience",
@@ -7810,6 +7758,58 @@
       "brand": "라라스윗)저당딸기요거트바70ML",
       "price": "2,500원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361057_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-d93f0bf9",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)저당블루베리요거트바 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)저당블루베리요거트바",
+      "price": "2,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361286_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-f3fc6ebe",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "요아정)구슬아이스레인보우70ML 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "요아정)구슬아이스레인보우70ML",
+      "price": "2,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809106922917_003.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-8dc0c5f7",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "스마일)파인퐁당75ML 1+1",
+      "description": "2,200원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "스마일)파인퐁당75ML",
+      "price": "2,200원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809682780963_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "gs25-7e0b1091",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "스마일)피치퐁당75ML 1+1",
+      "description": "2,200원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "스마일)피치퐁당75ML",
+      "price": "2,200원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809682780956_001.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
