@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T04:35:32.502Z",
+  "updatedAt": "2026-05-16T04:09:45.584Z",
   "count": 1818,
   "summary": {
     "cu": 400,
@@ -11779,19 +11779,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "emart24-00924245",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "하림)대파육개장면 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "하림)대파육개장면",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809778499663.JPG",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "emart24-fb3a75c4",
       "source": "emart24",
       "category": "convenience",
@@ -12932,6 +12919,19 @@
       "brand": "서울)커피타운화이트바닐라250ml",
       "price": "2,600원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801115140016.JPG",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "emart24-d3ef335a",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "서울)커피타운딥브라운모카250ml 1+1",
+      "description": "2,600원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "서울)커피타운딥브라운모카250ml",
+      "price": "2,600원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801115140023.JPG",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
