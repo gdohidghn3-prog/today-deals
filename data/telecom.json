@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-17T03:54:40.668Z",
+  "updatedAt": "2026-05-18T04:07:04.056Z",
   "freshness": {
-    "skt": "2026-05-17T03:54:40.668Z",
-    "kt": "2026-05-17T03:54:40.668Z",
+    "skt": "2026-05-18T04:07:04.056Z",
+    "kt": "2026-05-18T04:07:04.056Z",
     "lgu": null
   },
   "count": 344,
@@ -298,6 +298,34 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "kt-c765cc16",
+      "source": "kt",
+      "category": "etc",
+      "title": "배달의민족 혜택",
+      "description": "[전등급] [고객 보답] 배민X노랑통닭 8천원 할인",
+      "discount": "혜택",
+      "brand": "배달의민족",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_배달의민족_웹.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "kt-8e0b9e97",
+      "source": "kt",
+      "category": "cafe",
+      "title": "투썸플레이스(고객 보답) 50% 할인",
+      "description": "[전등급] [고객 보답] 전 메뉴 50% 할인(최대 5천원)",
+      "discount": "50%",
+      "brand": "투썸플레이스(고객 보답)",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98_엠블럼1.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "kt-c5e11bfd",
       "source": "kt",
       "category": "etc",
@@ -419,34 +447,6 @@
       "brand": "롯데마트 제타",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98184.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "kt-236b823f",
-      "source": "kt",
-      "category": "cafe",
-      "title": "메가MGC커피(고객 보답) 무료",
-      "description": "[전등급] [고객 보답 프로그램] 아메리카노(HOT/ICE) 2잔 무료 (최대 4천원 할인)",
-      "discount": "무료",
-      "brand": "메가MGC커피(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_메가MGC커피_웹0.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "kt-b1f71f50",
-      "source": "kt",
-      "category": "shopping",
-      "title": "쇼핑라운지(고객 보답) 혜택",
-      "description": "[전등급] [고객 보답] 쇼핑라운지 전 상품 6천원 할인",
-      "discount": "혜택",
-      "brand": "쇼핑라운지(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/쇼핑라운지_웹_제휴브랜드_195x981130.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
