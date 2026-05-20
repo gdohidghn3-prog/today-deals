@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-19T04:00:22.442Z",
+  "updatedAt": "2026-05-20T04:01:10.409Z",
   "freshness": {
-    "skt": "2026-05-19T04:00:22.442Z",
-    "kt": "2026-05-19T04:00:22.442Z",
+    "skt": "2026-05-20T04:01:10.409Z",
+    "kt": "2026-05-20T04:01:10.409Z",
     "lgu": null
   },
   "count": 344,
@@ -676,12 +676,12 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "kt-c01b17b2",
+      "id": "kt-768b7b07",
       "source": "kt",
       "category": "etc",
-      "title": "Starbucks 무료",
-      "description": "[전등급] [상시]사이즈업 [OTTX스타벅스] 아메리카노(Tall) 1잔 무료 | [VVIP] [VVIP생일] 생일 조각케이크＋아메리카노 2잔 무료 [V/VIP 초이스] 아메리카노 Short 무료 또는 4,000원 할인 | [VIP] [V/VIP 초이스] 아메리카노 Short 무료 또는 4,000원 할인",
-      "discount": "무료",
+      "title": "Starbucks 혜택",
+      "description": "[전등급] [상시]사이즈업 | [VVIP] [VVIP생일] 생일 조각케이크＋아메리카노 2잔 무료 [V/VIP 초이스] 아메리카노 Short 무료 또는 4,000원 할인 | [VIP] [V/VIP 초이스] 아메리카노 Short 무료 또는 4,000원 할인",
+      "discount": "혜택",
       "brand": "Starbucks",
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0027_starbucks.png",
