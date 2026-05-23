@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T04:44:47.803Z",
+  "updatedAt": "2026-05-23T04:15:50.706Z",
   "count": 1818,
   "summary": {
     "cu": 400,
@@ -7736,6 +7736,19 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "gs25-a935fd65",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)제주감귤제로바70ML 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)제주감귤제로바70ML",
+      "price": "2,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361682_001.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "gs25-8dc0c5f7",
       "source": "gs25",
       "category": "convenience",
@@ -7797,19 +7810,6 @@
       "brand": "동화약품)제주보메차500ML",
       "price": "2,200원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8806016186194_001.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "gs25-e77a5be1",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "유어스)슈퍼히어로드링크120ML 1+1",
-      "description": "1,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "유어스)슈퍼히어로드링크120ML",
-      "price": "1,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8806016181410_002.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
