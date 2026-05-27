@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T04:43:32.656Z",
+  "updatedAt": "2026-05-27T04:55:46.499Z",
   "count": 1818,
   "summary": {
     "cu": 400,
@@ -10414,6 +10414,19 @@
       "endDate": "2026-05-31"
     },
     {
+      "id": "emart24-f7e14283",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "자망요)자망요크림모찌60g(냉동) 1+1",
+      "description": "2,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "자망요)자망요크림모찌60g(냉동)",
+      "price": "2,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800244010689.JPG",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
       "id": "emart24-9404616b",
       "source": "emart24",
       "category": "convenience",
@@ -12923,15 +12936,15 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "emart24-08404d68",
+      "id": "emart24-202c66e7",
       "source": "emart24",
       "category": "convenience",
-      "title": "코카)파워에이드퍼플스톰펫600ml 1+1",
-      "description": "2,400원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "코카)파워에이드퍼플스톰펫600ml",
-      "price": "2,400원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801094603700.JPG",
+      "title": "롯데)의성마늘프랑크녹찐치즈65g 2+1",
+      "description": "2,600원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "롯데)의성마늘프랑크녹찐치즈65g",
+      "price": "2,600원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801123311026.JPG",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -15519,19 +15532,6 @@
       "brand": "CJ)바삭팝콘스팸맛55g(12)",
       "price": "1,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392158940.JPG",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "emart24-891bae1e",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "CJ)바삭팝콘허브솔트맛55g(12) 2+1",
-      "description": "1,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)바삭팝콘허브솔트맛55g(12)",
-      "price": "1,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392158964.JPG",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
