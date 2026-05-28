@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T04:55:46.499Z",
+  "updatedAt": "2026-05-28T04:50:15.710Z",
   "count": 1818,
   "summary": {
     "cu": 400,
@@ -1548,19 +1548,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-1aa2e39c",
-      "source": "cu",
-      "category": "convenience",
-      "title": "동원)양반현미밥130g 1+1",
-      "description": "2,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "동원)양반현미밥130g",
-      "price": "2,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801047170969.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "cu-f1acdb87",
       "source": "cu",
       "category": "convenience",
@@ -2458,19 +2445,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-27fc0778",
-      "source": "cu",
-      "category": "convenience",
-      "title": "CJ)100%현미밥130g 1+1",
-      "description": "2,600원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)100%현미밥130g",
-      "price": "2,600원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801392023200.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "cu-6b197e1a",
       "source": "cu",
       "category": "convenience",
@@ -2610,6 +2584,32 @@
       "brand": "롯데)핫식스더킹피치캔355",
       "price": "2,300원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801056234423.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-395b704e",
+      "source": "cu",
+      "category": "convenience",
+      "title": "미쟝센)데미지샴푸200ml 1+1",
+      "description": "8,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "미쟝센)데미지샴푸200ml",
+      "price": "8,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809643064088.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-582f508a",
+      "source": "cu",
+      "category": "convenience",
+      "title": "미쟝센)데미지린스200ml 1+1",
+      "description": "8,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "미쟝센)데미지린스200ml",
+      "price": "8,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809685746973.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -3563,19 +3563,6 @@
       "endDate": "2026-05-31"
     },
     {
-      "id": "cu-65ea8307",
-      "source": "cu",
-      "category": "convenience",
-      "title": "CJ)비비고고기찐만두6입 2+1",
-      "description": "4,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)비비고고기찐만두6입",
-      "price": "4,900원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007429298.png",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
       "id": "cu-36ebf2d1",
       "source": "cu",
       "category": "convenience",
@@ -3780,19 +3767,6 @@
       "brand": "일신)쥬시드랍팝캔디",
       "price": "3,500원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/5011053013591.jpg",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31"
-    },
-    {
-      "id": "cu-fa4e5897",
-      "source": "cu",
-      "category": "convenience",
-      "title": "CJ)비비고청양찐만두6입 2+1",
-      "description": "4,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)비비고청양찐만두6입",
-      "price": "4,900원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007537740.png",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
@@ -5210,6 +5184,32 @@
       "brand": "존슨즈)베이비로션",
       "price": "6,000원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801108000297_1.png",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-ab27dae0",
+      "source": "cu",
+      "category": "convenience",
+      "title": "롯데)의성마늘핫바빅90g 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "롯데)의성마늘핫바빅90g",
+      "price": "2,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801123309498.jpg",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31"
+    },
+    {
+      "id": "cu-660a49bb",
+      "source": "cu",
+      "category": "convenience",
+      "title": "CJ)컵반치킨마요덮밥 2+1",
+      "description": "4,800원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "CJ)컵반치킨마요덮밥",
+      "price": "4,800원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007778280.jpg",
       "startDate": "2026-05-01",
       "endDate": "2026-05-31"
     },
