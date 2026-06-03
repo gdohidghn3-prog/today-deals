@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-02T05:11:07.394Z",
+  "updatedAt": "2026-06-03T05:26:00.534Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -13014,6 +13014,32 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "emart24-d5be64e9",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "자망요)자몽요거트사우어젤리42g 2+1",
+      "description": "2,000원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "자망요)자몽요거트사우어젤리42g",
+      "price": "2,000원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809592642498.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "emart24-df6a3cd4",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "자망요)망고요거트사우어젤리42g 2+1",
+      "description": "2,000원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "자망요)망고요거트사우어젤리42g",
+      "price": "2,000원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809592642511.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "emart24-4a63a8bd",
       "source": "emart24",
       "category": "convenience",
@@ -15584,32 +15610,6 @@
       "brand": "삼양)탱글머쉬룸크림파스타",
       "price": "2,200원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073116832.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-bbe28338",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)탱글갈릭오일파스타봉지 2+1",
-      "description": "2,200원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)탱글갈릭오일파스타봉지",
-      "price": "2,200원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073116849.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-26b4a3eb",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)삼양1963봉지 2+1",
-      "description": "1,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)삼양1963봉지",
-      "price": "1,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073117037.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
