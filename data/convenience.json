@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-05T04:56:38.040Z",
+  "updatedAt": "2026-06-06T04:36:28.686Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -13014,6 +13014,19 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "emart24-4afedcde",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "오뚜기)진라면약간매운맛컵 2+1",
+      "description": "1,100원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "오뚜기)진라면약간매운맛컵",
+      "price": "1,100원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801045643359.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "emart24-d5be64e9",
       "source": "emart24",
       "category": "convenience",
@@ -15597,19 +15610,6 @@
       "brand": "남양)테이크핏호박고구마250ml",
       "price": "2,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069419619.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-5a2f2544",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)탱글머쉬룸크림파스타 2+1",
-      "description": "2,200원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)탱글머쉬룸크림파스타",
-      "price": "2,200원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073116832.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
