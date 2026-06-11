@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T04:57:21.213Z",
+  "updatedAt": "2026-06-11T05:09:20.229Z",
   "count": 1815,
   "summary": {
     "cu": 400,
@@ -2380,6 +2380,19 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "cu-14fb0737",
+      "source": "cu",
+      "category": "convenience",
+      "title": "CJ)비비고추어탕460g 1+1",
+      "description": "11,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)비비고추어탕460g",
+      "price": "11,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007769868.png",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "cu-a893e2cb",
       "source": "cu",
       "category": "convenience",
@@ -2597,19 +2610,6 @@
       "brand": "연세)복숭아요거트300",
       "price": "2,500원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801753111201.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "cu-c1477690",
-      "source": "cu",
-      "category": "convenience",
-      "title": "동원)딤섬샤오롱바오6입 1+1",
-      "description": "4,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "동원)딤섬샤오롱바오6입",
-      "price": "4,900원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801047317302.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -3559,6 +3559,19 @@
       "brand": "CJ)컵반미역국밥",
       "price": "4,800원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007403267.png",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "cu-1a26ac41",
+      "source": "cu",
+      "category": "convenience",
+      "title": "썬푸드)오징어와땅콩110g 2+1",
+      "description": "8,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "썬푸드)오징어와땅콩110g",
+      "price": "8,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801149430060.png",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -5197,19 +5210,6 @@
       "brand": "동원)덴마크라이트스트링",
       "price": "1,700원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801155834708.png",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "cu-711be86f",
-      "source": "cu",
-      "category": "convenience",
-      "title": "빙그레)아카페라UP바닐라 2+1",
-      "description": "2,600원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "빙그레)아카페라UP바닐라",
-      "price": "2,600원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801104306591.png",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -10739,6 +10739,19 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "emart24-fa07f881",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "선우)두쫀볼찰떡파이30g(두바이한정) 1+1",
+      "description": "1,800원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "선우)두쫀볼찰떡파이30g(두바이한정)",
+      "price": "1,800원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809963484047.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "emart24-7a2c876a",
       "source": "emart24",
       "category": "convenience",
@@ -12988,19 +13001,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "emart24-fe6ac348",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "서울)마이픽딸기초코링120g 1+1",
-      "description": "2,200원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "서울)마이픽딸기초코링120g",
-      "price": "2,200원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801115215851.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "emart24-d2119163",
       "source": "emart24",
       "category": "convenience",
@@ -14821,19 +14821,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "emart24-4c3e89d6",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "선우)두쫀볼찰떡파이30g(두바이한정) 2+1",
-      "description": "1,800원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "선우)두쫀볼찰떡파이30g(두바이한정)",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809963484047.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "emart24-3176eaa9",
       "source": "emart24",
       "category": "convenience",
@@ -15493,6 +15480,19 @@
       "brand": "CJ)햇반철판김치덮밥",
       "price": "4,800원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007638225.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "emart24-3e2e9ea6",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "CJ)햇반매일잡곡밥210g(36) 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "CJ)햇반매일잡곡밥210g(36)",
+      "price": "2,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007684543.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
