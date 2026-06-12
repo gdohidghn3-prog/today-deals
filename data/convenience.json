@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11T05:09:20.229Z",
+  "updatedAt": "2026-06-12T05:14:24.912Z",
   "count": 1815,
   "summary": {
     "cu": 400,
@@ -5916,19 +5916,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "gs25-32493089",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJFRESH)롱고바디토마토홀400G 1+1",
-      "description": "3,300원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJFRESH)롱고바디토마토홀400G",
-      "price": "3,300원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8001080006601_002.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "gs25-696b85ed",
       "source": "gs25",
       "category": "convenience",
@@ -6371,19 +6358,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "gs25-e58364a2",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "선우)달너새랜덤초콜릿48G 1+1",
-      "description": "2,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "선우)달너새랜덤초콜릿48G",
-      "price": "2,800원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809963483576_002.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "gs25-0c90a7ba",
       "source": "gs25",
       "category": "convenience",
@@ -6419,19 +6393,6 @@
       "brand": "CJ)스팸*빠더너스기획세트",
       "price": "18,600원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392106194_001.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "gs25-317705fd",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "고운벗)복주머니골든초콜릿30G 1+1",
-      "description": "3,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "고운벗)복주머니골든초콜릿30G",
-      "price": "3,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809943280829_001.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -7814,6 +7775,45 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "gs25-c9bccf1b",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "동아)나랑드사이다제로500ML 1+1",
+      "description": "2,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다제로500ML",
+      "price": "2,000원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097235014_004.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "gs25-6bed8362",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "동아)나랑드사이다파인애플500 1+1",
+      "description": "2,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다파인애플500",
+      "price": "2,000원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097235670_002.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "gs25-461073f8",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "동아)나랑드사이다제로345ML 1+1",
+      "description": "1,800원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다제로345ML",
+      "price": "1,800원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097135413_001.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "gs25-2ede7ae6",
       "source": "gs25",
       "category": "convenience",
@@ -8798,19 +8798,6 @@
       "brand": "SAMG)시즌6캐치티니핑짜장떡볶이",
       "price": "2,800원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8800280536051_001.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "gs25-73987fc6",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "짱구)21곡초코바 2+1",
-      "description": "700원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "짱구)21곡초코바",
-      "price": "700원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809037840892_002.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -10410,6 +10397,19 @@
       "brand": "바세린)립테라피로지립스7G",
       "price": "5,500원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801166270250_001.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "gs25-2ebeba2f",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "바세린)립테라피코코아버터7G 2+1",
+      "description": "5,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "바세린)립테라피코코아버터7G",
+      "price": "5,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801619049884_002.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -13001,6 +13001,32 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "emart24-7c50aa63",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "해태)고향김치만두378g 2+1",
+      "description": "5,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "해태)고향김치만두378g",
+      "price": "5,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801019901171.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "emart24-876edcc0",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "해태)고향만두378g 2+1",
+      "description": "5,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "해태)고향만두378g",
+      "price": "5,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801019998041.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "emart24-d2119163",
       "source": "emart24",
       "category": "convenience",
@@ -15467,32 +15493,6 @@
       "brand": "CJ)햇반철판제육덮밥",
       "price": "4,800원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007611679.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-14033983",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "CJ)햇반철판김치덮밥 2+1",
-      "description": "4,800원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)햇반철판김치덮밥",
-      "price": "4,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007638225.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-3e2e9ea6",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "CJ)햇반매일잡곡밥210g(36) 2+1",
-      "description": "2,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)햇반매일잡곡밥210g(36)",
-      "price": "2,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007684543.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
