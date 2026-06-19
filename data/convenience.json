@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T05:16:09.302Z",
+  "updatedAt": "2026-06-19T05:34:05.209Z",
   "count": 1815,
   "summary": {
     "cu": 400,
@@ -6072,19 +6072,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "gs25-54253890",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)오마이갓붕어빵젤리포도맛 1+1",
-      "description": "1,200원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)오마이갓붕어빵젤리포도맛",
-      "price": "1,200원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392155246_001.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "gs25-58bd6869",
       "source": "gs25",
       "category": "convenience",
@@ -6094,19 +6081,6 @@
       "brand": "일신)돌핀폴라레티해피썸머400ML",
       "price": "3,000원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8002267011753_001.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "gs25-a381bb5d",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)오마이갓왕교자젤리복숭아맛 1+1",
-      "description": "1,200원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)오마이갓왕교자젤리복숭아맛",
-      "price": "1,200원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392155215_001.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -7810,6 +7784,32 @@
       "brand": "현대)미에로화이바350ML",
       "price": "2,200원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8806004407133_139.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "gs25-e7ec90f3",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "동아)엑스코카스에너지캔355ML 1+1",
+      "description": "2,300원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)엑스코카스에너지캔355ML",
+      "price": "2,300원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097824317_001.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "gs25-a64ca9d7",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "동아)나랑드사이다그린애플500 1+1",
+      "description": "2,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다그린애플500",
+      "price": "2,000원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097235632_001.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
