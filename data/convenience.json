@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T05:34:05.209Z",
+  "updatedAt": "2026-06-20T04:51:08.635Z",
   "count": 1815,
   "summary": {
     "cu": 400,
@@ -5630,6 +5630,19 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "gs25-ed8a6d10",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "Dole)파인애플팝(62ml*8개) 1+1",
+      "description": "8,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "Dole)파인애플팝(62ml*8개)",
+      "price": "8,000원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809069306502_001.jpg",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "gs25-b92280ea",
       "source": "gs25",
       "category": "convenience",
@@ -7797,19 +7810,6 @@
       "brand": "동아)엑스코카스에너지캔355ML",
       "price": "2,300원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097824317_001.jpg",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "gs25-a64ca9d7",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "동아)나랑드사이다그린애플500 1+1",
-      "description": "2,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "동아)나랑드사이다그린애플500",
-      "price": "2,000원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801097235632_001.jpg",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -10414,6 +10414,32 @@
       "endDate": "2026-06-30"
     },
     {
+      "id": "emart24-ad2a418d",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "롯데)펩시엑스트라피즈펫500ml 1+1",
+      "description": "2,300원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "롯데)펩시엑스트라피즈펫500ml",
+      "price": "2,300원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911782.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "emart24-55e1bd49",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "롯데)롯데햄프랑크매콤90g 1+1",
+      "description": "3,200원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "롯데)롯데햄프랑크매콤90g",
+      "price": "3,200원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801123002672.JPG",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
       "id": "emart24-aa81c7c3",
       "source": "emart24",
       "category": "convenience",
@@ -12975,28 +13001,15 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "emart24-058a47c4",
+      "id": "emart24-74607fd6",
       "source": "emart24",
       "category": "convenience",
-      "title": "매일)매일두유렌틸콩190ml 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "매일)매일두유렌틸콩190ml",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801121022375.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-25b18434",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "매일)매일두유고단백190ml 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "매일)매일두유고단백190ml",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801121032145.JPG",
+      "title": "남양)불가리스설탕무첨가150ml 2+1",
+      "description": "2,000원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "남양)불가리스설탕무첨가150ml",
+      "price": "2,000원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069422237.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
@@ -15480,19 +15493,6 @@
       "brand": "CJ)비비고미역국500g",
       "price": "5,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007561677.JPG",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
-      "id": "emart24-da78c51d",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "CJ)햇반중화마파덮밥 2+1",
-      "description": "4,800원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)햇반중화마파덮밥",
-      "price": "4,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801007566412.JPG",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
     },
