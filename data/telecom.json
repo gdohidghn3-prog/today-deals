@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-21T04:48:22.306Z",
+  "updatedAt": "2026-06-22T04:56:08.369Z",
   "freshness": {
-    "skt": "2026-06-21T04:48:22.306Z",
-    "kt": "2026-06-21T04:48:22.306Z",
+    "skt": "2026-06-22T04:56:08.369Z",
+    "kt": null,
     "lgu": null
   },
   "count": 340,
@@ -12,9 +12,9 @@
     "lgu": 164
   },
   "best": [
-    "kt-22e245ef",
-    "kt-26b54951",
-    "kt-e774ae84"
+    "skt-142aae50",
+    "skt-2688cdb4",
+    "skt-4e61deeb"
   ],
   "deals": [
     {
@@ -200,20 +200,6 @@
       "endDate": "2026-06-30"
     },
     {
-      "id": "skt-84a95277",
-      "source": "skt",
-      "category": "food",
-      "title": "VIPS 15% 할인",
-      "description": "[VIP/골드] 15% 할인 | [실버] 5% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 10P 단위) | [VIP/골드] 15% 적립 | [실버] 5% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 10P 단위)",
-      "discount": "15%",
-      "brand": "VIPS",
-      "membershipGrade": "VIP·골드·실버",
-      "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202309/1694398652272.png",
-      "link": "https://sktmembership.tworld.co.kr",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-30"
-    },
-    {
       "id": "skt-33118f63",
       "source": "skt",
       "category": "cafe",
@@ -223,6 +209,20 @@
       "brand": "메가MGC커피",
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202503/1741325122018.png",
+      "link": "https://sktmembership.tworld.co.kr",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30"
+    },
+    {
+      "id": "skt-84a95277",
+      "source": "skt",
+      "category": "food",
+      "title": "VIPS 15% 할인",
+      "description": "[VIP/골드] 15% 할인 | [실버] 5% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 10P 단위) | [VIP/골드] 15% 적립 | [실버] 5% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 10P 단위)",
+      "discount": "15%",
+      "brand": "VIPS",
+      "membershipGrade": "VIP·골드·실버",
+      "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202309/1694398652272.png",
       "link": "https://sktmembership.tworld.co.kr",
       "startDate": "2026-06-01",
       "endDate": "2026-06-30"
