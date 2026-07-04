@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T04:25:49.044Z",
+  "updatedAt": "2026-07-04T04:10:52.222Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3745,28 +3745,28 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "cu-37335acb",
+      "id": "cu-bde92270",
       "source": "cu",
       "category": "convenience",
-      "title": "마스터)라떼캔240ml 2+1",
+      "title": "맥스웰)라떼캔240ml 2+1",
       "description": "1,600원 · 2+1 행사",
       "discount": "2+1",
-      "brand": "마스터)라떼캔240ml",
+      "brand": "맥스웰)라떼캔240ml",
       "price": "1,600원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037091397.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037091397_1.png",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
     {
-      "id": "cu-676426b8",
+      "id": "cu-9a9f26e3",
       "source": "cu",
       "category": "convenience",
-      "title": "마스터)스윗아메캔240ml 2+1",
+      "title": "맥스웰)스윗아메캔240ml 2+1",
       "description": "1,600원 · 2+1 행사",
       "discount": "2+1",
-      "brand": "마스터)스윗아메캔240ml",
+      "brand": "맥스웰)스윗아메캔240ml",
       "price": "1,600원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037091410.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037091410_1.png",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
@@ -5877,6 +5877,32 @@
       "endDate": "2026-07-31"
     },
     {
+      "id": "gs25-19673b82",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)골드키위파인파인트 1+1",
+      "description": "11,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)골드키위파인파인트",
+      "price": "11,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599361798_001.jpg",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "gs25-94d13e2f",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "라라스윗)바닐라빈파인트474ML 1+1",
+      "description": "11,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "라라스윗)바닐라빈파인트474ML",
+      "price": "11,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809599360494_001.jpg",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
       "id": "gs25-4b883505",
       "source": "gs25",
       "category": "convenience",
@@ -7784,32 +7810,6 @@
       "brand": "소와나무)생크림요거트150G",
       "price": "2,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155745141_001.jpg",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "gs25-323bb2c1",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "소화가잘되는바닐라빈라떼350ML 1+1",
-      "description": "3,400원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "소화가잘되는바닐라빈라떼350ML",
-      "price": "3,400원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155745677_001.jpg",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "gs25-a367b294",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "소화가잘되는시그니처라떼350ML 1+1",
-      "description": "3,400원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "소화가잘되는시그니처라떼350ML",
-      "price": "3,400원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155745660_001.jpg",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
@@ -13014,6 +13014,19 @@
       "endDate": "2026-07-31"
     },
     {
+      "id": "emart24-7cf0cecc",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동화)편안활스트롱15g 2+1",
+      "description": "1,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "동화)편안활스트롱15g",
+      "price": "1,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8806016186446.JPG",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
       "id": "emart24-026e362a",
       "source": "emart24",
       "category": "convenience",
@@ -15597,19 +15610,6 @@
       "brand": "농심)신라면툼바봉지",
       "price": "1,500원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801043018951.JPG",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "emart24-8843c291",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "농심)신라면툼바봉지*4입 2+1",
-      "description": "6,000원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "농심)신라면툼바봉지*4입",
-      "price": "6,000원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801043019002.JPG",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
