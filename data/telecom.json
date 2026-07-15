@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-14T02:49:40.833Z",
+  "updatedAt": "2026-07-15T02:48:13.243Z",
   "freshness": {
-    "skt": "2026-07-14T02:49:40.833Z",
-    "kt": "2026-07-14T02:49:40.833Z",
+    "skt": "2026-07-15T02:48:13.243Z",
+    "kt": "2026-07-15T02:48:13.243Z",
     "lgu": null
   },
-  "count": 334,
+  "count": 337,
   "summary": {
     "skt": 20,
-    "kt": 150,
+    "kt": 153,
     "lgu": 164
   },
   "best": [
@@ -298,6 +298,48 @@
       "endDate": "2026-07-31"
     },
     {
+      "id": "kt-2b4996b8",
+      "source": "kt",
+      "category": "etc",
+      "title": "더 키친 일뽀르노 혜택",
+      "description": "[전등급] [달.달.혜택] 1만원 할인 (5만원 이상 주문 시)",
+      "discount": "혜택",
+      "brand": "더 키친 일뽀르노",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98201.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "kt-02e0e0d3",
+      "source": "kt",
+      "category": "etc",
+      "title": "크리스탈 제이드 무료",
+      "description": "[전등급] [달.달.혜택] 딴딴면 1개 무료 (2만원 이상 주문 시)",
+      "discount": "무료",
+      "brand": "크리스탈 제이드",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98202.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "kt-600af523",
+      "source": "kt",
+      "category": "cafe",
+      "title": "폴바셋 50% 할인",
+      "description": "[전등급] [달.달.혜택] 룽고(S) 또는 라떼(S) 50% 할인 (2장)",
+      "discount": "50%",
+      "brand": "폴바셋",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98116.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
       "id": "kt-8f324b19",
       "source": "kt",
       "category": "cafe",
@@ -526,7 +568,7 @@
       "source": "kt",
       "category": "cafe",
       "title": "메가MGC커피 500원 할인",
-      "description": "[전등급] [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
+      "description": "[전등급] [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 [달.달.혜택] 메가MGC커피 1천원 할인 쿠폰(2매) | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
       "discount": "500원",
       "brand": "메가MGC커피",
       "membershipGrade": "전등급·VVIP·VIP",
@@ -694,7 +736,7 @@
       "source": "kt",
       "category": "etc",
       "title": "Domino's 25% 할인",
-      "description": "[전등급] [생일혜택] 생일파티세트 25% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
+      "description": "[전등급] [생일혜택] 생일파티세트 25% 할인 [달.달.혜택] 온라인 방문포장 50% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
       "discount": "25%",
       "brand": "Domino's",
       "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
@@ -802,14 +844,14 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "kt-ca6f4c24",
+      "id": "kt-006d32c2",
       "source": "kt",
       "category": "food",
-      "title": "VIPS 15% 할인",
-      "description": "[VVIP] [VVIP 초이스] 스테이크 무료 [상시] 15% 할인 | [VIP] [상시]15% 할인 | [Gold] [상시]5% 할인 | [일반] [상시]5% 할인",
-      "discount": "15%",
+      "title": "VIPS 무료",
+      "description": "[전등급] [달.달.혜택] 채끝 스테이크(210g) 무료 증정(성인 샐러드 바 2인 주문 시) | [VVIP] [VVIP 초이스] 스테이크 무료 [상시] 15% 할인 | [VIP] [상시]15% 할인 | [Gold] [상시]5% 할인 | [일반] [상시]5% 할인",
+      "discount": "무료",
       "brand": "VIPS",
-      "membershipGrade": "VVIP·VIP·Gold·일반",
+      "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9810.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-07-01",
