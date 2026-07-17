@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-16T02:54:37.298Z",
+  "updatedAt": "2026-07-17T02:57:17.482Z",
   "freshness": {
-    "skt": "2026-07-16T02:54:37.298Z",
-    "kt": null,
+    "skt": "2026-07-17T02:57:17.482Z",
+    "kt": "2026-07-17T02:57:17.482Z",
     "lgu": null
   },
-  "count": 337,
+  "count": 336,
   "summary": {
     "skt": 20,
-    "kt": 153,
+    "kt": 152,
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -298,6 +298,34 @@
       "endDate": "2026-07-31"
     },
     {
+      "id": "kt-b1f71f50",
+      "source": "kt",
+      "category": "shopping",
+      "title": "쇼핑라운지(고객 보답) 혜택",
+      "description": "[전등급] [고객 보답] 쇼핑라운지 5천원 할인",
+      "discount": "혜택",
+      "brand": "쇼핑라운지(고객 보답)",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/쇼핑라운지_웹_제휴브랜드_195x981131.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "kt-f6a31577",
+      "source": "kt",
+      "category": "cafe",
+      "title": "파리바게뜨(고객 보답) 50% 할인",
+      "description": "[전등급] [고객 보답] 최대 50% 할인",
+      "discount": "50%",
+      "brand": "파리바게뜨(고객 보답)",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98204.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
       "id": "kt-2b4996b8",
       "source": "kt",
       "category": "etc",
@@ -335,34 +363,6 @@
       "brand": "폴바셋",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98116.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "kt-8f324b19",
-      "source": "kt",
-      "category": "cafe",
-      "title": "배스킨라빈스(고객 보답) 50% 할인",
-      "description": "[전등급] [고객 보답] 50% 할인(최대 5천원)",
-      "discount": "50%",
-      "brand": "배스킨라빈스(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98186.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "kt-b1f71f50",
-      "source": "kt",
-      "category": "shopping",
-      "title": "쇼핑라운지(고객 보답) 혜택",
-      "description": "[전등급] [고객 보답] 쇼핑라운지 전 상품 5천원 할인",
-      "discount": "혜택",
-      "brand": "쇼핑라운지(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/쇼핑라운지_웹_제휴브랜드_195x981130.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
@@ -568,7 +568,7 @@
       "source": "kt",
       "category": "cafe",
       "title": "메가MGC커피 500원 할인",
-      "description": "[전등급] [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 [달.달.혜택] 메가MGC커피 1천원 할인 쿠폰(2매) | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
+      "description": "[전등급] [달.달.혜택] 메가MGC커피 1천원 할인 쿠폰(2매) [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
       "discount": "500원",
       "brand": "메가MGC커피",
       "membershipGrade": "전등급·VVIP·VIP",
@@ -732,12 +732,12 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "kt-1fc95cf6",
+      "id": "kt-bb62a34d",
       "source": "kt",
       "category": "etc",
-      "title": "Domino's 25% 할인",
-      "description": "[전등급] [생일혜택] 생일파티세트 25% 할인 [달.달.혜택] 온라인 방문포장 50% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
-      "discount": "25%",
+      "title": "Domino's 50% 할인",
+      "description": "[전등급] [달.달.혜택] 온라인 방문포장 50% 할인 [생일혜택] 생일파티세트 25% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
+      "discount": "50%",
       "brand": "Domino's",
       "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98135.png",
@@ -1306,20 +1306,6 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "kt-1590588e",
-      "source": "kt",
-      "category": "etc",
-      "title": "핫딜 5% 할인",
-      "description": "[전등급] 최대 5% 할인",
-      "discount": "5%",
-      "brand": "핫딜",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9873.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
       "id": "kt-0918c6df",
       "source": "kt",
       "category": "etc",
@@ -1334,15 +1320,15 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "kt-41bb609a",
+      "id": "kt-4bbcd006",
       "source": "kt",
       "category": "etc",
-      "title": "KT닷컴 액세서리 할인 5% 할인",
+      "title": "KT 다이렉트샵 5% 할인",
       "description": "[전등급] 기본 5% 할인, 일부 품목만 10% 할인 (최대 5만원 한도)",
       "discount": "5%",
-      "brand": "KT닷컴 액세서리 할인",
+      "brand": "KT 다이렉트샵",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x984.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98_KT 다이렉트샵.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
