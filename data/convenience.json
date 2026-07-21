@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T04:13:42.755Z",
+  "updatedAt": "2026-07-21T03:55:41.664Z",
   "count": 1823,
   "summary": {
     "cu": 400,
@@ -1400,7 +1400,7 @@
       "discount": "1+1",
       "brand": "코카)스프라이트제로P500",
       "price": "2,200원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801094962104.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801094962104_1.png",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
@@ -5448,19 +5448,6 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "gs25-dfb690ae",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)비비고가자미구이(순살/60G) 1+1",
-      "description": "6,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)비비고가자미구이(순살/60G)",
-      "price": "6,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392109201_001.jpg",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
       "id": "gs25-1e3c8e4b",
       "source": "gs25",
       "category": "convenience",
@@ -7810,6 +7797,19 @@
       "brand": "소화가잘되는바닐라빈라떼350ML",
       "price": "3,400원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155745677_001.jpg",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "gs25-a367b294",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "소화가잘되는시그니처라떼350ML 1+1",
+      "description": "3,400원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "소화가잘되는시그니처라떼350ML",
+      "price": "3,400원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155745660_001.jpg",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
