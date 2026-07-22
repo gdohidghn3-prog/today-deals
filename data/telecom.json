@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-21T03:14:58.507Z",
+  "updatedAt": "2026-07-22T02:57:32.159Z",
   "freshness": {
-    "skt": "2026-07-21T03:14:58.507Z",
-    "kt": null,
+    "skt": "2026-07-22T02:57:32.159Z",
+    "kt": "2026-07-22T02:57:32.159Z",
     "lgu": null
   },
-  "count": 336,
+  "count": 335,
   "summary": {
     "skt": 20,
-    "kt": 152,
+    "kt": 151,
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -1483,20 +1483,6 @@
       "brand": "아르떼뮤지엄",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98130.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "kt-cc163e6b",
-      "source": "kt",
-      "category": "etc",
-      "title": "기프티쇼 쿠폰",
-      "description": "[전등급] 구매실적 상관없이 VIP등급업(~5% 기프티쇼 차감 할인, 알파쇼핑 할인쿠폰 등 제공)",
-      "discount": "쿠폰",
-      "brand": "기프티쇼",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_기프티쇼_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
