@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-22T02:57:32.159Z",
+  "updatedAt": "2026-07-23T03:19:25.533Z",
   "freshness": {
-    "skt": "2026-07-22T02:57:32.159Z",
-    "kt": "2026-07-22T02:57:32.159Z",
+    "skt": "2026-07-23T03:19:25.533Z",
+    "kt": "2026-07-23T03:19:25.533Z",
     "lgu": null
   },
   "count": 335,
@@ -2104,13 +2104,13 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "kt-460c1b60",
+      "id": "kt-a5b1b5f6",
       "source": "kt",
       "category": "etc",
-      "title": "밀리의 서재 무료",
+      "title": "밀리의서재 무료",
       "description": "[VVIP] [VVIP 초이스]밀리의 서재 3개월 무료 | [VIP] [VIP 초이스]밀리의 서재 1개월 무료",
       "discount": "무료",
-      "brand": "밀리의 서재",
+      "brand": "밀리의서재",
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_밀리의서재_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
