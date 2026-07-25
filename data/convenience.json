@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T03:53:34.321Z",
+  "updatedAt": "2026-07-25T03:47:57.136Z",
   "count": 1823,
   "summary": {
     "cu": 400,
@@ -5422,19 +5422,6 @@
       "endDate": "2026-07-31"
     },
     {
-      "id": "gs25-c59d8016",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "곱창파는청년들)소스지190G/냉동 1+1",
-      "description": "12,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "곱창파는청년들)소스지190G/냉동",
-      "price": "12,800원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809729950144_001.jpg",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
       "id": "gs25-a1540888",
       "source": "gs25",
       "category": "convenience",
@@ -7810,6 +7797,19 @@
       "brand": "덴마크)초코초코우유300ML",
       "price": "2,100원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155731625_007.jpg",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-31"
+    },
+    {
+      "id": "gs25-481f0689",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "덴마크)커피커피우유300ML 1+1",
+      "description": "2,100원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "덴마크)커피커피우유300ML",
+      "price": "2,100원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801155731847_003.jpg",
       "startDate": "2026-07-01",
       "endDate": "2026-07-31"
     },
