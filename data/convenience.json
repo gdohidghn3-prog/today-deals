@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T04:04:16.180Z",
+  "updatedAt": "2026-08-03T04:06:31.157Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -13014,6 +13014,32 @@
       "endDate": "2026-08-31"
     },
     {
+      "id": "emart24-bcee8d49",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "청정원)오트밀감자크림50g(10) 2+1",
+      "description": "3,800원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "청정원)오트밀감자크림50g(10)",
+      "price": "3,800원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801052139333.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-c8eea0a1",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "청정원)오트밀소고기미역50g(10) 2+1",
+      "description": "3,800원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "청정원)오트밀소고기미역50g(10)",
+      "price": "3,800원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801052139357.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
       "id": "emart24-6f707763",
       "source": "emart24",
       "category": "convenience",
@@ -15584,32 +15610,6 @@
       "brand": "동서)포스트오곡코코볼컵시리얼",
       "price": "2,200원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801037096569.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-61646431",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "동서)포스트오레오오즈컵시리얼 2+1",
-      "description": "2,200원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "동서)포스트오레오오즈컵시리얼",
-      "price": "2,200원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801037096576.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-eee47b4b",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "동서)포스트아몬드후레이크컵시리얼 2+1",
-      "description": "2,400원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "동서)포스트아몬드후레이크컵시리얼",
-      "price": "2,400원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801037097795.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
