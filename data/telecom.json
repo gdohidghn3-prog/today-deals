@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-08-02T03:22:52.888Z",
+  "updatedAt": "2026-08-03T03:24:45.215Z",
   "freshness": {
-    "skt": "2026-08-02T03:22:52.888Z",
-    "kt": null,
+    "skt": "2026-08-03T03:24:45.215Z",
+    "kt": "2026-08-03T03:24:45.215Z",
     "lgu": null
   },
-  "count": 335,
+  "count": 334,
   "summary": {
     "skt": 20,
-    "kt": 151,
+    "kt": 150,
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -298,74 +298,60 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-b1f71f50",
-      "source": "kt",
-      "category": "shopping",
-      "title": "쇼핑라운지(고객 보답) 혜택",
-      "description": "[전등급] [고객 보답] 쇼핑라운지 5천원 할인",
-      "discount": "혜택",
-      "brand": "쇼핑라운지(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/쇼핑라운지_웹_제휴브랜드_195x981131.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "kt-f6a31577",
-      "source": "kt",
-      "category": "cafe",
-      "title": "파리바게뜨(고객 보답) 50% 할인",
-      "description": "[전등급] [고객 보답] 최대 50% 할인",
-      "discount": "50%",
-      "brand": "파리바게뜨(고객 보답)",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98204.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
-    },
-    {
-      "id": "kt-2b4996b8",
+      "id": "kt-7b3f8d1e",
       "source": "kt",
       "category": "etc",
-      "title": "더 키친 일뽀르노 혜택",
-      "description": "[전등급] [달.달.혜택] 1만원 할인 (5만원 이상 주문 시)",
+      "title": "GS칼텍스 혜택",
+      "description": "[전등급] [케멤페] 3천원 할인(3만원 이상 주유 시)",
       "discount": "혜택",
-      "brand": "더 키친 일뽀르노",
+      "brand": "GS칼텍스",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98201.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98143.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
-      "id": "kt-02e0e0d3",
+      "id": "kt-c765cc16",
       "source": "kt",
       "category": "etc",
-      "title": "크리스탈 제이드 무료",
-      "description": "[전등급] [달.달.혜택] 딴딴면 1개 무료 (2만원 이상 주문 시)",
-      "discount": "무료",
-      "brand": "크리스탈 제이드",
+      "title": "배달의민족 혜택",
+      "description": "[전등급] [케멤페] 최대 9천원 할인",
+      "discount": "혜택",
+      "brand": "배달의민족",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98202.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_배달의민족_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
-      "id": "kt-600af523",
+      "id": "kt-62cb68da",
       "source": "kt",
-      "category": "cafe",
-      "title": "폴바셋 50% 할인",
-      "description": "[전등급] [달.달.혜택] 룽고(S) 또는 라떼(S) 50% 할인 (2장)",
-      "discount": "50%",
-      "brand": "폴바셋",
+      "category": "etc",
+      "title": "패스트캠퍼스 혜택",
+      "description": "[전등급] AICE Associate 실전 완성 과정 30% 특별 할인",
+      "discount": "혜택",
+      "brand": "패스트캠퍼스",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98116.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98203.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "kt-747de389",
+      "source": "kt",
+      "category": "etc",
+      "title": "포케올데이 10% 할인",
+      "description": "[전등급] 10% 할인",
+      "discount": "10%",
+      "brand": "포케올데이",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98176.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-fe1512de",
@@ -378,8 +364,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98190.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-ff40742b",
@@ -392,8 +378,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98189.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-bc34eed2",
@@ -406,8 +392,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98188.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-8f177ba2",
@@ -420,8 +406,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98181.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-0f061a92",
@@ -434,8 +420,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9870.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4f7b0c3b",
@@ -448,8 +434,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98155.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-70b465b9",
@@ -462,8 +448,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98165.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-6692bce6",
@@ -476,8 +462,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98160.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-205d87b9",
@@ -490,8 +476,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98166.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-c62ac24d",
@@ -504,8 +490,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98159.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-d8e7dec6",
@@ -518,8 +504,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98149.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-04ede949",
@@ -532,8 +518,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98153.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-52f60fa1",
@@ -546,8 +532,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_GS25_web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-61c9e431",
@@ -560,22 +546,22 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/PB.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-3e70a3d2",
       "source": "kt",
       "category": "cafe",
       "title": "메가MGC커피 500원 할인",
-      "description": "[전등급] [달.달.혜택] 메가MGC커피 1천원 할인 쿠폰(2매) [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
+      "description": "[전등급] [상시] ICE 아메리카노 구매 시 500원 할인(3장) [OTTX메가MGC커피] 500원 할인쿠폰 2장 | [VVIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료 | [VIP] [V/VIP 초이스] 아메리카노(HOT/ICE) 2잔 무료",
       "discount": "500원",
       "brand": "메가MGC커피",
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_메가MGC커피_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b42fbfc8",
@@ -588,8 +574,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_지니TV_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-752abf8d",
@@ -602,8 +588,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_롯데시네마_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-05ce5644",
@@ -616,8 +602,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9867.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-70b3b1d3",
@@ -630,8 +616,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0078_emart24.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-c2435f4e",
@@ -644,8 +630,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/배스킨라빈스_웹_제휴브랜드_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-5db42c6d",
@@ -658,8 +644,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0001_CGV.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-36f30c72",
@@ -672,8 +658,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_할리스_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1ed22313",
@@ -686,8 +672,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_원스토어_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-76e42c1b",
@@ -700,8 +686,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_꾸까_웹5.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-0bcecffd",
@@ -714,8 +700,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9834.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-314c025b",
@@ -728,22 +714,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/megaboxnew.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
-      "id": "kt-bb62a34d",
+      "id": "kt-1fc95cf6",
       "source": "kt",
       "category": "etc",
-      "title": "Domino's 50% 할인",
-      "description": "[전등급] [달.달.혜택] 온라인 방문포장 50% 할인 [생일혜택] 생일파티세트 25% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
-      "discount": "50%",
+      "title": "Domino's 25% 할인",
+      "description": "[전등급] [생일혜택] 생일파티세트 25% 할인 | [VVIP] [VVIP 초이스] 3만원 할인 [상시] 20% 할인 | [VIP] [상시] 20% 할인 | [Gold] [상시] 15% 할인 | [일반] [상시] 15% 할인",
+      "discount": "25%",
       "brand": "Domino's",
       "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98135.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-7ef9e205",
@@ -756,8 +742,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0004_outback.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1a9b684d",
@@ -770,8 +756,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/papajohns_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-5e16b7a6",
@@ -784,8 +770,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_던킨도너츠_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-768b7b07",
@@ -798,8 +784,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0027_starbucks.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-72863416",
@@ -812,8 +798,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9888.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-61bac655",
@@ -826,8 +812,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0022_pariscroissant.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-610a8311",
@@ -840,22 +826,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
-      "id": "kt-006d32c2",
+      "id": "kt-ca6f4c24",
       "source": "kt",
       "category": "food",
-      "title": "VIPS 무료",
-      "description": "[전등급] [달.달.혜택] 채끝 스테이크(210g) 무료 증정(성인 샐러드 바 2인 주문 시) | [VVIP] [VVIP 초이스] 스테이크 무료 [상시] 15% 할인 | [VIP] [상시]15% 할인 | [Gold] [상시]5% 할인 | [일반] [상시]5% 할인",
-      "discount": "무료",
+      "title": "VIPS 15% 할인",
+      "description": "[VVIP] [VVIP 초이스] 스테이크 무료 [상시] 15% 할인 | [VIP] [상시]15% 할인 | [Gold] [상시]5% 할인 | [일반] [상시]5% 할인",
+      "discount": "15%",
       "brand": "VIPS",
-      "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
+      "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9810.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-51f6a85e",
@@ -868,8 +854,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_그리팅_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-59f26c6d",
@@ -882,8 +868,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_KT알파쇼핑_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-3cff6b18",
@@ -896,8 +882,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9880.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-fe87dd08",
@@ -910,8 +896,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9840.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-42f841db",
@@ -924,8 +910,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/BNCO_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-ced9f135",
@@ -938,8 +924,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0013_madforG.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-3c3dce59",
@@ -952,8 +938,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/4612_lteDataRecharge3.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-dc780fed",
@@ -966,8 +952,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98113.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f8ca94df",
@@ -980,8 +966,8 @@
       "membershipGrade": "VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9814.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-6722710f",
@@ -994,22 +980,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9851.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
-      "id": "kt-e861e984",
+      "id": "kt-de039c8c",
       "source": "kt",
       "category": "etc",
-      "title": "롯데렌터카 G car 20% 할인",
-      "description": "[전등급] 최대 20% 할인",
-      "discount": "20%",
+      "title": "롯데렌터카 G car 60% 할인",
+      "description": "[전등급] [케멤페]G car 60% 할인 [상시]최대 20% 할인",
+      "discount": "60%",
       "brand": "롯데렌터카 G car",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9841.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-22e245ef",
@@ -1022,8 +1008,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/4613_lteDataRoulette.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-36e8508c",
@@ -1036,8 +1022,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0036_everland.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-14c9d951",
@@ -1050,8 +1036,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_신세계면세점_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-298ca895",
@@ -1062,10 +1048,10 @@
       "discount": "50%",
       "brand": "KT멤버십 공연예매",
       "membershipGrade": "VVIP·VIP·Gold·일반",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/4608_공연예매_제휴사0.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4608_culture.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-d733d442",
@@ -1078,8 +1064,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-092dcec9",
@@ -1092,8 +1078,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9846.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-43bb94c6",
@@ -1106,8 +1092,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98100.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e0c47dc6",
@@ -1120,8 +1106,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0010_pizzahut.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-eea48806",
@@ -1134,8 +1120,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98200.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4214bd77",
@@ -1148,8 +1134,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_피자알볼로_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b44ad8fb",
@@ -1162,8 +1148,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_LTE데이터충전_195x98 (1).png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1266215e",
@@ -1176,8 +1162,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9811.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-2b8d85f9",
@@ -1190,8 +1176,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9856.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-0087c0a9",
@@ -1204,8 +1190,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_아고다_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-fa6ccbd8",
@@ -1218,8 +1204,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_CJ더마켓_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-578e59ed",
@@ -1232,8 +1218,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9854.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-7aab0742",
@@ -1246,8 +1232,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_신라면세점_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-016856d7",
@@ -1260,8 +1246,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/1112_genieweb.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-3842ba61",
@@ -1274,8 +1260,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_카페베네_웹1.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-53e2bd7f",
@@ -1288,8 +1274,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_초심카페_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-39532b96",
@@ -1302,8 +1288,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_달콤커피_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-0918c6df",
@@ -1316,8 +1302,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9885.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4bbcd006",
@@ -1330,8 +1316,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98_KT 다이렉트샵.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b3c78157",
@@ -1344,8 +1330,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98119.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9fd33de6",
@@ -1358,8 +1344,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0009_mrpizza.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-a4db830e",
@@ -1372,8 +1358,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_GS포스트박스_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-d96015b7",
@@ -1386,8 +1372,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98104.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b8aeb0f1",
@@ -1400,8 +1386,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_텐바이텐_195x982.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4e96dd05",
@@ -1414,8 +1400,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_어바웃펫_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f470ecec",
@@ -1428,8 +1414,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/비트커피.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b7d6ec85",
@@ -1442,8 +1428,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9895.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-a5d77d28",
@@ -1456,8 +1442,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/webbrand_195x986.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-afcf561d",
@@ -1470,8 +1456,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0043_aquaplanet.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1eafbb2c",
@@ -1484,22 +1470,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98130.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-23be850b",
       "source": "kt",
       "category": "etc",
       "title": "BLUE BOTTLE COFFEE 혜택",
-      "description": "[VVIP] 블루 보틀 인기 굿즈 추첨 제공",
+      "description": "[VVIP] 블루보틀 인기 굿즈 추첨 제공",
       "discount": "혜택",
       "brand": "BLUE BOTTLE COFFEE",
       "membershipGrade": "VVIP",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_블루보틀_웹1.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_블루보틀_웹10.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-fd05f0bb",
@@ -1512,8 +1498,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9846.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-6c9f75e8",
@@ -1526,8 +1512,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x981.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-373407ee",
@@ -1540,8 +1526,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9892.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-bebdf8f9",
@@ -1554,8 +1540,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9855_AICE.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-5687d65e",
@@ -1568,8 +1554,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0039_seoulland.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f07d5526",
@@ -1582,8 +1568,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_신라아이파크면세점_앱.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e8c44984",
@@ -1596,8 +1582,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_카모아_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-d3ed6d87",
@@ -1610,8 +1596,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/키자니아로고_195x98(웹)_190422.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-697e26e3",
@@ -1624,8 +1610,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_풀무원_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4a42de90",
@@ -1638,8 +1624,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98115.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-aa8aa748",
@@ -1652,36 +1638,36 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9843.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-2d5ebdac",
       "source": "kt",
       "category": "etc",
       "title": "파고다토쿨 혜택",
-      "description": "[전등급] 전화영어 1만원 할인",
+      "description": "[전등급] 전화/화상영어 1만원 할인",
       "discount": "혜택",
       "brand": "파고다토쿨",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98112.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-947df59f",
       "source": "kt",
       "category": "etc",
       "title": "파고다원 5% 할인",
-      "description": "[전등급] 1:1 회화 전과목 5% 할인 (대면 수업에 한함)＋1:1 화상 전과목 1만원 할인 (화상 수업에 한함)",
+      "description": "[전등급] 1:1 회화 전과목 5% 할인 (대면 수업에 한함)",
       "discount": "5%",
       "brand": "파고다원",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98111.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f0db0ad8",
@@ -1694,8 +1680,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98114.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9b96b910",
@@ -1708,8 +1694,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98110.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-ffd01d35",
@@ -1722,8 +1708,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_후디스몰_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-60c1cd2c",
@@ -1736,8 +1722,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9839.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-22db87c5",
@@ -1750,8 +1736,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98131.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-22e0937e",
@@ -1764,8 +1750,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9884.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4d67cf60",
@@ -1778,8 +1764,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_제주인터넷면세점_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-efb31525",
@@ -1792,8 +1778,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_에어클래스_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9a96de85",
@@ -1806,8 +1792,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_다락_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1ff5a7b0",
@@ -1820,8 +1806,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_히트조명_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-98b82412",
@@ -1834,8 +1820,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9891.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-a0be6d6b",
@@ -1848,8 +1834,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_에듀윌_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e0bb6c41",
@@ -1862,8 +1848,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_리프레쉬골프_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-6827f9a5",
@@ -1876,8 +1862,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4614_ASDiscount.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-62daca0e",
@@ -1890,8 +1876,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_차일디_195x98.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f4637d10",
@@ -1904,8 +1890,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98125.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9b924eb2",
@@ -1918,8 +1904,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98102.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f2054f0e",
@@ -1932,8 +1918,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_볼록북_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-fb80ba52",
@@ -1946,8 +1932,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_노보텔_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-26b54951",
@@ -1960,8 +1946,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98106.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-7a90b0ca",
@@ -1974,8 +1960,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98134.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e4bb2465",
@@ -1988,8 +1974,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9875.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-bc8d77f5",
@@ -2002,8 +1988,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9898.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4333f628",
@@ -2016,8 +2002,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9845.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-4c8c18f5",
@@ -2030,8 +2016,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9869.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9c8698fe",
@@ -2044,8 +2030,8 @@
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0056_ktWiz.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-d5b02505",
@@ -2058,8 +2044,8 @@
       "membershipGrade": "전등급·VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_서울스카이_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-bb3804d9",
@@ -2072,8 +2058,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9879.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-56190034",
@@ -2086,8 +2072,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9871.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-c70d3ba5",
@@ -2100,8 +2086,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9858.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-a5b1b5f6",
@@ -2114,8 +2100,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_밀리의서재_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9248672e",
@@ -2128,8 +2114,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/0057_lottecar.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-623ed162",
@@ -2142,8 +2128,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/lotteworld_weblogo.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-2ef56dfb",
@@ -2156,8 +2142,8 @@
       "membershipGrade": "VVIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/오토오아시스_웹0.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-18a387c1",
@@ -2170,8 +2156,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_롯데월드_아쿠아리움_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-2167701e",
@@ -2184,8 +2170,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_이월드_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-445540a8",
@@ -2198,8 +2184,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/워터피아.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-5fad8645",
@@ -2212,22 +2198,22 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9821.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-81a88fcf",
       "source": "kt",
       "category": "etc",
       "title": "MOVV 18% 할인",
-      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인＋KT멤버십 3% 추가 할인＋무브 마일리지 3% 추가 적립) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
+      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인+KT멤버십 3% 추가 할인) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
       "discount": "18%",
       "brand": "MOVV",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9849_MOVV.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x9849.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e774ae84",
@@ -2240,8 +2226,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/4611_geniePack.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-9733288f",
@@ -2254,8 +2240,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_클룩_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-f15b931f",
@@ -2268,8 +2254,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/1804lotteweb.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-cf0573f9",
@@ -2282,8 +2268,8 @@
       "membershipGrade": "VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_한화리조트_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-1bfc0ab8",
@@ -2296,8 +2282,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/skyhub_web.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-23170ea8",
@@ -2310,8 +2296,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_더라운지멤버스_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-c430bdb2",
@@ -2324,8 +2310,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9899.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-b7658389",
@@ -2338,8 +2324,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_Hmall_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-6c572766",
@@ -2352,8 +2338,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/0029_mrhealing.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-03cf4c8c",
@@ -2366,8 +2352,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9872.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-e1052430",
@@ -2380,8 +2366,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x986.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-31a6fc9b",
@@ -2394,8 +2380,8 @@
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98150.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "kt-def5bfd3",
@@ -2408,8 +2394,8 @@
       "membershipGrade": "VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9828.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-31"
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
     },
     {
       "id": "lgu-711169",
