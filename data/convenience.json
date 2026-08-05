@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T03:48:20.673Z",
+  "updatedAt": "2026-08-05T03:43:54.015Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -1530,7 +1530,7 @@
       "discount": "1+1",
       "brand": "광동)헛개차골드라벨500ml",
       "price": "3,300원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8806002020334.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8806002020334_1.png",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -10388,19 +10388,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "gs25-ed3be9ea",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)동그란스팸160G 2+1",
-      "description": "5,500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "CJ)동그란스팸160G",
-      "price": "5,500원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392088230_003.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "gs25-5efd88ae",
       "source": "gs25",
       "category": "convenience",
@@ -10410,6 +10397,19 @@
       "brand": "CJ)맥스봉숯불구이맛핫바90G",
       "price": "2,900원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801007403571_002.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-18b75172",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "CJ)맥스봉청양고추후랑크80G 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "CJ)맥스봉청양고추후랑크80G",
+      "price": "2,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801007348308_006.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
