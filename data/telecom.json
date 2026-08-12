@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-11T02:01:31.321Z",
+  "updatedAt": "2026-08-12T02:16:54.786Z",
   "freshness": {
-    "skt": "2026-08-11T02:01:31.321Z",
-    "kt": null,
+    "skt": "2026-08-12T02:16:54.786Z",
+    "kt": "2026-08-12T02:16:54.786Z",
     "lgu": null
   },
   "count": 335,
@@ -12,9 +12,9 @@
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -550,15 +550,15 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-6692bce6",
+      "id": "kt-a69cbef8",
       "source": "kt",
       "category": "etc",
-      "title": "어플레이즈 20% 할인",
-      "description": "[전등급] 어플레이즈 1개월 20% 할인 쿠폰",
+      "title": "2차 데이터 파일 시작일자는 TB, 상용 구분하여 아래 같이 데이터 업로드 해둔 상태입니다.  TB: daldalSdate\": \"20260805140000\"  상용: daldalSdate\": \"20260818000000\" 20% 할인",
+      "description": "[전등급] 래디오비즈 1개월 20% 할인 쿠폰",
       "discount": "20%",
-      "brand": "어플레이즈",
+      "brand": "2차 데이터 파일 시작일자는 TB, 상용 구분하여 아래 같이 데이터 업로드 해둔 상태입니다.  TB: daldalSdate\": \"20260805140000\"  상용: daldalSdate\": \"20260818000000\"",
       "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98160.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x980.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
@@ -1264,13 +1264,13 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-016856d7",
+      "id": "kt-a83e8d83",
       "source": "kt",
       "category": "etc",
-      "title": "genie 30% 할인",
+      "title": "지니 (genie) 30% 할인",
       "description": "[전등급] 최대 30%할인",
       "discount": "30%",
-      "brand": "genie",
+      "brand": "지니 (genie)",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/1112_genieweb.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
@@ -2146,12 +2146,12 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-623ed162",
+      "id": "kt-68ba9ded",
       "source": "kt",
       "category": "culture",
-      "title": "롯데월드로고 30% 할인",
-      "description": "[전등급] 본인 40% 및 동반 3인 30% 할인",
-      "discount": "30%",
+      "title": "롯데월드로고 42% 할인",
+      "description": "[전등급] [8월 프로모션] 본인 및 동반 1인 42% 할인 [상시] 본인 40% 및 동반 3인 30% 할인",
+      "discount": "42%",
       "brand": "롯데월드로고",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/lotteworld_weblogo.png",
@@ -2234,7 +2234,7 @@
       "source": "kt",
       "category": "etc",
       "title": "MOVV 18% 할인",
-      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인+KT멤버십 3% 추가 할인) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
+      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인 KT멤버십 3% 추가 할인) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
       "discount": "18%",
       "brand": "MOVV",
       "membershipGrade": "전등급",
