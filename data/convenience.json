@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T03:04:46.142Z",
+  "updatedAt": "2026-08-13T03:08:00.228Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -1600,19 +1600,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-d3120abc",
-      "source": "cu",
-      "category": "convenience",
-      "title": "좋은)유기농순면슬날대14P 1+1",
-      "description": "12,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "좋은)유기농순면슬날대14P",
-      "price": "12,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801166239134.png",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-8f72c27c",
       "source": "cu",
       "category": "convenience",
@@ -1674,19 +1661,6 @@
       "brand": "HK)컨디션스틱18g",
       "price": "3,900원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809422043884.png",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "cu-3b0157b8",
-      "source": "cu",
-      "category": "convenience",
-      "title": "템포)순면롱라이너18P 1+1",
-      "description": "4,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "템포)순면롱라이너18P",
-      "price": "4,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8806011636748.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -1791,19 +1765,6 @@
       "brand": "오뚜기)참기름김치볶음밥",
       "price": "5,400원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801045875538.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "cu-a7e2151d",
-      "source": "cu",
-      "category": "convenience",
-      "title": "쏘피)안심숙면팬티L4P 1+1",
-      "description": "10,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "쏘피)안심숙면팬티L4P",
-      "price": "10,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809709260898.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -2614,6 +2575,45 @@
       "endDate": "2026-08-31"
     },
     {
+      "id": "cu-00a223bf",
+      "source": "cu",
+      "category": "convenience",
+      "title": "좋은)입는데이팬티L4P 1+1",
+      "description": "10,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "좋은)입는데이팬티L4P",
+      "price": "10,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801166098991.png",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-14fb0737",
+      "source": "cu",
+      "category": "convenience",
+      "title": "CJ)비비고추어탕460g 1+1",
+      "description": "11,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)비비고추어탕460g",
+      "price": "11,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007769868.png",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-a893e2cb",
+      "source": "cu",
+      "category": "convenience",
+      "title": "연세)스트로베리요거트300 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "연세)스트로베리요거트300",
+      "price": "2,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801753110976.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
       "id": "cu-a570d312",
       "source": "cu",
       "category": "convenience",
@@ -3173,19 +3173,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-bfd2ee5c",
-      "source": "cu",
-      "category": "convenience",
-      "title": "질레트)센서티브폼 2+1",
-      "description": "8,500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "질레트)센서티브폼",
-      "price": "8,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/0004740024144.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-fafc9678",
       "source": "cu",
       "category": "convenience",
@@ -3715,19 +3702,6 @@
       "brand": "정식품)베지밀A병190ml",
       "price": "1,800원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801033000119.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "cu-b550b638",
-      "source": "cu",
-      "category": "convenience",
-      "title": "가그린)오리지널100ml 2+1",
-      "description": "2,300원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "가그린)오리지널100ml",
-      "price": "2,300원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8806011616047.png",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -5210,6 +5184,32 @@
       "brand": "시저)쇠고기닭고기통조림",
       "price": "2,400원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8804973300035.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-c40b900d",
+      "source": "cu",
+      "category": "convenience",
+      "title": "부명)소프트치킨육포 2+1",
+      "description": "4,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "부명)소프트치킨육포",
+      "price": "4,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809090430689.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-171e1a1a",
+      "source": "cu",
+      "category": "convenience",
+      "title": "부명)하드치킨육포 2+1",
+      "description": "4,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "부명)하드치킨육포",
+      "price": "4,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809090432720.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -7671,58 +7671,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "gs25-5a45eee0",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)고메소바바치킨양념순살240G 1+1",
-      "description": "9,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)고메소바바치킨양념순살240G",
-      "price": "9,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392112485_002.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-a8773da3",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)소바바치킨레드핫240G 1+1",
-      "description": "9,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)소바바치킨레드핫240G",
-      "price": "9,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392159084_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-2847958e",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)소바바치킨마쏘킥240G 1+1",
-      "description": "9,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)소바바치킨마쏘킥240G",
-      "price": "9,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392151118_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-bc6e86cd",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "CJ)소바바치킨소이허니순살240G 1+1",
-      "description": "9,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)소바바치킨소이허니순살240G",
-      "price": "9,900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801392087073_002.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "gs25-fd3b9126",
       "source": "gs25",
       "category": "convenience",
@@ -7810,6 +7758,58 @@
       "brand": "CJ)맥스봉치즈50G",
       "price": "2,400원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801007021652_656.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-fe80efea",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "진주)천하장사콰트로치즈50G 1+1",
+      "description": "2,400원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "진주)천하장사콰트로치즈50G",
+      "price": "2,400원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077384305_002.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-7cec7159",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "진주)천하장사콰트로치즈70G 1+1",
+      "description": "2,800원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "진주)천하장사콰트로치즈70G",
+      "price": "2,800원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077384800_001.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-deed1fe3",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "삼립)갈릭후랑크65G 1+1",
+      "description": "2,400원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "삼립)갈릭후랑크65G",
+      "price": "2,400원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801068940411_001.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-41fe515a",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "CJ)닭가슴살소시지(청양)80G 1+1",
+      "description": "3,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)닭가슴살소시지(청양)80G",
+      "price": "3,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801007951805_001.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
