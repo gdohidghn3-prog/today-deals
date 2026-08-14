@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T03:08:00.228Z",
+  "updatedAt": "2026-08-14T03:06:56.101Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3836,19 +3836,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-8d098ffc",
-      "source": "cu",
-      "category": "convenience",
-      "title": "가그린)제로100ml 2+1",
-      "description": "2,300원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "가그린)제로100ml",
-      "price": "2,300원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8806011616153.png",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-e9af52c5",
       "source": "cu",
       "category": "convenience",
@@ -5210,6 +5197,19 @@
       "brand": "부명)하드치킨육포",
       "price": "4,500원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809090432720.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-a5f07dd1",
+      "source": "cu",
+      "category": "convenience",
+      "title": "삼양)까르보불닭떡볶이 2+1",
+      "description": "3,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "삼양)까르보불닭떡볶이",
+      "price": "3,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801073310933.png",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -9790,6 +9790,19 @@
       "endDate": "2026-08-31"
     },
     {
+      "id": "gs25-5b049f11",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "맥심)TOP바닐라라떼275ML 2+1",
+      "description": "2,700원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "맥심)TOP바닐라라떼275ML",
+      "price": "2,700원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801037026313_002.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
       "id": "gs25-f496c833",
       "source": "gs25",
       "category": "convenience",
@@ -10397,19 +10410,6 @@
       "brand": "진주)천하장사BIG70G",
       "price": "2,800원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077308608_002.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-f29e1c16",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "진주)천하장사28G 2+1",
-      "description": "1,500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "진주)천하장사28G",
-      "price": "1,500원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077285701_703.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
