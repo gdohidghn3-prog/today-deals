@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-08-14T02:17:08.121Z",
+  "updatedAt": "2026-08-15T01:26:23.273Z",
   "freshness": {
-    "skt": "2026-08-14T02:17:08.121Z",
-    "kt": null,
+    "skt": "2026-08-15T01:26:23.273Z",
+    "kt": "2026-08-15T01:26:23.273Z",
     "lgu": null
   },
-  "count": 335,
+  "count": 336,
   "summary": {
     "skt": 20,
-    "kt": 151,
+    "kt": 152,
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -1226,7 +1226,7 @@
       "source": "kt",
       "category": "shopping",
       "title": "CJ더마켓 35% 할인",
-      "description": "[전등급] [상시] 35% 할인 쿠폰 | [VVIP] [V/VIP 초이스] 45% 할인 쿠폰 적립금 5천원 | [VIP] [V/VIP 초이스] 45% 할인 쿠폰 적립금 5천원",
+      "description": "[전등급] [상시] 35% 할인 쿠폰 | [VVIP] [V/VIP 초이스] 45% 할인 쿠폰＋적립금 5천원 | [VIP] [V/VIP 초이스] 45% 할인 쿠폰＋적립금 5천원",
       "discount": "35%",
       "brand": "CJ더마켓",
       "membershipGrade": "전등급·VVIP·VIP",
@@ -1497,6 +1497,20 @@
       "brand": "아르떼뮤지엄",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x98130.png",
+      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "kt-cc163e6b",
+      "source": "kt",
+      "category": "etc",
+      "title": "기프티쇼 쿠폰",
+      "description": "[전등급] 구매실적 상관없이 VIP등급업(~5% 기프티쇼 차감 할인, 알파쇼핑 할인쿠폰 등 제공)",
+      "discount": "쿠폰",
+      "brand": "기프티쇼",
+      "membershipGrade": "전등급",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_기프티쇼_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
@@ -1814,7 +1828,7 @@
       "source": "kt",
       "category": "etc",
       "title": "다락 35% 할인",
-      "description": "[VVIP] 1개월 무료 ＋ 35% 할인 | [VIP] 1개월 무료 ＋ 35% 할인 | [Gold] 35% 할인 | [일반] 35% 할인",
+      "description": "[VVIP] 1개월 무료＋35% 할인 | [VIP] 1개월 무료＋35% 할인 | [Gold] 35% 할인 | [일반] 35% 할인",
       "discount": "35%",
       "brand": "다락",
       "membershipGrade": "VVIP·VIP·Gold·일반",
@@ -2234,7 +2248,7 @@
       "source": "kt",
       "category": "etc",
       "title": "MOVV 18% 할인",
-      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인 KT멤버십 3% 추가 할인) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
+      "description": "[전등급] KTX결합상품 최대 18%할인(15%할인＋KT멤버십 3% 추가 할인) / 인천공항 프라이빗밴 서울 전지역 99,000원 특가",
       "discount": "18%",
       "brand": "MOVV",
       "membershipGrade": "전등급",
