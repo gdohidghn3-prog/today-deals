@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T01:57:20.299Z",
+  "updatedAt": "2026-08-16T02:06:40.222Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -10635,19 +10635,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "emart24-155efad2",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "트롤리)키스미니스100g 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "트롤리)키스미니스100g",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8437004492906.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "emart24-108e91eb",
       "source": "emart24",
       "category": "convenience",
@@ -10722,45 +10709,6 @@
       "brand": "콘돔)레드컨테이너홍콩가는티켓",
       "price": "6,000원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800244340014.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-f87132f8",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "에스엠)소보로도넛골드치즈40g 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "에스엠)소보로도넛골드치즈40g",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800263690237.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-71d6168d",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "에스엠)소보로도넛코코넛40g 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "에스엠)소보로도넛코코넛40g",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800263690268.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-b343f6fb",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "에스엠)소보로도넛블루베리40g 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "에스엠)소보로도넛블루베리40g",
-      "price": "1,800원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800263690275.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -12078,19 +12026,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "emart24-f4eaa10e",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "대상)안주야먹태열풍청양데리야끼맛25g 1+1",
-      "description": "5,900원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "대상)안주야먹태열풍청양데리야끼맛25g",
-      "price": "5,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801052094007.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "emart24-9b1f5f3d",
       "source": "emart24",
       "category": "convenience",
@@ -13010,6 +12945,84 @@
       "brand": "코카)스프라이트제로캔350ml",
       "price": "2,000원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801094963200.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-c2d28ea3",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동아)나랑드사이다제로캔245ml 1+1",
+      "description": "1,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다제로캔245ml",
+      "price": "1,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097135215.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-bd29a2de",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동아)나랑드사이다제로파인캔245ml 1+1",
+      "description": "1,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다제로파인캔245ml",
+      "price": "1,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097136618.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-ba57ac7b",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동아)데미소다레드애플캔350ml 1+1",
+      "description": "1,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)데미소다레드애플캔350ml",
+      "price": "1,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097168909.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-060b178a",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동아)나랑드사이다제로펫500ml 1+1",
+      "description": "2,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)나랑드사이다제로펫500ml",
+      "price": "2,000원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097235014.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-01f50c9d",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동아)엑스코카스에너지캔355ml 1+1",
+      "description": "2,300원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동아)엑스코카스에너지캔355ml",
+      "price": "2,300원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097824317.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-3cfc5a14",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "농심)짜파게티범벅소컵 2+1",
+      "description": "1,050원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "농심)짜파게티범벅소컵",
+      "price": "1,050원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801043015608.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -15597,19 +15610,6 @@
       "brand": "남양)불가리스사과150ml",
       "price": "2,000원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069175942.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-14587bbd",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "남양)테이크핏프로틴고소한맛250ml 2+1",
-      "description": "2,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "남양)테이크핏프로틴고소한맛250ml",
-      "price": "2,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069415833.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
