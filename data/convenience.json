@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T01:58:14.755Z",
+  "updatedAt": "2026-08-19T02:00:00.133Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -4767,7 +4767,7 @@
       "discount": "2+1",
       "brand": "동서)심플리라떼240ml",
       "price": "2,300원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037092240.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801037092240_1.png",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -10414,6 +10414,19 @@
       "endDate": "2026-08-31"
     },
     {
+      "id": "emart24-9129d173",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "성수310)애플머스캣스무디250ml 1+1",
+      "description": "2,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "성수310)애플머스캣스무디250ml",
+      "price": "2,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809350887178.JPG",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
       "id": "emart24-8dad1833",
       "source": "emart24",
       "category": "convenience",
@@ -13001,15 +13014,15 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "emart24-01f50c9d",
+      "id": "emart24-78bb73a3",
       "source": "emart24",
       "category": "convenience",
-      "title": "동아)엑스코카스에너지캔355ml 1+1",
-      "description": "2,300원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "동아)엑스코카스에너지캔355ml",
-      "price": "2,300원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097824317.JPG",
+      "title": "롯데)의성마늘프랑크직화65g 2+1",
+      "description": "2,600원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "롯데)의성마늘프랑크직화65g",
+      "price": "2,600원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801123002702.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -15597,19 +15610,6 @@
       "brand": "남양)테이크핏호박고구마250ml",
       "price": "2,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069419619.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-74607fd6",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "남양)불가리스설탕무첨가150ml 2+1",
-      "description": "2,000원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "남양)불가리스설탕무첨가150ml",
-      "price": "2,000원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069422237.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
