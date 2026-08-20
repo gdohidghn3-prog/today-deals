@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-19T01:26:56.702Z",
+  "updatedAt": "2026-08-20T01:26:31.103Z",
   "freshness": {
-    "skt": "2026-08-19T01:26:56.702Z",
-    "kt": null,
+    "skt": "2026-08-20T01:26:31.103Z",
+    "kt": "2026-08-20T01:26:31.103Z",
     "lgu": null
   },
   "count": 336,
@@ -12,9 +12,9 @@
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -368,12 +368,12 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-646c5f61",
+      "id": "kt-c2435f4e",
       "source": "kt",
       "category": "etc",
-      "title": "BR baskinrobbin 30% 할인",
-      "description": "[전등급] [달.달.혜택] 레디팩 30% 할인 [생일혜택] 아이스크림 케이크 4천원 할인 | [VVIP] [VVIP 초이스] 레디팩 1개(10,800원) FREE | [VIP] [VIP 초이스] 아이스크림군 6종 50% OFF(최대 4,900원 할인)",
-      "discount": "30%",
+      "title": "BR baskinrobbin 혜택",
+      "description": "[전등급] [생일혜택] 아이스크림 케이크 4천원 할인 | [VVIP] [VVIP 초이스] 레디팩 1개(10,800원) FREE | [VIP] [VIP 초이스] 아이스크림군 6종 50% OFF(최대 4,900원 할인)",
+      "discount": "혜택",
       "brand": "BR baskinrobbin",
       "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/배스킨라빈스_웹_제휴브랜드_195x98.png",
@@ -396,12 +396,12 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-f5b57d76",
+      "id": "kt-0bcecffd",
       "source": "kt",
       "category": "cafe",
-      "title": "공차 50% 할인",
-      "description": "[전등급] [달.달.혜택] 인기 음료 6종 50% 할인(할인 한도 5천원) [상시]제조음료 구매 시 10% 할인",
-      "discount": "50%",
+      "title": "공차 10% 할인",
+      "description": "[전등급] 제조음료 구매 시 10% 할인",
+      "discount": "10%",
       "brand": "공차",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9834.png",
@@ -690,14 +690,14 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "kt-05ce5644",
+      "id": "kt-140637df",
       "source": "kt",
       "category": "cafe",
-      "title": "뚜레쥬르 1,000원 할인",
-      "description": "[VVIP] 1,000원당 150원 할인 | [VIP] 1,000원당 150원 할인 | [Gold] 1,000원당 150원 할인 | [일반] 1,000원당 100원 할인",
-      "discount": "1,000원",
+      "title": "뚜레쥬르 혜택",
+      "description": "[전등급] [달.달.혜택] 4천원 할인(1만원 이상 구매 시) | [VVIP] [상시] 1,000원당 150원 할인 | [VIP] [상시] 1,000원당 150원 할인 | [Gold] [상시] 1,000원당 150원 할인 | [일반] [상시] 1,000원당 100원 할인",
+      "discount": "혜택",
       "brand": "뚜레쥬르",
-      "membershipGrade": "VVIP·VIP·Gold·일반",
+      "membershipGrade": "전등급·VVIP·VIP·Gold·일반",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9867.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-08-01",
@@ -2136,10 +2136,10 @@
       "source": "kt",
       "category": "etc",
       "title": "밀리의서재 무료",
-      "description": "[VVIP] [VVIP 초이스]밀리의 서재 3개월 무료 | [VIP] [VIP 초이스]밀리의 서재 1개월 무료",
+      "description": "[전등급] [달.달.혜택] 밀리의서재 1개월 무료 | [VVIP] [VVIP 초이스]밀리의 서재 3개월 무료 | [VIP] [VIP 초이스]밀리의 서재 1개월 무료",
       "discount": "무료",
       "brand": "밀리의서재",
-      "membershipGrade": "VVIP·VIP",
+      "membershipGrade": "전등급·VVIP·VIP",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/195x98_밀리의서재_웹.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-08-01",
