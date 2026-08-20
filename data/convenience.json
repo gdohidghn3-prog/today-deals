@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T02:00:00.133Z",
+  "updatedAt": "2026-08-20T01:59:08.865Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -1301,19 +1301,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-caddbdbf",
-      "source": "cu",
-      "category": "convenience",
-      "title": "하이)하이네켄논알콜캔330 1+1",
-      "description": "3,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "하이)하이네켄논알콜캔330",
-      "price": "3,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8712000055721.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-d3dfc15a",
       "source": "cu",
       "category": "convenience",
@@ -2610,6 +2597,19 @@
       "brand": "연세)스트로베리요거트300",
       "price": "2,500원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801753110976.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-3a796427",
+      "source": "cu",
+      "category": "convenience",
+      "title": "닥터그루트)쿨멘솔샴푸180 1+1",
+      "description": "9,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "닥터그루트)쿨멘솔샴푸180",
+      "price": "9,900원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801051297041.png",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -4018,19 +4018,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-0d3a154d",
-      "source": "cu",
-      "category": "convenience",
-      "title": "하겐)바닐라미니컵 2+1",
-      "description": "6,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "하겐)바닐라미니컵",
-      "price": "6,900원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/3415581311297.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-cd302daa",
       "source": "cu",
       "category": "convenience",
@@ -5210,6 +5197,19 @@
       "brand": "삼양)까르보불닭떡볶이",
       "price": "3,500원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801073310933.png",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-843fd376",
+      "source": "cu",
+      "category": "convenience",
+      "title": "동원)양반참기름김 2+1",
+      "description": "2,000원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "동원)양반참기름김",
+      "price": "2,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801047222118.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
