@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:59:08.865Z",
+  "updatedAt": "2026-08-21T02:07:51.919Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -1990,19 +1990,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-5f3bcb7b",
-      "source": "cu",
-      "category": "convenience",
-      "title": "CJ)한뿌리홍삼대보병100ml 1+1",
-      "description": "5,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "CJ)한뿌리홍삼대보병100ml",
-      "price": "5,000원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801007955551.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-62ede034",
       "source": "cu",
       "category": "convenience",
@@ -2432,19 +2419,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-364c4810",
-      "source": "cu",
-      "category": "convenience",
-      "title": "연세)블루베리요거트300 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "연세)블루베리요거트300",
-      "price": "2,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801753110501.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-17e41cd9",
       "source": "cu",
       "category": "convenience",
@@ -2549,19 +2523,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-87117fc1",
-      "source": "cu",
-      "category": "convenience",
-      "title": "웅진)빅토리아파인P500ml 1+1",
-      "description": "1,800원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "웅진)빅토리아파인P500ml",
-      "price": "1,800원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801382147343.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-00a223bf",
       "source": "cu",
       "category": "convenience",
@@ -2588,19 +2549,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "cu-a893e2cb",
-      "source": "cu",
-      "category": "convenience",
-      "title": "연세)스트로베리요거트300 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "연세)스트로베리요거트300",
-      "price": "2,500원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801753110976.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "cu-3a796427",
       "source": "cu",
       "category": "convenience",
@@ -2610,6 +2558,58 @@
       "brand": "닥터그루트)쿨멘솔샴푸180",
       "price": "9,900원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801051297041.png",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-41fb7fe5",
+      "source": "cu",
+      "category": "convenience",
+      "title": "동원)얼라이브망고P500ml 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동원)얼라이브망고P500ml",
+      "price": "2,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801155740061.png",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-4bbb43a1",
+      "source": "cu",
+      "category": "convenience",
+      "title": "롯데)핫식스더킹피치캔355 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "롯데)핫식스더킹피치캔355",
+      "price": "2,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801056234423.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-582f508a",
+      "source": "cu",
+      "category": "convenience",
+      "title": "미쟝센)데미지린스200ml 1+1",
+      "description": "8,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "미쟝센)데미지린스200ml",
+      "price": "8,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8809685746973.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "cu-36339245",
+      "source": "cu",
+      "category": "convenience",
+      "title": "동원)복숭아제로아이스900 1+1",
+      "description": "4,000원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동원)복숭아제로아이스900",
+      "price": "4,000원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801047284581.jpg",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -9920,58 +9920,6 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "gs25-89097555",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "젤리블리)귤60G 2+1",
-      "description": "900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "젤리블리)귤60G",
-      "price": "900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8805684013122_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-f384a9b2",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "젤리블리)제로도넛피치60G 2+1",
-      "description": "900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "젤리블리)제로도넛피치60G",
-      "price": "900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8805684011739_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-c8c20f6c",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "젤리블리)제로애플망고60G 2+1",
-      "description": "900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "젤리블리)제로애플망고60G",
-      "price": "900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8805684011715_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "gs25-73a3ba1e",
-      "source": "gs25",
-      "category": "convenience",
-      "title": "젤리블리)제로애플샤인머스켓60G 2+1",
-      "description": "900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "젤리블리)제로애플샤인머스켓60G",
-      "price": "900원",
-      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8805684011401_001.jpg",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
       "id": "gs25-22aea2e2",
       "source": "gs25",
       "category": "convenience",
@@ -10410,6 +10358,71 @@
       "brand": "진주)천하장사BIG70G",
       "price": "2,800원",
       "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077308608_002.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-f29e1c16",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "진주)천하장사28G 2+1",
+      "description": "1,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "진주)천하장사28G",
+      "price": "1,500원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8801077285701_703.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-abd5ef54",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "현대)미에로화이바스파클링제로 2+1",
+      "description": "2,200원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "현대)미에로화이바스파클링제로",
+      "price": "2,200원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8806004000587_002.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-f3adc8fb",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "BR)아몬드봉봉밀키드링크300ML 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "BR)아몬드봉봉밀키드링크300ML",
+      "price": "2,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809288635384_004.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "gs25-716c11d8",
+      "source": "gs25",
+      "category": "convenience",
+      "title": "BR)엄마는외계인밀키드링크300ML 2+1",
+      "description": "2,900원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "BR)엄마는외계인밀키드링크300ML",
+      "price": "2,900원",
+      "imageUrl": "https://image.woodongs.com/imgsvr/item/GD_8809288635377_004.jpg",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "emart24-154b3d63",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "CJ)소바바황금홀릭후라이드210g 1+1",
+      "description": "9,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)소바바황금홀릭후라이드210g",
+      "price": "9,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392198427.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -13001,15 +13014,15 @@
       "endDate": "2026-08-31"
     },
     {
-      "id": "emart24-060b178a",
+      "id": "emart24-49fe7f7b",
       "source": "emart24",
       "category": "convenience",
-      "title": "동아)나랑드사이다제로펫500ml 1+1",
-      "description": "2,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "동아)나랑드사이다제로펫500ml",
-      "price": "2,000원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801097235014.JPG",
+      "title": "동서)티오피바닐라라떼캔275ml 2+1",
+      "description": "2,700원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "동서)티오피바닐라라떼캔275ml",
+      "price": "2,700원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801037026313.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
@@ -15597,19 +15610,6 @@
       "brand": "남양)테이크핏프로틴바나나250ml",
       "price": "2,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069417554.JPG",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-31"
-    },
-    {
-      "id": "emart24-b4c67b66",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "남양)테이크핏호박고구마250ml 2+1",
-      "description": "2,900원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "남양)테이크핏호박고구마250ml",
-      "price": "2,900원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801069419619.JPG",
       "startDate": "2026-08-01",
       "endDate": "2026-08-31"
     },
