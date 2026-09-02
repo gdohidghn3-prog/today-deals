@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T05:27:21.780Z",
+  "updatedAt": "2026-09-02T04:53:47.267Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3974,7 +3974,7 @@
       "discount": "2+1",
       "brand": "삼립)정통크림빵",
       "price": "1,800원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801068086003.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801068086003_1.png",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -4845,7 +4845,7 @@
       "discount": "2+1",
       "brand": "서울)커피우유300ml",
       "price": "2,100원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115135708_1.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115135708_2.png",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -5210,6 +5210,19 @@
       "brand": "니베아)포맨액티브립케어",
       "price": "4,100원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/4005808373000.jpg",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "emart24-154b3d63",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "CJ)소바바황금홀릭후라이드210g 1+1",
+      "description": "9,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)소바바황금홀릭후라이드210g",
+      "price": "9,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392198427.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -7797,19 +7810,6 @@
       "brand": "롯데)펩시엑스트라피즈펫500ml",
       "price": "2,500원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911782.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-751670c5",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "사조)스노우크랩킹140g 1+1",
-      "description": "5,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "사조)스노우크랩킹140g",
-      "price": "5,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801066055438.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
