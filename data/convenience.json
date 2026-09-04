@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T04:51:52.184Z",
+  "updatedAt": "2026-09-04T04:59:13.829Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -5214,6 +5214,19 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "emart24-c49db99c",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "HK)컨디션스틱ZERO(샤인머스켓맛) 1+1",
+      "description": "3,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "HK)컨디션스틱ZERO(샤인머스켓맛)",
+      "price": "3,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8809422046694.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "emart24-154b3d63",
       "source": "emart24",
       "category": "convenience",
@@ -7797,19 +7810,6 @@
       "brand": "롯데)칠성사이다제로유자캔355ml",
       "price": "2,100원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911249.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-ad2a418d",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "롯데)펩시엑스트라피즈펫500ml 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "롯데)펩시엑스트라피즈펫500ml",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911782.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
