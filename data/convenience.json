@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T04:59:13.829Z",
+  "updatedAt": "2026-09-05T04:48:01.291Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -4819,7 +4819,7 @@
       "discount": "2+1",
       "brand": "서울)초코우유300ml",
       "price": "2,100원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115134220_1.png",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115134220_2.png",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -5210,6 +5210,32 @@
       "brand": "니베아)포맨액티브립케어",
       "price": "4,100원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/4005808373000.jpg",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "emart24-3d163549",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "CJ)NEW소바바마쏘킥210g 1+1",
+      "description": "9,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)NEW소바바마쏘킥210g",
+      "price": "9,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392203992.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "emart24-c4c72a81",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "CJ)NEW소바바레드핫210g 1+1",
+      "description": "9,900원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "CJ)NEW소바바레드핫210g",
+      "price": "9,900원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801392204036.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -7784,32 +7810,6 @@
       "brand": "롯데)핫식스글로우피치살구캔355ml",
       "price": "2,500원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911072.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-8f480e9b",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "롯데)핫식스글로우사과포멜로캔355ml 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "롯데)핫식스글로우사과포멜로캔355ml",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911171.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-93b28a15",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "롯데)칠성사이다제로유자캔355ml 1+1",
-      "description": "2,100원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "롯데)칠성사이다제로유자캔355ml",
-      "price": "2,100원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911249.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
