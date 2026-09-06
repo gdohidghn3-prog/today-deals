@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-05T03:46:13.154Z",
+  "updatedAt": "2026-09-06T03:49:50.847Z",
   "freshness": {
-    "skt": "2026-09-05T03:46:13.154Z",
-    "kt": null,
+    "skt": "2026-09-06T03:49:50.847Z",
+    "kt": "2026-09-06T03:49:50.847Z",
     "lgu": null
   },
   "count": 336,
@@ -12,9 +12,9 @@
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
-    "skt-2688cdb4",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -1688,7 +1688,7 @@
       "source": "kt",
       "category": "etc",
       "title": "파고다토쿨 혜택",
-      "description": "[전등급] 전화/화상영어 1만원 할인",
+      "description": "[전등급] 전화/화상영어 1만원 할인 (영어사용국, 정규 1개월 20분)",
       "discount": "혜택",
       "brand": "파고다토쿨",
       "membershipGrade": "전등급",
@@ -2010,7 +2010,7 @@
       "source": "kt",
       "category": "etc",
       "title": "밀크T 무료",
-      "description": "[전등급] 밀크T 10일 무료체험＋첫 체험자 전원 신세계상품권 3만원＋정학습생 결제자 전원 신세계상품권 5만원 증정",
+      "description": "[전등급] 밀크T 10일 무료체험 + 첫 체험자 전원 신세계상품권 3만원 + 신규 정학습생 결제자 전원 신세계상품권 4만원 증정",
       "discount": "무료",
       "brand": "밀크T",
       "membershipGrade": "전등급",
