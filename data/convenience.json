@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T05:02:45.037Z",
+  "updatedAt": "2026-09-11T04:59:19.419Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -5214,6 +5214,19 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "emart24-39eaa299",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "롯데)핫식스더킹프로즌블루캔355ml 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "롯데)핫식스더킹프로즌블루캔355ml",
+      "price": "2,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056912987.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "emart24-0e0e9ed7",
       "source": "emart24",
       "category": "convenience",
@@ -7797,19 +7810,6 @@
       "brand": "롯데)해피즈팝핑체리캔355ml",
       "price": "3,000원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056910730.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-547eceaf",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "롯데)펩시제로피치펫500ml 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "롯데)펩시제로피치펫500ml",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056911027.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
