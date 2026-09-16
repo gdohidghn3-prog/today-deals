@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-15T04:12:11.256Z",
+  "updatedAt": "2026-09-16T04:08:18.536Z",
   "freshness": {
-    "skt": "2026-09-15T04:12:11.256Z",
+    "skt": "2026-09-16T04:08:18.536Z",
     "kt": null,
     "lgu": null
   },
@@ -12,8 +12,8 @@
     "lgu": 164
   },
   "best": [
-    "skt-142aae50",
     "skt-2688cdb4",
+    "skt-7fa3d9d3",
     "skt-4e61deeb"
   ],
   "deals": [
@@ -284,12 +284,12 @@
       "endDate": "2026-09-30"
     },
     {
-      "id": "skt-142aae50",
+      "id": "skt-7fa3d9d3",
       "source": "skt",
       "category": "etc",
-      "title": "SK렌터카 85% 할인",
-      "description": "[VIP/골드/실버] 제주: 주중/주말 최대 85% 할인, 내륙: 주중/주말 최대 60% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 제주, 내륙 할인 혜택 적용 후 차량대여요금의 5% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 제주: 주중/주말 최대 85% 할인, 내륙: 주중/주말 최대 60% 할인",
-      "discount": "85%",
+      "title": "SK렌터카 60% 할인",
+      "description": "[VIP/골드/실버] 제주&내륙: 주중/주말 최대 60% 할인 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 제주, 내륙 할인 혜택 적용 후 차량대여요금의 5% 적립 | [VIP/골드/실버] 포인트 사용가능 (100%, 1P 단위) | [VIP/골드/실버] 제주&내륙: 주중/주말 최대 60% 할인",
+      "discount": "60%",
       "brand": "SK렌터카",
       "membershipGrade": "VIP·골드·실버",
       "imageUrl": "https://cdn.sktmembership.co.kr/mps.app/catalogue/brand/202110/1635214032482.png",
