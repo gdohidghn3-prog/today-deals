@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-17T04:15:20.163Z",
+  "updatedAt": "2026-09-18T03:59:39.452Z",
   "freshness": {
-    "skt": "2026-09-17T04:15:20.163Z",
-    "kt": null,
+    "skt": "2026-09-18T03:59:39.452Z",
+    "kt": "2026-09-18T03:59:39.452Z",
     "lgu": null
   },
   "count": 335,
@@ -12,9 +12,9 @@
     "lgu": 164
   },
   "best": [
-    "skt-2688cdb4",
-    "skt-7fa3d9d3",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -2146,12 +2146,12 @@
       "endDate": "2026-09-30"
     },
     {
-      "id": "kt-c70d3ba5",
+      "id": "kt-33db9232",
       "source": "kt",
       "category": "etc",
-      "title": "빌리카 85% 할인",
-      "description": "[전등급] 제주 최대 85% 할인",
-      "discount": "85%",
+      "title": "빌리카 60% 할인",
+      "description": "[전등급] 제주 최대 60% 할인",
+      "discount": "60%",
       "brand": "빌리카",
       "membershipGrade": "전등급",
       "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9858.png",
@@ -2164,7 +2164,7 @@
       "source": "kt",
       "category": "etc",
       "title": "롯데렌터카 60% 할인",
-      "description": "[전등급] 최대 제주 85%, 내륙 60% 할인",
+      "description": "[전등급] 최대 제주 60%,내륙 60%할인",
       "discount": "60%",
       "brand": "롯데렌터카",
       "membershipGrade": "전등급",
@@ -2248,7 +2248,7 @@
       "source": "kt",
       "category": "etc",
       "title": "SK렌터카 60% 할인",
-      "description": "[전등급] 내륙 최대 60% 할인, 제주 최대 85% 할인",
+      "description": "[전등급] 내륙 최대 60% 할인, 제주 최대 60% 할인",
       "discount": "60%",
       "brand": "SK렌터카",
       "membershipGrade": "전등급",
