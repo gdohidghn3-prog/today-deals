@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-20T04:14:52.131Z",
+  "updatedAt": "2026-09-21T04:12:21.905Z",
   "freshness": {
-    "skt": "2026-09-20T04:14:52.131Z",
-    "kt": "2026-09-20T04:14:52.131Z",
+    "skt": "2026-09-21T04:12:21.905Z",
+    "kt": "2026-09-21T04:12:21.905Z",
     "lgu": null
   },
   "count": 335,
@@ -1118,7 +1118,7 @@
       "discount": "35%",
       "brand": "CJ더마켓",
       "membershipGrade": "전등급·VVIP·VIP",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/KT닷컴_웹_제휴사로고_CJ더마켓_195x98.png",
+      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9822.png",
       "link": "https://membership.kt.com/discount/partner/PartnerList.do",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
