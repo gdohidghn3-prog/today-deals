@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T05:15:03.788Z",
+  "updatedAt": "2026-09-23T04:59:48.476Z",
   "count": 1784,
   "summary": {
     "cu": 400,
@@ -7294,6 +7294,19 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "emart24-1c54bdd9",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "정식품)베지밀A190ml24팩 2+1",
+      "description": "31,200원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "정식품)베지밀A190ml24팩",
+      "price": "31,200원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801033770678.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "emart24-4bf148f3",
       "source": "emart24",
       "category": "convenience",
@@ -9877,19 +9890,6 @@
       "brand": "삼양)1963우지파개장큰컵",
       "price": "1,950원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073217270.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-f92f2980",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)탱글갈릭쉬림프프로틴파스타큰컵 2+1",
-      "description": "2,500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)탱글갈릭쉬림프프로틴파스타큰컵",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073217294.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
