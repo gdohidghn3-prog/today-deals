@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T05:10:21.273Z",
+  "updatedAt": "2026-09-25T05:11:54.043Z",
   "count": 1784,
   "summary": {
     "cu": 400,
@@ -7294,6 +7294,32 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "emart24-34a5d8aa",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "엘투)붉은빛의우롱티펫500ml 2+1",
+      "description": "2,200원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "엘투)붉은빛의우롱티펫500ml",
+      "price": "2,200원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/6974906992025.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "emart24-6af903ec",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "엘투)눈꽃내리는자스민티펫500ml 2+1",
+      "description": "2,200원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "엘투)눈꽃내리는자스민티펫500ml",
+      "price": "2,200원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/6974906992384.JPG",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "emart24-1c54bdd9",
       "source": "emart24",
       "category": "convenience",
@@ -9864,32 +9890,6 @@
       "brand": "삼양)탱글갈릭오일파스타큰컵",
       "price": "2,500원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073216570.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-cbb4d062",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)탱글바질토마토프로틴파스타큰컵 2+1",
-      "description": "2,500원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)탱글바질토마토프로틴파스타큰컵",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073217201.JPG",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "emart24-2691407b",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "삼양)1963우지파개장큰컵 2+1",
-      "description": "1,950원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "삼양)1963우지파개장큰컵",
-      "price": "1,950원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801073217270.JPG",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
