@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-10-06T05:41:26.080Z",
+  "updatedAt": "2026-10-07T05:12:05.052Z",
   "freshness": {
-    "skt": "2026-10-06T05:41:26.080Z",
-    "kt": null,
+    "skt": "2026-10-07T05:12:05.052Z",
+    "kt": "2026-10-07T05:12:05.052Z",
     "lgu": null
   },
-  "count": 333,
+  "count": 332,
   "summary": {
     "skt": 20,
-    "kt": 149,
+    "kt": 148,
     "lgu": 164
   },
   "best": [
-    "skt-2688cdb4",
-    "skt-7fa3d9d3",
-    "skt-4e61deeb"
+    "kt-22e245ef",
+    "kt-26b54951",
+    "kt-e774ae84"
   ],
   "deals": [
     {
@@ -298,25 +298,11 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "kt-975f4f3f",
-      "source": "kt",
-      "category": "etc",
-      "title": "초대 혜택 혜택",
-      "description": "[전등급] [초대 혜택] 2026 KT VOYAGE FESTIVAL 응모",
-      "discount": "혜택",
-      "brand": "초대 혜택",
-      "membershipGrade": "전등급",
-      "imageUrl": "https://membership.kt.com/pc/images/ollehktclub/event/banner/club/웹_제휴브랜드_195x9833.png",
-      "link": "https://membership.kt.com/discount/partner/PartnerList.do",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
       "id": "kt-eef26464",
       "source": "kt",
       "category": "food",
       "title": "롯데리아 40% 할인",
-      "description": "[전등급] [달.달.혜택] 1인팩 or 2인팩 40% 할인",
+      "description": "[전등급] [달.달.혜택] 1인팩 or 2인팩 최대 40% 할인",
       "discount": "40%",
       "brand": "롯데리아",
       "membershipGrade": "전등급",
