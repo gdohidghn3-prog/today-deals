@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T06:17:58.538Z",
+  "updatedAt": "2026-10-08T06:27:47.805Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3745,6 +3745,19 @@
       "endDate": "2026-10-31"
     },
     {
+      "id": "cu-66656246",
+      "source": "cu",
+      "category": "convenience",
+      "title": "롯데)스크류바 2+1",
+      "description": "1,500원 · 2+1 행사",
+      "discount": "2+1",
+      "brand": "롯데)스크류바",
+      "price": "1,500원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801062417018.jpg",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
       "id": "cu-150c38d7",
       "source": "cu",
       "category": "convenience",
@@ -5197,19 +5210,6 @@
       "brand": "서울)꿀딴지딸기우유180ml",
       "price": "1,700원",
       "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115384014.jpg",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "cu-353f2d62",
-      "source": "cu",
-      "category": "convenience",
-      "title": "시저)쇠고기통조림 2+1",
-      "description": "2,400원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "시저)쇠고기통조림",
-      "price": "2,400원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8804973300028.jpg",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
