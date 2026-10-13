@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T06:18:21.826Z",
+  "updatedAt": "2026-10-13T06:58:46.694Z",
   "count": 1824,
   "summary": {
     "cu": 400,
@@ -3454,7 +3454,7 @@
       "discount": "2+1",
       "brand": "농심)오징어짬뽕소컵",
       "price": "1,350원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801043015745.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801043015745_1.png",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
@@ -4234,7 +4234,7 @@
       "discount": "2+1",
       "brand": "농심)너구리소컵",
       "price": "1,350원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801043015837.jpg",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801043015837_1.png",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
@@ -5201,15 +5201,15 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "cu-c4dfed91",
+      "id": "cu-353f2d62",
       "source": "cu",
       "category": "convenience",
-      "title": "서울)꿀딴지딸기우유180ml 2+1",
-      "description": "1,700원 · 2+1 행사",
+      "title": "시저)쇠고기통조림 2+1",
+      "description": "2,400원 · 2+1 행사",
       "discount": "2+1",
-      "brand": "서울)꿀딴지딸기우유180ml",
-      "price": "1,700원",
-      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8801115384014.jpg",
+      "brand": "시저)쇠고기통조림",
+      "price": "2,400원",
+      "imageUrl": "https://tqklhszfkvzk6518638.edge.naverncp.com/product/8804973300028.jpg",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
