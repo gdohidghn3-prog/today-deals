@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-14T05:11:26.431Z",
-  "count": 1796,
+  "updatedAt": "2026-10-15T05:00:04.536Z",
+  "count": 1795,
   "summary": {
     "cu": 400,
     "gs25": 400,
     "seven": 624,
-    "emart24": 372
+    "emart24": 371
   },
   "best": [
     "gs25-a5e399ce",
@@ -5383,6 +5383,19 @@
       "endDate": "2026-10-31"
     },
     {
+      "id": "emart24-5b11b235",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "크레이지치즈)올치글50g(30) 1+1",
+      "description": "2,200원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "크레이지치즈)올치글50g(30)",
+      "price": "2,200원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8804294026522.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
       "id": "emart24-4f692565",
       "source": "emart24",
       "category": "convenience",
@@ -7684,19 +7697,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "emart24-605d414a",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "샤프란)아로마리필2100ml(F) 1+1",
-      "description": "8,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "샤프란)아로마리필2100ml(F)",
-      "price": "8,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801051275179.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
       "id": "emart24-d2119163",
       "source": "emart24",
       "category": "convenience",
@@ -9344,19 +9344,6 @@
       "brand": "롯데)치토스US오리진치즈맛72g(12)",
       "price": "1,700원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8802259033004.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "emart24-33f44f6b",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "크레이지치즈)올치글50g(30) 2+1",
-      "description": "2,200원 · 2+1 행사",
-      "discount": "2+1",
-      "brand": "크레이지치즈)올치글50g(30)",
-      "price": "2,200원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8804294026522.JPG",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
