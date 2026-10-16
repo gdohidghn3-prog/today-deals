@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T05:00:04.536Z",
+  "updatedAt": "2026-10-16T04:49:24.256Z",
   "count": 1795,
   "summary": {
     "cu": 400,
@@ -5214,6 +5214,19 @@
       "endDate": "2026-10-31"
     },
     {
+      "id": "emart24-95306254",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "동화)부채표소다활레몬라임펫500ml 1+1",
+      "description": "2,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "동화)부채표소다활레몬라임펫500ml",
+      "price": "2,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8806016187085.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
       "id": "emart24-8e568246",
       "source": "emart24",
       "category": "convenience",
@@ -5682,19 +5695,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "emart24-d7279e27",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "농심)츄파춥스게코젤리90g 1+1",
-      "description": "2,300원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "농심)츄파춥스게코젤리90g",
-      "price": "2,300원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/6925425474653.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
       "id": "emart24-95630866",
       "source": "emart24",
       "category": "convenience",
@@ -5769,32 +5769,6 @@
       "brand": "후버)복숭아&포도주스200ml(S)",
       "price": "1,400원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8410707007509.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "emart24-a9636d6a",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "하리보)골드베어사우어80g 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "하리보)골드베어사우어80g",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8691216099579.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "emart24-d47d6df8",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "하리보)사운드큐브80g 1+1",
-      "description": "2,500원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "하리보)사운드큐브80g",
-      "price": "2,500원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8691216107731.JPG",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
@@ -5925,19 +5899,6 @@
       "brand": "피지)모락셀라액체허브리필1L",
       "price": "16,900원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800335704978.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "emart24-f4e3e2eb",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "SF)제스프리썬골드키위4입(팩) 1+1",
-      "description": "7,280원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "SF)제스프리썬골드키위4입(팩)",
-      "price": "7,280원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8800348941698.JPG",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
@@ -6904,19 +6865,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "emart24-382344ea",
-      "source": "emart24",
-      "category": "convenience",
-      "title": "오뚜기)추라면 1+1",
-      "description": "2,000원 · 1+1 행사",
-      "discount": "1+1",
-      "brand": "오뚜기)추라면",
-      "price": "2,000원",
-      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801045858241.JPG",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
       "id": "emart24-6f660a17",
       "source": "emart24",
       "category": "convenience",
@@ -7693,6 +7641,58 @@
       "brand": "샤프란)핑크리필2100ml",
       "price": "8,500원",
       "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801051275162.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "emart24-605d414a",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "샤프란)아로마리필2100ml(F) 1+1",
+      "description": "8,500원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "샤프란)아로마리필2100ml(F)",
+      "price": "8,500원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801051275179.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "emart24-4e00e2b2",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "청정원)저당홍초석류스틱40ml 1+1",
+      "description": "1,100원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "청정원)저당홍초석류스틱40ml",
+      "price": "1,100원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801052139593.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "emart24-bb3f4e5d",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "청정원)저당홍초레드애플스틱40ml 1+1",
+      "description": "1,100원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "청정원)저당홍초레드애플스틱40ml",
+      "price": "1,100원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801052139609.JPG",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "emart24-5fc7e071",
+      "source": "emart24",
+      "category": "convenience",
+      "title": "롯데)게토레이레몬펫600ml 1+1",
+      "description": "2,400원 · 1+1 행사",
+      "discount": "1+1",
+      "brand": "롯데)게토레이레몬펫600ml",
+      "price": "2,400원",
+      "imageUrl": "https://msave.emart24.co.kr/cmsbo/upload/nHq/plu_image/500x500/8801056049201.JPG",
       "startDate": "2026-10-01",
       "endDate": "2026-10-31"
     },
